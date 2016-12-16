@@ -1,15 +1,21 @@
-# General
+---
 title: Metro Ideas Project
-
-# Accounts
+timezone: America/New_York
+collections:
+  authors:
+    title: Authors
+    output: true
+  posts:
+    title: Blog
+    output: true
+  projects:
+    title: Projects
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 facebook: metroideas
 github: metroideas
 instagram: metroideas
 twitter: thinkmetro
 email: info@metroideas.org
-
-# Build
-# Collections
-# Defaults
-# Assets
-# API keys
