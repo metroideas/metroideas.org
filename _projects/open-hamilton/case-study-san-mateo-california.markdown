@@ -1,6 +1,6 @@
 ---
 title: 'Case study: San Mateo, California'
-date: 2016-12-16 19:10:00 Z
-position: 2
+date: 2016-12-16 14:10:00 -05:00
+position: 3
 ---
 

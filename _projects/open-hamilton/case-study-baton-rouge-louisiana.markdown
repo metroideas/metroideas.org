@@ -1,6 +1,6 @@
 ---
 title: 'Case study: Baton Rouge, Louisiana'
-date: 2016-12-16 19:09:00 Z
-position: 1
+date: 2016-12-16 14:09:00 -05:00
+position: 2
 ---
 
