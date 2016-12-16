@@ -3,7 +3,7 @@ title: Metro Ideas Project
 timezone: UTC
 collections:
   posts:
-    title: Posts
+    title: Blog
     output: true
   projects:
     title: Projects
