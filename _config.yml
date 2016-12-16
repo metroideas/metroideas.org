@@ -1,15 +1,15 @@
-# General
+---
 title: Metro Ideas Project
-
-# Accounts
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 facebook: metroideas
 github: metroideas
 instagram: metroideas
 twitter: thinkmetro
 email: info@metroideas.org
-
-# Build
-# Collections
-# Defaults
-# Assets
-# API keys
