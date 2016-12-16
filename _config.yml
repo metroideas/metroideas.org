@@ -2,6 +2,9 @@
 title: Metro Ideas Project
 timezone: America/New_York
 collections:
+  authors:
+    title: Authors
+    output: true
   posts:
     title: Blog
     output: true
