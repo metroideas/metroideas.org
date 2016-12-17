@@ -1,6 +1,6 @@
 ---
 title: Open Hamilton
-date: 2016-12-16 13:56:00 -05:00
+date: 2016-12-16 18:56:00 Z
 position: 1
 ---
 
