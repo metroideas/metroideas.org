@@ -1,21 +1,96 @@
 ---
+# General
 title: Metro Ideas Project
 timezone: America/New_York
-collections:
-  authors:
-    title: Authors
-    output: true
-  posts:
-    title: Blog
-    output: true
-  projects:
-    title: Projects
-    output: true
-  uploads:
-    title: Uploads
-    output: true
+
+# Contact
 facebook: metroideas
 github: metroideas
 instagram: metroideas
 twitter: thinkmetro
 email: info@metroideas.org
+
+# Collections
+collections:
+  authors:
+    title: Authors
+    output: true
+    permalink: /staff/:title/
+
+  posts:
+    title: Blog
+    output: true
+    permalink: /blog/:title/
+
+  projects:
+    title: Projects
+    output: true
+    permalink: /projects/:path/
+
+  public:
+    output: true
+    permalink: /:path
+
+  uploads:
+    title: Uploads
+    output: true
+    permalink: /media/:path
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      title:
+      date:
+      image:
+      description:
+  -
+    scope:
+      path: ""
+      type: authors
+    values:
+      layout: staff
+      current: true
+      role:
+      email:
+      twitter:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+      author: 
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: article
+      author: 
+
+# Build settings
+include:
+
+exclude:
+  - node_modules/
+  - bower_components/
+  - tmp/
+  - bower.json
+  - Gemfile*
+  - gulpfile.js
+  - package.json
+  - README.md
+  - LICENSE
+
+# Plugins
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+# API keys
+api:
