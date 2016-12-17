@@ -26,8 +26,6 @@ defaults:
     path: ''
   values:
     layout: default
-    title: 
-    date: 
     image: 
     description: 
 - scope:
