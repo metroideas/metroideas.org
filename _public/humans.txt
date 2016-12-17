@@ -1,4 +1,5 @@
 ---
+title: Humans
 ---
 {% assign staff = site.authors | sort:"position" %}
 # humanstxt.org/
