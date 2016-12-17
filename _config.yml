@@ -38,6 +38,39 @@ collections:
 
 # Defaults
 defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      title:
+      date:
+      image:
+      description:
+  -
+    scope:
+      path: ""
+      type: authors
+    values:
+      layout: staff
+      current: true
+      role:
+      email:
+      twitter:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+      author: 
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: article
+      author: 
 
 # Build settings
 include:
