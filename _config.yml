@@ -1,96 +1,74 @@
 ---
-# General
 title: Metro Ideas Project
 timezone: America/New_York
-
-# Contact
+collections:
+  authors:
+    title: Authors
+    output: true
+    permalink: "/staff/:title/"
+  posts:
+    title: Blog
+    output: true
+  projects:
+    title: Projects
+    output: true
+    permalink: "/projects/:path/"
+  public:
+    title: Public
+    output: true
+    permalink: "/:path"
+  uploads:
+    title: Uploads
+    output: true
+    permalink: "/media/:path"
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
+    title: 
+    date: 
+    image: 
+    description: 
+- scope:
+    path: ''
+    type: authors
+  values:
+    layout: staff
+    current: true
+    role: 
+    email: 
+    twitter: 
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: article
+    author: 
+- scope:
+    path: ''
+    type: projects
+  values:
+    layout: article
+    author: 
 facebook: metroideas
 github: metroideas
 instagram: metroideas
 twitter: thinkmetro
 email: info@metroideas.org
-
-# Collections
-collections:
-  authors:
-    title: Authors
-    output: true
-    permalink: /staff/:title/
-
-  posts:
-    title: Blog
-    output: true
-    permalink: /blog/:title/
-
-  projects:
-    title: Projects
-    output: true
-    permalink: /projects/:path/
-
-  public:
-    output: true
-    permalink: /:path
-
-  uploads:
-    title: Uploads
-    output: true
-    permalink: /media/:path
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: default
-      title:
-      date:
-      image:
-      description:
-  -
-    scope:
-      path: ""
-      type: authors
-    values:
-      layout: staff
-      current: true
-      role:
-      email:
-      twitter:
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: article
-      author: 
-  -
-    scope:
-      path: ""
-      type: projects
-    values:
-      layout: article
-      author: 
-
-# Build settings
-include:
-
+include: 
 exclude:
-  - node_modules/
-  - bower_components/
-  - tmp/
-  - bower.json
-  - Gemfile*
-  - gulpfile.js
-  - package.json
-  - README.md
-  - LICENSE
-
-# Plugins
+- node_modules/
+- bower_components/
+- tmp/
+- bower.json
+- Gemfile*
+- gulpfile.js
+- package.json
+- README.md
+- LICENSE
 gems:
-  - jekyll-feed
-  - jekyll-redirect-from
-  - jekyll-sitemap
-
-# API keys
-api:
+- jekyll-feed
+- jekyll-redirect-from
+- jekyll-sitemap
+api: 
