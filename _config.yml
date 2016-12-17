@@ -9,7 +9,6 @@ collections:
   posts:
     title: Blog
     output: true
-    permalink: "/blog/:title/"
   projects:
     title: Projects
     output: true
