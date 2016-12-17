@@ -1,0 +1,19 @@
+---
+---
+{% assign staff = site.authors | sort:"position" %}
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# Metro Ideas Project
+{% for author in site.authors %}
+  {% if author.active == true %}
+  {{ author.name }} -- {{ author.role }} {% if author.twitter %}-- @{{ author.twitter }}{% endif %}
+  {% endif %}
+{% endfor %}
+
+# Design and development
+    
+# Technology colophon
+
+  CSS3, HTML5
+    
