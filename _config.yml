@@ -17,9 +17,9 @@ collections:
     title: Public
     output: true
     permalink: "/:path"
-  static-pages:
+  static_pages:
     title: Static pages
-    output: true
+    output: false
   uploads:
     title: Uploads
     output: true
