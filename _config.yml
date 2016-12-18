@@ -9,6 +9,7 @@ collections:
   posts:
     title: Blog
     output: true
+    permalink: "/blog/:title/"
   projects:
     title: Projects
     output: true
@@ -17,8 +18,8 @@ collections:
     title: Public
     output: true
     permalink: "/:path"
-  static_pages:
-    title: Static pages
+  landing_pages:
+    title: Landing pages
     output: false
   uploads:
     title: Uploads
@@ -28,7 +29,6 @@ defaults:
 - scope:
     path: ''
   values:
-    layout: default
     image: 
     description: 
 - scope:
@@ -51,7 +51,14 @@ defaults:
     type: projects
   values:
     layout: article
-    author: 
+    author:
+    section:
+    index: false
+- scope:
+    path: ''
+    layout: landing_pages
+  values:
+    section:
 facebook: metroideas
 github: metroideas
 instagram: metroideas

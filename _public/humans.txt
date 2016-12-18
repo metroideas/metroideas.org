@@ -1,16 +1,13 @@
 ---
-title: Humans
+layout: null
 ---
-
-{% assign staff = site.authors | sort:"position" %}
+{% assign authors = site.authors | where: "current","true" | sort: "position" %}
 # humanstxt.org/
 # The humans responsible & technology colophon
 
 # Metro Ideas Project
-{% for author in site.authors %}
-  {% if author.active == true %}
-  {{ author.name }} -- {{ author.role }} {% if author.twitter %}-- @{{ author.twitter }}{% endif %}
-  {% endif %}
+{% for author in authors %}
+  {{ author.title }} -- {{ author.role }} {% if author.twitter %}-- @{{ author.twitter }}{% endif %}
 {% endfor %}
 
 # Design and development
@@ -18,4 +15,3 @@ title: Humans
 # Technology colophon
 
   CSS3, HTML5
-    
