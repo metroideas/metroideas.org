@@ -1,0 +1,14 @@
+---
+title: Research projects
+layout: indexpage
+permalink: /projects/
+---
+
+{% assign projects = site.projects | where: "index", "true" | sort: "position" %}
+{% for project in projects %}
+<article id="{{ project.title | slugify }}">
+  <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+  <p>{{ project.description }}</p>
+  <p><a href="{{ project.url }}">Read more</a></p>
+</article>
+{% endfor %}
