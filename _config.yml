@@ -57,22 +57,21 @@ github: metroideas
 instagram: metroideas
 twitter: thinkmetro
 email: info@metroideas.org
-include:
+include: 
 exclude:
-exclude:
-  - node_modules/
-  - bower_components/
-  - tmp/
-  - bower.json
-  - Gemfile*
-  - gulpfile.js
-  - package.json
-  - README.md
-  - LICENSE
+- node_modules/
+- bower_components/
+- tmp/
+- bower.json
+- Gemfile*
+- gulpfile.js
+- package.json
+- README.md
+- LICENSE
 gems:
-  - jekyll-feed
-  - jekyll-redirect-from
-  - jekyll-sitemap
+- jekyll-feed
+- jekyll-redirect-from
+- jekyll-sitemap
 api:
   analytics: 
   facebook: 
