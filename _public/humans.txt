@@ -1,6 +1,7 @@
 ---
 title: Humans
 ---
+
 {% assign staff = site.authors | sort:"position" %}
 # humanstxt.org/
 # The humans responsible & technology colophon
