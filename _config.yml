@@ -9,6 +9,9 @@ collections:
   posts:
     title: Blog
     output: true
+  static-pages:
+    title: Pages
+    output: true
   projects:
     title: Projects
     output: true
@@ -17,9 +20,6 @@ collections:
     title: Public
     output: true
     permalink: "/:path"
-  static-pages:
-    title: Static pages
-    output: true
   uploads:
     title: Uploads
     output: true
