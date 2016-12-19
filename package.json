@@ -1,0 +1,30 @@
+{
+  "name": "beta-metroideas",
+  "version": "0.0.0",
+  "description": "Website redesign",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metroideas/beta.metroideas.org.git"
+  },
+  "author": "David Morton -- michaeldavidmorton@gmail.com -- @itypewords",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metroideas/beta.metroideas.org/issues"
+  },
+  "homepage": "https://github.com/metroideas/beta.metroideas.org#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "run-sequence": "^1.2.2"
+  }
+}
