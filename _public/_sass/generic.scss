@@ -11,7 +11,7 @@ $system-font-stack: -apple-system, BlinkMacSystemFont,
 $base-font-size: 18px;
 $base-line-height: 1.65;
 $header-line-height: 1.1;
-$header-font-weight: 700;
+$strong-font-weight: 700;
 
 // Colors
 $black: #252525;
@@ -20,6 +20,14 @@ $gray: #6d6e70;
 $navy: #1e3567;
 $blue: #0060ae;
 $meta-gray: #bcbec0;
+
+// Mixins
+@mixin container-base {
+  max-width: 100%;
+  width: 768px;
+  @include margin(0 auto);
+  @include padding(1em);
+}
 
 // Base
 body {
@@ -44,7 +52,7 @@ h4,
 h5,
 h6 {
   line-height: $header-line-height;
-  font-weight: $header-font-weight;
+  font-weight: $strong-font-weight;
 
   & > a {
     text-decoration: none;
@@ -57,43 +65,180 @@ img {
   max-width: 100%;
 }
 
+iframe {
+  border: 0;
+}
+
 // Layout
 p {
-  @include margin(2em null);
+  @include margin(1.5em null);
 }
 
 figure {
-  @include margin(2em 0);
+  @include margin(3em 0);
 }
 
 figcaption {
   font-size: floor($base-font-size * .8);
 }
 
+iframe {
+  @include margin(3em 0)
+}
+
+// Prevents double margin
+figure iframe {
+  @include margin(0);
+}
+
 aside {
-  @include margin(2em null);
+  @include margin(3em null);
   @include padding(1em);
   background-color: $meta-gray;
 }
 
 main {
-  max-width: 100%;
-  width: 768px;
-  margin: 0 auto;
-  padding: 1em;
+  @include container-base;
 }
 
 header[role="banner"] {
   display: flex;
   max-width: 100%;
   width: 768px;
-  height: 100px;
   @include margin(0 auto);
-  @include padding (0.5em 1em);
+  @include padding (0 1em);
+  line-height: 0;
+
+  &,
+  nav {
+    height: 75px;
+  }
+  
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media (min-width: 600px) {
+    & {
+      @include margin(1em null);
+    }
+
+    &,
+    nav,
+    .logo {
+      height: 100px;
+    }
+
+    .logo {
+      display: inherit;
+      width: 100%;
+    }
+  }
 }
 
+footer {
+  @include container-base;
+
+  nav {
+    display: flex;
+
+    ul {
+      flex-basis: 50%;
+      @include padding(0);
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+// Form elements
+form {
+  @include margin(1.5em null);
+  p {
+    @include margin(0.5em 0);
+  }
+
+  p ~ button {
+    @include margin(1em 0);
+  }
+}
+
+fieldset {
+  @include padding(0);
+  border: none;
+}
+
+label {
+  font-size: floor($base-font-size * .8);
+}
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  @include padding(0.25em);
+}
+
+button,
+.button {
+  // Reset
+  border: none;
+  background-color: none;
+  
+  // Style
+  width: 150px;
+  @include padding(0.5em 1em);
+  
+  line-height: 1;
+  vertical-align: middle;
+  // font-weight: $strong-font-weight;
+  color: $navy;
+
+  border: 2px solid $navy;
+  background-color: transparent;
+
+  &:active {
+    background-color: $navy;
+    color: $white;
+  }
+}
+
+.button {
+  width: 175px;
+  text-decoration: none;
+}
+
+// Tables
+table {
+  width: 100%;
+  @include margin(3em 0);
+  border-collapse: collapse;
+
+  caption {
+    text-align: left;
+  }
+
+  th,
+  td {
+    @include padding(0.25em);
+    border-bottom: 1px solid $gray;
+    text-align: left;
+  }
+}
+
+// Misc
 .logo {
   width: 100%;
+  height: 75px;
   background: url('/media/logo.svg') no-repeat;
 }
 
@@ -102,25 +247,39 @@ header[role="banner"] {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
+  padding: 0 !important;
+  border: 0 !important;
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
 }
-body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .visually-hidden button { display: none !important; } 
 
-/*
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button {
+  display: none !important;
+}
 
-TO DO:
-+ iframe
-+ nav
-+ footer
-+ form
-+ button
-+ input[type="text"]
-+ table
-+ .responsive-embed
-+ img.responsive
+.responsive-embed {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
 
-*/
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

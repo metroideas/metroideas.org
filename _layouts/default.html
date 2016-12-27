@@ -23,9 +23,8 @@
 <![endif]-->
 
 <header role="banner">
-  <a href="/" class="logo">
-    <span class="visually-hidden">Metro Ideas Project homepage</span>
-  </a>
+  {% include banner/logo.html %}
+  {% include banner/site-navigation.html %}
 </header>
 
 <main>
@@ -33,7 +32,9 @@
 </main>
 
 <footer>
-  <!-- Site footer -->
+  {% include footer/about.html %}
+  {% include footer/connect.html %}
+  {% include footer/mailchimp.html %}
 </footer>
 
 <!-- Page JavaScript -->

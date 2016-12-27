@@ -64,6 +64,19 @@ github: metroideas
 instagram: metroideas
 twitter: thinkmetro
 email: info@metroideas.org
+nav:
+  - title: Home
+    icon: logo
+    href: /
+  - title: About
+    icon:
+    href: /about/
+  - title: Research
+    icon:
+    href: /projects/
+  - title: Blog
+    icon:
+    href: /blog/
 include: 
 exclude:
 - node_modules/
