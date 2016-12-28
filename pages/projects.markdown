@@ -1,7 +1,7 @@
 ---
-title: Research projects
-layout: indexpage
-permalink: /projects/
+title: Projects
+permalink: "/projects/"
+layout: index
 ---
 
 {% assign projects = site.projects | where: "index", "true" | sort: "position" %}

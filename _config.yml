@@ -2,25 +2,20 @@
 title: Metro Ideas Project
 timezone: America/New_York
 collections:
+  asides:
+    title: Asides
+    output: false
   authors:
     title: Authors
     output: true
     permalink: "/staff/:title/"
   posts:
-    title: Blog
+    title: Articles
     output: true
-    permalink: "/blog/:title/"
   projects:
     title: Projects
     output: true
     permalink: "/projects/:path/"
-  public:
-    title: Public
-    output: true
-    permalink: "/:path"
-  landing_pages:
-    title: Landing pages
-    output: false
   uploads:
     title: Uploads
     output: true
@@ -31,6 +26,19 @@ defaults:
   values:
     image: 
     description: 
+- scope:
+    path: pages
+    type: pages
+  values:
+    sections:
+    - title: 
+      image: 
+      description: 
+- scope:
+    path: ''
+    type: asides
+  values:
+    article:
 - scope:
     path: ''
     type: authors
@@ -44,39 +52,34 @@ defaults:
     path: ''
     type: posts
   values:
+    permalink: /blog/:title/
     layout: article
     author: 
+    project:
 - scope:
     path: ''
     type: projects
   values:
     layout: article
-    author:
-    section:
-    index: false
-- scope:
-    path: ''
-    layout: landing_pages
-  values:
-    section:
+    authors: 
 facebook: metroideas
 github: metroideas
 instagram: metroideas
 twitter: thinkmetro
 email: info@metroideas.org
 nav:
-  - title: Home
-    icon: logo
-    href: /
-  - title: About
-    icon:
-    href: /about/
-  - title: Research
-    icon:
-    href: /projects/
-  - title: Blog
-    icon:
-    href: /blog/
+- title: Home
+  icon: logo
+  href: "/"
+- title: About
+  icon: 
+  href: "/about/"
+- title: Research
+  icon: 
+  href: "/projects/"
+- title: Blog
+  icon: 
+  href: "/blog/"
 include: 
 exclude:
 - node_modules/

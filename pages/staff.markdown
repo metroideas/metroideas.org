@@ -1,7 +1,7 @@
 ---
 title: Staff
-layout: indexpage
-permalink: /staff/
+permalink: "/staff/"
+layout: index
 ---
 
 {% assign current = site.authors | where: "current","true" | sort: "position" %}

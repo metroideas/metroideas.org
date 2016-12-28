@@ -1,5 +1,5 @@
 ---
-layout: null
+permalink: /humans.txt
 ---
 {% assign authors = site.authors | where: "current","true" | sort: "position" %}
 # humanstxt.org/

@@ -19,15 +19,13 @@ var gulp = require('gulp'),
 
 // Source and destination paths
 var paths = {
-  sass:   './_public/_sass/**/*.scss',
-  css:    './_public/css',
+  sass:   './assets/_sass/**/*.scss',
+  css:    './css',
   jekyll: [
-    '_public/css/**/*.css',
-    '_public/*.html',
-    '_layouts/**/*.html',
-    '_includes/**/*.html',
-    '*.md',
-    '*.markdown'
+    './**/*.css',
+    './**/*.html',
+    './**/*.md',
+    './**/*.markdown'
   ]
 };
 
@@ -36,7 +34,7 @@ gulp.task('clean', function() {
   return del([
     'Gemfile.lock',
     '_site/',
-    '_public/css'
+    '/css'
 
   ]);
 })

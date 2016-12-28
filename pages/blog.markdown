@@ -1,7 +1,7 @@
 ---
 title: Blog
-layout: indexpage
-permalink: /blog/
+permalink: "/blog/"
+layout: index
 ---
 
 {% for post in site.posts %}
