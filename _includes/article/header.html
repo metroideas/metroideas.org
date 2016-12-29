@@ -1,0 +1,22 @@
+{% comment %}
+Article header with image, headline and byline
+{% endcomment %}
+
+<header>
+  {% if page.image %}
+    <figure>
+      <img src="{{ page.image.path }}" alt="{{ page.image.alt }}">
+      <figcaption>{{ page.image.caption }} Source: {{ page.image.credit }}</figcaption>
+    </figure>
+  {% endif %}
+
+  <div class="category">
+    {{ page.categories[0] }}
+  </div>
+  
+  <h1>{{ page.title }}</h1>
+
+  <p>
+    By <a href="{{ author.url }}">{{ author.title }}</a> on <time pubdate={{ page.date }}>{{ page.date }}</time>
+  </p>
+</header>

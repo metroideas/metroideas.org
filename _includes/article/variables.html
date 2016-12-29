@@ -1,0 +1,8 @@
+{% comment %}
+Set article variables before partials and content
+{% endcomment %}
+
+{% assign authors = site.authors | where_exp: "author", "author.title contains page.author" %}
+{% assign author = authors[0] %}
+{% assign author_articles = site.posts | where_exp: "post", "post.author contains author.title" | sample: 3 %}
+{% assign related_articles = site.posts | sample: 3 %}

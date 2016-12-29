@@ -1,0 +1,29 @@
+{% comment %}
+Article footer with tags, author profile and related articles
+{% endcomment %}
+
+<footer>
+  <section class="tags">
+  {% capture header %}<h2>Article tags</h2>{% endcapture %}
+  {% assign items = page.tags %}
+  {% include article/list-items.html header=header items=items %}
+  </section>
+  
+  <section class="author">
+    <a href="{{ author.url }}" aria-hidden="true">
+      <img src="{{ author.image }}" alt="{{ author.title }}"class="thumbnail">  
+    </a>
+
+    <h2>
+      <a href="{{ author.url }}">{{ author.title }}</a><br>{{ author.role }}
+    </h2>
+
+    <p class="bio">
+      {{ author.description }}
+    </p>
+
+    {% capture header %}<h3>More from {{ author.title }}</h3>{% endcapture %}
+    {% assign items = author_articles %}
+    {% include article/list-items.html header=header items=items %}
+  </section>
+</footer>
