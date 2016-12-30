@@ -91,6 +91,8 @@ exclude:
 - package.json
 - README.md
 - LICENSE
+- jekyll-build-error.log
+- npm-debug.log
 gems:
 - jekyll-feed
 - jekyll-redirect-from
