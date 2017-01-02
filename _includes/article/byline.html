@@ -1,0 +1,30 @@
+{% comment %}
+Renders byline with linked author profile(s) and formatted date
+{% endcomment %}
+
+{% assign authors = page.author %}
+{% capture byline %}{% endcapture %}
+
+{% for title in authors %}
+  {% assign profile = site.authors | where_exp: 'author', 'author.title contains title' | first %}
+  {% capture anchor %}<a href="{{ profile.url}}">{{ profile.title }}</a>{% endcapture %}
+  
+  {% if forloop.first %}
+    {% capture byline %}{{ byline }}{{ anchor }}{% endcapture %}
+  {% elsif forloop.last %}
+    {% capture byline %}{{ byline }} and {{ anchor }}{% endcapture %}
+  {% else %}
+    {% capture byline %}{{ byline }}, {{ anchor }}{% endcapture %}
+  {% endif %}
+{% endfor %}
+
+{% assign m = page.date | date: '%-m' | minus: 1 %}
+{% assign d = page.date | date: '%-d' %}
+{% assign y = page.date | date: '%Y' %}
+
+{% assign months = 'Jan.,Feb.,March,April,May,June,July,Aug.,Sept.,Oct.,Nov.,Dec.' | split: ',' %}
+{% capture formatted_date %}{{ months[m] }} {{ d }}, {{ y }}{% endcapture %}
+
+<p>
+  By {{ byline }} on <time datetime={{ page.date | date_to_xmlschema }}>{{ formatted_date }}</time>
+</p>

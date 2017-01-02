@@ -1,8 +1,17 @@
 {% comment %}
-Set article variables before partials and content
+Set article variables and render debug pre block
 {% endcomment %}
 
-{% assign authors = site.authors | where_exp: "author", "author.title contains page.author" %}
-{% assign author = authors[0] %}
-{% assign author_articles = site.posts | where_exp: "post", "post.author contains author.title" | sample: 3 %}
 {% assign related_articles = site.posts | sample: 3 %}
+
+{% if jekyll.environment == 'debug' %}
+{% assign post = site.posts | where_exp: 'current', 'current.title' contains 'page.title' | first %}
+<pre class="jekyll-debug">
+<code>
+Post: {{ post | inspect }}
+</code>
+</pre>
+<script>
+console.log({{ post | inspect | replace: '&quot;','"' }});
+</script>
+{% endif %}

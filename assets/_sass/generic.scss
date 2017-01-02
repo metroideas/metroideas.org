@@ -283,3 +283,10 @@ body:hover .visually-hidden button {
   max-width: 100%;
   height: auto;
 }
+
+pre.jekyll-debug {
+  pre-wrap: whitespace;
+  font-size: 12px;
+  padding: 1em;
+  background-color: #fcf6e7;
+}
