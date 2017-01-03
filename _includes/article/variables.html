@@ -1,17 +1,6 @@
 {% comment %}
-Set article variables and render debug pre block
+Set article variables
 {% endcomment %}
 
 {% assign related_articles = site.posts | sample: 3 %}
 
-{% if jekyll.environment == 'debug' %}
-{% assign post = site.posts | where_exp: 'current', 'current.title' contains 'page.title' | first %}
-<pre class="jekyll-debug">
-<code>
-Post: {{ post | inspect }}
-</code>
-</pre>
-<script>
-console.log({{ post | inspect | replace: '&quot;','"' }});
-</script>
-{% endif %}

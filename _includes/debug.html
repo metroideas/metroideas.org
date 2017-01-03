@@ -1,0 +1,22 @@
+{% comment %}
+Renders frontmatter pre block and console.log when JEKYLL_ENV=debug
+Environment check prevents accidental dump in production
+
+Send a *single* document as the item parameter:
+  {% assign item = site.posts | where_exp: 'post', 'post.title contains page.title' %}
+  {% include debug.html item=item %}
+{% endcomment %}
+
+{% if jekyll.environment == 'debug' %}
+  {% assign item = include.item %}
+
+  <pre class="jekyll-debug">
+  <code>
+  {{ item.title | slugify }}: {{ item | inspect }}
+  </code>
+  </pre>
+  
+  <script>
+    console.log({{ item | jsonify }});
+  </script>
+{% endif %}
