@@ -15,7 +15,7 @@ collections:
   projects:
     title: Projects
     output: true
-    permalink: "/projects/:path/"
+    permalink: "/projects/:title/"
   uploads:
     title: Uploads
     output: true
@@ -24,13 +24,17 @@ defaults:
 - scope:
     path: ''
   values:
-    image: 
     description: 
+    image:
+    - image:
+      caption:
+      credit:
+      alt:
 - scope:
     path: pages
     type: pages
   values:
-    sections:
+    section:
     - title: 
       image: 
       description: 
@@ -60,8 +64,9 @@ defaults:
     path: ''
     type: projects
   values:
-    layout:
-    authors: 
+    layout: project
+    author: 
+    article:
 facebook: metroideas
 github: metroideas
 instagram: metroideas
