@@ -1,7 +1,10 @@
 ---
 title: Data-driven restaurant inspections
 date: 2016-11-22 12:30:00 -05:00
-permalink: /projects/open-hamilton/restaurant-inspections/
+permalink: "/projects/open-hamilton/restaurant-inspections/"
+image:
+- file: "/media/restaurant-inspections.jpg"
+  alt: Outdoor brunch spot
 author: Abby Attia
 project: Open Hamilton
 ---

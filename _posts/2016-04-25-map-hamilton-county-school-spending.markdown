@@ -1,7 +1,10 @@
 ---
 title: 'Map: Hamilton County school spending'
 date: 2016-04-25 00:00:00 -04:00
-permalink: /projects/the-cost-of-education/map-hamilton-county-school-spending/
+permalink: "/projects/the-cost-of-education/map-hamilton-county-school-spending/"
+image:
+- file: "/media/map-hamilton-county-school-spending.jpg"
+  alt: Hamilton County school zone map
 author:
 - David Morton
 - Jacqueline Homann
