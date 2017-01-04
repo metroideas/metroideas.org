@@ -4,11 +4,9 @@ permalink: "/projects/"
 layout: index
 ---
 
-{% assign projects = site.projects | where: "index", "true" | sort: "position" %}
-{% for project in projects %}
-<article id="{{ project.title | slugify }}">
-  <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
-  <p>{{ project.description }}</p>
-  <p><a href="{{ project.url }}">Read more</a></p>
-</article>
+{% assign collection = site.projects | sort: "position" %}
+
+{% for item in collection %}
+  {% include index/preview.html item=item %}
 {% endfor %}
+

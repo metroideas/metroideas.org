@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article>
+<img src="{{ page.image.file }}" alt="" aria-hidden="true">
+
+<h1>
+  {{ page.title }}
+  <br><small>{{ page.role }}</small>
+</h1>
+
+{{ page.description }}
+
+<h2>Projects</h2>
+{% assign projects = site.projects | where_exp: 'project', 'project.author contains page.title' %}
+
+<ul>
+{% for item in projects %}
+  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+{% endfor %}  
+</ul>
+
+<h2>Articles</h2>
+{% assign articles = site.posts | where_exp: 'article', 'article.author contains page.title' %}
+
+<ul>
+{% for item in articles %}
+  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+{% endfor %}
+</ul>  
+</article>

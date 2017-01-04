@@ -26,7 +26,7 @@ defaults:
   values:
     description: 
     image:
-    - file: 
+      file: 
       caption: 
       credit: 
       alt: 
@@ -35,7 +35,7 @@ defaults:
     type: pages
   values:
     section:
-    - title: 
+      title: 
       image: 
       description: 
 - scope:
@@ -47,7 +47,7 @@ defaults:
     path: ''
     type: authors
   values:
-    layout: staff
+    layout: author
     current: true
     role: 
     email: 
@@ -66,7 +66,13 @@ defaults:
   values:
     layout: project
     author: 
-    article: 
+    summary:
+      title:
+      description:
+    article:
+    section:
+      title:
+      description:
 facebook: metroideas
 github: metroideas
 instagram: metroideas

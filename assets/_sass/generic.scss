@@ -91,6 +91,14 @@ figure iframe {
   @include margin(0);
 }
 
+.preview figure {
+  @include margin(null null 0);
+}
+
+.preview {
+  @include margin(null null 3em);
+}
+
 article > aside {
   @include margin(3em null);
   @include padding(1em);

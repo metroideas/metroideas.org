@@ -1,0 +1,42 @@
+{% comment %}
+Render preview item argument on index pages:
+
+{% assign item = site.posts[0] %}
+{% include preview.html item=item %}
+
+{% endcomment %}
+
+{% assign item = include.item %}
+
+<section class="preview" id="{{ item.title | slugify }}">
+  {% if item.image.file %}
+    <figure>
+      <a href="{{ item.url }}">
+        <img src="{{ item.image.file }}" alt="{{ item.image.alt }}">
+      </a>
+      {% if item.image.credit %}
+      <figcaption>
+        Source: {{ item.image.credit }}
+      </figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+
+  <div class="category">
+    {{ item.category[0] }}
+  </div>
+  
+  <h2>
+    <a href="{{ item.url }}">
+      {{ item.title }}  
+    </a>
+  </h2>
+
+  <time datetime="{{ item.date | date_to_xmlschema }}">
+    {{ item.date | ap_datetime }}
+  </time>
+  
+  <p>{{ item.description }}</p>
+
+  <p><a href="{{ item.url }}">Read more</a></p>
+</section>
