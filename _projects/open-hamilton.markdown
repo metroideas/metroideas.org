@@ -12,11 +12,11 @@ article:
 - 'Case study: Nashville, Tennessee'
 - Data-driven restaurant inspections
 - Hamilton County data inventory
-External:
+external:
   title: 'App: Explore local property data'
   href: https://hamco-taxbills.herokuapp.com
   image:
     file: "/media/app-thumbnail.jpg"
-    alt: Hamilton County census tract map
+    alt: Hamilton County census map
 ---
 
