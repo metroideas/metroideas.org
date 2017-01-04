@@ -86,8 +86,8 @@ nav:
   icon: 
   href: "/blog/"
 - title: Lab
-  icon:
-  href: "https://metroideaslab.org"
+  icon: 
+  href: https://metroideaslab.org
 include: 
 exclude:
 - node_modules/
