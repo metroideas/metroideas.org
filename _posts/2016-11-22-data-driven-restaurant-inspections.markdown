@@ -5,7 +5,8 @@ permalink: "/projects/open-hamilton/restaurant-inspections/"
 image:
   file: "/media/restaurant-inspections.jpg"
   alt: Outdoor brunch spot
-author: Abby Attia
+author:
+- Abby Attia
 project: Open Hamilton
 ---
 

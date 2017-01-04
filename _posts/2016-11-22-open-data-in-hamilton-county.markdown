@@ -5,7 +5,8 @@ permalink: "/projects/open-hamilton/report/"
 image:
   file: "/media/open-data-report.jpg"
   alt: Hamilton County Courthouse
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: Open Hamilton
 ---
 

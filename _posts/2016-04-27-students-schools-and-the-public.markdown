@@ -6,7 +6,8 @@ image:
   file: "/media/students-schools-and-the-public.jpg"
   credit: AP Photo/The Saginaw News, Neil Barris
   alt: Students on bleachers
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: The cost of education
 redirect_from: "/blog/students-schools-and-the-public/"
 ---

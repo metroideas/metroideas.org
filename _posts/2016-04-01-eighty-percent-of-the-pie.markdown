@@ -6,7 +6,8 @@ image:
   file: "/media/eighty-percent-of-the-pie.jpg"
   credit: AP Photo/Elaine Thompson
   alt: Teacher with art students
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: The cost of education
 redirect_from: "/blog/eighty-percent-of-the-pie/"
 ---

@@ -5,7 +5,8 @@ permalink: "/projects/open-hamilton/baton-rouge/"
 image:
   file: "/media/baton-rouge.jpg"
   alt: Baton Rouge, Louisiana, skyline
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: Open Hamilton
 ---
 

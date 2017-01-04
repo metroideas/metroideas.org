@@ -5,7 +5,8 @@ permalink: "/projects/open-hamilton/san-mateo/"
 image:
   file: "/media/san-mateo.jpg"
   alt: Aerial view of San Mateo, California
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: Open Hamilton
 ---
 

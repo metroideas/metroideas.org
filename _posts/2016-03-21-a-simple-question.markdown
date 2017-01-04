@@ -5,7 +5,8 @@ permalink: "/projects/the-cost-of-education/a-simple-question/"
 image:
   file: "/media/a-simple-question.jpg"
   alt: Boy holding dollar near window
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: The cost of education
 redirect_from: "/blog/a-simple-question/"
 ---

@@ -5,7 +5,8 @@ permalink: "/projects/the-cost-of-education/q-a-hamilton-county-principals-discu
 image:
   file: "/media/principals-talk-funding-gaps.jpg"
   alt: Teacher and student talking
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: The cost of education
 redirect_from: "/blog/q-a-hamilton-county-principals-discuss-funding-gaps/"
 ---

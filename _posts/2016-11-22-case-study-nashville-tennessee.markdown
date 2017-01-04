@@ -5,7 +5,8 @@ permalink: "/projects/open-hamilton/nashville/"
 image:
   file: "/media/nashville.jpg"
   alt: Nashville, Tennessee, skyline
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: Open Hamilton
 ---
 

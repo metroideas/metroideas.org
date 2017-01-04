@@ -5,6 +5,7 @@ redirect: "https://hamco-taxbills.herokuapp.com"
 image:
   file: "/media/app-thumbnail.jpg"
   alt: Hamilton County census map
-author: David Morton
+author:
+- David Morton
 project: Open Hamilton
 ---

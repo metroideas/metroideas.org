@@ -18,6 +18,12 @@ Renders byline with linked author profile(s) and date
   {% endif %}
 {% endfor %}
 
+{% if authors.size > 0 %}
 <p>
   By {{ byline }} on <time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time>
 </p>
+{% else %}
+<p>
+  Published on <time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time>
+</p>
+{% endif %}

@@ -6,7 +6,8 @@ image:
   file: "/media/one-answer-many-questions.jpg"
   credit: Times Free Press/John Rawlston
   alt: Hamilton County schools' central office building
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 project: The cost of education
 redirect_from: "/blog/one-answer-many-questions/"
 ---

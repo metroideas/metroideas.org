@@ -4,6 +4,7 @@ date: 2016-02-10 11:30:00 -05:00
 image:
   file: "/media/get-to-know-americas-midsize-cities.jpg"
   alt: Downtown Chattanooga, Tennessee
-author: Jacqueline Homann
+author:
+- Jacqueline Homann
 ---
 
