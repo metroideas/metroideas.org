@@ -5,6 +5,5 @@ position: 1
 image:
 - file: "/media/open-hamilton.jpg"
   alt: Hamilton County Courthouse south lawn
-index: true
 ---
 
