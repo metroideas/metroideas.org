@@ -14,6 +14,3 @@ article:
 - Hamilton County data inventory
 ---
 
-{% comment %}
-Open Hamilton project page
-{% endcomment %}
