@@ -1,0 +1,17 @@
+{% comment %}
+Render staff preview item argument:
+
+{% for item in site.authors %}
+  {% include staff/preview.html item=item %}
+{% endfor %}
+
+{% endcomment %}
+
+{% assign item = include.item %}
+<section class="staff-preview" id="{{ item.title | slugyify }}">
+  <a href="{{ item.url }}">
+    <img src="{{ item.image.file }}" alt="" aria-hidden="true">
+    <h3>{{ item.title }}</h3>
+  </a>
+  <small>{{ item.role }}</small>
+</section>

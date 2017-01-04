@@ -3,10 +3,15 @@ Article header with image, headline and byline
 {% endcomment %}
 
 <header>
-  {% if page.image %}
+  {% if page.image.file %}
     <figure>
-      <img src="{{ page.image.path }}" alt="{{ page.image.alt }}">
-      <figcaption>{{ page.image.caption }} Source: {{ page.image.credit }}</figcaption>
+      <img src="{{ page.image.file }}" alt="{{ page.image.alt }}">
+      {% if page.image.caption or page.image.credit %}
+      <figcaption>
+        {% if page.image.caption %}{{ page.image.caption }}{% endif %}
+        {% if page.image.credit %}Source: {{ page.image.credit }}{% endif %}
+      </figcaption>
+      {% endif %}
     </figure>
   {% endif %}
 
