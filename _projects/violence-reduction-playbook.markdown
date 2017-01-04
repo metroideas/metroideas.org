@@ -5,6 +5,5 @@ position: 0
 image:
 - file: "/media/violence-reduction-playbook.jpg"
   alt: Window with bullet holes
-index: true
 ---
 
