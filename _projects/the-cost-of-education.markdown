@@ -5,6 +5,5 @@ position: 2
 image:
 - file: "/media/the-cost-of-education.jpg"
   alt: Boy walking up school steps
-index: true
 ---
 
