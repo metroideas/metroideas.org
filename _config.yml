@@ -78,19 +78,22 @@ email: info@metroideas.org
 nav:
 - title: Home
   icon: logo
-  href: "/"
+  url: "/"
 - title: About
   icon: 
-  href: "/about/"
-- title: Research
+  url: "/about/"
+- title: Projects
   icon: 
-  href: "/projects/"
+  url: "/projects/"
 - title: Blog
   icon: 
-  href: "/blog/"
+  url: "/blog/"
+- title: Staff
+  icon:
+  url: "/staff/"
 - title: Lab
   icon: 
-  href: https://metroideaslab.org
+  url: https://metroideaslab.org
 include: 
 exclude:
 - node_modules/

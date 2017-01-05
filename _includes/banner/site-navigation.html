@@ -3,6 +3,6 @@ Sitewide navigation
 {% endcomment %}
 <nav>
   {% for nav in site.nav %}
-  <a href="{{ nav.href }}">{{ nav.title }}</a>
+  <a href="{{ nav.url }}">{{ nav.title }}</a>
   {% endfor %}  
 </nav>
