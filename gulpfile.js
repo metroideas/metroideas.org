@@ -144,9 +144,9 @@ gulp.task('build-jekyll', function(done) {
   // command run by cp.exec()
   var command = function() {
     return {
-      development: 'JEKYLL_ENV=development bundle exec jekyll build --incremental --config=_config.yml',
-      production: 'JEKYLL_ENV=production bundle exec jekyll build --incremental --config=_config.yml',
-      debug: 'JEKYLL_ENV=debug bundle exec jekyll build --incremental --config=_config.yml --verbose --profile'
+      development: 'JEKYLL_ENV=development bundle exec jekyll build --config=_config.yml --future --unpublished --drafts',
+      production: 'JEKYLL_ENV=production bundle exec jekyll build --config=_config.yml',
+      debug: 'JEKYLL_ENV=debug bundle exec jekyll build --config=_config.yml --verbose --profile --future --unpublished --drafts'
     }[env];
   }();
 
