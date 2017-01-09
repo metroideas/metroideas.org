@@ -8,9 +8,11 @@ Render staff preview item argument:
 {% endcomment %}
 
 {% assign item = include.item %}
-<section class="staff-preview" id="{{ item.title | slugyify }}">
+<section class="staff-preview" id="{{ item.slug }}">
   <a href="{{ item.url }}">
+    {% if item.image.file %}
     <img src="{{ item.image.file }}" alt="" aria-hidden="true">
+    {% endif %}
     <h3>{{ item.title }}</h3>
   </a>
   <small>{{ item.role }}</small>

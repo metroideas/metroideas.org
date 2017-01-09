@@ -3,30 +3,51 @@ layout: default
 ---
 
 <article>
-<img src="{{ page.image.file }}" alt="" aria-hidden="true">
-
 <h1>
   {{ page.title }}
   <br><small>{{ page.role }}</small>
 </h1>
 
-{{ page.description }}
+{% if page.image.file %}
+<img src="{{ page.image.file }}" alt="" aria-hidden="true">
+{% endif %}
 
-<h2>Projects</h2>
+<p>{{ page.description }}</p>
+
+{% if page.email or page.twitter or page.github %}
+<h2>Contact</h2>
+
+<ul>
+  {% if page.email %}
+  <li><a href="{{ page.email | prepend: "mailto:" }}">Email</a></li>
+  {% endif %}
+  {% if page.twitter %}
+  <li><a href="{{ page.twitter | prepend: "https://twitter.com/" }}">Twitter</a></li>
+  {% endif %}
+  {% if page.github %}
+  <li><a href="{{ page.github | prepend: "https://github.com/" }}">Github</a></li>
+  {% endif %}
+</ul>
+{% endif %}
+
+
 {% assign projects = site.projects | where_exp: 'project', 'project.author contains page.title' %}
-
+{% if projects.size > 0%}
+<h2>Projects</h2>
 <ul>
 {% for item in projects %}
   <li><a href="{{ item.url }}">{{ item.title }}</a></li>
 {% endfor %}  
 </ul>
+{% endif %}
 
-<h2>Articles</h2>
 {% assign articles = site.posts | where_exp: 'article', 'article.author contains page.title' %}
-
+{% if articles.size > 0 %}
+<h2>Articles</h2>
 <ul>
 {% for item in articles %}
   <li><a href="{{ item.url }}">{{ item.title }}</a></li>
 {% endfor %}
-</ul>  
+</ul>
+{% endif %}
 </article>

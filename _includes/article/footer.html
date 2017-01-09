@@ -9,22 +9,40 @@ Article footer with tags, author profile and related articles
   {% include article/list-items.html header=header items=items %}
   </section>
   
-  {% if page.author.size > 0 %}
-    {% for title in page.author %}
+  {% for title in page.author %}
+    {% assign author = site.authors | where_exp: 'author', 'author.title contains title' | first %}
     <section class="author">
-      {% assign author = site.authors | where_exp: 'author', 'author.title contains title' | first %}
+      <h2>
+        <a href="{{ author.url }}">{{ author.title }}</a>
+        <br><small>{{ author.role }}</small>
+      </h2>
+      
+      {% if author.image.file %}
       <a href="{{ author.url }}" aria-hidden="true">
-        <img src="{{ author.image }}" alt="{{ author.title }}" class="thumbnail">  
+        <img src="{{ author.image.file }}" alt="{{ author.title }}" class="thumbnail">  
       </a>
-
-      <h2><a href="{{ author.url }}">{{ author.title }}</a><br>{{ author.role }}</h2>
+      {% endif %}
 
       <p class="bio">{{ author.description }}</p>
+      
+      {% if author.email or author.twitter or author.github %}
+      <h3>Contact</h3>
+      <ul>
+        {% if author.email %}
+        <li><a href="{{ author.email | prepend: "mailto:" }}">Email</a></li>
+        {% endif %}
+        {% if author.twitter %}
+        <li><a href="{{ author.twitter | prepend: "https://twitter.com/" }}">Twitter</a></li>
+        {% endif %}
+        {% if author.github %}
+        <li><a href="{{ author.github | prepend: "https://github.com/" }}">Github</a></li>
+        {% endif %}
+      </ul>
+      {% endif %}
 
       {% capture header %}<h3>More from {{ author.title }}</h3>{% endcapture %}
       {% assign items = site.posts | where_exp: 'post', 'post.author contains author.title' | sample: 3 %}
       {% include article/list-items.html header=header items=items %}
     </section>
-    {% endfor %}
-  {% endif %}
+  {% endfor %}
 </footer>
