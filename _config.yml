@@ -35,9 +35,9 @@ defaults:
     type: pages
   values:
     section:
-      - title: 
-        image: 
-        description: 
+    - title: 
+      image: 
+      description: 
 - scope:
     path: ''
     type: asides
@@ -69,8 +69,8 @@ defaults:
     author: []
     article: []
     section:
-      - title:
-        description:
+    - title: 
+      description: 
 facebook: metroideas
 github: metroideas
 instagram: metroideas
@@ -90,7 +90,7 @@ nav:
   icon: 
   url: "/blog/"
 - title: Staff
-  icon:
+  icon: 
   url: "/staff/"
 - title: Lab
   icon: 

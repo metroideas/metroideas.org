@@ -48,7 +48,7 @@ Uses an article's title to match and generate preview from site.posts
 <section id="{{ section.title | slugify }}">
   <h2>{{ section.title }}</h2>
 
-  {{ section.description }}
+  {{ section.description | markdownify }}
 </section>
 {% endfor %}
 </article>
