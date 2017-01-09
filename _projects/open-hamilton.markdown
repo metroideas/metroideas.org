@@ -24,7 +24,18 @@ article:
 - 'App: Explore local property data'
 - Hamilton County data inventory
 section:
-- title: About this toolkit
+- title: Further reading
+  description: "\\[The Open Data Handbook\\](http://opendatahandbook.org)  \n\nThis
+    comprehensive guide provides common adoption practices and implementation steps.\n\n\\[Open
+    Data Policy Guidelines\\](http://sunlightfoundation.com/opendataguidelines/)  \n\nThe
+    Sunlight Foundation has extensive guidelines for identifying datasets to release
+    and navigating private vendors.\n\n\\[Video: How Leading Governments Measure Performance\\](https://www.youtube.com/watch?v=Yhb4IKRAfpY)
+    \ \n\nThree municipal officials talk about next steps for open government data
+    after getting a portal online.\n\n\\[The Complex Relationship Between Data and
+    Cities\\](http://www.citylab.com/tech/2016/05/the-complex-relationship-between-data-and-cities/483303/)
+    \ \n\nRichard Florida argues that \"nuanced human reasoning\" is needed to make
+    big data work for cities."
+- title: About
   description: |-
     Metro Ideas Project prepared this toolkit during the summer and fall of 2016.
 
