@@ -9,6 +9,7 @@ $system-font-stack: -apple-system, BlinkMacSystemFont,
     "Ubuntu", "Cantarell", "Fira Sans", 
     "Droid Sans", "Helvetica Neue", sans-serif;
 $base-font-size: 18px;
+$small-font-size: floor($base-font-size * 0.8);
 $base-line-height: 1.65;
 $header-line-height: 1.1;
 $strong-font-weight: 700;
@@ -228,8 +229,11 @@ button,
 // Tables
 table {
   width: 100%;
+
   @include margin(3em 0);
   border-collapse: collapse;
+  table-layout: fixed;
+  font-size: $small-font-size;
 
   caption {
     text-align: left;
