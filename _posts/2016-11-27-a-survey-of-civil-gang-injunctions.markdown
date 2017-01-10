@@ -1,6 +1,10 @@
 ---
 title: A survey of civil gang injunctions
 date: 2016-11-27 12:00:00 -05:00
+categories:
+- criminal justice
+tags:
+- hamilton county
 description: Since 1980, civil gang injunctions have been used to combat gang violence.
   Studies show that they result in varied outcomes.
 image:
