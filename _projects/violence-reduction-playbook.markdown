@@ -14,23 +14,18 @@ author:
 - David Morton
 section:
 - title: Further reading
-  description: |-
-    [What Works in Reducing Community Violence](https://www.usaid.gov/sites/default/files/USAID-2016-What-Works-in-Reducing-Community-Violence-Final-Report.pdf)  
-    A report from the United States Agency for International Development looks at over 1,400 studies to identify what policies and strategies reduce community violence.
-
-    [National Gang Center Program Matrix](https://www.nationalgangcenter.gov/SPT/Program-Matrix)  
-    Matrix comparing a large collection of youth and gang crime prevention practices.
-
-    [Crime Solutions Database](https://www.crimesolutions.gov/Programs.aspx)  
-    The National Institute of Justice database includes crime programs, best practices, and efficacy and evidence ratings.
-
-    [Desistance and the Feared Self](http://scholarlycommons.law.northwestern.edu/cgi/viewcontent.cgi?article=7339&context=jclc)  
-    Ray Paternoster and Shawn Bushway examine why people commit crimes and what
-    may make them stop.
-
-    [Reducing Group Related Violent Crime through Focused Deterrence](http://www.smartpolicinginitiative.com/sites/all/files/resources/Reducing%20Group%20Related%20Violent%20Crime%20through%20Focused%20Deterrence%20in%20High%20Point%20NC.pdf)  
-    Researchers look at the stages of focused deterrence as it was implemented
-    in High Point, North Carolina.
+  description: "[What Works in Reducing Community Violence](https://www.usaid.gov/sites/default/files/USAID-2016-What-Works-in-Reducing-Community-Violence-Final-Report.pdf)
+    \ \nA report from the United States Agency for International Development looks
+    at over 1,400 studies to identify what policies and strategies reduce community
+    violence.\n\n[National Gang Center Program Matrix](https://www.nationalgangcenter.gov/SPT/Program-Matrix)
+    \ \nMatrix comparing a large collection of youth and gang crime prevention practices.\n\n[Crime
+    Solutions Database](https://www.crimesolutions.gov/Programs.aspx)  \nThe National
+    Institute of Justice database includes crime programs, best practices, and efficacy
+    and evidence ratings.\n\n[Desistance and the Feared Self](http://scholarlycommons.law.northwestern.edu/cgi/viewcontent.cgi?article=7339&context=jclc)
+    \ \nRay Paternoster and Shawn Bushway examine why people commit crimes and what\nmay
+    make them stop.\n\n[Reducing Group Related Violent Crime through Focused Deterrence](http://www.smartpolicinginitiative.com/sites/all/files/resources/Reducing%20Group%20Related%20Violent%20Crime%20through%20Focused%20Deterrence%20in%20High%20Point%20NC.pdf)
+    \ \nResearchers look at the stages of focused deterrence as it was implemented\nin
+    High Point, North Carolina."
 - title: About
   description: |-
     The Metro Ideas Project examined eight anti-crime policies, reviewed external research and interviewed national experts for the violence reduction playbook.

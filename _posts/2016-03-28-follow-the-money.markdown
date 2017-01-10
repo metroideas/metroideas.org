@@ -1,8 +1,9 @@
 ---
 title: Follow the money
 date: 2016-03-28 00:00:00 -04:00
-description: "It costs around $400 million to operate the public school system in Hamilton County, Tennessee. We explore where the money comes from."
 permalink: "/projects/the-cost-of-education/follow-the-money/"
+description: It costs around $400 million to operate the public school system in Hamilton
+  County, Tennessee. We explore where the money comes from.
 image:
   file: "/media/follow-the-money.jpg"
   alt: Boxes of documents

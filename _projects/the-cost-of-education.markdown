@@ -30,24 +30,21 @@ article:
 - 'Q&A: Hamilton County principals discuss funding gaps'
 section:
 - title: Further reading
-  description: |-
-    [A Guide to Understanding the Budget](http://www.pefchattanooga.org/wp-content/uploads/2015/06/HCDE_budget-guide_051515.pdf)  
-    The Hamilton County Department of Education released this citizen's guide in summer 2015 to accompany its upcoming fiscal operating budget.
-
-    [Federal, State and Local K–12 School Finance Overview](http://atlas.newamerica.org/school-finance)  
-    This New America primer explains how public schools are funded in the U.S.
-
-    [Chronic state underfunding of education spurs lawsuit by seven school districts](http://tn.chalkbeat.org/2015/03/25/chronic-state-underfunding-of-education-spurs-lawsuit-by-seven-school-districts/#.VuGq_cdouEI)  
-    Chalkbeat reports on a lawsuit filed by seven boards of education, including Hamilton County, against Tennessee over education funding.
-
-    [Do Districts Fund Schools Fairly?](http://educationnext.org/do-districts-fund-schools-fairly/)  
-    Researchers examine whether Texas school districts equitably fund schools in this Education Next article.
-
-    [Denver Public Schools: Making more money follow students](http://www.crpe.org/sites/default/files/For%20folder%2014_EL_001_DPS_Case_Study_F-2.pdf)  
-    The Edunomics Lab presents a short case study on Denver's move to student-based budgeting.
-
-    [Smart School Budgeting: Resources for Districts](http://www.renniecenter.org/research/SmartSchoolBudgeting.pdf)  
-    This toolkit summarizes different types of school budgeting and provides strategies to shape important resource decisions.
+  description: "[A Guide to Understanding the Budget](http://www.pefchattanooga.org/wp-content/uploads/2015/06/HCDE_budget-guide_051515.pdf)
+    \ \nThe Hamilton County Department of Education released this citizen's guide
+    in summer 2015 to accompany its upcoming fiscal operating budget.\n\n[Federal,
+    State and Local K–12 School Finance Overview](http://atlas.newamerica.org/school-finance)
+    \ \nThis New America primer explains how public schools are funded in the U.S.\n\n[Chronic
+    state underfunding of education spurs lawsuit by seven school districts](http://tn.chalkbeat.org/2015/03/25/chronic-state-underfunding-of-education-spurs-lawsuit-by-seven-school-districts/#.VuGq_cdouEI)
+    \ \nChalkbeat reports on a lawsuit filed by seven boards of education, including
+    Hamilton County, against Tennessee over education funding.\n\n[Do Districts Fund
+    Schools Fairly?](http://educationnext.org/do-districts-fund-schools-fairly/)  \nResearchers
+    examine whether Texas school districts equitably fund schools in this Education
+    Next article.\n\n[Denver Public Schools: Making more money follow students](http://www.crpe.org/sites/default/files/For%20folder%2014_EL_001_DPS_Case_Study_F-2.pdf)
+    \ \nThe Edunomics Lab presents a short case study on Denver's move to student-based
+    budgeting.\n\n[Smart School Budgeting: Resources for Districts](http://www.renniecenter.org/research/SmartSchoolBudgeting.pdf)
+    \ \nThis toolkit summarizes different types of school budgeting and provides strategies
+    to shape important resource decisions."
 - title: Data and documents
   description: |-
     [Title I schools in Hamilton County; Tennessee graduation rates](/media/mip-data-a-simple-question.zip)

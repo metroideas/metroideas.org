@@ -1,8 +1,9 @@
 ---
 title: Students, schools and the public
 date: 2016-04-27 11:15:00 -04:00
-description: "Recommendations to help Hamilton County equitably fund schools, foster collaboration and communicate with the public."
 permalink: "/projects/the-cost-of-education/students-schools-and-the-public/"
+description: Recommendations to help Hamilton County equitably fund schools, foster
+  collaboration and communicate with the public.
 image:
   file: "/media/students-schools-and-the-public.jpg"
   credit: AP Photo/The Saginaw News, Neil Barris

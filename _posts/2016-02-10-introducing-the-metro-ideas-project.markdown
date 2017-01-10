@@ -1,7 +1,8 @@
 ---
 title: Introducing the Metro Ideas Project
 date: 2016-02-10 10:00:00 -05:00
-description: "Over the past five years, midsize cities have been on the frontlines of some of the most important policy challenges of our time."
+description: Over the past five years, midsize cities have been on the frontlines
+  of some of the most important policy challenges of our time.
 image:
   file: "/media/introducing-the-metro-ideas-project.jpg"
   alt: Staff meeting

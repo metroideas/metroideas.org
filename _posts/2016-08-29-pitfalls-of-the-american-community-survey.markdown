@@ -1,7 +1,8 @@
 ---
 title: Pitfalls of the American Community Survey
 date: 2016-08-29 08:00:00 -04:00
-description: "The ACS provides frequent, yet error-prone, snapshots of city and county demographics."
+description: The ACS provides frequent, yet error-prone, snapshots of city and county
+  demographics.
 image:
   file: "/media/pitfalls-of-the-american-community-survey.jpg"
   alt: 'Flag on small downtown building '

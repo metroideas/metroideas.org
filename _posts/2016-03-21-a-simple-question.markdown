@@ -1,8 +1,10 @@
 ---
 title: A simple question
 date: 2016-03-21 00:00:00 -04:00
-description: "Our series on education spending will examine the per pupil expenditure for each public school in Hamilton County, Tennessee. There are four reasons those spending levels are important to know."
 permalink: "/projects/the-cost-of-education/a-simple-question/"
+description: Our series on education spending will examine the per pupil expenditure
+  for each public school in Hamilton County, Tennessee. There are four reasons those
+  spending levels are important to know.
 image:
   file: "/media/a-simple-question.jpg"
   alt: Boy holding dollar near window

@@ -1,8 +1,8 @@
 ---
 title: 'Case study: San Mateo, California'
 date: 2016-11-22 12:30:00 -05:00
-description: "San Mateo County takes open data seriously."
 permalink: "/projects/open-hamilton/san-mateo/"
+description: San Mateo County takes open data seriously.
 image:
   file: "/media/san-mateo.jpg"
   alt: Aerial view of San Mateo, California

@@ -1,8 +1,9 @@
 ---
 title: Why school-by-school budgets matter
 date: 2016-04-11 05:45:00 -04:00
-description: "Knowing how much we spend at each school helps elected officials make better, more informed decisions."
 permalink: "/projects/the-cost-of-education/why-school-by-school-budgets-matter/"
+description: Knowing how much we spend at each school helps elected officials make
+  better, more informed decisions.
 image:
   file: "/media/why-school-by-school-budgets-matter.jpg"
   credit: Jake May/The Flint Journal-MLive.com via AP

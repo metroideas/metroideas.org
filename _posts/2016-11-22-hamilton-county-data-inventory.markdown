@@ -1,14 +1,14 @@
 ---
 title: Hamilton County data inventory
 date: 2016-11-22 12:30:00 -05:00
-description: "This inventory is a starting point for Hamilton County officials who want to identify potential open datasets."
 permalink: "/projects/open-hamilton/data-inventory/"
+description: This inventory is a starting point for Hamilton County officials who
+  want to identify potential open datasets.
 image:
   file: "/media/data-inventory.jpg"
   alt: File folders on shelf
 project: Open Hamilton
 ---
-
 
 One of the key challenges governments face in making data open is identifying which datasets to prioritize. 
 

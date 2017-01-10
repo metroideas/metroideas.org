@@ -1,8 +1,9 @@
 ---
 title: One answer, many questions
 date: 2016-04-20 06:00:00 -04:00
-description: "School-level spending helps us understand if resources are being equitably distributed. We look at per-student spending in Hamilton County public schools."
 permalink: "/projects/the-cost-of-education/one-answer-many-questions/"
+description: School-level spending helps us understand if resources are being equitably
+  distributed. We look at per-student spending in Hamilton County public schools.
 image:
   file: "/media/one-answer-many-questions.jpg"
   credit: Times Free Press/John Rawlston
