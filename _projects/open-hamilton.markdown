@@ -2,12 +2,12 @@
 title: Open Hamilton
 date: 2016-11-22 12:30:00 -05:00
 categories:
-- open data
+- Open data
 tags:
-- hamilton county
+- Hamilton County
 position: 1
-description: An open data policy would improve government transparency, accountability and
-  efficiency in Hamilton County.
+description: An open data policy would improve government transparency, accountability
+  and efficiency in Hamilton County.
 image:
   file: "/media/open-hamilton.jpg"
   alt: Hamilton County Courthouse south lawn
@@ -25,21 +25,15 @@ article:
 - Hamilton County data inventory
 section:
 - title: Further reading
-  description: |-
-    [The Open Data Handbook](http://opendatahandbook.org)  
-    This comprehensive guide provides common adoption practices and implementation steps.
-
-    [Open Data Policy Guidelines](http://sunlightfoundation.com/opendataguidelines/)  
-    The Sunlight Foundation has extensive guidelines for identifying datasets to release
-    and navigating private vendors.
-
-    [Video: How Leading Governments Measure Performance](https://www.youtube.com/watch?v=Yhb4IKRAfpY)  
-    Three municipal officials talk about next steps for open government data
-    after getting a portal online.
-
-    [The Complex Relationship Between Data and Cities](http://www.citylab.com/tech/2016/05/the-complex-relationship-between-data-and-cities/483303/)  
-    Richard Florida argues that "nuanced human reasoning" is needed to make
-    big data work for cities.
+  description: "[The Open Data Handbook](http://opendatahandbook.org)  \nThis comprehensive
+    guide provides common adoption practices and implementation steps.\n\n[Open Data
+    Policy Guidelines](http://sunlightfoundation.com/opendataguidelines/)  \nThe Sunlight
+    Foundation has extensive guidelines for identifying datasets to release\nand navigating
+    private vendors.\n\n[Video: How Leading Governments Measure Performance](https://www.youtube.com/watch?v=Yhb4IKRAfpY)
+    \ \nThree municipal officials talk about next steps for open government data\nafter
+    getting a portal online.\n\n[The Complex Relationship Between Data and Cities](http://www.citylab.com/tech/2016/05/the-complex-relationship-between-data-and-cities/483303/)
+    \ \nRichard Florida argues that \"nuanced human reasoning\" is needed to make\nbig
+    data work for cities."
 - title: About
   description: |-
     Metro Ideas Project prepared this toolkit during the summer and fall of 2016.

@@ -3,11 +3,16 @@ Article footer with tags, author profile and related articles
 {% endcomment %}
 
 <footer>
+  {% if page.tags %}
   <section class="tags">
-  {% capture header %}<h2>Article tags</h2>{% endcapture %}
-  {% assign items = page.tags %}
-  {% include article/list-items.html header=header items=items %}
+    <h2>Article tags</h2>
+    <ul>
+      {% for tag in page.tags %}
+        <li>{{ tag }}</li>
+      {% endfor %}  
+    </ul>
   </section>
+  {% endif %}
   
   {% for title in page.author %}
     {% assign author = site.authors | where_exp: 'author', 'author.title contains title' | first %}

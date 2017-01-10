@@ -4,21 +4,16 @@ Renders article aside(s)
 Asides should be rendered as 'Learn more' links in XML feeds.
 Set page.feed to true in XML frontmatter
 
-If an article has one aside, assign its title to page.aside
-Otherwise, pass an aside variable along with the include
+{% include article/aside.html title="Title" %}
 {% endcomment %}
 
-{% if include.aside == nil %}
-  {% assign aside = site.asides | where_exp: 'aside', 'aside.title contains page.aside' | first %}
-{% else %}
-  {% assign aside = include.aside %}
-{% endif %}
+{% assign aside = site.asides | where_exp: "aside", "aside.title contains include.title" | first %}
 
-<aside id="{{ aside.title | slugify }}">
+<aside id="{{ aside.slug }}">
   {% if page.feed %}
-    Learn more: <a href="{{ page.url }}#{{ aside.title | slugify }}">{{ aside.title }}</a>
+    Learn more: <a href="{{ page.url }}#{{ aside.slug }}">{{ aside.title }}</a>
   {% else %}
     <h2>{{ aside.title }}</h2>
-    {{ aside | markdownify }}
+    {{ aside.content | markdownify }}
   {% endif %}
 </aside>
