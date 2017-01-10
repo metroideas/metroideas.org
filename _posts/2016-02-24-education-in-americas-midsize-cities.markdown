@@ -1,6 +1,11 @@
 ---
 title: Education in America's midsize cities
 date: 2016-02-24 09:00:00 -05:00
+categories:
+- education
+tags:
+- hamilton county
+- american community survey
 description: We revisit American Community Survey data to look at education in 441
   midsize U.S. cities.
 author:
