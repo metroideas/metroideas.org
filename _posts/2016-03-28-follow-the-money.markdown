@@ -2,6 +2,12 @@
 title: Follow the money
 date: 2016-03-28 00:00:00 -04:00
 permalink: "/projects/the-cost-of-education/follow-the-money/"
+categories:
+- education
+tags:
+- hamilton county
+- schools
+- hcde
 description: It costs around $400 million to operate the public school system in Hamilton
   County, Tennessee. We explore where the money comes from.
 image:
