@@ -2,6 +2,11 @@
 title: Data-driven restaurant inspections
 date: 2016-11-22 12:30:00 -05:00
 permalink: "/projects/open-hamilton/restaurant-inspections/"
+categories:
+- open data
+tags:
+- hamilton county
+- health department
 description: Converting restaurant inspection reports to open data would increase
   public accountability and lead to more efficient government.
 image:
