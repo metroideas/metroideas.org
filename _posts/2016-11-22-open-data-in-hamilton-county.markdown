@@ -2,6 +2,10 @@
 title: Open data in Hamilton County
 date: 2016-11-22 12:30:00 -05:00
 permalink: "/projects/open-hamilton/report/"
+categories:
+- open data
+tags:
+- hamilton county
 description: An open data policy would improve transparency, accountability and efficiency
   in Hamilton County's government.
 image:
