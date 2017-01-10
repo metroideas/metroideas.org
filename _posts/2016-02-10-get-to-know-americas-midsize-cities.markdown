@@ -1,6 +1,12 @@
 ---
 title: Get to know America's midsize cities
 date: 2016-02-10 11:30:00 -05:00
+categories:
+- open data
+tags:
+- american community survey
+- chattanooga
+- hamilton county
 description: We dive into the American Community Survey, a key data source for policymakers,
   planners and the public seeking to understand economic and social trends.
 image:
