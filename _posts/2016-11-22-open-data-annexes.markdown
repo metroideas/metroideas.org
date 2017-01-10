@@ -2,6 +2,10 @@
 title: Open data annexes
 date: 2016-11-22 12:30:00 -05:00
 permalink: "/projects/open-hamilton/annex/"
+categories:
+- open data
+tags:
+- hamilton county
 description: Supplementary annexes for our open data report.
 image:
   file: "/media/open-data-report.jpg"
