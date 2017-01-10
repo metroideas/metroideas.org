@@ -1,6 +1,10 @@
 ---
 title: Pitfalls of the American Community Survey
 date: 2016-08-29 08:00:00 -04:00
+categories:
+- open data
+tags:
+- american community survey
 description: The ACS provides frequent, yet error-prone, snapshots of city and county
   demographics.
 image:
