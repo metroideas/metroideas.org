@@ -2,6 +2,12 @@
 title: A simple question
 date: 2016-03-21 00:00:00 -04:00
 permalink: "/projects/the-cost-of-education/a-simple-question/"
+categories:
+- education
+tags:
+- hamilton county
+- schools
+- hcde
 description: Our series on education spending will examine the per pupil expenditure
   for each public school in Hamilton County, Tennessee. There are four reasons those
   spending levels are important to know.
