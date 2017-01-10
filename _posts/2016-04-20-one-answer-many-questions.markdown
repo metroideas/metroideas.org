@@ -2,6 +2,12 @@
 title: One answer, many questions
 date: 2016-04-20 06:00:00 -04:00
 permalink: "/projects/the-cost-of-education/one-answer-many-questions/"
+categories:
+- education
+tags:
+- hamilton county
+- schools
+- hcde
 description: School-level spending helps us understand if resources are being equitably
   distributed. We look at per-student spending in Hamilton County public schools.
 image:
