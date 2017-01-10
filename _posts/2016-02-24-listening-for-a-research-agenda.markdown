@@ -1,6 +1,9 @@
 ---
 title: Listening for a research agenda
 date: 2016-02-24 13:30:00 -05:00
+tags:
+- chattanooga
+- hamilton county
 description: We recently finished a series of roundtable discussions with community
   leaders to help shape our research agenda.
 image:
