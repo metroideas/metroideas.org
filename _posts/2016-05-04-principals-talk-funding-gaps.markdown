@@ -2,6 +2,12 @@
 title: 'Q&A: Hamilton County principals discuss funding gaps'
 date: 2016-05-04 10:00:00 -04:00
 permalink: "/projects/the-cost-of-education/q-a-hamilton-county-principals-discuss-funding-gaps/"
+categories:
+- education
+tags:
+- hamilton county
+- schools
+- hcde
 description: Three Hamilton County principals answer our questions on school funding,
   community engagement and school needs.
 image:
