@@ -6,6 +6,7 @@ categories:
 tags:
 - Hamilton County
 position: 1
+published: true
 description: An open data policy would improve government transparency, accountability
   and efficiency in Hamilton County.
 image:
