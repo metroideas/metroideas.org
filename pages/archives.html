@@ -1,0 +1,56 @@
+---
+title: Archives
+permalink: "/archives/"
+redirect_from:
+- "/archives/category/"
+- "/archives/tag/"
+layout: index
+---
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+  {% for project in site.projects %}
+    <li>
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section id="articles">
+  <h2>Articles</h2>
+  <ul>
+  {% for article in site.posts %}
+    <li>
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section id="categories">
+  <h2>Categories</h2>
+  <ul>
+  {% for cat in site.categories %}
+    <li>
+      <a href="{{ cat | first | slugify | prepend: "/archives/category/" }}">
+        {{ cat | first }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section id="tags">
+  <h2>Tags</h2>
+  <ul>
+  {% for tag in site.tags %}
+    <li>
+      <a href="{{ tag | first | slugify | prepend: "/archives/tag/" }}">
+        {{ tag | first }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

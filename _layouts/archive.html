@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+{% if page.type == "category" %}
+  {% assign type = "categories" %}
+{% elsif page.type == "tag" %}
+  {% assign type = "tags" %}
+{% endif %}
+
+{% assign title = page.title %}
+{% assign projects = site.projects | where_exp: 'project', 'project[type] contains title' | sort: "date" %}
+{% assign articles = site.posts | where_exp: 'article', 'article[type] contains title' | sort: "date" %}
+
+<h1>{{ page.title }} archive</h1>
+
+{% if projects.size != 0 %}
+<section id="projects">
+  <h2>Projects</h2>
+  
+  <ul>
+  {% for project in projects %}
+    <li>
+      <a href="{{ project.url }}">
+        {{ project.title }}
+      </a>
+    </li>
+  {% endfor %}  
+  </ul>
+</section>
+{% endif %}
+
+{% if articles.size != 0 %}
+<section id="articles">
+  <h2>Articles</h2>
+
+  <ul>
+  {% for article in articles %}
+    <li>
+      <a href="{{ article.url }}">
+        {{ article.title }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}

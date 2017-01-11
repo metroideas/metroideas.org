@@ -5,7 +5,11 @@ layout: default
 {% assign project = page %}
 
 <article class="project">
-
+<div class="category">
+  <a href="{{ page.categories[0] | slugify | prepend: "/archives/category/" }}">
+    {{ page.categories[0] }}
+  </a>
+</div>
 <h1>{{ project.title }}</h1>
 <p>{{ project.description }}</p>
 <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | ap_datetime }}</time></p>

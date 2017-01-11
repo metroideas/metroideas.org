@@ -16,7 +16,9 @@ Article header with image, headline and byline
   {% endif %}
 
   <div class="category">
-    {{ page.categories[0] }}
+    <a href="{{ page.categories[0] | slugify | prepend: "/archives/category/" }}">
+      {{ page.categories[0] }}
+    </a>
   </div>
   
   <h1>{{ page.title }}</h1>

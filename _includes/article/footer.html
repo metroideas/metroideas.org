@@ -8,7 +8,11 @@ Article footer with tags, author profile and related articles
     <h2>Article tags</h2>
     <ul>
       {% for tag in page.tags %}
-        <li>{{ tag }}</li>
+        <li>
+          <a href="{{ tag | slugify | prepend: "/archives/tag/" }}">
+            {{ tag }}
+          </a>
+        </li>
       {% endfor %}  
     </ul>
   </section>

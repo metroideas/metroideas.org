@@ -89,6 +89,9 @@ nav:
 - title: Blog
   icon: 
   url: "/blog/"
+- title: Archives
+  icon:
+  url: "/archives/"
 - title: Staff
   icon: 
   url: "/staff/"
@@ -112,6 +115,15 @@ gems:
 - jekyll-feed
 - jekyll-redirect-from
 - jekyll-sitemap
+- jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/archives/category/:name/'
+    tag: '/archives/tag/:name/'
 api:
   analytics: 
   facebook: 

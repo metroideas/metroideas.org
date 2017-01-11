@@ -8,7 +8,6 @@ tags:
 - Hamilton County
 - Hamilton County schools
 - HCDE
-- county commission
 description: Knowing how much we spend at each school helps elected officials make
   better, more informed decisions.
 image:

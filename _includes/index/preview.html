@@ -23,7 +23,9 @@ Render preview item argument on index pages:
   {% endif %}
 
   <div class="category">
-    {{ item.category[0] }}
+    <a href="{{ item.categories[0] | slugify | prepend: "/archives/category/" }}">
+      {{ item.categories[0] }}
+    </a>
   </div>
   
   <h2>
