@@ -32,6 +32,7 @@ section:
 
     + [Peter Hagemeyer](/staff/peter-hagemeyer), research
     + [David Morton](/staff/david-morton/), project editor
+published: true
 ---
 
 Combating violence is one of the most complex and visible challenges cities face. Policy is an important tool to curbing crime, but choosing the right strategy revolves around many questions:
