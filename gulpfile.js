@@ -120,12 +120,10 @@ gulp.task('serve', function(done) {
  *
  * Note: Netlify automatically installs package.json and Gemfile dependencies
  **/
-
-  // CURRENTLY INACTIVE
-  // gulp.task('netlify', function(done) {
-  //   jekyllEnv = 'production';
-  //   runSequence('sass', 'build-jekyll', done);
-  // })
+gulp.task('netlify', function(done) {
+  jekyllEnv = 'production';
+  runSequence('sass', 'build-jekyll', done);
+})
 
 /**
  *
