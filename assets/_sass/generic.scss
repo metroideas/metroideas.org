@@ -114,7 +114,7 @@ header[role="banner"] {
   display: flex;
   max-width: 100%;
   width: 768px;
-  @include margin(0 auto);
+  @include margin(1em auto 0);
   @include padding (0 1em);
   line-height: 0;
 
@@ -122,16 +122,13 @@ header[role="banner"] {
   nav {
     height: 75px;
   }
-  
+
   .logo {
-    display: none;
+    height: 60px;
   }
 
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    display: none;
   }
 
   @media (min-width: 600px) {
@@ -148,6 +145,13 @@ header[role="banner"] {
     .logo {
       display: inherit;
       width: 60%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; 
     }
   }
 }
