@@ -90,7 +90,7 @@ nav:
   icon: 
   url: "/blog/"
 - title: Archives
-  icon:
+  icon: 
   url: "/archives/"
 - title: Staff
   icon: 
@@ -118,12 +118,12 @@ gems:
 - jekyll-archives
 jekyll-archives:
   enabled:
-    - categories
-    - tags
-  layout: 'archive'
+  - categories
+  - tags
+  layout: archive
   permalinks:
-    category: '/archives/category/:name/'
-    tag: '/archives/tag/:name/'
+    category: "/archives/category/:name/"
+    tag: "/archives/tag/:name/"
 api:
   analytics: 
   facebook: 
