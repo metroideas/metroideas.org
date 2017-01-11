@@ -4,6 +4,7 @@ date: 2016-12-07 08:00:00 -05:00
 categories:
 - Criminal justice
 position: 0
+published: true
 description: Finding the right policy is the first step to curbing crime. We break
   down several popular options.
 image:
@@ -32,7 +33,6 @@ section:
 
     + [Peter Hagemeyer](/staff/peter-hagemeyer), research
     + [David Morton](/staff/david-morton/), project editor
-published: true
 ---
 
 Combating violence is one of the most complex and visible challenges cities face. Policy is an important tool to curbing crime, but choosing the right strategy revolves around many questions:
