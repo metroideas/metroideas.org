@@ -10,8 +10,4 @@ cd beta.metroideas.org && npm install
 gulp
 ```
 
-Build the Jekyll _site directory with ```gulp build```. Serve with ```gulp serve```.
-
-Both tasks default to ```JEKYLL_ENV=development```. Modify with ```--production``` or ```--debug```. Remove and recompile assets with ```--clean```.
-
-
+See [starter](https://github.com/metroideas/starter) for gulp tasks.

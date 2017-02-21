@@ -1,7 +1,6 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import "/node_modules/normalize.css/normalize.css";
 /*! beta.metroideas.org | Metro Ideas Project | https://github.com/metroideas/beta.metroideas.org.git */
-@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
-@import "../../node_modules/bourbon-neat/app/assets/stylesheets/neat";
+@import "../../node_modules/bourbon/core/bourbon";
 
 // Type variables
 $system-font-stack: -apple-system, BlinkMacSystemFont, 
