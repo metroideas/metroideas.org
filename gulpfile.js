@@ -80,7 +80,7 @@ gulp.task('serve', function(done) {
  */
 gulp.task('netlify', function(done) {
   argv.production = true;
-  runSequence('build-assets', done);
+  runSequence('build-assets', 'build-jekyll', done);
 })
 
 /**
