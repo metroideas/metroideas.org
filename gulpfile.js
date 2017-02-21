@@ -32,7 +32,7 @@ var jekyll = config.jekyll;
  * Default task cleans, compiles assets and builds _site/
  */
 gulp.task('default', function(done) {
-  runSequence('clean', 'build-assets', 'build-jekyll', 'serve', done);
+  runSequence('clean', 'bundle', 'build-assets', 'build-jekyll', 'serve', done);
 });
 
 /**
@@ -156,6 +156,12 @@ gulp.task('browser-sync', function() {
     host: config.host
   });
 });
+
+// Installs gem bundle
+gulp.task('bundle', function(done) {
+  cp.spawn('bundle', ['install'], {stdio: 'inherit'})
+    .on('close', done);
+})
 
 // Deletes build files, _site dir and compiled CSS and JS
 gulp.task('clean', function() {
