@@ -1,83 +1,48 @@
+'use strict';
+
 /**
- *
  * CONFIGURATION
- *
- **/
-var gulp = require('gulp'),
-    cp = require('child_process'),
-    del = require('del')
-    fs = require('fs'),
-    runSequence = require('run-sequence'),
-    browserSync = require('browser-sync'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cleanCSS = require('gulp-clean-css'),
-    rename = require('gulp-rename'),
-    argv = require('yargs').argv;
+ */
+
+// Modules
+var argv         = require('yargs').argv;
+var autoprefixer = require('gulp-autoprefixer');
+var browserSync  = require('browser-sync');
+var cleanCSS     = require('gulp-clean-css');
+var concat       = require('gulp-concat');
+var cp           = require('child_process');
+var del          = require('del');
+var gulp         = require('gulp');
+var runSequence  = require('run-sequence');
+var sass         = require('gulp-sass');
+var sourcemaps   = require('gulp-sourcemaps');
+var uglify       = require('gulp-uglify');
+
+// Local settings
+var config = require('./gulp.config.js');
+var paths  = config.paths;
+var jekyll = config.jekyll;
 
 /**
- *
- * Sets global Jekyll build environment via command line ARGV
- * Defaults to JEKYLL_ENV=development
- * See `build` and `serve` tasks
- *
- **/
-var jekyllEnv = function() {
-  if (argv.production) {
-    return 'production';
-  } else if (argv.debug) {
-    return 'debug';
-  } else {
-    return 'development';
-  }
-}();
-
-// Source and destination paths for generating assets
-var paths = {
-  sass:   './assets/_sass/**/*.scss',
-  // js:     './assets/_js/**/*.js', // PENDING
-  css:    './css',
-  jekyll: './_site'
-}
-
-// Paths being watched
-var watch = {
-  // sass
-  sass: paths.sass,
-  
-  // PENDING js
-  // js: paths.js,
-  
-  // Jekyll
-  jekyll: [
-    './**/*',
-    '!./*', // Exclude standalone files in root dir
-    './_config*yml', // Rebuild on _config.yml change? Oh, hell yes.
-    '!./node_modules/**/*', // Exclude node_modules
-    '!./assets/**/*', // Exclude assets dir watched by other tasks
-    '!./_site/**/*' // Exclude _site build
-  ]
-};
-
-/**
- *
  * PRIMARY TASKS
- *
- **/
+ */
 
 /**
- *
  * `gulp`
- * Default task installs rubygem dependencies, compiles assets and builds _site/
- *
- **/
+ * Default task cleans, compiles assets and builds _site/
+ */
 gulp.task('default', function(done) {
-  runSequence('clean', 'install', 'sass', 'build-jekyll', done);
+  runSequence('clean', 'build-assets', 'build-jekyll', 'serve', done);
 });
 
 /**
- *
+ * Build assets: CSS & JS
+ */
+gulp.task('build-assets', function(done) {
+  runSequence('sass', 'js', done);
+});
+
+/**
  * `gulp build`
  * Builds _site directory
  * 
@@ -88,76 +53,61 @@ gulp.task('default', function(done) {
  * 
  * Remove dependencies and assets, then recompile
  * --clean 
- *
- **/
+ */
  gulp.task('build', function(done) {
   if (argv.clean) {
-    runSequence('clean', 'install', 'sass', 'build-jekyll', done);
+    runSequence('default', done);
   } else {
     runSequence('build-jekyll', done);    
   }
  })
 
 /**
- *
  * `gulp serve`
  * Builds and serves _site directory
  * 
  * See `gulp build` for command line options
- *
- **/
+ */
 gulp.task('serve', function(done) {
   runSequence('browser-sync', 'watch', done)
 });
 
 /**
- *
  * `gulp netlify`
- * 
- * Compiles assets
- * Sets JEKYLL_ENV=production
- * Builds _site/ directory
+ * Compiles assets, builds _site/ for production
  *
  * Note: Netlify automatically installs package.json and Gemfile dependencies
- **/
+ */
 gulp.task('netlify', function(done) {
-  jekyllEnv = 'production';
-  runSequence('sass', 'build-jekyll', done);
+  argv.production = true;
+  runSequence('build-assets', done);
 })
 
 /**
- *
  * SECONDARY TASKS
- * 
- **/
+ */
 
 // Generates Jekyll _site directory
 gulp.task('build-jekyll', function(done) {
-  var env = jekyllEnv;
 
-  if (env != 'production') {
-    browserSync.notify('Building jekyll:' + env);
-  }
+  var env = function() {
+    if (argv.production) {
+      process.env.JEKYLL_ENV = 'production';
+    } else if (argv.debug) {
+      process.env.JEKYLL_ENV = 'debug';
+    } else {
+      process.env.JEKYLL_ENV = 'development';
+    }
 
-  // command run by cp.exec()
-  var command = function() {
-    return {
-      development: 'JEKYLL_ENV=development bundle exec jekyll build --config=_config.yml --future --unpublished --drafts',
-      production: 'JEKYLL_ENV=production bundle exec jekyll build --config=_config.yml',
-      debug: 'JEKYLL_ENV=debug bundle exec jekyll build --config=_config.yml --verbose --profile --future --unpublished --drafts'
-    }[env];
+    return process.env;
   }();
-
-  var opts = {
-    development: {},
-    production: {},
-    debug: {maxBuffer: 1024 * 500}
-  }[env]
-
-  opts.stdio = [0, 'pipe', fs.openSync('jekyll-build-error.log', 'w')]
   
-  return cp.exec(command, opts).on('close', done)
-    .stdout.pipe(process.stdout);
+  browserSync.notify('Building jekyll:' + env.JEKYLL_ENV);
+
+  var args = ['exec','jekyll','build'].concat(jekyll.build[env.JEKYLL_ENV]);
+  var opts = {stdio: 'inherit', env: env};
+
+  return cp.spawn('bundle', args, opts).on('close', done);
 })
 
 // Rebuild Jekyll site and reload page
@@ -168,61 +118,54 @@ gulp.task('rebuild-jekyll', ['build-jekyll'], function() {
 // Compile sass to minified & mapped css files
 gulp.task('sass', function() {
   browserSync.notify('Compiling stylesheet')
-  return gulp.src(paths.sass)
+  return gulp.src(paths.sass + '/**/*')
     .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'expanded'})
-      .on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.css))
     .pipe(browserSync.stream());
 });
 
+// Minify js files
+gulp.task('js', function() {
+  browserSync.notify('Compiling JavaScript')
+  return gulp.src(paths.js + '/**/*')
+    .pipe(sourcemaps.init())
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(paths.script))
+})
+
 // Watch for changes 
 gulp.task('watch', function() {
-  // js
-
-  // sass
-  gulp.watch(watch.sass, ['sass'])
-  
-  // html and markdown
-  gulp.watch(watch.jekyll, ['rebuild-jekyll']);
+  gulp.watch(paths.js + '/**/*', ['js'])
+  gulp.watch(paths.sass + '/**/*', ['sass'])
+  gulp.watch(jekyll.watch, ['rebuild-jekyll']);
 });
 
 // Serve generated _site with BrowserSync
-gulp.task('browser-sync', ['build'], function() {
+gulp.task('browser-sync', function() {
   browserSync({
+    port: config.port,
     server: {
-      baseDir: '_site'
+      baseDir: paths.dest
     },
-    host: 'localhost'
+    host: config.host
   });
 });
 
-// Deletes build files, _site dir and compiled css
+// Deletes build files, _site dir and compiled CSS and JS
 gulp.task('clean', function() {
-  return del([
-    './.jekyll-metadata',
-    './Gemfile.lock',
-    paths.jekyll,
-    paths.css
-  ]);
-})
-
-// Bundle install Gemfile 
-gulp.task('install', function(done) {
-  return cp.spawn('bundle', ['install'], {stdio: 'inherit'})
-    .on('close', done);
+  return del(config.clean)
 })
 
 /**
- *
  * REFERENCES (aka people I stole from)
  *
  * https://gist.github.com/agragregra/79be7c57271c81258a51
  * http://savaslabs.com/2016/10/19/optimizing-jekyll-with-gulp.html
  * https://aaronlasseigne.com/2016/02/03/using-gulp-with-jekyll/
- *
- **/
+ */

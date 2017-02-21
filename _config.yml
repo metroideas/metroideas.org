@@ -98,7 +98,8 @@ nav:
 - title: Lab
   icon: 
   url: https://metroideaslab.org
-include: 
+include:
+- _pages
 exclude:
 - node_modules/
 - bower_components/
