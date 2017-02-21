@@ -32,7 +32,7 @@ var jekyll = config.jekyll;
  * Default task cleans, compiles assets and builds _site/
  */
 gulp.task('default', function(done) {
-  runSequence('clean', 'build-assets', 'build-jekyll', done);
+  runSequence('clean', 'build-assets', 'build-jekyll', 'serve', done);
 });
 
 /**

@@ -4,9 +4,7 @@
   "description": "Website redesign",
   "main": "gulpfile.js",
   "scripts": {
-    "geminstall": "bundle install",
-    "preinstall": "npm run geminstall",
-    "postinstall": "gulp && gulp serve"
+    "geminstall": "bundle install"
   },
   "repository": {
     "type": "git",

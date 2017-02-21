@@ -6,7 +6,8 @@ Setup and local build:
 
 ```
 git clone https://github.com/metroideas/beta.metroideas.org.git  
-cd beta.metroideas.org && npm install
+cd beta.metroideas.org && npm install  
+gulp
 ```
 
 See [starter](https://github.com/metroideas/starter) for gulp tasks.
