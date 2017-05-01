@@ -7,7 +7,7 @@ tags:
 - Hamilton County
 - Hamilton County schools
 - HCDE
-position: 2
+position: 0
 description: 'The Metro Ideas Project is examining more than a dozen local, state
   and federal datasets to answer a simple question: How much does it cost to educate
   a student in Hamilton County, Tennessee? The answer has important implications for
