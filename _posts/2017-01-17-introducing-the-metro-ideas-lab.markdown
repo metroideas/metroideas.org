@@ -1,10 +1,10 @@
 ---
 title: 'Introducing: The Metro Ideas Lab'
-date: 2017-01-17 10:00 -05:00
-categories:
+date: 2017-01-17 10:00:00 -05:00
 tags:
 - Chattanooga
-description: 'Our new headquarters will be a space for government and communities to work on public sector challenges together.'
+description: Our new headquarters will be a space for government and communities to
+  work on public sector challenges together.
 image:
   file: "/media/introducing-the-metro-ideas-lab.jpg"
   alt: Office space
