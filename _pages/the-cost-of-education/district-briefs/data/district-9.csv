@@ -1,5 +1,5 @@
 ---
-permalink: /projects/the-cost-of-education/brief/data/district-9.csv
+permalink: "/projects/the-cost-of-education/brief/data/district-9.csv"
 ---
 
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
