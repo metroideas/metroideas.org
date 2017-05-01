@@ -6,6 +6,10 @@ categories:
 tags:
 - Chattanooga
 description: Voter turnout was once again low in Chattanooga's recent city election.
+image:
+  file: "/media/low-voter-turnout-in-chattanooga-precincts.png"
+  caption: Precinct map showing voter turnout in Chattanooga's 2017 city election.
+  alt: Precinct map showing voter turnout in Chattanooga's 2017 city election.
 author:
 - David Morton
 ---
