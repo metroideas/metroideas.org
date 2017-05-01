@@ -1,5 +1,5 @@
 ---
-permalink: /projects/the-cost-of-education/brief/data/district-7.csv
+permalink: "/projects/the-cost-of-education/brief/data/district-7.csv"
 ---
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
 Apison Elementary,Elementary,7,,0,PreK-3-5,628,0,0,0.789,0.6,0,0,6551.3,-682.85

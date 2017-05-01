@@ -1,5 +1,5 @@
 ---
-permalink: /projects/the-cost-of-education/brief/data/district-2.csv
+permalink: "/projects/the-cost-of-education/brief/data/district-2.csv"
 ---
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
 Alpine Crest Elementary,Elementary,2,,1,Kindergarten-5,299,0,0,0.678,0.407,0,0,7198.87,-35.28
