@@ -1,5 +1,5 @@
 ---
-permalink: /projects/the-cost-of-education/brief/data/district-5.csv
+permalink: "/projects/the-cost-of-education/brief/data/district-5.csv"
 ---
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
 Brainerd High,High,5,iZone,1,Grades 9-12,554,0.335,0.349,0,0,0,0,9771.83,2537.68

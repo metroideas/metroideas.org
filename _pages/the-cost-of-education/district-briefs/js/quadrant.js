@@ -1,5 +1,5 @@
 ---
-permalink: /projects/the-cost-of-education/brief/js/quadrant.js
+permalink: "/projects/the-cost-of-education/brief/js/quadrant.js"
 ---
 
 (function(district) {

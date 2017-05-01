@@ -1,5 +1,5 @@
 ---
-permalink: /projects/the-cost-of-education/brief/js/district-lookup.js
+permalink: "/projects/the-cost-of-education/brief/js/district-lookup.js"
 ---
 
 (function() {

@@ -1,5 +1,5 @@
 ---
-permalink: /projects/the-cost-of-education/brief/data/district-1.csv
+permalink: "/projects/the-cost-of-education/brief/data/district-1.csv"
 ---
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
 Allen Elementary,Elementary,1,,0,PreK-3-5,596,0,0,0.764,0.474,0,0,6677.08,-557.07
