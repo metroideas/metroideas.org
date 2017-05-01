@@ -1,0 +1,69 @@
+---
+title: "School spending briefs for Hamilton County, Tennessee"
+date: 2016-05-25 00:00:00 -04:00
+permalink: "/projects/the-cost-of-education/brief/"
+categories:
+- Education
+tags:
+- Hamilton County
+- Hamilton County schools
+- HCDE
+description: Find out how much is spent on schools in your district.
+author:
+- David Morton
+project: The cost of education
+---
+
+<section class="description">
+  <p>The Metro Ideas Project spent the past four months researching <a href="/blog/one-answer-many-questions/">how much it costs to educate students</a> at every school in Hamilton County, Tennessee.</p>
+  
+  <p>The Hamilton County Department of Education spent around $400 million in the 2014–15 school year on more than 42,000 students. Our research shows how approximately 75 percent of the school system budget, or $300 million, is divided among schools.</p>
+
+  <p>We organized the results by the county's nine legislative districts.</p>
+</section>
+
+<section class="district-lookup">
+  <h2>District lookup</h2>
+  <p>Enter your street address and city in the form to find out how much is spent on schools in your district.</p>
+  
+  <form class="inline" id="lookup-address">
+    <div class="span-9">
+      <label for="address">Address</label><br>
+      <input id="address" type="text" name="address" placeholder="Street address and city">
+    </div>
+    <div class="span-3">
+      <button>Get brief</button>  
+    </div>
+  </form>
+  
+  <p class="text-small text-error" id="form-error"></p>
+  
+  <label for="district-selection">
+    Or select a district from the dropdown:
+  
+    <select id="district-selection">
+      <option value disabled selected> Hamilton County districts</option>
+      <option value="1">1st District</option>
+      <option value="2">2nd District</option>
+      <option value="3">3rd District</option>
+      <option value="4">4th District</option>
+      <option value="5">5th District</option>
+      <option value="6">6th District</option>
+      <option value="7">7th District</option>
+      <option value="8">8th District</option>
+      <option value="9">9th District</option>  
+      
+    </select>
+  </label>
+</section>
+
+<section class="about-the-project">
+  <h2>About the project</h2>
+
+  <p>The Metro Ideas Project examined more than a dozen local, state and federal datasets to answer a simple question: How much does it cost to educate a student in Hamilton County, Tennessee?</p>
+  <p>Visit the <a href="/projects/the-cost-of-education/">project page</a> to read more from this series.</p>
+</section>
+  
+<script src="//apis.google.com/js/client.js"></script>
+<script>var baseurl = "{{ "/projects/the-cost-of-education/brief/district-" }}";</script>
+<script src="js/district-lookup.js"></script>
