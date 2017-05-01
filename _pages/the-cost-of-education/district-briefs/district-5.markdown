@@ -1,14 +1,14 @@
 ---
-layout: the-cost-of-education/brief
+title: 5th District school spending in Hamilton County, Tennessee
 date: 2016-05-25 00:00:00 -04:00
+permalink: "/projects/the-cost-of-education/brief/district-5/"
+layout: the-cost-of-education/brief
 boe: Karitsa Mosley
 commission: Greg Beck
 fn: district-5
 district: 5th District
-title: 5th District school spending in Hamilton County, Tennessee
 description: Learn about school funding in Hamilton County, Tennessee.
 project: The cost of education
-permalink: /projects/the-cost-of-education/brief/district-5/
 ---
 
 | School               | Enrollment | Per-student spending |

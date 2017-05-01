@@ -1,14 +1,14 @@
 ---
-layout: the-cost-of-education/brief
+title: 1st District school spending in Hamilton County, Tennessee
 date: 2016-05-25 00:00:00 -04:00
+permalink: "/projects/the-cost-of-education/brief/district-1/"
+layout: the-cost-of-education/brief
 boe: Rhonda Thurman
 commission: Randy Fairbanks
 fn: district-1
 district: 1st District
-title: 1st District school spending in Hamilton County, Tennessee
 description: Learn about school funding in Hamilton County, Tennessee.
 project: The cost of education
-permalink: /projects/the-cost-of-education/brief/district-1/
 ---
 
 | School                           | Enrollment | Per-student spending |
