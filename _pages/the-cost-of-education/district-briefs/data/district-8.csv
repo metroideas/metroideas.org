@@ -1,7 +1,6 @@
 ---
 permalink: /projects/the-cost-of-education/brief/data/district-8.csv
 ---
-
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
 Barger Academy,Elementary,8,Magnet,1,Kindergarten-5,402,0,0,0.507,0.149,0,0,7577.87,343.72
 CSLA,Elementary,8,Magnet,0,Kindergarten-8,410,0,0,0.951,0.707,0.782,0.848,7889.74,655.59

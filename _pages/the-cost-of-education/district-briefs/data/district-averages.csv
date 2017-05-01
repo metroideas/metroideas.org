@@ -1,7 +1,6 @@
 ---
 permalink: /projects/the-cost-of-education/brief/data/district-averages.csv
 ---
-
 district,Far below average (<-10%),Slightly below average,Average,Slightly above average,Far above average (>+10%)
 district-1,0.111111111,0.333333333,0.222222222,0.111111111,0.222222222
 district-2,0.125,0.25,0.375,0,0.25
