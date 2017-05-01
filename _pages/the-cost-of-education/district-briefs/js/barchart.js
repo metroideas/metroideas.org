@@ -1,5 +1,5 @@
 ---
-permalink: "/projects/the-cost-of-education/brief/js/barchart.js"
+permalink: /projects/the-cost-of-education/brief/js/barchart.js
 ---
 
 (function(district) {

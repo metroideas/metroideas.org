@@ -1,5 +1,5 @@
 ---
-permalink: "/projects/the-cost-of-education/map-hamilton-county-school-spending/map.js"
+permalink: /projects/the-cost-of-education/map-hamilton-county-school-spending/map.js
 ---
 
   (function() {
