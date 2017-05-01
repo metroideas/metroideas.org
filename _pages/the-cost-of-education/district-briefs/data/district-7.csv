@@ -1,6 +1,7 @@
 ---
 permalink: "/projects/the-cost-of-education/brief/data/district-7.csv"
 ---
+
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
 Apison Elementary,Elementary,7,,0,PreK-3-5,628,0,0,0.789,0.6,0,0,6551.3,-682.85
 Bess T. Shepherd Elementary,Elementary,7,,1,Kindergarten-5,553,0,0,0.418,0.175,0,0,7201.32,-32.83

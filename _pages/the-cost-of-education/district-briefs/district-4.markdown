@@ -1,14 +1,14 @@
 ---
-layout: the-cost-of-education/brief
+title: 4th District school spending in Hamilton County, Tennessee
 date: 2016-05-25 00:00:00 -04:00
+permalink: "/projects/the-cost-of-education/brief/district-4/"
+layout: the-cost-of-education/brief
 boe: George Ricks
 commission: Warren Mackey
 fn: district-4
 district: 4th District
-title: 4th District school spending in Hamilton County, Tennessee
 description: Learn about school funding in Hamilton County, Tennessee.
 project: The cost of education
-permalink: /projects/the-cost-of-education/brief/district-4/
 ---
 
 | School                      | Enrollment | Per-student spending |

@@ -1,5 +1,5 @@
 ---
-title: "School spending briefs for Hamilton County, Tennessee"
+title: School spending briefs for Hamilton County, Tennessee
 date: 2016-05-25 00:00:00 -04:00
 permalink: "/projects/the-cost-of-education/brief/"
 categories:

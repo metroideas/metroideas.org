@@ -1,14 +1,14 @@
 ---
-layout: the-cost-of-education/brief
+title: 3rd District school spending in Hamilton County, Tennessee
 date: 2016-05-25 00:00:00 -04:00
+permalink: "/projects/the-cost-of-education/brief/district-3/"
+layout: the-cost-of-education/brief
 boe: Greg Martin
 commission: Marty Haynes
 fn: district-3
 district: 3rd District
-title: 3rd District school spending in Hamilton County, Tennessee
 description: Learn about school funding in Hamilton County, Tennessee.
 project: The cost of education
-permalink: /projects/the-cost-of-education/brief/district-3/
 ---
 
 | School                         | Enrollment | Per-student spending |

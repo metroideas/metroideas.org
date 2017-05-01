@@ -1,6 +1,7 @@
 ---
 permalink: "/projects/the-cost-of-education/brief/data/district-3.csv"
 ---
+
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
 Big Ridge Elementary,Elementary,3,,0,Kindergarten-5,477,0,0,0.776,0.684,0,0,6363.35,-870.8
 DuPont Elementary,Elementary,3,,1,Kindergarten-5,358,0,0,0.531,0.183,0,0,6545.91,-688.24
