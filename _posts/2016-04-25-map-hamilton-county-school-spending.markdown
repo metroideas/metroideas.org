@@ -15,5 +15,291 @@ author:
 - David Morton
 - Jacqueline Homann
 project: The cost of education
+layout: default
 ---
+
+<style>
+  .hidden {
+    display: none;
+  }
+
+  /* Range sliders */
+  input[type="range"] {
+    width: 100%;
+    border: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  @media (max-width:414px) {
+    input[type="range"]::-webkit-slider-thumb {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  /* IE11 */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    input {
+      border: none;
+    }
+  }
+
+  datalist {
+    display: none;
+  }
+
+  output {
+    padding: 1px 2px;
+    color: #252525;
+    background-color: rgb(236,231,242);
+    border-radius: 3px;
+    border: 1px solid rgb(236,231,242);
+  }
+
+  /* Map */
+  path {
+    cursor: pointer;
+  }
+
+  /* Utility */
+   {
+    display: none;
+  }
+
+  /* Legend */
+  #legend {
+    font-size: 14px;
+  }
+
+  .key text {
+    font-size: 10px;
+    text-anchor: middle;
+  }
+
+  /* Tooltip */
+  #tooltip {
+    position: absolute;
+    font-size: 12px;
+    background-color: rgba(255,255,255, 0.8);
+  }
+
+  /* Popup */
+  #modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(255,255,255);
+    border-radius: 3px;
+    border: 1px solid #6d6e70;
+  }
+
+  #modal .close {
+    font-size: 16px;
+    font-family: "collecticons";
+    float: right;
+    color: #6d6e70;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #modal .close:before {
+    content: "\EA70";
+  }
+
+  /* Table */
+  #modal table.school-profile td {
+    font-size: 12px;
+  }
+
+  #modal table.school-profile td:last-child {
+    text-align: center;
+  }
+
+  /* Bar chart */
+  .chart {
+    margin-top: 24px;
+  }
+
+  .bar text,
+  .tick text {
+    font-size: 10px;
+  }
+
+  .bar text {
+    text-anchor: end;
+    alignment-baseline: middle;
+  }
+
+  .axis line,
+  .axis path {
+    fill: none;
+    stroke: #dcddde;
+    shape-rendering: crispEdges;
+  }
+
+  .axis path {
+    display: none;
+  }
+</style>
+
+<div class="container" id="container">
+  <div class="row">
+    <div class="span-4">
+      <header>
+        <span class="category">{{ page.category }}</span>
+        <h1>Hamilton County school spending</h1>
+        <p>{{ page.description }}</p>
+        <p>Select a school zone to see how it compares to others. Filter schools by grade, demographics or county district.</p>
+        <p>See our <a href="/blog/one-answer-many-questions">research on per-student spending</a> for additional details.</p>
+        <noscript>Interactive map requires JavaScript.</noscript>  
+      </header>
+      
+      <div class="sliders" id="sliders">
+        <div id="grade">
+          <label for="grade">Show <output id="grade-output">elementary</output> schools</label><br>
+          <input type="range" name="grade" min="1" max="3" step="1" value="1" list="grade-steplist">
+          <datalist id="grade-steplist">
+            <option value="1">Elementary</option>
+            <option value="2">Middle</option>
+            <option value="3">High</option>
+          </datalist>
+        </div>
+        <div id="funding">
+          <label for="funding">Spending at least <output id="funding-output">$5,500</output> per student</label><br>
+          <input type="range" name="funding" min="5500" max="9500" value="5000" list="funding-steplist">
+          <datalist id="funding-steplist">
+            <option value="5500">5500</option>
+            <option value="6000">6000</option>
+            <option value="6500">6500</option>
+            <option value="7000">7000</option>
+            <option value="7500">7500</option>
+            <option value="8000">8000</option>
+            <option value="8500">8500</option>
+            <option value="9000">9000</option>
+            <option value="9500">9500</option>
+          </datalist>
+        </div>
+        <div id="minority">
+          <label for="minority">At least <output id="minority-output">0%</output> of students are black, Hispanic or Asian</label><br>
+          <input type="range" name="minority" min="0" max="1" step="0.05" value="0" list="minority-steplist">
+          <datalist id="minority-steplist">
+            <option value="0">0%</option>
+            <option value="0.1">10%</option>
+            <option value="0.2">20%</option>
+            <option value="0.3">30%</option>
+            <option value="0.4">40%</option>
+            <option value="0.5">50%</option>
+            <option value="0.6">60%</option>
+            <option value="0.7">70%</option>
+            <option value="0.8">80%</option>
+            <option value="0.9">90%</option>
+            <option value="1">100%</option>
+          </datalist>
+        </div>
+        <div id="poverty">
+          <label for="poverty">At least <output id="poverty-output">0%</output> of students are economically disadvantaged</label> <br>
+          <input type="range" name="poverty" min="0" max="1" step="0.05" value="0" list="poverty-steplist">
+           <datalist id="poverty-steplist">
+            <option value="0">0%</option>
+            <option value="0.1">10%</option>
+            <option value="0.2">20%</option>
+            <option value="0.3">30%</option>
+            <option value="0.4">40%</option>
+            <option value="0.5">50%</option>
+            <option value="0.6">60%</option>
+            <option value="0.7">70%</option>
+            <option value="0.8">80%</option>
+            <option value="0.9">90%</option>
+            <option value="1">100%</option>
+          </datalist>
+        </div>
+        <div id="district">
+          <label for="district"><output id="district-output">Countywide</output></label><br>
+          <input type="range" name="district" min="0" max="9" step="1" value="0" list="district-steplist">
+          <datalist id="district-steplist">
+            <option value="0">Countywide</option>
+            <option value="1">In the 1st District</option>
+            <option value="2">In the 2nd District</option>
+            <option value="3">In the 3rd District</option>
+            <option value="4">In the 4th District</option>
+            <option value="5">In the 5th District</option>
+            <option value="6">In the 6th District</option>
+            <option value="7">In the 7th District</option>
+            <option value="8">In the 8th District</option>
+            <option value="9">In the 9th District</option>
+          </datalist>
+        </div>        
+      </div>
+      
+      <div class="hidden" id="tooltip"></div>
+      
+      <div class="grid hidden modal" id="modal">
+        <a class="close" href="#" alt="Close window">Close</a>
+
+        <table class="school-profile">
+          <caption></caption>
+          <tbody>
+            <tr>
+              <td>Spending per student</td>
+              <td class="funding"></td>
+            </tr>
+            <tr>
+              <td>Grades</td>
+              <td class="grades"></td>
+            </tr>
+            <tr>
+              <td>Enrollment</td>
+              <td class="adm"></td>
+            </tr>
+            <tr>
+              <td>Minority students</td>
+              <td class="minority"></td>
+            </tr>
+            <tr>
+              <td>Economically disadvantaged students</td>
+              <td class="poverty"></td>
+            </tr>
+            <tr>
+              <td>Special education students</td>
+              <td class="special"></td>
+            </tr>
+            <tr>
+              <td>English language learners</td>
+              <td class="ell"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="span-8 map" id="map">
+      <figure>
+        <img src="/media/map-hamilton-county-school-spending-map-fallback.png" alt="Hamilton County map shows school zones by per-student funding">  
+      </figure>
+    </div>
+  </div>
+  
+  <div class="whole">
+    <p>Map does not show Center for Creative Arts, Chattanooga School for the Arts and Sciences, Chattanooga School for the Liberal Arts, Chattanooga STEM School or Sequoyah High School. Data was unavailable for the joint zone of Battle Academy and Brown Academy. Percentages of economically disadvantaged students are from the Hamilton County Department of Education (2015 Title I schools) and the Tennessee Department of Education (non-Title I schools).</p>
+    <p>
+      Sources: <em>Hamilton County GIS, Hamilton County Department of Education and Tennessee Department of Education.</em>
+    </p>
+  </div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+<script src="map.js"></script>
+<script src="range-touch.min.js"></script>
 
