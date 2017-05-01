@@ -1,0 +1,169 @@
+---
+layout: article
+---
+
+<!-- Inline CSS -->
+<style>
+  #quadrant,
+  #barchart,
+  .quadrant #tooltip,
+  .barchart .legend {
+    font-size: 12px;
+  }
+
+  .axis path,
+  .axis line,
+  .box {
+    fill: none;
+    stroke: #dcddde;
+    shape-rendering: crispEdges;
+  }
+
+  .axis path {
+    display: none;
+  }
+
+  circle.school {
+    fill: #006d2c;
+    fill-opacity: 0.9;
+  }
+
+  .quadrant-label {
+    font-size: 14px;
+  }
+
+  .quadrant button.primary {
+    background-color: #006d2c;
+    border-color: #006d2c;
+  }
+
+  .quadrant #tooltip {
+    position: absolute;
+    width: 225px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #6d6e70;
+  }
+
+  .quadrant #tooltip .text-meta {
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+
+  .quadrant .hidden {
+    display: none;
+  }
+</style>
+
+<section class="overview">
+  <p>How much do we spend on students in Hamilton County? The Tennessee Department of Education estimates that our school system spent $9,728 per student in the 2014–15 school year.</p>
+  
+  <p>However, that districtwide estimate does not take into account spending variations between schools. The Metro Ideas Project spent the past four months examining school spending data to answer a slightly different question:</p>
+
+  <p><a href="http://metroideas.org/projects/the-cost-of-education/">How much do we spend on students at every school in Hamilton County?</a></p>
+
+  <p>The answers provide insight into:</p>
+
+  <ul>
+    <li><strong>Equity:</strong> Are resources being distributed fairly across schools regardless of students' economic status, race or learning ability?</li>
+    <li><strong>Transparency:</strong> Which schools spend more on students? Which ones spend less?</li>
+    <li><strong>Engagement:</strong> How can education and community stakeholders make better decisions around spending?</li>
+    <li><strong>Return on investment:</strong> What is the relationship between average spending and student achievement?</li>
+  </ul>
+
+  <p>Our analysis focused on services that directly benefit students like teachers, Title I, transportation and meals. The analysis reflects about 75 percent of the Hamilton County Department of Education's fiscal 2015 budget. Central office spending was excluded from our analysis, as were some spending groups not reported on a school-by-school basis (e.g. building maintenance).</p>
+
+  <p>We found that HCDE spends on average $7,200 per student across 72 schools. Learn more about <a href="http://metroideas.org/blog/one-answer-many-questions/">per-student spending in Hamilton County</a>.</p>
+
+</section>
+
+<section class="district">
+  {% capture brief %}{{ page.fn }}-brief.pdf{% endcapture %}
+  <h2>About the {{ page.district }}</h2>
+  
+  <p>Hamilton County is divided into nine legislative districts. This brief encompasses schools located in the {{ page.district }}, which is represented by {{ page.boe }} on the Hamilton County Board of Education and {{ page.commission }} on the County Commission.</p>
+
+  <p>For other districts, see our <a href="http://metroideas.org/projects/the-cost-of-education/map-hamilton-county-school-spending/">map of school spending</a> or read our <a href="{{ "/projects/the-cost-of-education/brief/" | prepend: site.baseurl | prepend: site.url }}">other briefs</a>.</p>
+
+  <p><a href="{{ brief | prepend: "/projects/the-cost-of-education/reports/" | prepend: site.baseurl | prepend: site.url }}">Download the {{ page.district }} brief (PDF)</a>.</p>
+</section>
+
+<section class="table">
+  {{ content }}
+</section>
+
+<section class="quadrant">
+  <h2>School spending and student outcomes</h2>
+
+  <p>The chart below shows the percentage of students in {{ page.district }} schools who are considered proficient or advanced compared to average per-student spending.</p>
+  <div class="legend">
+    <div class="buttons">
+      <button class="primary" id="english">English</button>
+      <button id="math">Math</button>
+      <button id="title">Title I</button>  
+    </div>
+  </div>
+  <div id="quadrant">
+    <!-- Fallback -->
+  </div>
+
+  <div class="hidden" id="tooltip">
+    <span class="text-meta" data-item="grade"></span>
+    <h1 class="lead" data-item="name"></h1>
+    <ul class="list-unstyled">
+      <li>Spending: <span data-item="spending"></span> per student</li>
+      <li>English proficiency: <span data-item="english"></span></li>
+      <li>Math proficiency: <span data-item="math"></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="barchart">
+  <h2>School spending per student compared to county average</h2>
+  <p>The chart below shows how funding for {{ page.district }} schools compare to the countywide average of $7,200 per student. The overall county distribution is also included for comparison.</p>
+  <div class="legend"></div>
+  <div id="barchart">
+    <!-- <img src="bar-chart-fallback.png" alt="" class="responsive"> -->  
+  </div>
+</section>
+
+<section class="data-sources text-xsmall">
+  <p>Sources: Hamilton County Department of Education and Tennessee Department of Education</p>
+</section>
+
+<section class="findings">
+  <h2>Findings</h2>
+
+  <p><a href="/blog/students-schools-and-the-public/">Key takeaways from our research</a>:</p>
+
+  <ul>
+    <li>Some students cost more to educate than others.</li>
+    <li>Schools that are short on money struggle to create optimal learning environments.</li>
+    <li>Schools know their students best but often don't have the opportunity to communicate specific needs to central office or direct resources where they're needed most.</li>
+    <li>HCDE's budget is complex and opaque. It's difficult for the public to understand how spending impacts students and outcomes.</li>
+  </ul>
+</section>
+
+<section class="primary-recommendation">
+  <h2>Primary recommendation</h2>
+  <p>Current budgeting practices account for staff, buildings and enrollment numbers, but they do not reflect individual student needs.</p>
+
+  <p>Student-based budgeting focuses funds toward students instead of enrollment ratios. It recognizes that some students cost more to educate than others — for example, students from low-income families or those with limited English proficiency — and clearly budgets for them.</p>
+
+  <p>Student-based budgeting is student-focused, transparent, efficient and equitable. It encourages optimal learning environments for all students to succeed.</p>
+</section>
+
+<hr>
+
+<section class="about">
+  <h3>About the Metro Ideas Project</h3>
+
+  <p>The Metro Ideas Project is an independent, nonprofit research startup devoted to the analysis and design of public policies that help make midsize cities work better for people. Learn more about <a href="http://metroideas.org/about/#mission">our work, mission and funding</a>.</p>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+<script>var fn = "{{ page.fn }}";</script>
+<script src="/projects/the-cost-of-education/brief/js/barchart.js"></script>
+<script src="/projects/the-cost-of-education/brief/js/quadrant.js"></script>

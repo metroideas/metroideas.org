@@ -1,0 +1,13 @@
+---
+permalink: "/projects/the-cost-of-education/brief/data/district-2.csv"
+---
+school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
+Alpine Crest Elementary,Elementary,2,,1,Kindergarten-5,299,0,0,0.678,0.407,0,0,7198.87,-35.28
+Nolan Elementary,Elementary,2,,0,Kindergarten-5,608,0,0,0.9,0.684,0,0,7025.64,-208.51
+Red Bank Elementary,Elementary,2,,1,PreK-3-5,642,0,0,0.628,0.354,0,0,6799.55,-434.6
+Red Bank High,High,2,,1,Grades 9-12,722,0.277,0.596,0,0,0,0,10847.62,3613.47
+Red Bank Middle,Middle,2,,1,Grades 6-8,610,0,0,0,0,0.357,0.358,6859.68,-374.47
+Rivermont Elementary,Elementary,2,,1,Pre-Kindergarten-5,186,0,0,0.727,0.455,0,0,11873.8,4639.65
+Signal Mountain Middle-High,Middle,2,,0,Grades 6-12,1252,0.74,0.906,0,0,0.692,0.77,7099.89,-134.26
+Signal Mountain Middle-High,High,2,,0,Grades 6-12,1252,0.74,0.906,0,0,0.692,0.77,7099.89,-134.26
+Thrasher Elementary,Elementary,2,,0,Kindergarten-5,560,0,0,0.854,0.534,0,0,6111.77,-1122.38

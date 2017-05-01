@@ -1,0 +1,14 @@
+---
+permalink: "/projects/the-cost-of-education/brief/data/district-9.csv"
+---
+school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
+Brown Middle,Middle,9,,1,Grades 6-8,472,0,0,0,0,0.331,0.366,6801.25,-432.9
+Central High,High,9,,1,Grades 9-12,884,0.358,0.506,0,0,0,0,7092.87,-141.28
+Harrison Elementary,Elementary,9,,1,Kindergarten-5,377,0,0,0.63,0.354,0,0,6480.97,-753.18
+Hunter Middle,Middle,9,,0,Grades 6-8,755,0,0,0,0,0.723,0.578,6323.11,-911.04
+Ooltewah Elementary,Elementary,9,,0,PreK-3-5,839,0,0,0.752,0.357,0,0,5707.41,-1526.74
+Ooltewah High,High,9,,0,Grades 9-12,1414,0.574,0.591,0,0,0,0,6231.88,-1002.27
+Ooltewah Middle,Middle,9,,1,Grades 6-8,792,0,0,0,0,0.446,0.473,6726.4,-507.75
+Snowhill Elementary,Elementary,9,,0,PreK-3-5,509,0,0,0.72,0.39,0,0,6584.44,-649.71
+Wallace A. Smith Elementary,Elementary,9,,0,Kindergarten-5,634,0,0,0.759,0.583,0,0,7141.5,-92.65
+Wolftever Creek Elementary,Elementary,9,,1,Pre-Kindergarten-5,415,0,0,0.536,0.274,0,0,7959.96,725.81

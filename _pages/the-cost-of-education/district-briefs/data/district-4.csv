@@ -1,0 +1,18 @@
+---
+permalink: "/projects/the-cost-of-education/brief/data/district-4.csv"
+---
+school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
+Battle Academy,Elementary,4,Magnet,1,Pre-Kindergarten-5,374,0,0,0.687,0.5,0,0,7731.19,497.04
+Calvin Donaldson Elementary,Elementary,4,Magnet,1,Pre-Kindergarten-5,312,0,0,0.364,0.273,0,0,8499.29,1265.14
+Clifton Hills Elementary,Elementary,4,,1,Pre-Kindergarten-5,530,0,0,0.308,0.1,0,0,6867.36,-366.79
+CSAS Lower,Elementary,4,Magnet,0,Kindergarten-5,360,0,0,0.746,0.54,0,0,9381.01,2146.86
+CSAS Upper,Middle,4,Magnet,0,Grades 6-12,638,0.619,0.851,0,0,0.643,0.753,6696.02,-538.13
+CSAS Upper,High,4,Magnet,0,Grades 6-12,638,0.619,0.851,0,0,0.643,0.753,6696.02,-538.13
+East Lake Academy,Middle,4,Magnet,1,Grades 6-8,527,0,0,0,0,0.256,0.275,7771.09,536.94
+East Lake Elementary,Elementary,4,,1,Pre-Kindergarten-5,506,0,0,0.318,0.094,0,0,7160.84,-73.31
+East Side Elementary,Elementary,4,,1,Kindergarten-5,593,0,0,0.593,0.142,0,0,7134.41,-99.74
+Hardy Elementary,Elementary,4,,1,Pre-Kindergarten-5,443,0,0,0.568,0.333,0,0,7712.34,478.19
+Howard School,High,4,,1,Grades 9-12,619,0.265,0.257,0,0,0,0,9559.46,2325.31
+Orchard Knob Elementary,Elementary,4,iZone,1,Pre-Kindergarten-5,591,0,0,0.491,0.144,0,0,6567.99,-666.16
+Orchard Knob Middle,Middle,4,,1,Grades 6-8,466,0,0,0,0,0.146,0.126,7669.94,435.79
+STEM School Chattanooga,High,4,Magnet,0,Grades 9-10,190,0.567,0.833,0,0,0,0,7593.96,359.81

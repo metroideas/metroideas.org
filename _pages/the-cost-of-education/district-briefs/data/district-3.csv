@@ -1,0 +1,12 @@
+---
+permalink: "/projects/the-cost-of-education/brief/data/district-3.csv"
+---
+school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
+Big Ridge Elementary,Elementary,3,,0,Kindergarten-5,477,0,0,0.776,0.684,0,0,6363.35,-870.8
+DuPont Elementary,Elementary,3,,1,Kindergarten-5,358,0,0,0.531,0.183,0,0,6545.91,-688.24
+Ganns Middle Valley Elementary,Elementary,3,,0,Kindergarten-5,573,0,0,0.706,0.367,0,0,6176.74,-1057.41
+Hixson Elementary,Elementary,3,,1,Kindergarten-5,441,0,0,0.605,0.272,0,0,9017.54,1783.39
+Hixson High,High,3,,1,Grades 9-12,829,0.525,0.571,0,0,0,0,7724.48,490.33
+Hixson Middle,Middle,3,,1,Grades 6-8,666,0,0,0,0,0.498,0.49,6760.19,-473.96
+Loftis Middle,Middle,3,,0,Grades 6-8,578,0,0,0,0,0.707,0.623,7732.93,498.78
+McConnell Elementary,Elementary,3,,0,Kindergarten-5,490,0,0,0.747,0.427,0,0,6263.2,-970.95

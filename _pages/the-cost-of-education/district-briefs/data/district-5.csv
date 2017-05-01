@@ -1,0 +1,11 @@
+---
+permalink: "/projects/the-cost-of-education/brief/data/district-5.csv"
+---
+school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
+Brainerd High,High,5,iZone,1,Grades 9-12,554,0.335,0.349,0,0,0,0,9771.83,2537.68
+Dalewood Middle,Middle,5,iZone,1,Grades 6-8,296,0,0,0,0,0.2,0.264,8817.62,1583.47
+Hillcrest Elementary,Elementary,5,,1,Pre-Kindergarten-5,276,0,0,0.62,0.16,0,0,8088.44,854.29
+Lakeside Academy,Elementary,5,Magnet,1,Kindergarten-5,432,0,0,0.69,0.239,0,0,7061.35,-172.8
+Tyner Academy,High,5,Magnet,1,Grades 9-12,585,0.421,0.357,0,0,0,0,7366.87,132.72
+Tyner Middle,Middle,5,Magnet,1,Grades 6-8,470,0,0,0,0,0.314,0.225,6944.71,-289.44
+Woodmore Elementary,Elementary,5,iZone,1,Pre-Kindergarten-5,347,0,0,0.451,0.275,0,0,6897.14,-337.01
