@@ -1,7 +1,6 @@
 ---
 permalink: "/projects/the-cost-of-education/brief/data/district-4.csv"
 ---
-
 school,type,district,designation,title_i,grades,adm,math_high,english_high,math_elementary,english_elementary,math_middle,english_middle,spending,spending_difference
 Battle Academy,Elementary,4,Magnet,1,Pre-Kindergarten-5,374,0,0,0.687,0.5,0,0,7731.19,497.04
 Calvin Donaldson Elementary,Elementary,4,Magnet,1,Pre-Kindergarten-5,312,0,0,0.364,0.273,0,0,8499.29,1265.14

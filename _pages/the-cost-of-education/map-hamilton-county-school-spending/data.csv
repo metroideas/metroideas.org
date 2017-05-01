@@ -1,7 +1,6 @@
 ---
-permalink: "/projects/the-cost-of-education/map-hamilton-county-school-spending/data.csv"
+permalink: /projects/the-cost-of-education/map-hamilton-county-school-spending/data.csv
 ---
-
 geoid,school,quantile,type,longitude,latitude,district,grades,adm,economic_disadvantage,special_education,ell,minority,spending
 1168,Allen Elementary,2,Elementary,-85.15181796,35.23729202,1,K-5,596,0.477,0.145,0.005,0.054,6677.08
 1159,Alpine Crest Elementary,3,Elementary,-85.27170532,35.12992187,2,K-5,299,0.655,0.169,0.03,0.312,7198.87
