@@ -18,7 +18,6 @@ image:
 author:
 - Jacqueline Homann
 - David Morton
-- David Eichenthal
 article:
 - A simple question
 - Follow the money
@@ -55,5 +54,6 @@ section:
     [Hamilton County 2016 average salaries and benefits; teacher investment index](/media/mip-data-eighty-percent-of-the-pie.zip)
 
     [Hamilton County 2015 school and district accountability, per-student spending, and achievement; 10-year spending in U.S., Tennessee and Hamilton County](/media/mip-data-one-answer-many-questions.zip)
+published: true
 ---
 
