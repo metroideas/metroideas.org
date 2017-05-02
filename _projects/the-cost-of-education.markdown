@@ -8,6 +8,7 @@ tags:
 - Hamilton County schools
 - HCDE
 position: 2
+published: true
 description: 'The Metro Ideas Project is examining more than a dozen local, state
   and federal datasets to answer a simple question: How much does it cost to educate
   a student in Hamilton County, Tennessee? The answer has important implications for
@@ -28,7 +29,7 @@ article:
 - 'Map: Hamilton County school spending'
 - Students, schools and the public
 - 'Q&A: Hamilton County principals discuss funding gaps'
-- School spending briefs for Hamilton County, Tennessee
+- 'School spending briefs for Hamilton County, Tennessee'
 section:
 - title: Further reading
   description: "[A Guide to Understanding the Budget](http://www.pefchattanooga.org/wp-content/uploads/2015/06/HCDE_budget-guide_051515.pdf)
