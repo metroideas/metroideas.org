@@ -1,0 +1,33 @@
+---
+layout: blog
+permalink: /blog/
+---
+
+{% assign posts = site.posts | where_exp: "post", "post.project == null" %}
+
+{% assign featured = posts | first %}
+
+<style>
+  #featured {
+    background-image: url('{{ featured.image.file }}');
+  }
+</style>
+
+<div class="card-group">
+  <article class="project-card-featured" id="featured">
+    <header>
+      <h1 class="display">{{ featured.title }}</h1>
+      <p>{{ featured.description }}</p>
+      <a href="{{ featured.url }}" class="button transparent-reverse">Read more</a>
+    </header>
+  </article>
+</div>
+
+<div class="large-container">
+ <h2>More from the blog</h2>
+  {% for post in posts limit: 5 %}
+    {% if post != featured %}
+      {% include article/preview.html post=post %}
+    {% endif %}
+  {% endfor %}
+</div>
