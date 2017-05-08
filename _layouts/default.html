@@ -1,2 +1,17 @@
 ---
+layout: critical
 ---
+
+{% comment %}
+The default.html layout is used by most other layouts. It includes three landmark roles: banner, main and contentinfo.
+
+Default requires critical.html to load CSS, Javascript and other sitewide meta tags.
+{% endcomment %}
+
+<!-- include banner nav -->
+
+<main class="{{ page.layout }}" role="main" id="main">
+{{ content }}
+</main>
+
+<!-- include footer -->
