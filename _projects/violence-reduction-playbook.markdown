@@ -7,6 +7,8 @@ position: 0
 published: true
 description: Finding the right policy is the first step to curbing crime. We break
   down several popular options.
+lead: Finding the right policy is the first step to curbing crime. We break
+  down several popular options.
 image:
   file: "/media/violence-reduction-playbook.jpg"
   alt: Window with bullet holes

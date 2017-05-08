@@ -9,6 +9,8 @@ position: 1
 published: true
 description: An open data policy would improve government transparency, accountability
   and efficiency in Hamilton County.
+lead: An open data policy would improve government transparency, accountability
+  and efficiency in Hamilton County.
 image:
   file: "/media/open-hamilton.jpg"
   alt: Hamilton County Courthouse south lawn

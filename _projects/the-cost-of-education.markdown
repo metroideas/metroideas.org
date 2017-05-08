@@ -13,6 +13,7 @@ description: 'The Metro Ideas Project is examining more than a dozen local, stat
   and federal datasets to answer a simple question: How much does it cost to educate
   a student in Hamilton County, Tennessee? The answer has important implications for
   elected officials, educators and the general public.'
+lead: "How much does it cost to educate a student in Hamilton County, Tennessee?"
 image:
   file: "/media/the-cost-of-education.jpg"
   alt: Boy walking up school steps
