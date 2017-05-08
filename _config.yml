@@ -1,6 +1,8 @@
 ---
 title: Metro Ideas Project
 timezone: America/New_York
+public: false
+description: 
 collections:
   posts:
     title: Articles
@@ -107,6 +109,7 @@ exclude:
 - bower.json
 - Gemfile*
 - gulpfile.js
+- gulp.config.js
 - package.json
 - README.md
 - LICENSE
