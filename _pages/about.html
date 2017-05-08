@@ -1,6 +1,7 @@
 ---
-layout: about
+layout: default
 permalink: /about/
+main: about
 ---
 
 {% assign currentStaff = site.authors | where_exp: "author", "author.current == true" | sort: "position" %}

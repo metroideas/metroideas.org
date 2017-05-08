@@ -1,6 +1,7 @@
 ---
-layout: blog
+layout: default
 permalink: /blog/
+main: blog
 ---
 
 {% assign posts = site.posts | where_exp: "post", "post.project == null" %}

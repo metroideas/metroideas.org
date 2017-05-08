@@ -60,6 +60,7 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: article
+    main: article
     author: []
     project: 
 - scope:
