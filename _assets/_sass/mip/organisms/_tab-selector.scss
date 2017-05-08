@@ -1,0 +1,111 @@
+.tab-selector {
+  margin: $half-gutter;
+  padding: $half-gutter;
+  border: 1px solid $blue;
+  
+  @media (min-width: $small) {
+    margin: 0;
+  }
+  
+  @media (min-width: $medium) {
+    @include grid-container;
+
+    display: flex;
+    align-items: center;
+
+    border-width: 0;
+    
+    padding: 0;
+  }
+}
+
+.tab-selector [role="tablist"][aria-orientation="vertical"] {
+  @include unstyled-list;
+}
+
+.tab-selector [role="tablist"][aria-orientation="vertical"] li {
+  margin-bottom: $fourth-gutter;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.tab-selector section > :last-child {
+  margin-bottom: 0;
+}
+
+.tab-selector [role="tabpanel"][aria-hidden="true"] {
+  display: none;
+}
+
+.tab-selector [role="tab"] {
+  padding-left: 0;
+  font-family: $sans-serif;
+  color: $black;
+  border-width: 0;
+}
+
+.tab-selector [role="tab"]:focus {
+  outline: 0;
+  border-bottom: 1px solid $blue;
+}
+
+.tab-selector [role="tab"]:hover,
+.tab-selector [role="tab"]:focus,
+.tab-selector [role="tab"][aria-selected="true"] {
+  color: $blue;
+}
+
+// Vertical orientation on displays > 600px
+@media (min-width: $medium) {
+  // Tablist width is 33% of container
+  .tab-selector [role="tablist"][aria-orientation="vertical"] {
+    @include grid-column(4);
+    @include padding($double-gutter * 2 null);
+    margin-bottom: 0;
+    padding-right: calc(#{$double-gutter} + 6px);
+    text-align: right;
+    border-right: 6px solid $lt-blue;
+  }
+
+  .tab-selector [role="tablist"][aria-orientation="vertical"] li {
+    margin-right: 0;
+    margin-bottom: $gutter * 1.5;
+    display: list-item;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  
+  // Tab panel is 66% width
+  .tab-selector [aria-orientation="vertical"] ~ [role="tabpanel"] {
+    @include grid-column(8);
+    @include padding(null $gutter);
+  }
+
+  .tab-selector [aria-orientation="vertical"] [role="tab"] {
+    @include h4;
+    font-weight: bold;
+  }
+
+  // Far right strong border on selected tab
+  .tab-selector [aria-orientation="vertical"] [role="tab"][aria-selected="true"] {
+    position: relative;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: $gutter * -1;
+      right: calc(#{$double-gutter * -1} - 12px);
+      height: calc(100% + #{$double-gutter});
+      width: 100%;
+      border-right: 6px solid $blue;
+    }
+  }
+}
+
+
+
+

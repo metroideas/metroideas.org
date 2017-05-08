@@ -1,0 +1,53 @@
+// Text inputs
+@mixin text-input-reset {
+  @include form-input-default;
+  @include padding($text-input-padding);
+  width: 100%;
+  height: $text-input-height;
+  
+  color: $black;
+  background: $subtle-gray;
+  border-radius: 0;
+  border: 1px solid $gray;
+  appearance: none;
+
+  &:active,
+  &:hover {
+    background: $white;
+    border-color: $blue;
+  }
+
+  &[disabled] {
+    background: $lt-gray;
+    color: $dk-gray;
+  }
+
+  &[invalid] {
+    border-color: $red;
+    background: rgba($red, 0.15);
+  }
+
+  &::placeholder {
+    padding-top: 1px;
+    color: $dk-gray;
+  }
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  @include text-input-reset;
+}
+
+// Textarea overrides
+textarea {
+  min-height: $textarea-min-height;
+
+  &::placeholder {
+    padding-top: 0;
+  }
+}
+
+label.error {
+  color: $red;
+}

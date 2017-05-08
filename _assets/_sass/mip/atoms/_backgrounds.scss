@@ -1,0 +1,35 @@
+// For demo use only
+.swatch {
+  width: $double-gutter * 1.5;
+  height: $double-gutter * 1.5;
+}
+
+// Primary colors
+.navy        { @include background-color($navy);        }
+.blue        { @include background-color($blue);        }
+.lt-blue     { @include background-color($lt-blue);     }
+.black       { @include background-color($black);       }
+.body        { @include background-color($body);        }
+.dk-gray     { @include background-color($dk-gray);     }
+.gray        { @include background-color($gray);        }
+.lt-gray     { @include background-color($lt-gray);     }
+.subtle-gray { @include background-color($subtle-gray); }
+.white       { @include background-color($white);       }
+
+// Secondary colors
+.green      { @include background-color($green);    }
+.beige      { @include background-color($beige);    }
+.alt-gray   { @include background-color($alt-gray); }
+.red        { @include background-color($red);      }
+.lime       { @include background-color($lime);     }
+
+// Gradients
+.gray-gradient  { @include gradient($subtle-gray, $lt-gray); }
+.blue-gradient  { @include gradient($blue, $navy); }
+.black-gradient { @include gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)); }
+
+// Background patterns
+.bg-dots {
+  background-image: url(/media/bg-dots@2x.png);
+  background-image: url(/media/bg-dots.svg);
+}

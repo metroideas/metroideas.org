@@ -1,0 +1,77 @@
+// Project card defaults
+[class^="project-card"] {
+  @include hero-image;
+  @include hero-padding;
+  @include hero-type-color;
+  @include vertical-margin-default;
+  display: flex;
+
+  // Trigger :active with JavaScript when .button:hover/active
+  // Changes gradient overlay color.
+  &.active:before, 
+  &:active:before {
+    @include gradient(rgba($blue,0.7), rgba($blue,0.7));
+  }
+}
+
+// Headline, paragraph and button alignment
+[class^="project-card"] > :first-child > :first-child {
+  margin-bottom: $half-gutter * 1.5;
+}
+
+[class^="project-card"] > :first-child > :last-child {
+  margin-bottom: 0;
+}
+
+
+// Short hero, centered text
+.project-card {
+  @include hero-short;
+  justify-content: center;
+  align-items: center;
+}
+
+.ie11 .project-card {
+  height: 40rem;
+}
+
+.project-card > :first-child {
+  text-align: center;
+}
+
+// Default hero height, left-aligned text
+// Before breakpoint, card spans display's full width w/ text pushed down
+.project-card-featured {
+  @include hero-default;
+  @include margin(null $half-gutter * -1);
+  align-items: flex-end;
+}
+
+// 1. Helps card background img contain long heading
+.project-card-featured > :first-child {
+  margin-top: $gutter; /* 1 */
+  text-align: left;
+}
+
+@media (min-width: $small) {
+  // Half container width
+  .project-card {
+    @include grid-column($columns / 2);
+  }
+
+  // Full container width
+  .project-card-featured {
+    @include grid-column($columns);
+    align-items: center;
+  }
+  
+  // 1-column left and right margin on header
+  .project-card-featured > :first-child {
+    margin-top: 0;
+    margin-left: calc(8.33333% - 2.16667rem + 4rem);
+    margin-right: calc(8.33333% - 2.16667rem + 4rem);
+  }
+}
+
+
+

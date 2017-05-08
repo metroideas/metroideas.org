@@ -1,0 +1,61 @@
+ul,
+ol,
+dl {
+  @include vertical-margin-default;
+  line-height: $base-line-height;
+}
+
+// ul and ol use li:before content for markers
+// instead of the default bullets and numbering
+ul,
+ol {
+  padding-left: 0;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+// Custom counter for ordered lists
+ol {
+  counter-reset: custom-decimal-counter;
+}
+
+// List items are preceded by ~30px of margin
+// 15px precedes the li element
+// The other 15px follows li:before
+// 
+// 1. Compensates for period after the counter  
+ul li,
+ol li {
+  margin-left: 1.5rem;
+}
+
+ul li:before {
+  content: "·";
+  font-weight: 700;
+  margin-right: 1.5rem;
+}
+
+ol li:before {
+  content: counter(custom-decimal-counter)'.';
+  counter-increment: custom-decimal-counter;
+  margin-right: 1rem; /* 1 */
+}
+
+// Definitions line up with ul and ol items
+dd {
+  margin-left: 3.5rem;
+}
+
+// Long list items have default vertical margin
+// Use with items that longer than one line
+.long-list li {
+  @include vertical-margin-default;
+}
+
+.unstyled-list {
+  @include unstyled-list;
+}
+
+.inline-list {
+  @include inline-list;
+}

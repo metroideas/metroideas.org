@@ -1,0 +1,96 @@
+// Full-width button on displays < $small
+form.block button {
+  width: 100%;
+}
+
+// Keep default input width (auto)
+input.default {
+  width: auto;
+}
+
+@media (min-width: $small) {
+  // Clearfix
+  form.inline,
+  form.block {
+    @include grid-container;
+  }
+
+  // Wrap input groups in a div; Add optional column classes
+  form.inline div {
+    display: inline-block;
+  }
+
+  form.inline input {
+    width: 100%;
+  }
+
+  form.inline div[class*="span"] ~ button,
+  form.inline div[class*="span"] ~ div > button {
+    margin-top: 2.2rem;
+  }
+
+  form.block button {
+    width: auto;
+    margin-top: $half-gutter;
+  }
+}
+
+// Description form
+.description-form {
+  @include vertical-margin-default;
+  border: 1px solid $lt-gray;
+}
+
+.description-form form,
+.description-form .description {
+  padding: $gutter $half-gutter;
+}
+
+.description-form .description {
+  text-align: center;
+}
+
+.description-form .description p {
+  margin-bottom: 0;
+}
+
+.description-form form {
+  border-top: 1px solid $lt-gray;
+}
+
+.description-form form div {
+  margin-bottom: $fourth-gutter;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $small) {
+  .description-form {
+    display: flex;
+  }
+  
+  .description-form form,
+  .description-form .description {
+    width: 50%;
+  }
+
+  .description-form .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include padding($double-gutter);
+    text-align: left;
+  }
+
+  .description-form .description > :first-child {
+    margin-bottom: $half-gutter;
+  }
+  
+  .description-form form {
+    @include padding($double-gutter $gutter);
+    border-top-width: 0;
+    border-left: 1px solid $lt-gray;
+  }
+}

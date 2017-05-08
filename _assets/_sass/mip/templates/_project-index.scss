@@ -1,0 +1,38 @@
+// Main: Same as homepage
+main.project-index {
+  @include section-margin-default;
+
+  @media (min-width: $medium) {
+    margin-top: $default-section-spacing;
+  }
+}
+
+main.project-index .description {
+  @include single-column(1000px);
+  @include vertical-margin-default;
+  @include margin(null $half-gutter);
+  @include padding($gutter $half-gutter);
+
+  text-align: center;
+  border: 1px solid $lt-gray;
+
+  @media (min-width: $medium) {
+    @include section-margin-default;
+    @include margin(null auto);
+    @include padding($double-gutter $gutter);
+  }
+}
+
+main.project-index .description p {
+  @include vertical-margin-reset;
+}
+
+main.project-index .card-group:first-of-type {
+  @media (min-width: $medium) {
+    @include section-margin-default;
+  }
+}
+
+main.project-index .card-group:last-of-type {
+  margin-bottom: 0;
+}

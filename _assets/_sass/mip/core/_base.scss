@@ -1,0 +1,13 @@
+// Border-box sizing, 10px font base and font-smoothing for all elements
+html {
+  box-sizing: border-box;
+  font-size: $root-font-size;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,104 @@
+// Extend large container and grid
+footer[role="contentinfo"] {
+  @include container($large);
+}
+
+// Default style
+footer[role="contentinfo"] {
+  @include padding($gutter null);
+  font-family: $sans-serif;
+  font-size: $small-font-size;
+  color: $white;
+  background: transparent;
+  text-align: center;
+
+  a {
+    text-transform: uppercase;
+    color: $white;
+    border-width: 0;
+
+    &:focus,
+    &:hover {
+      border-bottom: 1px solid $white;  
+    }
+  }
+}
+
+// Reset list vertical margin
+footer[role="contentinfo"] ul {
+  @include vertical-margin-reset;
+}
+
+// Organization
+footer[role="contentinfo"] .organization {
+  line-height: $base-line-height;
+
+  address {
+    margin-top: $half-gutter;
+    font-style: normal;
+  }
+}
+
+// Nav
+footer[role="contentinfo"] nav {
+  @include margin($gutter null);
+
+  a {
+    line-height: 2;
+  }
+}
+
+// Social links
+footer[role="contentinfo"] .social {
+  li {
+    margin-right: $half-gutter;
+  }
+
+  li:last-of-type {
+    margin-right: 0;
+  }
+}
+
+// Switch to horizontal footer
+@media (min-width: $small) {
+  // Large centered flex container with clearfix
+  footer[role="contentinfo"] {
+    display: flex;
+    align-items: center;
+    height: 35rem;
+    text-align: left;
+  }
+
+  // Organization width
+  footer[role="contentinfo"] .organization {
+    @include grid-column(4);
+  }
+
+  // Nav and social icon width
+  footer[role="contentinfo"] nav,
+  footer[role="contentinfo"] .social {
+    @include grid-column(3);
+  }
+
+  // Social icon spacing
+  footer[role="contentinfo"] .social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      margin: 0;  
+    }
+  }
+}
+
+@media (min-width: $medium) {
+  footer[role="contentinfo"] .organization {
+    @include grid-column(3);
+  }
+
+  footer[role="contentinfo"] nav,
+  footer[role="contentinfo"] .social {
+    @include grid-column(2);
+  }
+}

@@ -1,0 +1,111 @@
+main.project {
+  @include section-margin-default;
+}
+
+main.project > header,
+main.project > header .hero,
+main.project > header .full-screen,
+main.project .article-list,
+main.project .report {
+  @include section-margin-default;
+}
+
+main.project .report {
+  @include single-column($large);
+}
+
+main.project .article-preview {
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $small) {
+    @include grid-column(12);
+  }
+
+  @media (min-width: $medium) {
+    @include grid-column(10);
+  }
+}
+
+main.project .hero,
+main.project .full-screen  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.project .hero h1,
+main.project .full-screen h1  {
+  margin: 0;
+  text-align: center;
+}
+
+// Half-screen background on header intro
+@media (min-width: $medium) {
+  main.project > header {
+    border-bottom: 1px solid $lt-gray;
+  }
+
+  main.project > header .hero,
+  main.project > header .full-screen {
+    margin-bottom: $gutter;
+  }
+}
+
+@media (min-width: $medium) and (min-height: $small) {
+  // Shift description area upward
+  main.project .intro .description {
+    position: relative;
+    top: $gutter * -4;
+
+    margin-bottom: $gutter * -2;
+    padding-top: $gutter;
+    padding-right: $double-gutter;
+    padding-bottom: 0;
+    padding-left: 0;
+    z-index: 1;
+    background: $white;
+  }
+  
+  // Backfill to the left of description area
+  main.project .intro .description:before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 200%;
+    height: $gutter * 4; // Same height as upward shift
+    z-index: -1;
+    background: $white;
+  }
+}
+
+main.project .report .hero-short {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main.project .intro h2 {
+  @media (min-width: $small) {
+    @include h1;
+  }
+}
+
+main.project .report .hero-short {
+  @include header-spacing;
+}
+
+main.project .report h2 {
+  @media (min-width: $small) {
+    @include h1;
+  }
+}
+
+main.project .supplemental .meta-title {
+  margin-bottom: $gutter;
+}

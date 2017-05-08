@@ -1,0 +1,221 @@
+// Vertical layout
+main.article {
+  margin: 0;
+
+  @media (min-width: $medium) {
+    @include margin(null null $default-section-spacing);
+  }
+}
+
+main.article .copy,
+main.article .profile {
+  @include section-margin-default;
+}
+
+main.article .copy {
+  margin-top: $gutter;
+
+  @media (min-width: $medium) {
+    margin-top: $default-section-spacing;
+  }
+}
+
+main.article .profile {
+  margin-top: $double-gutter;
+}
+
+// Horizontal layout
+main.article header:first-of-type,
+main.article .copy,
+main.article .profile {
+  @include single-column($small);
+}
+
+main.article .related {
+  @include single-column(1000px);
+}
+
+// Hero section
+main.article .hero {
+  @include padding(null 0);
+
+  display: flex;
+  align-items: flex-end;
+}
+
+main.article .hero a {
+  border-color: $white;
+}
+
+// Header spacing
+main.article header:first-of-type {
+  @include header-spacing;
+}
+
+main.article .byline,
+main.article .profile,
+main.article .related {
+  font-family: $sans-serif;
+}
+
+// Copy vertical spacing
+// ~30px between each element sans headings
+main.article .copy > * {
+  margin-bottom: $gutter * 1.5;
+}
+
+main.article .copy h2,
+main.article .copy h3,
+main.article .copy h4,
+main.article .copy caption {
+  @include h4;
+  margin-bottom: $fourth-gutter;
+}
+
+main.article .copy > :last-child {
+  margin-bottom: 0;
+}
+
+// Aside
+main.article .copy aside {
+  @include padding($gutter $half-gutter);
+  border: 1px solid $lt-gray;
+
+  @media (min-width: $small) {
+    @include padding(null $gutter);  
+  }
+}
+
+main.article .copy aside > :first-child {
+  margin-top: 0;
+}
+
+main.article .copy aside > :last-child {
+  margin-bottom: 0;
+}
+
+// Author profile
+main.article .profile {
+  @include padding($half-gutter)
+  border: 1px solid rgba($blue, 0.5);
+  
+  @media (max-width: $small) {
+    @include margin(null $half-gutter);
+  }
+
+  @media (min-width: $small) {
+    @include padding($gutter * 1.5 $gutter);
+    display: flex;
+    align-items: center;
+  }
+}
+
+main.article .profile .description {
+  margin-top: $gutter;
+
+  @media (min-width: $small) {
+    margin-top: 0;
+  }
+}
+
+main.article .profile a {
+  color: $blue;
+}
+
+main.article .profile p {
+  margin-top: $gutter * 1.5;
+  margin-bottom: 0;
+
+  @media (min-width: $small) {
+    margin-top: $fourth-gutter;
+  }
+}
+
+main.article .profile figure {
+  @include margin(0 $gutter 0 0)
+  float: left;
+
+  @media (min-width: $small) {
+    float: none !important;
+  }
+
+  @media (min-width: $medium) {
+    margin-left: -8.5rem;
+  }
+}
+
+main.article .profile img {
+  width: 8rem;
+  height: 8rem;
+
+  @media (min-width: $small) {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+main.article .profile .description > :first-child {
+  @include h3;
+  margin: 0;
+}
+
+// Related articles and tags
+main.article .related {
+  @include padding($gutter);
+
+  @media (min-width: $small) {
+    @include padding($gutter * 1.5 0);
+    display: flex;
+  }
+}
+
+main.article .related .related-articles,
+main.article .related .tags {
+  @media (min-width: $small) {
+    @include grid-column(5);
+    @include grid-push(1);
+    @include padding($half-gutter $gutter * 1.5);
+    border-left: 1px solid $lt-gray;
+  }
+}
+
+main.article .related .related-articles {
+  @media (min-width: $medium) {
+    @include grid-column(4);
+    @include grid-push(2);
+  }
+}
+
+main.article .related .tags {
+  margin-top: $gutter * 1.5;
+
+  @media (min-width: $small) {
+    margin-top: 0;
+  }
+}
+
+main.article .related ul  {
+  @include vertical-margin-reset;
+  padding: 0;
+}
+
+main.article .related-articles li {
+  margin-bottom: $fourth-gutter;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+main.article .related .tags li {
+  margin-left: 0;
+  margin-right: $fourth-gutter;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+main.article .related h2 {
+  @include h4;
+}

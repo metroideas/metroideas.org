@@ -1,0 +1,86 @@
+// Main
+main.homepage {
+  @include section-margin-default;
+
+  @media (min-width: $medium) {
+    margin-top: $default-section-spacing;
+  }
+}
+
+// Sections
+main.homepage .projects,
+main.homepage .rethink,
+main.homepage .blog {
+  @include section-margin-default;
+}
+
+// Roadblocks
+main.homepage .rethink,
+main.homepage .description-form {
+  @include margin(null $half-gutter);
+  @include single-column(1000px);
+}
+
+main.homepage .rethink h2,
+main.homepage .description-form h2 {
+  @media (min-width: $small) {
+    @include h1;
+  }
+}
+
+main.homepage .rethink {
+  @include padding($gutter $half-gutter);
+  border: 1px solid $lt-gray;
+  text-align: center;
+
+  @media (min-width: $small) {
+    @include padding($double-gutter * 1.5 $gutter);
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+main.homepage .rethink figure {
+  @media (min-width: $small) {
+    display: flex;
+    justify-content: center;
+    margin-right: $half-gutter;
+  }
+}
+
+main.homepage .rethink object {
+  height: 12rem;
+
+  @media (min-width: $small) {
+    height: 18rem;
+  }
+}
+
+main.homepage .rethink header {
+  @include header-spacing;
+}
+
+main.homepage .description-form {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-color: $green;
+}
+
+main.homepage .description-form .description * {
+  color: $white;
+}
+
+// Homepage blog section
+main.homepage .blog > h2 {
+  @include h3;
+  margin-bottom: $half-gutter;
+  text-align: center;
+  
+
+  @media (min-width: $medium) {
+    @include h2;
+    @include vertical-margin-default;
+  }
+}

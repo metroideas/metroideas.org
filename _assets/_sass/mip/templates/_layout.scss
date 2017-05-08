@@ -1,0 +1,57 @@
+// Section vertical margins
+$default-section-spacing: $double-gutter * 1.5;
+
+@mixin section-margin-default {
+  & {
+    @include margin(0 null $gutter);
+
+    @media (min-width: $medium) {
+      @include margin(0 null $default-section-spacing);
+    }
+  }
+}
+
+$about-section-spacing: $double-gutter * 2.5;
+
+@mixin about-section-margin-default {
+  & {
+    @include margin(0 null $double-gutter);
+
+    @media (min-width: $medium) {
+      @include margin(0 null $about-section-spacing);
+    }
+  }
+}
+
+$vertical-shift: 8rem;
+
+@mixin shift-up-element($amount: $vertical-shift) {
+  & {
+    position: relative;
+    top: $amount * -1;
+    @include padding($gutter $double-gutter);
+    background: $white;  
+  }
+}
+
+@mixin shift-up-container($amount: $vertical-shift) {
+  margin-bottom: $amount * -1;
+}
+
+@mixin pseudo-outer-border($color) {
+  & {
+    position: relative;
+    overflow: none;
+  }
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: $gutter * -1;
+    left: $gutter * -1;
+    width: calc(100% + #{$gutter * 2});
+    height: calc(100% + #{$gutter * 2});
+    border: 1px solid $color;
+  }  
+  
+}
