@@ -1,0 +1,25 @@
+{% comment %}
+Renders byline with linked author profile(s) and date
+{% endcomment %}
+
+{% assign authors = page.author %}
+{% capture byline %}{% endcapture %}
+
+{% for title in authors %}
+  {% assign profile = site.authors | where_exp: 'author', 'author.title contains title' | first %}
+  {% capture anchor %}<a href="{{ profile.url}}">{{ profile.title }}</a>{% endcapture %}
+  
+  {% if forloop.first %}
+    {% capture byline %}{{ byline }}{{ anchor }}{% endcapture %}
+  {% elsif forloop.last %}
+    {% capture byline %}{{ byline }} and {{ anchor }}{% endcapture %}
+  {% else %}
+    {% capture byline %}{{ byline }}, {{ anchor }}{% endcapture %}
+  {% endif %}
+{% endfor %}
+
+{% if authors.size > 0 %}
+<time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time> — {{ byline }}
+{% else %}
+<time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time>
+{% endif %}
