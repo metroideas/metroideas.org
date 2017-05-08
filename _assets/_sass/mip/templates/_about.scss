@@ -284,8 +284,8 @@ main.about .team {
     }
 
     .box-list {
-      @include grid-column(4);
-      @include grid-push(2);
+      @include grid-column(5);
+      @include grid-push(1);
     }
   }
 }
