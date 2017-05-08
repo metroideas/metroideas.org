@@ -49,7 +49,7 @@ defaults:
     path: ''
     type: authors
   values:
-    layout: author
+    layout: profile-page
     current: true
     role: 
     email: 
