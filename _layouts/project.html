@@ -1,3 +1,99 @@
 ---
-layout: default
+layout: critical
 ---
+
+{% assign project = page %}
+
+<style>
+  #project-hero {
+    background-image: url('{{ project.image.file }}');
+  }
+</style>
+
+{% include navigation/transparent-banner.html %}
+
+<main class="project" role="main" id="main">
+  <header class="full-screen" id="project-hero">
+    <div class="medium-container">
+      <h1 class="large-display">{{ project.title }}</h1>
+    </div>
+  </header>
+
+  <section class="intro container">
+    <div class="description span-7">
+      {{ content }}
+    </div>
+    <div class="offset-1 span-4">
+      {% include sharing-widget.html %}
+    </div>
+  </section>
+  
+  {% if project.article.size > 0 %}
+  <section class="article-list container">
+    <h2 class="whole">Our research</h2>
+    
+    {% for title in project.article %}
+      {% for post in site.posts %}
+        {% if post.title == title %}
+          {% include article/preview.html post=post %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </section>
+  {% endif %}
+  
+  <section class="supplemental container">
+    <div class="span-5">
+      {% if project["further reading"] %}
+        <h2 class="meta-title">Further reading</h2>
+        {% for item in project["further reading"] %}
+          <article>
+            <h3>
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </h3>
+            <p>{{ item.description }}</p>
+          </article>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="offset-2 span-5">
+      <h2 class="meta-title">About this project</h2>
+      
+      {% if project.about %}
+        <p>{{ project.about }}</p>
+      {% endif %}
+      
+      <ul class="box-list">
+        {% for title in project.author %}
+          <li>
+            {% assign profile = site.authors | where_exp: "author", "author.title contains title" | first %}
+            <a href="{{ profile.url }}" class="box">
+              <div class="description">
+                {{ profile.title }}<br><span class="meta-title">{{ profile.role }}</span>
+              </div>
+              <span class="icon-arrow"></span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% if project.downloads %}
+      <h2 class="meta-title">Data and documents</h2>
+        <ul class="box-list">
+          {% for item in project.downloads %}
+          <li>
+            <a href="{{ item.file }}" class="box" download>
+              <span class="icon-arrow"></span>
+              <div class="description">
+                {{ item.title }}
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </section>
+</main>
+
+{% include navigation/footer.html %}
