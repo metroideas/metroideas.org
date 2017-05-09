@@ -44,7 +44,7 @@ layout: critical
   
   <section class="supplemental container">
     <div class="span-5">
-      {% if project["further reading"] %}
+      {% if project["further reading"].size > 1 %}
         <h2 class="meta-title">Further reading</h2>
         {% for item in project["further reading"] %}
           <article>
@@ -77,7 +77,7 @@ layout: critical
         {% endfor %}
       </ul>
 
-      {% if project.downloads %}
+      {% if project.downloads.size > 1 %}
       <h2 class="meta-title">Data and documents</h2>
         <ul class="box-list">
           {% for item in project.downloads %}
