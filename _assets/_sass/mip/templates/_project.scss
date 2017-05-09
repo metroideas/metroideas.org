@@ -3,8 +3,8 @@ main.project {
 }
 
 main.project > header,
-main.project > header .hero,
-main.project > header .full-screen,
+main.project > header.hero,
+main.project > header.full-screen,
 main.project .article-list,
 main.project .report {
   @include section-margin-default;
@@ -48,8 +48,8 @@ main.project .full-screen h1  {
     border-bottom: 1px solid $lt-gray;
   }
 
-  main.project > header .hero,
-  main.project > header .full-screen {
+  main.project > header.hero,
+  main.project > header.full-screen {
     margin-bottom: $gutter;
   }
 }
