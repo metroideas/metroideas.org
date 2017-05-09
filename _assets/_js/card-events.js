@@ -28,6 +28,11 @@ var mip = window.mip;
           $.toggleClass(project, 'active');
         }, false);
       });
+
+      // Remove project card's active class on button click
+      button.addEventListener('click', function(e) {
+        $.toggleClass(project, 'active');
+      }, false);
     });  
   }
 })(mip);
