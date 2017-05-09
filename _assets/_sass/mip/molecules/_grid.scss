@@ -1,0 +1,87 @@
+// Demo only
+.cell {
+  @include vertical-margin-default;
+  @include h4;
+  padding: $half-gutter 0;
+  font-family: $sans-serif;
+  text-align: center;
+  line-height: $heading-line-height;
+  background: $subtle-gray;
+}
+
+// Fixed width containers
+.container {
+  @include container($large);
+}
+
+// Grid-aligned containers
+.large-container {
+  @include single-column($large);
+}
+
+.medium-container {
+  @include single-column($medium);
+}
+
+.small-container {
+  @include single-column($small);
+}
+
+// Clearfix
+.grid,
+.row {
+  @include grid-container;
+}
+
+// Columns
+.whole {
+  @media (min-width: $small) {
+    @include grid-column($columns * 1);
+  }
+}
+
+.half {
+  @media (min-width: $small) {
+    @include grid-column($columns / 2);  
+  }
+}
+
+.third {
+  @media (min-width: $small) {
+    @include grid-column($columns / 3);  
+  }
+}
+
+.fourth {
+  @media (min-width: $small) {
+    @include grid-column($columns / 2);  
+  }
+  
+  @media (min-width: $medium) {
+    @include grid-column($columns / 4);  
+  }
+}
+
+// .span-x and .offset-x only applied on displays > than 600px
+@media (min-width: $small) {
+  @for $i from 1 through $columns {
+    .span-#{$i} {
+      @include grid-column($i);
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .offset-#{$i} {
+      @include grid-push($i);
+    }
+  }
+  
+  // Centers children
+  .grid.center > *,
+  .row.center > * {
+    @include margin(null auto);
+    float: none;
+  }
+}
+
+

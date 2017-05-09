@@ -1,0 +1,17 @@
+{% comment %}
+Author profile section(s) for the end of an article. Accommodates multiple authors.
+{% endcomment %}
+
+{% for byline in page.author %}
+  {% assign author = site.authors | where_exp: 'author', 'author.title contains byline' | first %}
+  <section class="profile">
+    <figure>
+      <img src="{{ author.image.file }}" alt="{{ author.title }}" class="avatar" aria-hidden="true">
+    </figure>
+    <div class="description">
+      <h2><a href="{{ author.url }}">{{ author.title }}</a></h2>
+      <span class="meta-title">{{ author.role }}</span>
+      <p>{{ author.description }}</p>
+    </div>
+  </section>
+{% endfor %}

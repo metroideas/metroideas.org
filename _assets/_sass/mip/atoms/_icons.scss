@@ -1,0 +1,61 @@
+// .brand sets dimensions for logo inside object
+// .logo* uses background-image property
+.brand,
+[class^="logo"] {
+  width: 134px;
+  height: 66px;
+}
+
+.logo {
+  background: url("/media/logo@2x.png");
+  background: url("/media/logo.svg");
+}
+
+.logo-transparent {
+  background: url("/media/logo-transparent@2x.png");
+  background: url("/media/logo-transparent.svg");
+}
+
+[class^="logo"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-list {
+  @include inline-list;
+  @include padding($fourth-gutter null);
+}
+
+.icon-list li {
+  margin-right: $half-gutter;
+}
+
+.icon-list li:last-of-type {
+  margin-right: 0;
+}
+
+// .icon styles inline svg icons
+.icon {
+  border-width: 0 !important;
+}
+
+// Icons have a white fill by default
+.icon path {
+  fill: $white;
+}
+
+// Black fill
+.icon.black path {
+  fill: $black;
+}
+
+.icon.black {
+  background: transparent;
+}
+
+.icon:hover path,
+.icon:active path,
+.icon:focus path {
+  fill: $blue;
+}

@@ -1,0 +1,47 @@
+// Large container with clearfix and pseudo element border
+.card-group {
+  @include container($large);
+}
+
+// 1. Flex stretches card height, but width controlled by card defaults
+@media (min-width: $small) {
+  .card-group {
+    display: flex; /* 1 */
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+
+  .card-group .card {
+    flex: 0 0 auto; /* 1 */
+  }
+}
+
+// Pseudo element border appears on displays larger than 800px
+@media (min-width: $medium) {
+  .card-group {
+    position: relative;
+    @include vertical-margin-default;
+  }
+
+  .card-group:before {
+    content: "";
+      
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    display: block;
+    margin-top: $double-gutter;
+    width: calc(100%);
+    height: calc(100% - #{$gutter * 4});
+    border: 1px solid $blue;
+  }
+  
+  // Remove card's default vertical margin
+  .card-group .card,
+  .card-group .project-card,
+  .card-group .project-card-featured {
+    @include vertical-margin-reset;
+  }
+}

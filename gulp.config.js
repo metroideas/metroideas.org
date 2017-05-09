@@ -37,5 +37,14 @@ module.exports = {
     '_site',
     'css',
     'js'
+  ],
+
+  // Source order for compiled main.js
+  concatJS: [
+    // 'node_modules/feature.js/feature.js',
+    'node_modules/smooth-scroll/src/js/smooth-scroll.js',
+    '_assets/_js/utilities.js',
+    '_assets/_js/*.js',
+    '_assets/_js/mip.js'
   ]
 }

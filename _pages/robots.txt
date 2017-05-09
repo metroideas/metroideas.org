@@ -1,9 +1,16 @@
 ---
-permalink: "/robots.txt"
+permalink: robots.txt
 ---
+{% comment %}
+robots.txt output depends on jekyll.environment and site.public
+{% endcomment %}
 
 # www.robotstxt.org/
 
-# Allow crawling of all content
+{% if jekyll.environment == "production" and site.public %}
+User-agent: *
+Disallow:
+{% else %}
 User-agent: *
 Disallow: *
+{% endif %}

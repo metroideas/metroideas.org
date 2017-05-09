@@ -1,14 +1,45 @@
 ---
 layout: default
 ---
+{% assign category = page.categories | first %}
 
+<!-- Hero background-image paths -->
+<style>
+  .hero {
+    {% if page.image.file %}
+      background-image: url({{ page.image.file }});
+    {% else %}
+      background-image: url("/media/bg-dots.svg") repeat;
+      background-size: auto auto;
+      background-color: #208177;
+    {% endif %}
+  }
+</style>
+
+<!-- Article body -->
 <article>
-  {% include article/variables.html %}
-  {% include article/header.html %}
-
-  {{ content }}
+  <div class="hero" id="{{ page.title | slugify }}">
+    <header>
+      {% if page.categories.size > 0 %}
+        <a href="/archives/category/{{ category | slugify }}" class="category">
+          {{ category }}
+        </a>
+      {% endif %}
+      
+      <h1 class="large-display">{{ page.title }}</h1>
+      <p class="byline">
+        {% include article/byline.html %}  
+      </p>
+    </header>
+  </div>
   
-  {% include article/footer.html %}
+  <!-- Content -->
+  <section class="copy">
+    {{ content }}
+  </section>
+  
+  <!-- Author profiles -->
+  {% include article/profile.html %}
+  <!-- Related articles and tags -->
+  {% include article/related.html %}
 </article>
-
-{% include article/related-articles.html %}

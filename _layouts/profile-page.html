@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+{% assign byline = page.title %}
+{% assign posts = site.posts | where_exp: "post", "post.author contains byline" %}
+
+<section class="bio container" id="bio">
+  <figure class="half">
+    <img src="{{ page.image.file }}" alt="{{ page.title }}" aria-hidden="true">
+  </figure>
+
+  <header class="half">
+    <h1>{{ page.title }}</h1>
+    <span class="meta-title">{{ page.role }}</span>
+    <p>{{ page.description }}</p>
+
+    <ul class="icon-list">
+      {% if page.facebook %}
+      <li>
+        <a href="http://facebook.com/{{ page.facebook }}" title="Facebook" class="icon black">
+        <span aria-hidden="true">{% include icons/facebook-round.svg %}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if page.twitter %}
+      <li>
+        <a href="http://twitter.com/{{ page.twitter }}" title="Twitter" class="icon black">
+        <span aria-hidden="true">{% include icons/twitter-round.svg %}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if page.instagram %}
+      <li>
+        <a href="http://instagram.com/{{ page.instagram }}" title="Instagram" class="icon black">
+        <span aria-hidden="true">{% include icons/instagram-round.svg %}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if page.github %}
+      <li>
+        <a href="http://github.com/{{ page.github }}" title="Github" class="icon black">
+        <span aria-hidden="true">{% include icons/github-round.svg %}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if page.email %}
+      <li>
+        <a href="mailto:{{ page.email }}" title="Email" class="icon black">
+        <span aria-hidden="true">{% include icons/email-round.svg %}</span>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </header>
+</section>
+
+<section class="articles container" id="articles">
+  <div class="whole">
+    <h2>Contributions</h2>
+    {% for post in posts %}
+      {% include article/preview.html post=post %}
+    {% endfor %}
+  </div>
+</section>

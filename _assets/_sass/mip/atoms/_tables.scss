@@ -1,0 +1,57 @@
+// Default responsive table has h4-style caption, striped rows and bolded th cells
+table {
+  @include vertical-margin-default;
+  table-layout: fixed;
+  width: 100%;
+  
+  font-family: $sans-serif;
+  font-size: $small-font-size;
+  line-height: 1;
+  text-align: left;
+
+  border-collapse: collapse;
+}
+
+// Table element typography
+thead,
+th,
+caption {
+  font-weight: bold;
+}
+
+caption {
+  @include h4;
+  @include vertical-margin-default;
+  text-align: left;
+}
+
+// Table element layout
+tr {
+  height: $table-row-height;
+}
+
+td,
+th {
+  @include padding($table-cell-padding);
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+// Table decoration
+thead {
+  border-bottom: 1px solid $gray;
+}
+
+// Table striping
+tr:nth-child(odd) {
+  background: $subtle-gray;
+}
+
+// Table header rows: No striping
+thead tr {
+  background: transparent !important;
+}

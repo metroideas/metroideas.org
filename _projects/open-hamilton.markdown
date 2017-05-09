@@ -9,6 +9,8 @@ position: 1
 published: true
 description: An open data policy would improve government transparency, accountability
   and efficiency in Hamilton County.
+lead: An open data policy would improve government transparency, accountability
+  and efficiency in Hamilton County.
 image:
   file: "/media/open-hamilton.jpg"
   alt: Hamilton County Courthouse south lawn
@@ -24,24 +26,20 @@ article:
 - Data-driven restaurant inspections
 - 'App: Explore local property data'
 - Hamilton County data inventory
-section:
-- title: Further reading
-  description: "[The Open Data Handbook](http://opendatahandbook.org)  \nThis comprehensive
-    guide provides common adoption practices and implementation steps.\n\n[Open Data
-    Policy Guidelines](http://sunlightfoundation.com/opendataguidelines/)  \nThe Sunlight
-    Foundation has extensive guidelines for identifying datasets to release\nand navigating
-    private vendors.\n\n[Video: How Leading Governments Measure Performance](https://www.youtube.com/watch?v=Yhb4IKRAfpY)
-    \ \nThree municipal officials talk about next steps for open government data\nafter
-    getting a portal online.\n\n[The Complex Relationship Between Data and Cities](http://www.citylab.com/tech/2016/05/the-complex-relationship-between-data-and-cities/483303/)
-    \ \nRichard Florida argues that \"nuanced human reasoning\" is needed to make\nbig
-    data work for cities."
-- title: About
-  description: |-
-    Metro Ideas Project prepared this toolkit during the summer and fall of 2016.
-
-    + [Jacqueline Homann](/staff/jacqueline-homann/), policy research director
-    + [David Morton](/staff/david-morton/), project editor
-    + [Abby Attia](/staff/abby-attia/), research assistant
+further reading:
+- title: The Open Data Handbook
+  url:  http://opendatahandbook.org
+  description: This comprehensive guide provides common adoption practices and implementation steps.
+- title: Open Data Policy Guidelines
+  url: http://sunlightfoundation.com/opendataguidelines/
+  description: The Sunlight Foundation has extensive guidelines for identifying datasets to release and navigating private vendors.
+- title: "Video: How Leading Governments Measure Performance"
+  url: https://www.youtube.com/watch?v=Yhb4IKRAfpY
+  description: Three municipal officials talk about next steps for open government data after getting a portal online.
+- title: The Complex Relationship Between Data and Cities
+  url: http://www.citylab.com/tech/2016/05/the-complex-relationship-between-data-and-cities/483303/
+  description: "Richard Florida argues that &ldquo;nuanced human reasoning&rdquo; is needed to make big data work for cities."
+about: Metro Ideas Project prepared this toolkit during the summer and fall of 2016.
 ---
 
 Transparency, accountability, efficiency — these are core values that should drive public service. A robust open data policy is one tool governments are increasingly adopting to meet them.

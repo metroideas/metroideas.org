@@ -1,0 +1,99 @@
+body {
+  font-family: $serif;
+  font-size: $base-font-size;
+  color: $body; 
+}
+
+p {
+  line-height: $base-line-height;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5,
+h6 {
+  @include heading-default;
+}
+
+h1, .h1 { @include h1; }
+h2, .h2 { @include h2; }
+h3, .h3 { @include h3; }
+h4, .h4 { @include h4; }
+
+// Vertical margins for block elements
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include vertical-margin-default;
+}
+
+small {
+  font-size: $small-font-size;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+  border-bottom: 1px solid $blue;
+  
+  & > h1,
+  & > h2,
+  & > h3,
+  & > h4,
+  h1 > &,
+  h2 > &,
+  h3 > &,
+  h4 > & {
+    @include anchor-heading;
+  }
+}
+
+// Font style resets
+address,
+cite {
+  font-style: normal;
+}
+
+// Small sans-serif for figcaption, labels, inputs, and meta-text
+figcaption,
+label,
+.caption,
+.meta-text,
+.meta-title {
+  @include margin(0 null);
+  font-size: $small-font-size;
+  font-family: $sans-serif;
+  line-height: 1;
+}
+
+// Uppercase gray meta text
+.meta-title {
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $dk-gray;
+}
+
+// Display headings when window is larger than $small
+@media (min-width: $small) and (min-height: $small) {
+  .large-display,
+  .display {
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+
+  .large-display {
+    font-weight: 800;
+    font-size: 5.6rem;
+  }
+
+  .display {
+    font-weight: 700;
+    font-size: 4.5rem;
+  }
+}

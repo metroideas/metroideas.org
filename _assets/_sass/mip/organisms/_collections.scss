@@ -1,0 +1,77 @@
+// Article preview widgets fit inside a clearfix container
+.article-preview {
+  @include vertical-margin-default;
+  border: 1px solid $lt-gray;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @include h2;
+    margin-bottom: $half-gutter;
+  }
+}
+
+.article-preview figure {
+  @include margin(0 null);
+  position: relative;
+}
+
+.article-preview figcaption {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;  
+  color: $white;
+}
+
+.article-preview .description {
+  padding: $half-gutter;
+}
+
+.article-preview .description p {
+  @include vertical-margin-reset;
+}
+
+.article-preview .category {
+  padding: 0;
+  color: $dk-gray;
+  font-weight: normal;
+  background: transparent;
+}
+
+@media (min-width: $medium) {
+  .article-preview {
+    display: flex;
+    align-items: center;
+    border-width: 0;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      @include h1;
+    }
+  }
+
+  .article-preview figure {
+    flex: 1 0 auto;
+    max-width: 450px;
+    margin-right: $half-gutter;
+  }
+
+  .article-preview figcaption {
+    right: 0;
+    bottom: 0;
+    padding: 7px;
+    color: $body;
+    background: $white;
+  }
+
+  .article-preview .description {
+    flex: 0 1 auto;
+    margin-left: $half-gutter;
+  }
+}
+
+
+

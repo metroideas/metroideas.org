@@ -1,0 +1,33 @@
+// .visually-hidden for invisible but audible elements
+// via http://a11yproject.com/posts/how-to-hide-content/
+.visually-hidden { 
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button { display: none !important; } 
+
+// .wider child pops out of the parent container by ~160px
+.wider {
+  $wider: strip-unit($double-gutter) * 4px;
+  
+  @media (min-width: $medium) {
+    @include margin(null $double-gutter * -2);
+    @include padding(null $half-gutter);
+    
+    position: relative;
+    width: calc(100% + $double-gutter * 2);
+
+    & > * {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+// Main
+main.profile-page {
+  @include section-margin-default;
+
+  @media (min-width: $medium) {
+    margin-top: $default-section-spacing;
+  }
+}
+
+main.profile-page .article-preview:last-of-type {
+  margin-bottom: 0;
+}
+
+main.profile-page .bio {
+  @include vertical-margin-default;
+
+  @media (min-width: $small) {
+    @include section-margin-default;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// On displays > 800px, shift description column left
+main.profile-page .bio > :last-child {
+  @media (min-width: $medium) {
+    @include grid-shift(-1);
+    margin-left: 0;
+    padding: $gutter * 1.5 $double-gutter;
+    background: $white;
+  }
+}
+
+main.profile-page .bio .icon-list {
+  @include vertical-margin-reset;
+}
+
+// Full bleed profile image on small screens only
+main.profile-page .bio figure {
+  @media (max-width: $small) {
+    @include margin(null $half-gutter * -1);  
+  }
+}
+
+// Bio styles
+main.profile-page .bio figure,
+main.profile-page .bio h1 {
+  @include vertical-margin-reset;
+}
+
+main.profile-page .bio p {
+  margin-top: $gutter;
+}
+
+// Typography
+main.profile-page .bio h1 {
+  @include h2;
+}
+
+main.profile-page .articles h2 {
+  @include h3;
+  margin-bottom: $half-gutter;
+  text-align: center;
+
+  @media (min-width: $small) {
+    @include h2;
+    margin-bottom: $gutter;
+    text-align: left;
+  }
+}
+

@@ -1,0 +1,37 @@
+{% comment %}
+Default sitewide footer
+{% endcomment %}
+
+<div class="black">
+  <footer role="contentinfo">
+    <div class="organization">
+      <div class="logo-transparent" aria-label="Metro Ideas Project"></div>
+      
+      <address>
+        1216 E. Main St., Suite 102<br>
+        Chattanooga, TN 37408
+      </address>
+
+      <a href="tel:423-405-1119">423-405-1119</a>
+    </div>
+
+    <nav>
+      <ul class="unstyled-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="https://metroideaslab.com">Lab</a></li>
+      </ul>
+    </nav>
+    
+    <div class="social">
+      <ul class="icon-list">
+        <li><a class="icon" href="http://facebook.com/{{ site.facebook }}" title="Facebook"><span aria-hidden="true">{% include icons/facebook-round.svg %}</a></span></li>
+        <li><a class="icon" href="http://twitter.com/{{ site.twitter }}" title="Twitter"><span aria-hidden="true">{% include icons/twitter-round.svg %}</a></span></li>
+        <li><a class="icon" href="http://instagram.com/{{ site.instagram }}" title="Instagram"><span aria-hidden="true">{% include icons/instagram-round.svg %}</a></span></li>
+        <li><a class="icon" href="mailto:{{ site.email }}" title="Email"><span aria-hidden="true">{% include icons/email-round.svg %}</a></span></li>
+      </ul>
+    </div>
+  </footer>
+</div>

@@ -1,44 +1,17 @@
 ---
+layout: critical
 ---
 
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>{% if page.title %}{{ page.title | append: " — " }}{% endif %}{{ site.title }}</title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+{% comment %}
+The default.html layout is used by most other layouts. It includes three landmark roles: banner, main and contentinfo.
 
-{% include head/robots.html %}
-{% include head/social.html %}
-{% include head/favicons.html %}
-{% include head/stylesheet.html %}
-{% include head/misc.html %}
-{% include head/modernizr.html %}
-</head>
-<body>
-<!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
+Default requires critical.html to load CSS, Javascript and other sitewide meta tags.
+{% endcomment %}
 
-<header role="banner">
-  {% include banner/logo.html %}
-  {% include banner/site-navigation.html %}
-</header>
+{% include navigation/banner.html %}
 
-<main role="main">
-{{ content }}  
+<main class="{{ page.main }}" role="main" id="main">
+{{ content }}
 </main>
 
-<footer role="contentinfo">
-  {% include footer/about.html %}
-  {% include footer/connect.html %}
-  {% include footer/mailchimp.html %}
-</footer>
-
-<!-- Page JavaScript -->
-<!-- Sitewide Javascript -->
-<!-- Analytics -->
-</body>
-</html>
+{% include navigation/footer.html %}

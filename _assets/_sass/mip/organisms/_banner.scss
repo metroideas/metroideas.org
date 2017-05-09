@@ -1,0 +1,318 @@
+$mobile-banner-height: 6rem;
+$button-height:        $mobile-banner-height - $gutter;
+$banner-height:        10rem;
+
+header[role="banner"] {
+  @include single-column($large);
+  @include padding($half-gutter null);
+  position: relative;
+  z-index: 10;
+  overflow: none; 
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: $mobile-banner-height;
+  
+  font-family: $sans-serif;
+  border-bottom: 1px solid $lt-gray;
+  background: transparent;
+}
+
+header[role="banner"] a {
+  border-width: 0;
+  color: $dk-gray;
+}
+
+header[role="banner"] ul {
+  @include unstyled-list;     
+  margin: 0;
+}
+
+header[role="banner"] [class^="logo"] {
+  height: $mobile-banner-height - $half-gutter;
+}
+
+// Skip navigation link appears on :focus 
+.skip-menu {
+  position: absolute;
+  left: -5000px;    
+}
+
+.skip-menu:focus {
+  top: $fourth-gutter;
+  left: 0;
+
+  height: $mobile-banner-height - $half-gutter;
+  line-height: $mobile-banner-height - $half-gutter;
+  vertical-align: middle;
+  
+  text-align: center;
+  color: $blue;
+  background: $white;
+}
+  
+// Menu toggle button
+.menu-toggle {
+  position: relative;
+  display: block;
+  width: $button-height;
+  height: $button-height;
+  margin-left: auto;
+  padding: 0;
+  background: transparent;
+  border-width: 0;
+}
+
+.menu-toggle:focus,
+.menu-toggle:active,
+.menu-toggle:hover {
+  box-shadow: none;
+  background: transparent;
+}
+
+.menu-toggle[aria-expanded="true"] {
+  background: $subtle-gray;
+}
+
+// Default hamburger button
+// Spans are absolutely positioned in 40x40 button
+.menu-toggle span {
+  position: absolute;
+  left: 5px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: $dk-gray;
+  transition: transform 250ms, top 100ms;
+  
+  &:nth-child(1) { top: 9px;  }
+  &:nth-child(2) { top: 19px; }
+  &:nth-child(3) { top: 29px; }
+}
+
+// Open hamburger button
+.menu-toggle[aria-expanded="true"] span {
+  // Move all spans to middle
+  & { top: 19px; }
+
+  // Rotate top and bottom to make X
+  &:nth-child(1) { transform: rotate(45deg); }
+  &:nth-child(3) { transform: rotate(-45deg); }
+
+  // Slide middle span offscreen to right
+  &:nth-child(2) {
+    height: 0;
+    transform: translate(5000px, 0);
+  }
+}
+
+// Nav menu default
+// 1. Height varies by device orientation: default is portrait
+header[role="banner"] nav {
+  position: absolute;
+  top: $mobile-banner-height;
+  left: -5000px;
+  z-index: 10;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% + #{$half-gutter});
+  height: calc(100vh - #{$mobile-banner-height * 2}); /* 1 */
+  @include margin(null $half-gutter * -1);
+
+  text-align: center;
+  background: $white;
+  transition: all 350ms;
+
+  @media(orientation: landscape) {
+    margin-left: $gutter * -1;
+    margin-right: $gutter * -1;
+    width: calc(100% + #{$gutter * 2});
+    height: calc(100vh - #{$mobile-banner-height}); /* 1 */
+  }
+}
+
+// Nav menu open
+.menu-toggle[aria-expanded="true"] ~ nav {
+  left: 0;
+}
+
+// Menu items are hidden when menu is closed.
+// This prevents tab focus from getting stuck on offscreen content
+.menu-toggle[aria-expanded="false"] ~ nav li {
+  display: none;
+}
+
+// Nav menu list items
+header[role="banner"] nav li {
+  @include h2;
+  font-weight: bold;
+  margin-bottom: $double-gutter;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (orientation: landscape) {
+    margin-bottom: $half-gutter;
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Horizontal banner nav on displays larger than 600px
+@media (min-width: $medium) {
+  // Change banner height
+  header[role="banner"] {
+    height: $banner-height;  
+  }
+  
+  // Reset logo size to _media.scss default
+  header[role="banner"] [class^="logo"] {
+    height: 66px;
+    background-size: contain;
+  }
+  
+  // .skip-menu anchor covers .logo
+  .skip-menu:focus {
+    top: $gutter * 0.75;
+    left: 0px;
+    
+    width: 145px;
+    height: 68px;
+    
+    padding-bottom: 1px;
+    
+    line-height: 68px;
+    font-weight: bold;
+  }
+  
+  // Hide hamburger button
+  .menu-toggle {
+    display: none;
+  }
+  
+  // Reset nav
+  header[role="banner"] nav {
+    position: static;
+    height: $banner-height;
+    width: auto;
+    margin-left: auto;
+    margin-right: 0;
+
+    background: transparent;
+  }
+  
+  // Menu list items
+  // 1. Make sure menu items are visible
+  header[role="banner"] nav li {
+    display: inline-block !important; /* 1 */
+    margin: 0 0 0 $menu-item-spacing - $half-gutter;
+    
+    font-size: $small-font-size;
+    text-align: left; 
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  
+  // Increase clickable area
+  // Requires pseudo element border-bottom
+  header[role="banner"] nav a {
+    @include padding($half-gutter $fourth-gutter);
+  }
+  
+  // Pseudo border-bottom on hover
+  header[role="banner"] nav a:hover,
+  header[role="banner"] nav a:focus,
+  header[role="banner"] nav a.current {
+    position: relative;
+    color: $blue;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: $gutter * 1.75;
+      left: 10%;
+      display: inline-block;
+      width: 80%;
+      border-bottom: 1px solid $blue;
+    }
+  }
+}
+
+@media (min-width: $large) {
+  header[role="banner"] {
+    @include padding(null 0);
+  }
+}
+
+.transparent-banner-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+header[role="banner"].transparent {
+  @media (max-width: $small) {
+    border-width: 0;
+  }
+}
+
+header[role="banner"].transparent .logo {
+  background: url("/media/logo-transparent@2x.png") no-repeat;
+  background: url("/media/logo-transparent.svg") no-repeat;
+}
+
+header[role="banner"].transparent nav {
+  background-color: transparent;
+
+  &:before {
+    background-image: linear-gradient(
+      -180deg, transparent 0%, rgba($black, 0.6) 15%, rgba($black, 1) 100%
+    );
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+header[role="banner"].transparent nav a {
+  color: $white;
+}
+
+header[role="banner"].transparent .menu-toggle span {
+  background-color: $white;
+}
+
+header[role="banner"].transparent .menu-toggle[aria-expanded="true"] span {
+  background-color: $dk-gray;
+}
+
+@media (min-width: $medium) {
+  header[role="banner"].transparent nav:before {
+    background-image: none;
+  }
+
+  header[role="banner"].transparent nav a:hover,
+  header[role="banner"].transparent nav a:focus,
+  header[role="banner"].transparent nav a.current {
+    color: $white;
+
+    &:after {
+      border-color: $white;
+    }
+  }
+}

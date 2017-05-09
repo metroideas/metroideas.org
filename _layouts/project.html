@@ -1,58 +1,99 @@
 ---
-layout: default
+layout: critical
 ---
 
 {% assign project = page %}
 
-<article class="project">
-<div class="category">
-  <a href="{{ page.categories[0] | slugify | prepend: "/archives/category/" }}">
-    {{ page.categories[0] }}
-  </a>
-</div>
-<h1>{{ project.title }}</h1>
-<p>{{ project.description }}</p>
-<p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | ap_datetime }}</time></p>
+<style>
+  #project-hero {
+    background-image: url('{{ project.image.file }}');
+  }
+</style>
 
-{% if page.image.file %}
-  <figure>
-    <img src="{{ page.image.file }}" alt="{{ page.image.alt }}">
-    {% if page.image.credit %}
-    <figcaption>
-      Source: {{ page.image.credit }}
-    </figcaption>
-    {% endif %}
-  </figure>
-{% endif %}
+{% include navigation/transparent-banner.html %}
 
-{% comment %}
-Render project overview via editor's primary content field 
-{% endcomment %}
+<main class="project" role="main" id="main">
+  <header class="full-screen" id="project-hero">
+    <div class="medium-container">
+      <h1 class="large-display">{{ project.title }}</h1>
+    </div>
+  </header>
 
-{% if page.content.size > 2 %}
-<section id="overview">
-  <h2>Overview</h2>
+  <section class="intro container">
+    <div class="description span-7">
+      {{ content }}
+    </div>
+    <div class="offset-1 span-4">
+      {% include sharing-widget.html %}
+    </div>
+  </section>
   
-  {{ content }}
-</section>
-{% endif %}
+  {% if project.article.size > 0 %}
+  <section class="article-list container">
+    <h2 class="whole">Our research</h2>
+    
+    {% for title in project.article %}
+      {% for post in site.posts %}
+        {% if post.title == title %}
+          {% include article/preview.html post=post %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </section>
+  {% endif %}
+  
+  <section class="supplemental container">
+    <div class="span-5">
+      {% if project["further reading"] %}
+        <h2 class="meta-title">Further reading</h2>
+        {% for item in project["further reading"] %}
+          <article>
+            <h3>
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </h3>
+            <p>{{ item.description }}</p>
+          </article>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="offset-2 span-5">
+      <h2 class="meta-title">About this project</h2>
+      
+      {% if project.about %}
+        <p>{{ project.about }}</p>
+      {% endif %}
+      
+      <ul class="box-list">
+        {% for title in project.author %}
+          <li>
+            {% assign profile = site.authors | where_exp: "author", "author.title contains title" | first %}
+            <a href="{{ profile.url }}" class="box">
+              <div class="description">
+                {{ profile.title }}<br><span class="meta-title">{{ profile.role }}</span>
+              </div>
+              <span class="icon-arrow"></span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
 
-{% comment %}
-Render project's report previews.
-Uses an article's title to match and generate preview from site.posts 
-{% endcomment %}
+      {% if project.downloads %}
+      <h2 class="meta-title">Data and documents</h2>
+        <ul class="box-list">
+          {% for item in project.downloads %}
+          <li>
+            <a href="{{ item.file }}" class="box" download>
+              <span class="icon-arrow"></span>
+              <div class="description">
+                {{ item.title }}
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </section>
+</main>
 
-{% for title in project.article %}
-  {% assign item = site.posts | where_exp: 'post', 'post.title contains title' | first %}
-  {% include index/preview.html item=item %}
-{% endfor %}
-
-<!-- Use project sections for downloads, resources, about, whatevs -->
-{% for section in project.section %}
-<section id="{{ section.title | slugify }}">
-  <h2>{{ section.title }}</h2>
-
-  {{ section.description | markdownify }}
-</section>
-{% endfor %}
-</article>
+{% include navigation/footer.html %}

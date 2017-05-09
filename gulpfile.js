@@ -15,7 +15,6 @@ var del          = require('del');
 var gulp         = require('gulp');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
-var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 
 // Local settings
@@ -118,24 +117,21 @@ gulp.task('rebuild-jekyll', ['build-jekyll'], function() {
 // Compile sass to minified & mapped css files
 gulp.task('sass', function() {
   browserSync.notify('Compiling stylesheet')
-  return gulp.src(paths.sass + '/**/*')
-    .pipe(sourcemaps.init())
+  return gulp.src(paths.sass + '/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.css))
     .pipe(browserSync.stream());
 });
 
 // Minify js files
+// List JavaScript dependencies in config.concatJS
 gulp.task('js', function() {
   browserSync.notify('Compiling JavaScript')
-  return gulp.src(paths.js + '/**/*')
-    .pipe(sourcemaps.init())
+  return gulp.src(config.concatJS)
     .pipe(concat('main.js'))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.script))
 })
 

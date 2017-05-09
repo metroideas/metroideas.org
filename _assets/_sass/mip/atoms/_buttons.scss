@@ -1,0 +1,98 @@
+// Button base
+// 1. Consistency between button and a.button
+@mixin button-base {
+  @include form-input-default;
+  display: inline-block; /* 1 */
+  
+  padding: $button-padding;
+  font-weight: bold;
+  
+  appearance: none;
+  background: none;
+  border: 1px solid transparent;
+  text-decoration: none; /* 1 */
+  
+  overflow: visible;
+  white-space: pre;
+  cursor: pointer;
+
+  &:hover  { box-shadow: 0 2px 4px 0 rgba($body, 0.40); }
+  &:active { box-shadow: 0 4px 10px 0 rgba($body, 0.40); }
+}
+
+// Button state mixins blend a darkener and primary color
+@mixin button-hover($primary-color) {
+  background: mix($gray, $primary-color, 10%);
+}
+
+@mixin button-active($primary-color) {
+  background: mix($gray, $primary-color, 15%);
+}
+
+// All button types have default blue and green variations
+// Default blue button
+#{$all-buttons} {
+  @include button-base;
+
+  background: $blue;
+  color: $white;
+  
+  &:hover  { @include button-hover($blue); }
+  &:active { @include button-active($blue); }
+}
+
+// Green variation
+#{$all-buttons} {
+  &.green {
+    background: $green;
+    color: $white;
+    
+    &:hover  { @include button-hover($green); }
+    &:active { @include button-active($green); }
+  }
+}
+
+.button {
+  // line-height: $default-input-height;
+}
+
+// Anchor buttons have .reverse, .transparent and .transparent-reverse variations
+.button.reverse {
+  color: $blue;
+  background: $white;
+}
+
+.button.transparent {
+  background: transparent;
+  color: $blue;
+  border: 1px solid $blue;
+
+  &:hover,
+  &:active { color: $white; }
+
+  &:hover  { @include button-hover($blue); }
+  &:active { @include button-active($blue); }
+
+  &[disabled] { border-color: $gray; }
+}
+
+.button.transparent-reverse {
+  background: transparent;
+  color: $white;
+  border: 1px solid $white;
+
+  &:hover,
+  &:active {
+    background: $white;
+    color: $blue;
+  }
+}
+
+// Disabled state for all buttons
+#{$all-buttons} {
+  &[disabled] {
+    pointer-events: none;
+    background: $subtle-gray;
+    color: $gray;
+  }
+}

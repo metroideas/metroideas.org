@@ -19,11 +19,7 @@ Renders byline with linked author profile(s) and date
 {% endfor %}
 
 {% if authors.size > 0 %}
-<p>
-  By {{ byline }} on <time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time>
-</p>
+<time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time> — {{ byline }}
 {% else %}
-<p>
-  Published on <time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time>
-</p>
+<time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time>
 {% endif %}

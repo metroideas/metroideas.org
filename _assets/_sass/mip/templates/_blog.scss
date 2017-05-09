@@ -1,0 +1,23 @@
+main.blog {
+  @include section-margin-default;
+
+  @media (min-width: $medium) {
+    margin-top: $default-section-spacing;
+  }
+}
+
+main.blog > :first-child > h1 {
+  @include h2;
+  @include margin($half-gutter null);
+  // text-align: center;
+
+  @media (min-width: $medium) {
+    @include vertical-margin-default;
+    @include h1;
+    text-align: left;
+  }
+}
+
+main.blog .article-preview:last-of-type {
+  margin-bottom: 0;
+}

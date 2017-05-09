@@ -1,0 +1,36 @@
+.tag-list {
+  @include inline-block-list;
+  @include padding($fourth-gutter);
+
+  li {
+    margin: $fourth-gutter;
+    line-height: 1;
+  }
+}
+
+// Box list groups
+.box-list {
+  @include unstyled-list;
+  border: 1px solid $lt-blue;
+}
+
+// Hide individual box borders
+.box-list .box {
+  border-color: transparent;
+}
+
+// Put borders on list items
+.box-list li, 
+.box-list li.box {
+  border-bottom: 1px solid $lt-blue;
+
+  &:last-of-type {
+    border-bottom-width: 0;
+  }
+}
+
+.box-list li,
+.box-list .box {
+  margin-top: 0;
+  margin-bottom: 0;
+}

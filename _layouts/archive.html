@@ -12,13 +12,14 @@ layout: default
 {% assign projects = site.projects | where_exp: 'project', 'project[type] contains title' | sort: "date" %}
 {% assign articles = site.posts | where_exp: 'article', 'article[type] contains title' | sort: "date" %}
 
+<div class="large-container">
 <h1>{{ page.title }} archive</h1>
 
 {% if projects.size != 0 %}
-<section id="projects">
+<section>
   <h2>Projects</h2>
   
-  <ul>
+  <ul class="unstyled-list">
   {% for project in projects %}
     <li>
       <a href="{{ project.url }}">
@@ -31,10 +32,10 @@ layout: default
 {% endif %}
 
 {% if articles.size != 0 %}
-<section id="articles">
+<section>
   <h2>Articles</h2>
 
-  <ul>
+  <ul class="unstyled-list">
   {% for article in articles %}
     <li>
       <a href="{{ article.url }}">
@@ -45,3 +46,4 @@ layout: default
   </ul>
 </section>
 {% endif %}
+</div>

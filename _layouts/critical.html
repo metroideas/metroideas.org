@@ -1,0 +1,33 @@
+---
+---
+{% comment %}
+This is the critical.html layout upon which all other layouts are built. It loads sitewide CSS, Javascript and other important meta tags.
+
+Unlike default.html, it does not include any primary landmark roles, such as banner, main or contentinfo (footer).
+
+Except in the case of custom page layouts and builds, you're probably looking for the default.html layout.
+{% endcomment %}
+<!doctype html>
+<html class="no-js" lang="en_us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% include head/favicon.html %}
+{% include head/social.html %}
+{% include head/css.html %}
+<!-- feature detection -->
+</head>
+<body>
+<!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+{{ content }}
+
+{% include scripts.html %}
+</body>
+</html>

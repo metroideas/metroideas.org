@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="164px" height="180px" viewBox="0 0 164 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Views" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-233.000000, -3546.000000)" fill="#3B71E8">
+            <g id="Idea-Section" transform="translate(0.000000, 2936.000000)">
+                <path d="M233,790 L233,610 L243.333972,610 L243.333972,790 L233,790 Z M263.592023,720.785995 L263.592023,610 L273.925995,610 L273.925995,720.785995 L263.592023,720.785995 Z M294.184046,790 L294.184046,610 L304.518018,610 L304.518018,790 L294.184046,790 Z M324.776069,790 L324.776069,610 L335.110041,610 L335.110041,790 L324.776069,790 Z M355.368091,790 L355.368091,610 L365.702064,610 L365.702064,790 L355.368091,790 Z M385.960114,720.785995 L385.960114,610 L396.294087,610 L396.294087,720.785995 L385.960114,720.785995 Z" id="Logo"></path>
+            </g>
+        </g>
+    </g>
+</svg>

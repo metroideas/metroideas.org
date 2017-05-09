@@ -1,0 +1,17 @@
+figure {
+  @include vertical-margin-default(0);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+img.round,
+img.avatar {
+  border-radius: 50%;
+}
+
+figure > a {
+  border-color: transparent;
+}

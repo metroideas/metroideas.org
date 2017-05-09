@@ -1,0 +1,46 @@
+// Indented with border to align with ul, ol bullets
+@mixin blockquote {
+  @include vertical-margin-default;
+  margin-left: 1.5rem;
+  padding: $gutter 1.5rem;
+  border-left: 1px solid $blue;
+  
+  // Left border extends slightly above blockquote body
+  // This ensures children with vertical margins don't make it enormous
+  & :first-child { margin-top: 0; }
+  & :last-child  { margin-bottom: 0; }
+}
+
+
+blockquote,
+.pullquote {
+  @include vertical-margin-default;
+  @include blockquote;
+}
+
+.pullquote :first-child {
+  @include h3;
+}
+
+// Automatic curly quotes
+.pullquote :first-child:before {
+  content: "“";
+}
+
+.pullquote :first-child:after {
+  content: "”";
+}
+
+.pullquote cite {
+  @include margin(0 null);
+  font-size: $small-font-size;
+  font-family: $sans-serif;
+  line-height: 1;
+  font-style: normal;
+  font-weight: bold;
+}
+
+// Automatic m-dash before cite source
+.pullquote cite:before {
+  content: "— ";
+}

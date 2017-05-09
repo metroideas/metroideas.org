@@ -1,0 +1,136 @@
+/* Layout mixins */
+
+// Default top/bottom margin with optional left/right
+@mixin vertical-margin-default($side-margin: null) {
+  @include margin(0 $side-margin $gutter);
+}
+
+// Reset top and bottom margin
+@mixin vertical-margin-reset {
+  @include margin(0 null);
+}
+
+// Centered grid container with clearfix
+@mixin container($size) {
+  $width: $size + (strip-unit($double-gutter) * $root-font-size); 
+
+  @include grid-container;
+  @include margin(null auto);
+  @include padding(null $half-gutter);
+  width: 100%;
+  max-width: $width;
+
+  @media (min-width: $small) {
+    @include padding(null 0);
+  }
+}
+
+// Centered single columns create grid-aligned containers w/o the extra markup
+@mixin single-column($width) {
+  @include grid-container;
+  @include padding(null $half-gutter);
+  max-width: $width;
+
+  @media (min-width: $small) {
+    @include margin(null auto);
+    @include padding(null 0);
+    width: calc(100% - #{$double-gutter});
+  }
+}
+
+// Sets top and bottom spacing on all header children except the first and last
+@mixin header-spacing {
+  & > * {
+    @include margin($half-gutter null)
+
+    @media (min-width: $small) {
+      @include margin($gutter null);
+    }
+  }
+
+  & > :first-child,
+  & > :last-child {
+    @include margin(0 null);
+  }
+}
+
+/*
+ * Typography
+ */
+
+// Default heading styles
+@mixin heading-default {
+  line-height: $heading-line-height;
+  font-family: $sans-serif;
+  color: $black;
+}
+
+// Heading font sizes
+@mixin h1 { font-size: 3.4rem; }
+@mixin h2 { font-size: 2.4rem; }
+@mixin h3 { font-size: 2.0rem; }
+@mixin h4 { font-size: 1.6rem; }
+
+// Anchor <> heading styles
+@mixin anchor-heading {
+  color: $black;
+  border-width: 0;
+}
+
+/*
+ * List resets
+ */
+
+// List resets remove child's left-margin and pseudo element content
+@mixin unstyled-list {
+  & li {
+    margin-left: 0;
+  }
+
+  & li:before {
+    content: "";
+    margin-right: 0;
+  }
+}
+
+// Same as unstyled-list-base with inline children
+@mixin inline-list {
+  @include unstyled-list;
+  
+  & li {
+    display: inline;
+  }
+}
+
+@mixin inline-block-list {
+  @include unstyled-list;
+
+  & li {
+    display: inline-block;
+  }
+}
+
+/*
+ * Form inputs
+ */
+
+// Form input default
+// 1. IE11 button and input alignment
+@mixin form-input-default {
+  @include margin($input-vertical-margin);
+  font-family: $sans-serif;
+  font-size: $small-font-size;
+  vertical-align: middle; /* 1 */
+}
+
+/*
+ * Backgrounds
+ */
+
+@mixin background-color($color) {
+  background: $color;
+}
+
+@mixin gradient($start-color, $end-color) {
+  background-image: linear-gradient(-180deg, $start-color 0%, $end-color 100%);
+}

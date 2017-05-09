@@ -1,0 +1,37 @@
+{% comment %}
+Generates article preview for included post variable.
+
+Usage:
+
+{% for post in site.posts %}
+  {% include article/preview.html post=post %}
+{% endfor %}
+{% endcomment %}
+
+{% assign post = includes.post %}
+{% assign link = post.url %}
+
+<article class="article-preview">
+  <figure>
+    <a href="{{ link }}">
+      {% if post.image.file %}
+        <img src="{{ post.image.file }}" alt="{{ post.image.alt }}">
+        {% if post.image.credit %}
+        <figcaption>{{ post.image.credit }}</figcaption>
+        {% endif %}
+      {% else %}
+        <img class="green" src="/media/bg-dots.svg" alt="" aria-hidden="true" style="height:250px;width:450px;display:block;">
+      {% endif %}
+    </a>
+  </figure>
+
+  <header class="description">
+    {% if post.categories.size > 0 %}
+    <span class="category">{{ post.categories | first }}</span>
+    {% endif %}
+    <h1>
+      <a href="{{ link }}">{{ post.title }}</a>
+    </h1>
+    <p>{{ post.description }}</p>
+  </header>
+</article>

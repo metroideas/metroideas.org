@@ -1,0 +1,379 @@
+// Typography
+// Heading scale down one on displays < 600px
+@media (max-width: $small) {
+  main.about h1 { @include h2; }
+  main.about h2 { @include h3; }
+  main.about h3 { @include h4; }
+}
+
+// SVG illustrations floated left on displays < 600px
+// Default dimensions on larger displays
+main.about svg,
+main.about object {
+  float: left;
+  width: 8rem;
+  height: 8rem;
+  margin-right: $gutter;
+  margin-bottom: $gutter;
+}
+
+main.about object {
+  @media (min-width: $medium) {
+    float: none;
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+// Layout
+// Section vertical flow
+// Default bottom margins
+// About page sections have more spacing than other pages
+main.about {
+  @include about-section-margin-default;
+}
+
+main.about .mission {
+  @include single-column($large);
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+
+  @media (min-width: $medium) {
+    margin-top: $about-section-spacing;
+    margin-bottom: $about-section-spacing;
+  }
+
+  @media (min-width: $medium) {
+    & {
+      @include container($large);
+      display: flex;
+      align-items: center;
+    }
+
+    svg {
+      float: none;
+      width: auto;
+      height: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+
+    .graphic {
+      @include grid-column(5)
+    }
+
+    .description {
+      @include grid-column(6);
+    }
+  }
+}
+
+// Keeps hero SVG from being clipped.
+main.about .mission svg {
+  overflow: visible;
+}
+
+// Fixes IE11 SVG sizing
+.ie11 main.about .mission svg {
+  @media (min-width: $small) {
+    height: 500px;
+  }
+}
+
+// Midsize cities section has hero and pseudo-border description shifted up
+main.about .midsize-cities {
+  margin-bottom: $gutter;
+
+  .container > :first-child {
+    margin-top: $gutter;
+  }
+
+  @media (min-width: $small) {
+    .container > :first-child {
+      @include grid-column(12);
+    }
+
+    h2 {
+      @include h1;
+    }
+  }
+
+  @media (min-width: $medium) {
+    & {
+      margin-bottom: $about-section-spacing;
+    }
+
+    .container {
+      @include shift-up-container;
+    }
+
+    .container > :first-child {
+      @include shift-up-element;
+      @include pseudo-outer-border($white);
+      @include grid-column(7)
+      @include grid-push(1);
+    }
+  }
+}
+
+main.about .goals {
+  @include container($large);
+  @include about-section-margin-default;
+  
+  h3 {
+    @include h4;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  [class^="goal-"] {
+    margin-bottom: $gutter;
+  }
+
+  @media (min-width: $small) {
+    h2, 
+    [class^="goal-"] {
+      @include grid-column(12);
+    }
+  }
+
+  @media (min-width: $medium) {
+    & {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    h2 {
+      width: 100%;
+      margin-bottom: $double-gutter;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    h3 {
+      margin-top: $gutter;
+      margin-bottom: $half-gutter;
+    }
+
+    [class^="goal-"] {
+      flex: 1;
+      margin-left: $double-gutter;
+      margin-right: $double-gutter;
+    }
+  }
+}
+
+main.about .outcomes {
+  @include single-column(1000px);
+  @include about-section-margin-default;
+  @include padding($gutter)
+
+  text-align: center;
+  background-color: $alt-gray;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $small) {
+    & {
+      @include padding($double-gutter $double-gutter * 1.5);
+    }
+
+    h2 {
+      @include h1;
+    }
+  }
+
+  @media (min-width: $medium) {
+    @include pseudo-outer-border($alt-gray);
+    @include padding($double-gutter * 2 null);
+    margin-bottom: $about-section-spacing + $double-gutter;
+  }
+}
+
+main.about .legal {
+  @include single-column(1000px);
+  @include about-section-margin-default;
+}
+
+main.about .creative-thinking {
+  @include container($large);
+  @include about-section-margin-default;
+
+  .hero {
+    width: calc(100% + #{$gutter});
+    @include margin(null $half-gutter * -1);
+  }
+
+  .description {
+    margin-top: $double-gutter;
+  }
+
+  .description p {
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: $small) {
+    .hero {
+      @include grid-column(12);
+    }
+
+    .description {
+      @include grid-column(12);
+    }
+  }
+
+  @media (min-width: $medium) {
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: $about-section-spacing;
+    }
+
+    .description object {
+      margin-right: $double-gutter;
+    }
+
+    .description > :last-child {
+      width: $small;
+      margin-left: $double-gutter;
+    }
+  }
+  
+  // Compensates for next section's vertical shift
+  @media (min-width: $large) {
+    padding-bottom: $vertical-shift;
+  }
+}
+
+main.about .team {
+  @include about-section-margin-default;
+  padding-bottom: $half-gutter;
+
+  @media (min-width: $small) {
+    h2 {
+      @include h1;
+    }
+
+    .description,
+    .box-list {
+      @include grid-column(6);
+    }
+  }
+  
+  // Vertical shift on figure
+  @media (min-width: $large) {
+    .container {
+      margin-top: $vertical-shift * -1;
+    }
+
+    figure {
+      @include shift-up-element
+
+      padding: 0 !important;
+      background-color: $alt-gray !important;
+    }
+
+    .box-list {
+      @include grid-column(5);
+      @include grid-push(1);
+    }
+  }
+}
+
+// Box and box list styles
+main.about .box,
+main.about .box:hover,
+main.about .box-list,
+main.about .box-list li {
+  border-color: transparent;
+}
+
+main.about .box {
+  background-color: rgba($white, 0.5);
+}
+
+main.about .box:hover {
+  background-color: $white;
+}
+
+main.about .contact-us {
+  @include single-column(1000px);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  form {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $small) {
+    .description-form {
+      border-width: 0;  
+    }
+    
+    form {
+      padding-left: $gutter * 2;
+    }
+
+    h2 {
+      @include h1;
+    }
+  }
+}
+
+// main.about SVG animation
+main.about .mission svg {
+  @media (min-width: $small) {
+    #top-box,
+    #middle-box,
+    #bottom-box {
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(.08,0,.94,1);
+      animation-duration: 12s;
+    }
+
+    #top-box {
+      animation-name: move-top;
+    }
+
+    #middle-box {
+      animation-name: move-middle;
+    }
+
+    #bottom-box {
+      animation-name: move-bottom;
+    }
+
+    @keyframes move-top {
+      0% { transform: translate(0px, 0px);}
+      40% { transform: translate(-10px, 4px);}
+      60% { transform: translate(-8px, 0px);}
+      100% { transform: translate(0px, 0px);}
+    }
+
+    @keyframes move-middle {
+      0% { transform: translate(0px, 0px);}
+      50% { transform: translate(-10px, -10px);}
+      70% { transform: translate(-8px, -5px);}
+      100% { transform: translate(0px, 0px); }
+    }
+
+    @keyframes move-bottom {
+      0% { transform: translate(0px, 0px);}
+      40% { transform: translate(6px, -5px);}
+      60% { transform: translate(3px, 0px);}
+      100% { transform: translate(0px, 0px);}
+    }
+  }  
+}
+  
+

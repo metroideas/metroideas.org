@@ -1,21 +1,21 @@
 {
-  "name": "beta-metroideas",
+  "name": "mip-starter",
   "version": "0.0.0",
-  "description": "Website redesign",
+  "description": "Jekyll, Node and Sass starter",
   "main": "gulpfile.js",
   "scripts": {
     "geminstall": "bundle install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metroideas/beta.metroideas.org.git"
+    "url": "git+https://github.com/metroideas/starter.git"
   },
   "author": "David Morton -- michaeldavidmorton@gmail.com -- @itypewords",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/metroideas/beta.metroideas.org/issues"
+    "url": "https://github.com/metroideas/starter/issues"
   },
-  "homepage": "https://github.com/metroideas/beta.metroideas.org#readme",
+  "homepage": "https://github.com/metroideas/starter#readme",
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "del": "^2.2.2",
@@ -31,6 +31,9 @@
   },
   "dependencies": {
     "bourbon": "^5.0.0-beta.7",
-    "normalize.css": "^5.0.0"
+    "bourbon-neat": "^2.0.0",
+    "feature.js": "^1.0.0",
+    "normalize.css": "^5.0.0",
+    "smooth-scroll": "cferdinandi/smooth-scroll"
   }
 }
