@@ -58,7 +58,6 @@ defaults:
     path: ''
     type: projects
   values:
-    published: false
     layout: project
     lead: 
     about: 
