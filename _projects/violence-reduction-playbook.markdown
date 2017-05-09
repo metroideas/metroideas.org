@@ -4,11 +4,10 @@ date: 2016-12-07 08:00:00 -05:00
 categories:
 - Criminal justice
 position: 0
-published: true
 description: Finding the right policy is the first step to curbing crime. We break
   down several popular options.
-lead: Finding the right policy is the first step to curbing crime. We break
-  down several popular options.
+lead: Finding the right policy is the first step to curbing crime. We break down several
+  popular options.
 image:
   file: "/media/violence-reduction-playbook.jpg"
   alt: Window with bullet holes
@@ -18,20 +17,27 @@ author:
 further reading:
 - title: What Works in Reducing Community Violence
   url: https://www.usaid.gov/sites/default/files/USAID-2016-What-Works-in-Reducing-Community-Violence-Final-Report.pdf
-  description: A report from the United States Agency for International Development looks at over 1,400 studies to identify what policies and strategies reduce community violence.
+  description: A report from the United States Agency for International Development
+    looks at over 1,400 studies to identify what policies and strategies reduce community
+    violence.
 - title: National Gang Center Program Matrix
   url: https://www.nationalgangcenter.gov/SPT/Program-Matrix
-  description: Matrix comparing a large collection of youth and gang crime prevention practices.
+  description: Matrix comparing a large collection of youth and gang crime prevention
+    practices.
 - title: Crime Solutions Database
   url: https://www.crimesolutions.gov/Programs.aspx
-  description: The National Institute of Justice database includes crime programs, best practices, and efficacy and evidence ratings.
+  description: The National Institute of Justice database includes crime programs,
+    best practices, and efficacy and evidence ratings.
 - title: Desistance and the Feared Self
   url: http://scholarlycommons.law.northwestern.edu/cgi/viewcontent.cgi?article=7339&context=jclc
-  description: Ray Paternoster and Shawn Bushway examine why people commit crimes and what may make them stop.
+  description: Ray Paternoster and Shawn Bushway examine why people commit crimes
+    and what may make them stop.
 - title: Reducing Group Related Violent Crime through Focused Deterrence
   url: http://www.smartpolicinginitiative.com/sites/all/files/resources/Reducing%20Group%20Related%20Violent%20Crime%20through%20Focused%20Deterrence%20in%20High%20Point%20NC.pdf
-  description: Researchers look at the stages of focused deterrence as it was implemented  in High Point, North Carolina.
-about: The Metro Ideas Project examined eight anti-crime policies, reviewed external research and interviewed national experts for the violence reduction playbook.
+  description: Researchers look at the stages of focused deterrence as it was implemented  in
+    High Point, North Carolina.
+about: The Metro Ideas Project examined eight anti-crime policies, reviewed external
+  research and interviewed national experts for the violence reduction playbook.
 ---
 
 Combating violence is one of the most complex and visible challenges cities face. Policy is an important tool to curbing crime, but choosing the right strategy revolves around many questions:

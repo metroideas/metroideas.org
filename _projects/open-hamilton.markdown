@@ -6,11 +6,10 @@ categories:
 tags:
 - Hamilton County
 position: 1
-published: true
 description: An open data policy would improve government transparency, accountability
   and efficiency in Hamilton County.
-lead: An open data policy would improve government transparency, accountability
-  and efficiency in Hamilton County.
+lead: An open data policy would improve government transparency, accountability and
+  efficiency in Hamilton County.
 image:
   file: "/media/open-hamilton.jpg"
   alt: Hamilton County Courthouse south lawn
@@ -28,17 +27,21 @@ article:
 - Hamilton County data inventory
 further reading:
 - title: The Open Data Handbook
-  url:  http://opendatahandbook.org
-  description: This comprehensive guide provides common adoption practices and implementation steps.
+  url: http://opendatahandbook.org
+  description: This comprehensive guide provides common adoption practices and implementation
+    steps.
 - title: Open Data Policy Guidelines
   url: http://sunlightfoundation.com/opendataguidelines/
-  description: The Sunlight Foundation has extensive guidelines for identifying datasets to release and navigating private vendors.
-- title: "Video: How Leading Governments Measure Performance"
+  description: The Sunlight Foundation has extensive guidelines for identifying datasets
+    to release and navigating private vendors.
+- title: 'Video: How Leading Governments Measure Performance'
   url: https://www.youtube.com/watch?v=Yhb4IKRAfpY
-  description: Three municipal officials talk about next steps for open government data after getting a portal online.
+  description: Three municipal officials talk about next steps for open government
+    data after getting a portal online.
 - title: The Complex Relationship Between Data and Cities
   url: http://www.citylab.com/tech/2016/05/the-complex-relationship-between-data-and-cities/483303/
-  description: "Richard Florida argues that &ldquo;nuanced human reasoning&rdquo; is needed to make big data work for cities."
+  description: Richard Florida argues that &ldquo;nuanced human reasoning&rdquo; is
+    needed to make big data work for cities.
 about: Metro Ideas Project prepared this toolkit during the summer and fall of 2016.
 ---
 

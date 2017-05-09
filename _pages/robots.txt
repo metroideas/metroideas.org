@@ -1,6 +1,7 @@
 ---
 permalink: robots.txt
 ---
+
 {% comment %}
 robots.txt output depends on jekyll.environment and site.public
 {% endcomment %}

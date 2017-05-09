@@ -1,8 +1,6 @@
 ---
 title: Metro Ideas Project
 timezone: America/New_York
-public: false
-description: 
 collections:
   posts:
     title: Articles
@@ -32,7 +30,7 @@ defaults:
       file: 
       caption: 
       credit: 
-      alt:
+      alt: 
 - scope:
     path: ''
     type: asides
@@ -47,7 +45,7 @@ defaults:
     current: true
     role: 
     email: 
-    twitter:
+    twitter: 
 - scope:
     path: ''
     type: posts
@@ -62,17 +60,18 @@ defaults:
   values:
     published: false
     layout: project
-    lead:
-    about:
+    lead: 
+    about: 
     article: []
-    "further reading":
-      - title:
-        url:
-        description:
+    further reading:
+    - title: 
+      url: 
+      description: 
     downloads:
-      - title:
-        file:
-
+    - title: 
+      file: 
+public: false
+description: 
 facebook: metroideas
 github: metroideas
 instagram: metroideas
