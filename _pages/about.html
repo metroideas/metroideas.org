@@ -199,24 +199,28 @@ main: about
       <p style="margin-bottom:2rem;">We are building an idea engine for America’s cities by designing and developing informed solutions to complex urban problems.</p>
       <p>If you’re looking for an innovative, research-based approach to an urban policy challenge, we’re here to help. Please contact us for more information.</p>
     </div>
-    <form class="block whole">
+    <form class="block whole" action="https://formspree.io/info@metroideas.org" method="POST">
       <div>
-        <label>Name</label><br>
-        <input type="text" placeholder="Name">
+        <label for="contact-us-name">Name</label><br>
+        <input type="text" id="contact-us-name" name="name" placeholder="Name">
       </div>
 
       <div>
-        <label>Email address</label><br>
-        <input type="email" placeholder="Email address">
+        <label for="contact-us-email-address">Email address</label><br>
+        <input type="email" id="contact-us-email-address" name="_replyto" placeholder="Email address">
       </div>
       
       <div>
-        <label>Message</label><br>
-        <textarea placeholder="Say hello"></textarea>
+        <label for="contact-us-message">Message</label><br>
+        <textarea id="contact-us-message" name="message" placeholder="Say hello"></textarea>
       </div>
       
+      <input type="hidden" name="_format" value="plain" aria-hidden="true">
+      <input type="hidden" name="_subject" value="Metro Ideas Project inquiry" aria-hidden="true">
+      <input type="text" name="_gotcha" style="display:none" aria-hidden="true">
+      
       <div>
-        <button>Send message</button>  
+        <button>Send message</button>
       </div>
     </form>
       
