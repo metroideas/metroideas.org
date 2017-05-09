@@ -15,26 +15,23 @@ image:
 author:
 - Peter Hagemeyer
 - David Morton
-section:
-- title: Further reading
-  description: "[What Works in Reducing Community Violence](https://www.usaid.gov/sites/default/files/USAID-2016-What-Works-in-Reducing-Community-Violence-Final-Report.pdf)
-    \ \nA report from the United States Agency for International Development looks
-    at over 1,400 studies to identify what policies and strategies reduce community
-    violence.\n\n[National Gang Center Program Matrix](https://www.nationalgangcenter.gov/SPT/Program-Matrix)
-    \ \nMatrix comparing a large collection of youth and gang crime prevention practices.\n\n[Crime
-    Solutions Database](https://www.crimesolutions.gov/Programs.aspx)  \nThe National
-    Institute of Justice database includes crime programs, best practices, and efficacy
-    and evidence ratings.\n\n[Desistance and the Feared Self](http://scholarlycommons.law.northwestern.edu/cgi/viewcontent.cgi?article=7339&context=jclc)
-    \ \nRay Paternoster and Shawn Bushway examine why people commit crimes and what\nmay
-    make them stop.\n\n[Reducing Group Related Violent Crime through Focused Deterrence](http://www.smartpolicinginitiative.com/sites/all/files/resources/Reducing%20Group%20Related%20Violent%20Crime%20through%20Focused%20Deterrence%20in%20High%20Point%20NC.pdf)
-    \ \nResearchers look at the stages of focused deterrence as it was implemented\nin
-    High Point, North Carolina."
-- title: About
-  description: |-
-    The Metro Ideas Project examined eight anti-crime policies, reviewed external research and interviewed national experts for the violence reduction playbook.
-
-    + [Peter Hagemeyer](/staff/peter-hagemeyer), research
-    + [David Morton](/staff/david-morton/), project editor
+further reading:
+- title: What Works in Reducing Community Violence
+  url: https://www.usaid.gov/sites/default/files/USAID-2016-What-Works-in-Reducing-Community-Violence-Final-Report.pdf
+  description: A report from the United States Agency for International Development looks at over 1,400 studies to identify what policies and strategies reduce community violence.
+- title: National Gang Center Program Matrix
+  url: https://www.nationalgangcenter.gov/SPT/Program-Matrix
+  description: Matrix comparing a large collection of youth and gang crime prevention practices.
+- title: Crime Solutions Database
+  url: https://www.crimesolutions.gov/Programs.aspx
+  description: The National Institute of Justice database includes crime programs, best practices, and efficacy and evidence ratings.
+- title: Desistance and the Feared Self
+  url: http://scholarlycommons.law.northwestern.edu/cgi/viewcontent.cgi?article=7339&context=jclc
+  description: Ray Paternoster and Shawn Bushway examine why people commit crimes and what may make them stop.
+- title: Reducing Group Related Violent Crime through Focused Deterrence
+  url: http://www.smartpolicinginitiative.com/sites/all/files/resources/Reducing%20Group%20Related%20Violent%20Crime%20through%20Focused%20Deterrence%20in%20High%20Point%20NC.pdf
+  description: Researchers look at the stages of focused deterrence as it was implemented  in High Point, North Carolina.
+about: The Metro Ideas Project examined eight anti-crime policies, reviewed external research and interviewed national experts for the violence reduction playbook.
 ---
 
 Combating violence is one of the most complex and visible challenges cities face. Policy is an important tool to curbing crime, but choosing the right strategy revolves around many questions:
@@ -52,31 +49,31 @@ The Metro Ideas Project created a rubric comparing eight anti-crime policies. Ou
   </thead>
   <tbody>
     <tr>
-      <td><a href="#focused-deterrence">Focused deterrence</a></td>
+      <td><a href="#focused-deterrence" data-scroll>Focused deterrence</a></td>
       <td>Focuses resources on a few individuals believed to be responsible for high levels of crime</td>
     </tr>
     <tr>
-      <td><a href="#cure-violence">Cure Violence</a></td>
+      <td><a href="#cure-violence" data-scroll>Cure Violence</a></td>
       <td>Treats violence as a public health issue through a network of volunteers, mediators and city officials</td>
     </tr>
     <tr>
-      <td><a href="#disorder-policing">Disorder policing</a></td>
+      <td><a href="#disorder-policing" data-scroll>Disorder policing</a></td>
       <td>Identifies and commits resources to high crime areas</td>
     </tr>
     <tr>
-      <td><a href="#school-based-programs">School-based programs</a></td>
+      <td><a href="#school-based- data-scrollprograms">School-based programs</a></td>
       <td>Uses schools and education programs to tackle root causes of violence</td>
     </tr>
     <tr>
-      <td><a href="#prison-programs">Prison programs</a></td>
+      <td><a href="#prison-programs" data-scroll>Prison programs</a></td>
       <td>Aims to curbs recidivism through prisoner education and counseling</td>
     </tr>
     <tr>
-      <td><a href="#minimum-sentencing-laws">Minimum sentencing laws</a></td>
+      <td><a href="#minimum-sentencing- data-scrolllaws">Minimum sentencing laws</a></td>
       <td>Assumes that severity of punishment deters crime</td>
     </tr>
     <tr>
-      <td><a href="#civil-gang-injunctions">Civil gang injunctions</a></td>
+      <td><a href="#civil-gang- data-scrollinjunctions">Civil gang injunctions</a></td>
       <td>Uses civil nuisance abatements to prevent gangs from congregating in specific areas</td>
     </tr>
   </tbody>
