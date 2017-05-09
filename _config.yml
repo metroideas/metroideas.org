@@ -27,19 +27,12 @@ defaults:
     path: ''
   values:
     description: 
+    author: []
     image:
       file: 
       caption: 
       credit: 
-      alt: 
-- scope:
-    path: pages
-    type: pages
-  values:
-    section:
-    - title: 
-      image: 
-      description: 
+      alt:
 - scope:
     path: ''
     type: asides
@@ -50,10 +43,11 @@ defaults:
     type: authors
   values:
     layout: profile-page
+    main: profile-page
     current: true
     role: 
     email: 
-    twitter: 
+    twitter:
 - scope:
     path: ''
     type: posts
@@ -61,7 +55,6 @@ defaults:
     permalink: "/blog/:title/"
     layout: article
     main: article
-    author: []
     project: 
 - scope:
     path: ''
@@ -69,11 +62,17 @@ defaults:
   values:
     published: false
     layout: project
-    author: []
+    lead:
+    about:
     article: []
-    section:
-    - title: 
-      description: 
+    "further reading":
+      - title:
+        url:
+        description:
+    downloads:
+      - title:
+        file:
+
 facebook: metroideas
 github: metroideas
 instagram: metroideas
