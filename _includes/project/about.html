@@ -1,0 +1,22 @@
+{% comment %}
+Project about section
+{% endcomment %}
+
+{% assign project = page %}
+
+{% if project.about %}
+  <h2 class="meta-title">About this project</h2>
+  <p>{{ project.about }}</p>
+{% endif %}
+
+{% if project.author.size > 0 %}
+  <h2 class="meta-title">Contributors</h2>
+  <ul class="box-list">
+    {% for title in project.author %}
+      <li>
+        {% assign profile = site.authors | where_exp: "author", "author.title contains title" | first %}
+        {% include patterns/box-anchor.html title=profile.title href=profile.url meta=profile.role %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

@@ -1,0 +1,17 @@
+{% comment %}
+Further reading section
+{% endcomment %}
+
+{% assign project = page %}
+
+{% if project["further reading"].first.title != null %}
+  <h2 class="meta-title">Further reading</h2>
+  {% for item in project["further reading"] %}
+    <article>
+      <h3>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </h3>
+      <p>{{ item.description }}</p>
+    </article>
+  {% endfor %}
+{% endif %}

@@ -1,0 +1,16 @@
+{% comment %}
+Project downloads section
+{% endcomment %}
+
+{% assign project = page %}
+
+{% if project.downloads.first.title != null %}
+<h2 class="meta-title">Data and documents</h2>
+  <ul class="box-list">
+    {% for item in project.downloads %}
+      <li>
+        {% include patterns/box-download.html title=item.title href=item.file %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

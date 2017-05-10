@@ -1,0 +1,10 @@
+{% comment %}
+Project report previews 
+{% endcomment %}
+
+{% assign project = page %}
+
+{% for title in project.article %}
+  {% assign post = site.posts | where_exp: "post", "post.title contains title" | first %}
+  {% include patterns/preview.html post=post %}
+{% endfor %}

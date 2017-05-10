@@ -11,12 +11,26 @@ layout: critical
     #{{ project.title | append: " hero" | slugify }} {
       background-image: url('{{ project.image.file }}');
     }
+
+    #download-hero {
+      background-image: url('{{ project.image.file }}');
+    }
+
+    .full-screen object,
+    .full-screen img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   </style>
   
   <header class="full-screen" id="{{ project.title | append: " hero" | slugify }}">
-    <div class="medium-container">
-      <h1 class="large-display">{{ project.title }}</h1>
-    </div>
+    <h1 class="small-container">
+      <object data="/media/the-cost-of-education-title-card.svg" type="image/svg+xml" aria-hidden="true">
+        <img src="/media/the-cost-of-education-title-card@2x.png" alt="The cost of education">
+      </object>
+      <span class="visually-hidden">The cost of education</span>
+    </h1>
   </header>
 
   <section class="intro container">
@@ -29,13 +43,21 @@ layout: critical
     </div>
   </section>
   
-  {% if project.article.size > 0 %}
   <section class="article-list container">
     <h2 class="whole">Our research</h2>
     
     {% include project/reports.html %}
   </section>
-  {% endif %}
+
+  <section class="report">
+    <div class="hero-short" id="download-hero">
+      <h2>Full report and methodology</h2>
+      <p>Download our full detailed report on the cost of education in Hamilton County.</p>
+
+      {% include patterns/box-download.html title="Final report: The cost of education" href="/media/the-cost-of-education/the-cost-of-education-final-report.pdf" meta="PDF (1.5MB)" %}
+    </div>
+  </section>
+  
   
   <section class="supplemental container">
     <div class="span-5">
