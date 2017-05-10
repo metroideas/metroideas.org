@@ -2,18 +2,18 @@
 layout: critical
 ---
 
-{% assign project = page %}
-
-<style>
-  #project-hero {
-    background-image: url('{{ project.image.file }}');
-  }
-</style>
-
 {% include patterns/banner-transparent.html %}
 
 <main class="project" role="main" id="main">
-  <header class="full-screen" id="project-hero">
+  {% assign project = page %}
+
+  <style>
+    #{{ project.title | append: " hero" | slugify }} {
+      background-image: url('{{ project.image.file }}');
+    }
+  </style>
+  
+  <header class="full-screen" id="{{ project.title | append: " hero" | slugify }}">
     <div class="medium-container">
       <h1 class="large-display">{{ project.title }}</h1>
     </div>
@@ -23,6 +23,7 @@ layout: critical
     <div class="description span-7">
       {{ content }}
     </div>
+
     <div class="offset-1 span-4">
       {% include patterns/sharing-widget.html %}
     </div>
@@ -32,56 +33,18 @@ layout: critical
   <section class="article-list container">
     <h2 class="whole">Our research</h2>
     
-    {% for title in project.article %}
-      {% for post in site.posts %}
-        {% if post.title == title %}
-          {% include patterns/preview.html post=post %}
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
+    {% include project/reports.html %}
   </section>
   {% endif %}
   
   <section class="supplemental container">
     <div class="span-5">
-      {% if project["further reading"].size > 1 %}
-        <h2 class="meta-title">Further reading</h2>
-        {% for item in project["further reading"] %}
-          <article>
-            <h3>
-              <a href="{{ item.url }}">{{ item.title }}</a>
-            </h3>
-            <p>{{ item.description }}</p>
-          </article>
-        {% endfor %}
-      {% endif %}
+      {% include project/further-reading.html %}
     </div>
-    <div class="offset-2 span-5">
-      <h2 class="meta-title">About this project</h2>
-      
-      {% if project.about %}
-        <p>{{ project.about }}</p>
-      {% endif %}
-      
-      <ul class="box-list">
-        {% for title in project.author %}
-          <li>
-            {% assign profile = site.authors | where_exp: "author", "author.title contains title" | first %}
-            {% include patterns/box-anchor.html title=profile.title href=profile.url meta=profile.role %}
-          </li>
-        {% endfor %}
-      </ul>
 
-      {% if project.downloads.size > 1 %}
-      <h2 class="meta-title">Data and documents</h2>
-        <ul class="box-list">
-          {% for item in project.downloads %}
-          <li>
-            {% include patterns/box-download.html title=item.title href=item.file %}
-          </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+    <div class="offset-2 span-5">
+      {% include project/about.html %}
+      {% include project/downloads.html %}
     </div>
   </section>
 </main>
