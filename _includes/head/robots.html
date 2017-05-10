@@ -2,4 +2,9 @@
 Crawling disabled
 {% endcomment %}
 
+{% if jekyll.environment == 'production' and site.public %}
+<meta name="robots" content="index,follow">
+{% else %}
 <meta name="robots" content="noindex,nofollow">
+{% endif %}
+
