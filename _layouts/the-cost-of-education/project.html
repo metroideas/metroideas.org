@@ -1,0 +1,74 @@
+---
+layout: critical
+---
+
+{% include patterns/banner-transparent.html %}
+
+<main class="project" role="main" id="main">
+  {% assign project = page %}
+
+  <style>
+    #{{ project.title | append: " hero" | slugify }} {
+      background-image: url('{{ project.image.file }}');
+    }
+
+    #download-hero {
+      background-image: url('{{ project.image.file }}');
+    }
+
+    .full-screen object,
+    .full-screen img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  
+  <header class="full-screen" id="{{ project.title | append: " hero" | slugify }}">
+    <h1 class="small-container">
+      <object data="/media/the-cost-of-education-title-card.svg" type="image/svg+xml" aria-hidden="true">
+        <img src="/media/the-cost-of-education-title-card@2x.png" alt="The cost of education">
+      </object>
+      <span class="visually-hidden">The cost of education</span>
+    </h1>
+  </header>
+
+  <section class="intro container">
+    <div class="description span-7">
+      {{ content }}
+    </div>
+
+    <div class="offset-1 span-4">
+      {% include patterns/sharing-widget.html %}
+    </div>
+  </section>
+  
+  <section class="article-list container">
+    <h2 class="whole">Our research</h2>
+    
+    {% include project/reports.html %}
+  </section>
+
+  <section class="report">
+    <div class="hero-short" id="download-hero">
+      <h2>Full report and methodology</h2>
+      <p>Download our full detailed report on the cost of education in Hamilton County.</p>
+
+      {% include patterns/box-download.html title="Final report: The cost of education" href="/media/the-cost-of-education/the-cost-of-education-final-report.pdf" meta="PDF (1.5MB)" %}
+    </div>
+  </section>
+  
+  
+  <section class="supplemental container">
+    <div class="span-5">
+      {% include project/further-reading.html %}
+    </div>
+
+    <div class="offset-2 span-5">
+      {% include project/about.html %}
+      {% include project/downloads.html %}
+    </div>
+  </section>
+</main>
+
+{% include patterns/footer.html %}
