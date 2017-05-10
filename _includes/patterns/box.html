@@ -1,0 +1,10 @@
+{% comment %}
+Box element has two arguments: required title and optional meta:
+
+{% include patterns/box.html title="Box title" meta="Meta string" %}
+{% endcomment %}
+
+<div class="box">
+  {{ include.title }}
+  {% if include.meta %}<br><span class="meta-title">{{ include.meta }}</span>{% endif %}
+</div>

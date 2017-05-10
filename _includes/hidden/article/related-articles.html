@@ -1,9 +1,0 @@
-{% comment %}
-Renders aside for related articles
-{% endcomment %}
-
-<aside class="related">
-  {% capture header %}<h2>Related articles</h2>{% endcapture %}
-  {% assign items = related_articles %}
-  {% include article/list-items.html header=header items=items %}
-</aside>
