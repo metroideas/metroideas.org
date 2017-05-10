@@ -7,6 +7,20 @@ module Jekyll
     # Output: Formatted date string
     def ap_date(datetime)
       time   = time(datetime)
+      month  = abbrev_month(time)
+      date   = time.strftime("%-d")
+      year   = time.strftime("%Y")
+
+     "#{month} #{date}, #{year}"
+    end
+
+    # Formats input date
+    #
+    # Input: datetime
+    #
+    # Output: Formatted date string
+    def ap_day_date(datetime)
+      time   = time(datetime)
       day    = time.strftime("%A")
       month  = abbrev_month(time)
       date   = time.strftime("%-d")
@@ -23,7 +37,7 @@ module Jekyll
     def ap_datetime(datetime)
       time = time(datetime)
 
-      "#{ap_date(time)}, at #{ap_time(time)}"
+      "#{ap_day_date(time)}, at #{ap_time(time)}"
     end
 
     # Formats input time
