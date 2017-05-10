@@ -1,0 +1,29 @@
+{% comment %}
+Featured project card has 2 arguments: required project or post object and optional button copy.
+
+Outputs html and inline style:
+
+{% include patterns/project-card-featured.html project=project button="Read more" %}
+{% endcomment %}
+
+{% assign project = include.project %}
+
+<style>
+  #{{ project.title | slugify }} {
+    {% if project.image.file %}
+    background-image: url('{{ project.image.file }}');
+    {% else %}
+    background: #3b71e8;
+    background-image: url("/media/bg-dots.svg");
+    background-repeat: repeat;
+    {% endif %}
+  }
+</style>
+
+<article class="project-card-featured" id="{{ project.title | slugify }}">
+  <header>
+    <h1 class="display">{{ project.title }}</h1>
+    <p>{% if project.lead %}{{ project.lead }}{% else %}{{ project.description }}{% endif %}</p>
+    <a href="{{ project.url }}" class="button transparent-reverse">{% if include.button %}{{ include.button }}{% else %}View project{% endif %}</a>
+  </header>
+</article>

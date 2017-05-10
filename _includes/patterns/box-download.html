@@ -1,0 +1,14 @@
+{% comment %}
+Box download anchor element with 3 arguments: Required title, required href value, optional meta:
+
+{% include patterns/box-anchor.html title="Box name" href="http://example.com" meta="Meta description" %}
+{% endcomment %}
+
+<a href="{{ include.href }}" class="box" download>
+  <span class="icon-arrow"></span>
+  <div class="description">
+    {{ include.title }}
+    {% if include.meta %}<br><span class="meta-title">{{ include.meta }}</span>{% endif %}
+  </div>
+</a>
+

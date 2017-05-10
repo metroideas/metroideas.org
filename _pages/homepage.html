@@ -9,46 +9,13 @@ main: homepage
 {% assign project-3 = site.projects[2] %}
 {% assign blog = site.posts | where_exp: "post", "post.project == null" %}
 
-<style>
-  #project-1 {
-    background-image: url('{{ project-1.image.file }}');
-  }
-
-  #project-2 {
-    background-image: url('{{ project-2.image.file }}');
-  }
-
-  #project-3 {
-    background-image: url('{{ project-3.image.file }}');
-  }
-</style>
-
 <section class="projects" id="projects">
   <div class="card-group">
-    <article class="project-card-featured" id="project-1">
-      <header>
-        <h1 class="display">{{ project-1.title }}</h1>
-        <p>{{ project-1.lead }}</p>
-        <a href="{{ project-1.url }}" class="button transparent-reverse">View project</a>
-      </header>
-    </article>
+    {% include patterns/project-card-featured.html project=project-1 %}
   </div>
   <div class="card-group">
-    <article class="project-card" id="project-2">
-      <header>
-        <h2>{{ project-2.title }}</h2>
-        <p>{{ project-2.lead }}</p>
-        <a href="{{ project-2.url }}" class="button transparent-reverse">View project</a>
-      </header>
-    </article>
-
-    <article class="project-card" id="project-3">
-      <header>
-        <h2>{{ project-3.title }}</h2>
-        <p>{{ project-3.lead }}</p>
-        <a href="{{ project-3.url }}" class="button transparent-reverse">View project</a>
-      </header>
-    </article>
+    {% include patterns/project-card.html project=project-2 %}
+    {% include patterns/project-card.html project=project-3 %}
   </div>
 </section>
 
@@ -73,20 +40,7 @@ main: homepage
   <h2>From the blog</h2>
   <div class="card-group">
     {% for post in blog limit:4 %}
-    <article class="card">
-      <picture style="height:300px;width:300px;" aria-hidden="true">
-        {% if post.image.file %}
-        <img src="{{ post.image.file }}" alt="{{ post.image.alt }}">
-        {% else %}
-        <img class="green" src="/media/bg-dots.svg">
-        {% endif %}
-      </picture>
-
-      <div class="description">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <time datetime={{ post.date | date_to_xmlschema }}>{{ post.date | ap_date }}</time>
-      </div>
-    </article>
+      {% include patterns/card.html post=post %}
     {% endfor %}
   </div>
 </section>

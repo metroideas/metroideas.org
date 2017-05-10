@@ -10,7 +10,7 @@ layout: critical
   }
 </style>
 
-{% include navigation/transparent-banner.html %}
+{% include patterns/banner-transparent.html %}
 
 <main class="project" role="main" id="main">
   <header class="full-screen" id="project-hero">
@@ -24,7 +24,7 @@ layout: critical
       {{ content }}
     </div>
     <div class="offset-1 span-4">
-      {% include sharing-widget.html %}
+      {% include patterns/sharing-widget.html %}
     </div>
   </section>
   
@@ -35,7 +35,7 @@ layout: critical
     {% for title in project.article %}
       {% for post in site.posts %}
         {% if post.title == title %}
-          {% include article/preview.html post=post %}
+          {% include patterns/preview.html post=post %}
         {% endif %}
       {% endfor %}
     {% endfor %}
@@ -67,12 +67,7 @@ layout: critical
         {% for title in project.author %}
           <li>
             {% assign profile = site.authors | where_exp: "author", "author.title contains title" | first %}
-            <a href="{{ profile.url }}" class="box">
-              <div class="description">
-                {{ profile.title }}<br><span class="meta-title">{{ profile.role }}</span>
-              </div>
-              <span class="icon-arrow"></span>
-            </a>
+            {% include patterns/box-anchor.html title=profile.title href=profile.url meta=profile.role %}
           </li>
         {% endfor %}
       </ul>
@@ -82,12 +77,7 @@ layout: critical
         <ul class="box-list">
           {% for item in project.downloads %}
           <li>
-            <a href="{{ item.file }}" class="box" download>
-              <span class="icon-arrow"></span>
-              <div class="description">
-                {{ item.title }}
-              </div>
-            </a>
+            {% include patterns/box-download.html title=item.title href=item.file %}
           </li>
           {% endfor %}
         </ul>
@@ -96,4 +86,4 @@ layout: critical
   </section>
 </main>
 
-{% include navigation/footer.html %}
+{% include patterns/footer.html %}

@@ -8,10 +8,10 @@ The default.html layout is used by most other layouts. It includes three landmar
 Default requires critical.html to load CSS, Javascript and other sitewide meta tags.
 {% endcomment %}
 
-{% include navigation/banner.html %}
+{% include patterns/banner.html %}
 
 <main class="{{ page.main }}" role="main" id="main">
 {{ content }}
 </main>
 
-{% include navigation/footer.html %}
+{% include patterns/footer.html %}

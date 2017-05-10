@@ -8,28 +8,8 @@ main: project-index
 {% assign project-2 = site.projects[1] %}
 {% assign project-3 = site.projects[2] %}
 
-<style>
-  #project-1 {
-    background-image: url('{{ project-1.image.file }}');
-  }
-
-  #project-2 {
-    background-image: url('{{ project-2.image.file }}');
-  }
-
-  #project-3 {
-    background-image: url('{{ project-3.image.file }}');
-  }
-</style>
-
 <section class="card-group">
-  <article class="project-card-featured" id="project-1">
-    <header>
-      <h1 class="display">{{ project-1.title }}</h1>
-      <p>{{ project-1.lead }}</p>
-      <a href="{{ project-1.url }}" class="button transparent-reverse">View project</a>
-    </header>
-  </article>
+  {% include patterns/project-card-featured.html project=project-1 %}
 </section>
 
 <div class="description">
@@ -38,19 +18,6 @@ main: project-index
 </div>
 
 <section class="card-group">
-  <article class="project-card" id="project-2">
-    <header>
-      <h2>{{ project-2.title }}</h2>
-      <p>{{ project-2.lead }}</p>
-      <a href="{{ project-2.url }}" class="button transparent-reverse">View project</a>
-    </header>
-  </article>
-
-  <article class="project-card" id="project-3">
-    <header>
-      <h2>{{ project-3.title }}</h2>
-      <p>{{ project-3.lead }}</p>
-      <a href="{{ project-3.url }}" class="button transparent-reverse">View project</a>
-    </header>
-  </article>
+  {% include patterns/project-card.html project=project-2 %}
+  {% include patterns/project-card.html project=project-3 %}
 </section>

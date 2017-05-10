@@ -1,0 +1,47 @@
+{% comment %}
+Icon list has required item object:
+
+{% include patterns/icon-list.html item=author %}
+{% endcomment %}
+
+{% assign item = include.item %}
+
+<ul class="icon-list">
+  {% if item.facebook %}
+  <li>
+    <a href="http://facebook.com/{{ item.facebook }}" title="Facebook" class="icon black">
+    <span aria-hidden="true">{% include icons/facebook-round.svg %}</span>
+    </a>
+  </li>
+  {% endif %}
+  
+  {% if item.twitter %}
+  <li>
+    <a href="http://twitter.com/{{ item.twitter }}" title="Twitter" class="icon black">
+    <span aria-hidden="true">{% include icons/twitter-round.svg %}</span>
+    </a>
+  </li>
+  {% endif %}
+  
+  {% if item.instagram %}
+  <li>
+    <a href="http://instagram.com/{{ item.instagram }}" title="Instagram" class="icon black">
+    <span aria-hidden="true">{% include icons/instagram-round.svg %}</span>
+    </a>
+  </li>
+  {% endif %}
+  {% if item.github %}
+  <li>
+    <a href="http://github.com/{{ item.github }}" title="Github" class="icon black">
+    <span aria-hidden="true">{% include icons/github-round.svg %}</span>
+    </a>
+  </li>
+  {% endif %}
+  {% if item.email %}
+  <li>
+    <a href="mailto:{{ item.email }}" title="Email" class="icon black">
+    <span aria-hidden="true">{% include icons/email-round.svg %}</span>
+    </a>
+  </li>
+  {% endif %}
+</ul>

@@ -180,12 +180,7 @@ main: about
     <ul class="box-list">
       {% for staff in currentStaff %}
         <li>
-          <a href="{{ staff.url }}" class="box">
-            <div class="description">
-              {{ staff.title }}<br><span class="meta-title">{{ staff.role }}</span>
-            </div>
-            <span class="icon-arrow"></span>
-          </a>
+          {% include patterns/box-anchor.html title=staff.title href=staff.url meta=staff.role %}
         </li>
       {% endfor %}
     </ul>

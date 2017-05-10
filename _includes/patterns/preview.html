@@ -1,11 +1,7 @@
 {% comment %}
-Generates article preview for included post variable.
-
-Usage:
-
-{% for post in site.posts %}
-  {% include article/preview.html post=post %}
-{% endfor %}
+Article preview has required post argument:
+  
+{% include article/preview.html post=post %}  
 {% endcomment %}
 
 {% assign post = includes.post %}

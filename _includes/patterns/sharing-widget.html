@@ -1,0 +1,32 @@
+{% comment %}
+Sharing widget with optional title variable.
+
+{% include patterns/sharing-widget.html title="Share article" %}
+{% endcomment %}
+
+<aside class="sharing-widget">
+  <header class="title">
+    {% if include.title %}{{ include.title }}{% else %}Share this story{% endif %}
+  </header>
+
+  <ul>
+    <li class="facebook">
+      <a class="icon black"
+        href="http://www.facebook.com/sharer.php?u={{ page.url }}" target="_blank" title="Share on Facebook">
+        <span aria-hidden="true">{% include icons/facebook.svg %}</span>
+      </a>
+    </li>
+    <li class="twitter">
+      <a class="icon black"
+        href="https://twitter.com/share?url={{ page.url }}&amp;text={{ page.title }} via @thinkmetro" data-size="large" target="_blank" title="Share on Twitter">
+        <span aria-hidden="true">{% include icons/twitter.svg %}</span>
+      </a>
+    </li>
+    <li class="email">
+      <a class="icon black"
+        href="mailto:?subject={{ page.title | prepend: "Metro Ideas Project: "}}&body={{ page.description | append: " — " | append: page.url }}" title="Share by email">
+        <span aria-hidden="true">{% include icons/email.svg %}</span>
+      </a>
+    </li>
+  </ul>
+</aside>
