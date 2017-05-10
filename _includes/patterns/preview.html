@@ -4,7 +4,7 @@ Article preview has required post argument:
 {% include article/preview.html post=post %}  
 {% endcomment %}
 
-{% assign post = includes.post %}
+{% assign post = include.post %}
 {% assign link = post.url %}
 
 <article class="article-preview">
