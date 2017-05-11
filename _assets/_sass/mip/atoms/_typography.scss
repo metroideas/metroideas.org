@@ -52,6 +52,18 @@ a {
   h4 > & {
     @include anchor-heading;
   }
+
+  &:hover > h1,
+  &:hover > h2,
+  &:hover > h3,
+  &:hover > h4,
+  h1 > &:hover,
+  h2 > &:hover,
+  h3 > &:hover,
+  h4 > &:hover {
+    color: $blue;
+    border-bottom: 2px solid $blue;
+  }
 }
 
 // Font style resets
