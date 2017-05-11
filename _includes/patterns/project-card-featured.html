@@ -7,20 +7,58 @@ Outputs html and inline style:
 {% endcomment %}
 
 {% assign project = include.project %}
+{% assign hero_id = project.title | slugify %}
+{% assign image   = project.image.file %}
+{% assign imgix   = project.image.file | replace: "/media/", "" | imgix_url %}
 
 <style>
-  #{{ project.title | slugify }} {
-    {% if project.image.file %}
-    background-image: url('{{ project.image.file }}');
-    {% else %}
-    background: #3b71e8;
-    background-image: url("/media/bg-dots.svg");
-    background-repeat: repeat;
-    {% endif %}
-  }
+  {% if project.image.file %}
+    {% comment %} Mobile default {% endcomment %}
+    #{{ hero_id }} {
+      background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format" }}');
+    }
+    
+    {% comment %} Mobile retina and high res displays {% endcomment %}
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) { 
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format", dpr:2 }}');
+      }
+    }
+    
+    {% comment %} Desktop default {% endcomment %}
+    @media only screen and (min-width:600px) {
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:1200, h:500, fit:"crop", auto:"format" }}');
+      }
+    }
+    
+    {% comment %} Desktop retina and high res displays {% endcomment %}
+    @media only screen and (min-width:600px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-width:600px) and (min-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (min-resolution: 192dpi),
+    only screen and (min-width:600px) and (min-resolution: 2dppx) {
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:1200, h:500, fit:"crop", auto:"format", dpr:2 }}');
+      }
+    }
+
+  {% else %}
+    #{{ hero_id }} {
+      background: #3b71e8;
+      background-image: url("/media/bg-dots.svg");
+      background-repeat: repeat;
+    }
+  {% endif %}
 </style>
 
-<article class="project-card-featured" id="{{ project.title | slugify }}">
+<article class="project-card-featured" id="{{ hero_id }}">
   <header>
     <h1 class="display">{{ project.title }}</h1>
     <p>{% if project.lead %}{{ project.lead }}{% else %}{{ project.description }}{% endif %}</p>
