@@ -5,21 +5,78 @@ layout: default
 {% assign category = page.categories | first %}
 
 <!-- Hero background-image paths -->
+{% assign hero_id = page.title | slugify %}
+{% assign image   = page.image.file %}
+
 <style>
-  .hero {
-    {% if page.image.file %}
-      background-image: url({{ page.image.file }});
-    {% else %}
-      background-image: url("/media/bg-dots.svg") repeat;
-      background-size: auto auto;
-      background-color: #208177;
-    {% endif %}
-  }
+  {% if page.image.file %}
+    {% comment %} Mobile default {% endcomment %}
+    #{{ hero_id }} {
+      background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format" }}');
+    }
+    
+    {% comment %} Mobile retina and high res displays {% endcomment %}
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) { 
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format", dpr:2 }}');
+      }
+    }
+    
+    {% comment %} Desktop default {% endcomment %}
+    @media only screen and (min-width:600px) {
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:1200, h:500, fit:"crop", auto:"format" }}');
+      }
+    }
+    
+    {% comment %} Desktop retina and high res displays {% endcomment %}
+    @media only screen and (min-width:600px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-width:600px) and (min-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (min-resolution: 192dpi),
+    only screen and (min-width:600px) and (min-resolution: 2dppx) {
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:1200, h:500, fit:"crop", auto:"format", dpr:2 }}');
+      }
+    }
+
+    {% comment %} Desktop large default {% endcomment %}
+    @media only screen and (min-width: 1800px) {
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:1800, h:900, fit:"crop", auto:"format" }}');
+      }
+    }
+
+    {% comment %} Desktop large retina and high res displays {% endcomment %}
+    @media only screen and (min-width:1800px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-width:1800px) and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-width:1800px) and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-width:1800px) and (min-device-pixel-ratio: 2),
+    only screen and (min-width:1800px) and (min-resolution: 192dpi),
+    only screen and (min-width:1800px) and (min-resolution: 2dppx) {
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:1800, h:900, fit:"crop", auto:"format", dpr:2 }}');
+      }
+    }
+
+  {% else %}
+    #{{ hero_id }} {
+      background: #3b71e8;
+      background-image: url("/media/bg-dots.svg");
+      background-repeat: repeat;
+    }
+  {% endif %}
 </style>
 
 <!-- Article body -->
 <article>
-  <div class="hero" id="{{ page.title | slugify }}">
+  <div class="hero" id="{{ hero_id }}">
     <header>
       {% if page.categories.size > 0 %}
         <a href="/archives/category/{{ category | slugify }}" class="category">

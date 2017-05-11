@@ -2,18 +2,79 @@
 layout: critical
 ---
 
+{% assign project = page %}
+{% assign hero_id = project.title | append: " hero" | slugify %}
+{% assign image   = project.image.file %}
+
 {% include patterns/banner-transparent.html %}
 
 <main class="project" role="main" id="main">
-  {% assign project = page %}
-
   <style>
-    #{{ project.title | append: " hero" | slugify }} {
-      background-image: url('{{ project.image.file }}');
-    }
+    {% if project.image.file %}
+      {% comment %} Mobile default {% endcomment %}
+      #{{ hero_id }} {
+        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format" }}');
+      }
+      
+      {% comment %} Mobile retina and high res displays {% endcomment %}
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) { 
+        #{{ hero_id }} {
+          background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format", dpr: 2 }}');
+        }
+      }
+      
+      {% comment %} Desktop default {% endcomment %}
+      @media only screen and (min-width:600px) {
+        #{{ hero_id }} {
+          background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", auto:"format" }}');
+        }
+      }
+
+      {% comment %} Desktop retina and high res displays {% endcomment %}
+      @media only screen and (min-width:600px) and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-width:600px) and (min--moz-device-pixel-ratio: 2),
+      only screen and (min-width:600px) and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-width:600px) and (min-device-pixel-ratio: 2),
+      only screen and (min-width:600px) and (min-resolution: 192dpi),
+      only screen and (min-width:600px) and (min-resolution: 2dppx) {
+        #{{ hero_id }} {
+          background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", auto:"format", dpr:2 }}');
+        }
+      }
+
+      {% comment %} Desktop large default {% endcomment %}
+      @media only screen and (min-width: 1800px) {
+        #{{ hero_id }} {
+          background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", auto:"format" }}');
+        }
+      }
+
+      {% comment %} Desktop large retina and high res displays {% endcomment %}
+      @media only screen and (min-width:1800px) and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-width:1800px) and (min--moz-device-pixel-ratio: 2),
+      only screen and (min-width:1800px) and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-width:1800px) and (min-device-pixel-ratio: 2),
+      only screen and (min-width:1800px) and (min-resolution: 192dpi),
+      only screen and (min-width:1800px) and (min-resolution: 2dppx) {
+        #{{ hero_id }} {
+          background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", auto:"format", dpr: 2 }}');
+        }
+      }
+    {% else %}
+      #{{ hero_id }} {
+        background: #3b71e8;
+        background-image: url("/media/bg-dots.svg");
+        background-repeat: repeat;
+      }
+    {% endif %}
   </style>
   
-  <header class="full-screen" id="{{ project.title | append: " hero" | slugify }}">
+  <header class="full-screen" id="{{ hero_id }}">
     <div class="medium-container">
       <h1 class="large-display">{{ project.title }}</h1>
     </div>

@@ -3,12 +3,20 @@ layout: default
 ---
 
 {% assign byline = page.title %}
-{% assign posts = site.posts | where_exp: "post", "post.author contains byline" %}
+{% assign posts  = site.posts | where_exp: "post", "post.author contains byline" %}
+{% assign image  = page.image.file %}
 
 <section class="bio container" id="bio">
+  {% if page.image.file %}
   <figure class="half">
-    <img src="{{ page.image.file }}" alt="{{ page.title }}" aria-hidden="true">
+    <img srcset="{{ image | imgix_url: w: 600, h:600, auto:"format" }} 1x,
+                 {{ image | imgix_url: w: 600, h:600, auto:"format", dpr:2 }} 2x,
+                 {{ image | imgix_url: w: 600, h:600, auto:"format", dpr:3 }} 3x"
+            src="{{ image | imgix_url: w: 600, h:600, auto:"format" }}"
+            alt="{{ page.title }}"
+            aria-hidden="true">
   </figure>
+  {% endif %}
 
   <header class="half">
     <h1>{{ page.title }}</h1>

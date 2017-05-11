@@ -5,14 +5,23 @@ Article card requires post object
 {% include patterns/card.html post=post %}
 {% endcomment %}
 
-{% assign post = include.post %}
+{% assign post  = include.post %}
+{% assign image = post.image.file %}
 
 <article class="card">
-  <picture style="height:300px;width:300px" aria-hidden="true">
+  <picture aria-hidden="true">
     {% if post.image.file %}
-    <img src="{{ post.image.file }}" alt="{{ post.image.alt }}">
+    <source media="(min-width:800px)"
+           srcset="{{ post.image.file | imgix_url: w:300, h:300, fit:"crop", auto:"format" }} 1x,
+                   {{ post.image.file | imgix_url: w:300, h:300, fit:"crop", auto:"format", dpr:2 }} 2x,
+                   {{ post.image.file | imgix_url: w:300, h:300, fit:"crop", auto:"format", dpr:3 }} 3x">
+    <img srcset="{{ post.image.file | imgix_url: w:350, h:200, fit:"crop", auto:"format" }} 1x,
+                 {{ post.image.file | imgix_url: w:350, h:200, fit:"crop", auto:"format", dpr:2 }} 2x,
+                 {{ post.image.file | imgix_url: w:350, h:200, fit:"crop", auto:"format", dpr:3 }} 3x"
+            src="{{ post.image.file | imgix_url: w:350, h:200, fit:"crop", auto:"format" }}"
+            alt="{{ post.image.alt }}">
     {% else %}
-    <img src="/media/bg-dots.svg" alt="{{ post.image.alt }}" class="green">
+    <img src="/media/bg-dots.svg" alt="{{ post.title }}" class="green">
     {% endif %}
   </picture>
 
