@@ -118,6 +118,9 @@ gems:
 - jekyll-redirect-from
 - jekyll-sitemap
 - jekyll-archives
+- jekyll/imgix
+imgix:
+  source: mip-beta.imgix.net
 jekyll-archives:
   enabled:
   - categories
