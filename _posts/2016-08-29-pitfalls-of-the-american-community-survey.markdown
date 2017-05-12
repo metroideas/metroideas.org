@@ -37,7 +37,7 @@ Local governments and organizations trying to find socioeconomic data for areas 
 The Census Bureau measures the reliability of data based on an estimate's coefficient of variation (CV). The CV is a standard measure of the amount of sampling error in the estimate relative to the size of the estimate itself. The Census Bureau's established thresholds of reliability are: 
 
 <table>
-  <caption><strong>Census thresholds of reliability</strong></caption>
+  <caption>Census thresholds of reliability</caption>
   <thead>
     <tr>
       <th>Level of reliability</th>

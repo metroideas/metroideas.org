@@ -53,5 +53,18 @@ $vertical-shift: 8rem;
     height: calc(100% + #{$gutter * 2});
     border: 1px solid $color;
   }  
-  
+}
+
+.four-oh-four {
+  @include single-column($large);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - #{$mobile-banner-height});
+
+  @media (min-width: $medium) {
+    height: calc(100vh - #{$banner-height});
+  }
 }

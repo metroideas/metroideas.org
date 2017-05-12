@@ -28,6 +28,7 @@ The district is faced with a multitude of expenses, like transporting and feedin
 
 We previously broke down [HCDE's different revenue streams](http://metroideas.org/blog/follow-the-money/). Before we start exploring personnel expenses, we first want to briefly explain how funds get apportioned. All revenue gets broken down into the following four funds:
 
+{: .long-list}
 + General purpose school fund: Consider this HCDE's operating budget. Money in this fund is discretionary and goes towards the basic operations of the school system, like paying bills, buying textbooks and paying salaries and benefits. During the 2014–15 school year, HCDE had a budget of $345,319,137 for this fund.
 + Federal projects fund: These funds are earmarked for specific purposes designated by state or federal governments, such as Title I and the Individuals with Disabilities Education Act, which means that not all schools or students qualify. Last year HCDE received $31,679,204 for its federal projects fund.
 + Food service fund: These funds go directly to federal school nutrition programs. The budget for last year was $19,895,927.
@@ -57,7 +58,8 @@ We can examine school-level salary trends across time in Hamilton County using t
 
 Do different average salaries correspond  to different teacher quality and qualification across schools? We wanted to see how our findings on average salaries related to teacher qualification and quality at the school-level. But first we want to acknowledge that measuring teacher effectiveness isn't easy. Graduation rates, grades and test scores are one way to measure success, but then again, student improvement is just one kind of data point. Teachers can serve a much more expansive role in the way they motivate and inspire students that isn't always easy to quantify. We also want to point out that our analysis focuses on average school-level data, which cancels out individual variation, both good and bad.
 
-**Quality**  
+### Quality
+
 When a school principal recruits a teacher he or she doesn't have a say in how much that teacher is paid. That's already determined by the HCDE pay schedule. So schools simply get to pick the best qualified teacher for the job. Different schools, however, have different access to quality teachers. Good teachers may flee or avoid “difficult” schools. This problem has been acknowledged by the U.S. Department of Education, which has called upon states to develop strategies to promote an equitable distribution of excellent teachers across schools. The Tennessee plan, [Ensure Equitable Access to Excellent Educators](http://www2.ed.gov/programs/titleiparta/equitable/tn.html), was released last year.
 
 Tennessee's plan defines highly effective teachers as those who receive a 4 or 5 on the Tennessee Value Added Assessment System. TVAAS measures how well teachers are improving students' growth, rather than whether they are proficient on the state assessment. A score of 4 or 5 indicates that students are exceeding expected growth; a score of 3 indicates they are achieving expected growth; and a score of 1 or 2 indicates they are not meeting expected growth. We want to point out that TVAAS scores are only one tool in a much larger kit that helps determine teacher effectiveness. In fact, TVAAS scores usually account for only 35 percent of a teacher's total evaluation score.
@@ -65,7 +67,7 @@ Tennessee's plan defines highly effective teachers as those who receive a 4 or 5
 We obtained a sample of anonymous teacher-level TVAAS scores for over 200 teachers in 74 Hamilton County schools. We found that 41 percent of sampled teachers in elementary schools received a 4 or 5 TVAAS score compared to 28 percent in secondary schools. For teachers in Title I schools, these rates are nearly the same. In non-Title I schools, teacher effectiveness is significantly higher. While it appears Title I schools tend to have higher average per-student spending on salary and benefits than non-Title I schools, this does not necessarily translate into better TVAAS scores for individual teachers.
 
 <table>
-  <caption><strong>Teachers earning a TVAAS score of 4 or 5</strong></caption>
+  <caption>Teachers earning a TVAAS score of 4 or 5</caption>
   <thead>
     <tr>
       <th>&nbsp;</th><th>Elementary</th><th>Secondary</th>
@@ -87,7 +89,7 @@ We obtained a sample of anonymous teacher-level TVAAS scores for over 200 teache
 We also looked at school-level composite TVAAS scores for 77 Hamilton County schools. Trends were somewhat the same as teacher-level TVAAS scores, with elementary schools performing consistently better than secondary schools. Non-Title I schools also had higher rates of 4 and 5 scores than non-Title I schools.
 
 <table>
-  <caption><strong>Schools earning a TVAAS score of 4 or 5</strong></caption>
+  <caption>Schools earning a TVAAS score of 4 or 5</caption>
   <thead>
     <tr>
       <th>&nbsp;</th><th>Elementary</th><th>Secondary</th>
@@ -106,7 +108,8 @@ We also looked at school-level composite TVAAS scores for 77 Hamilton County sch
   </tbody>
 </table>
 
-**Qualification**  
+### Qualification
+
 Differences in TVAAS scores between Title I and non-Title I schools may be due to teacher-level differences in academic qualification and experience. Veteran teachers with an advanced degree might be more effective than teachers just out of college, or vice versa. To explore this possibility, we obtained 2014–15 teacher-level data on academic attainment and years of experience for 78 schools in Hamilton County.
 
 We calculated the percentage of first year teachers with bachelor's degrees and found that across the county around 6 percent of teachers were new to the job. That rate was 4 percent for non-Title I schools and 8 percent for Title I schools. These differences balanced out somewhat when expanding the analysis to teachers with five years experience or less. These teachers represent 19 percent of educators across the county, 15 percent of teachers in non-Title I schools and 22 percent of teachers in Title I schools. Based on this analysis, we saw evidence that teacher experience differs between Title I and non-Title I schools.

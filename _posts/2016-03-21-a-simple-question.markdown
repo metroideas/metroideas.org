@@ -44,7 +44,8 @@ Lower graduation rates in Hamilton County also appear to be related to relativel
 
 We think it's important to understand how resources are allocated on a per-school basis for four reasons: equity, transparency, community engagement and results.
 
-**Equity**  
+### Equity
+
 Average per-student spending on a school basis would allow us to understand if resources are being distributed fairly across schools, regardless of students' economic status, race, learning ability or location. Several studies in recent years have revealed that intradistrict funding, or funding to different schools within a district,  is often unequal. In 2005, [Marguerite Roza, Larry Miller and Paul Hill](http://www.crpe.org/sites/default/files/wp_crpe6_title1_aug05_0.pdf) found that in four out of five urban school districts studied, the highest-poverty schools had 10 to 15 percent less per-pupil expenditures from non-categorical program funds than the lowest-poverty schools. In a 2008 study of 10 large urban districts, [Roza](https://cdn.americanprogress.org/wp-content/uploads/issues/2008/06/pdf/comparability_part3.pdf) found that teachers in the highest-poverty schools received lower salaries than teachers in the lowest-poverty schools.
 
 The most extensive study on intradistrict spending, completed by the [U.S. Department of Education in 2011](http://www2.ed.gov/about/offices/list/opepd/ppss/reports.html#title), looks at state and local funding for salaries on a per-school basis for all districts in the U.S. with a Title I school. The data for this study was based on conditional reporting from districts that received Title I funds from the American Recovery and Reinvestment Act for the 2008-09 school year[^3]. This was an exceptional opportunity for the Education Department to study funding at individual schools and to ensure that federal funds were not making up for an unfair distribution of local and state funds to benefit more affluent schools. 
@@ -53,16 +54,19 @@ Data was analyzed from over 82,000 schools in 50 states, the District of Columbi
 
 {% include article/aside.html title="What is Title I?" %}
 
-**Transparency**  
+### Transparency
+
 Understanding average per-student expenditure by school is critical for reasons of transparency. Without transparency, schools and school districts cannot be held accountable for spending decisions. Better transparency was the key driver behind the Education Department's 2011 study. Following the release of the study's results, a department official [stated](http://www.ed.gov/news/press-releases/more-40-low-income-schools-dont-get-fair-share-state-and-local-funds-department-education-research-finds), "Transparency on resource allocation within school districts is critical to ensuring every child has access to the same educational opportunities. This new data highlights that the Title I comparability provision is broken and has failed to provide access to equitable resources, and that it is possible to fix it." Without honest communication, education stakeholders don't have the tools to clearly identify waste or needs and push for reform where it's needed.
 
-**Community engagement**  
+### Community engagement
+
 Closely tied to transparency is community engagement. Understanding how resources are being allocated and spent at schools can help the public and policymakers advocate for better funding allocations. Parents can hold the district accountable for its funding decisions. Community stakeholders can advocate for more equitable resource allocation. And policymakers can build consensus around tough budget decisions.
 
-**Results**  
+### Results
+
 Average expenditure at the school level may be one additional variable affecting individual student success. But without this data on hand, it's impossible to study correlations between spending and metrics like test scores or graduation rates. While our intention is not to undertake an in-depth study of this connection, we do recognize the value of understanding how inputs relate to outputs, or in this case, how expenditure relates to results.
 
-**Searching for the answer**  
+### Searching for the answer
 Over the next several weeks the Metro Ideas Project will explore the question, "What is the average expenditure per student at each school in Hamilton County?" We'll be reporting on our attempt to answer this seemingly simple question. We'll explain the county's revenue for education, explore teacher performance and compensation, and decode the district's complex education budget. Our attempt to uncover an answer may in fact reveal more questions in the end, but we hope this will help our community identify areas for greater transparency and engagement.
 
 ## Footnotes

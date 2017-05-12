@@ -20,6 +20,21 @@ main.article .copy {
   }
 }
 
+main.article .footnotes {
+  font-family: $sans-serif;
+  font-size: $small-font-size;
+}
+
+main.article .footnotes li > p {
+  display: inline;
+  margin: 0;
+}
+
+main.article .footnotes li {
+  @include vertical-margin-default;
+  margin-left: 0;
+}
+
 main.article .profile {
   margin-top: $double-gutter;
 }

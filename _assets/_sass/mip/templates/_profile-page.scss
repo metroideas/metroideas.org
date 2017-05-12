@@ -21,8 +21,17 @@ main.profile-page .bio {
   }
 }
 
-// On displays > 800px, shift description column left
+// On displays > 800px, shift description column left *when paired with figure element*
 main.profile-page .bio > :last-child {
+  margin-top: $gutter;
+
+  @media (min-width: $small) {
+    margin-top: 0;
+  }
+}
+
+main.profile-page .bio figure + :last-child {
+  margin-top: 0;
   @media (min-width: $medium) {
     @include grid-shift(-1);
     margin-left: 0;
