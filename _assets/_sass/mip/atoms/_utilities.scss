@@ -15,19 +15,63 @@ body:hover .visually-hidden a,
 body:hover .visually-hidden input,
 body:hover .visually-hidden button { display: none !important; } 
 
-// .wider child pops out of the parent container by ~160px
+// .wider child pops out of the parent container by ~240px
 .wider {
-  $wider: strip-unit($double-gutter) * 4px;
+  $wider: strip-unit($double-gutter) * 6px;
   
-  @media (min-width: $medium) {
-    @include margin(null $double-gutter * -2);
+  @media (min-width: 1000px) {
+    @include margin(null $double-gutter * -3);
     @include padding(null $half-gutter);
     
     position: relative;
-    width: calc(100% + $double-gutter * 2);
+    width: calc(100% + $double-gutter * 3);
 
     & > * {
       width: 100%;
     }
   }
+}
+
+// Responsive embed for widescreen iframe, object, embed and img
+.responsive-embed {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+
+  padding-top: 1em;
+  padding-bottom: 96.69%;; // 1:1 aspect ratio
+
+  & iframe,
+  & object,
+  & embed,
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border-width: 0;
+  }
+}
+
+// Other aspect ratios
+.responsive-embed {
+  &.widescreen,
+  &.aspect-ratio-16x9 { padding-bottom: 56.25%; } // 16:9
+  &.aspect-ratio-8x5  { padding-bottom: 62.5%;  } // 8:5
+  &.aspect-ratio-4x3  { padding-bottom: 75%;    } // 4:3
+  &.aspect-ratio-3x2  { padding-bottom: 66.6%;  } // 3:2
+}
+
+// Top of page message for outdated browsers
+.browserupgrade {
+  max-width: 100%;
+  width: $large;
+  @include margin($gutter auto);
+  @include padding($gutter);
+  text-align: center;
+  border: 1px solid $red;
 }

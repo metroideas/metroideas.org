@@ -40,8 +40,8 @@ Additional funding would be weighted for students who meet certain criteria. An 
 
 <table>
   <caption>
-    <strong>Student-based funding in Prince George's County, Maryland</strong>
-    <br>How additional resources would be calculated for a 1st grader meeting specific priority criteria.
+    Student-based funding in Prince George's County, Maryland
+    <br><span style="font-weight:normal">How additional resources would be calculated for a 1st grader meeting specific priority criteria.</span>
   </caption>  
   <thead>
     <tr>
@@ -86,6 +86,7 @@ Additional funding would be weighted for students who meet certain criteria. An 
 
 A student-based budgeting model has four main benefits:
 
+{: .long-list}
 + **Student-focused:** It creates a direct pipeline between funding and students. Priorities are clearly defined through a weighted formula established by school leaders. Dollars follow students even if they switch schools.
 + **Transparent:** The funding formula prioritizes students' needs instead of enrollment numbers. It provides a clear rationale for resource distribution throughout the school system. It makes budgets and public spending more accessible.
 + **Efficient:** Students are the building blocks of this budgeting model. The more money allocated to a particular student group, the more resources provided for those students. Principals and teachers also have more flexibility and autonomy to meet the specific needs of their students.
@@ -101,6 +102,7 @@ Successful implementation of student-based budgeting depends on collecting and l
 
 The Hamilton County Department of Education should take steps to listen closely to schools:
 
+{: .long-list}
 + **Talk about basic school needs.** In interviews, school leaders identified fundraising as a strategy to meet basic school needs such as classroom equipment and maintenance. Schools with the capacity to raise funds are better able to address these shortfalls than schools with limited fundraising resources. The district and schools need to discuss how to better meet these basic needs across all schools.
 + **Find out what teachers are paying for.** Teachers are each allocated $100 to purchase supplies for a school year. Many cover additional expenses out of pocket. The school system should establish a formal way to identify what those purchases entail.
 + **Communicate up and down.** Communication between central office and schools has traditionally been top-down. Schools, however, know their students and needs better. Two-way communication can help foster a more collaborative relationship, which would be an important starting point in discussions of student-based resource allocation.
@@ -111,6 +113,7 @@ HCDE is the largest employer in Hamilton County and has an annual budget of roug
 
 A lack of transparency around the budget leads to confusion among parents, educators and policymakers. To make a more understandable and accessible budget, the following actions should be taken: 
 
+{: .long-list}
 + **Include average per-student spending for each school in the annual budget.** When budgeting is based around students, average per-student spending amounts should be easier to capture. Publishing these spending figures can help ensure that schools are equitably and efficiently funded.
 + **Continue to publish "A Guide to Understanding the Budget."** HCDE released its [citizen's guide to the budget](http://www.pefchattanooga.org/wp-content/uploads/2015/06/HCDE_budget-guide_051515.pdf) in 2015. This was a positive step forward. The school district should publish this guide annually to communicate how money is used.
 + **Hire dedicated communications personnel.** Throughout our research, we communicated directly with accounting and finance staff in central office. While they graciously helped us gather data, this task should not have fallen on their shoulders. HCDE would benefit from dedicated personnel responsible for responding to the media and public.

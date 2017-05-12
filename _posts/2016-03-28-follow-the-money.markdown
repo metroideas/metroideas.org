@@ -27,6 +27,7 @@ During the course of our research we uncovered different revenue totals for educ
 
 We also found 2014–15 education revenue reported in these documents:
 
+{: .long-list}
 + [HCDE State Budget Document](http://images.pcmac.org/Uploads/HamiltonCountyDE/HamiltonCountyDE/Sites/DocumentsCategories/Documents/FY15-STATE-BUDGET-DOCUMENT.pdf): This report provides line item breakdowns of revenue according to the funds they are slated for.
 + [Hamilton County’s Comprehensive Annual Budget Report](http://www.hamiltontn.gov/pdf/cabr/2015/FY15CABR.pdf) (CABR): This budget report is an overview of how the county plans to spend its money for the upcoming fiscal year.
 + [Hamilton County’s Comprehensive Annual Financial Report](http://www.hamiltontn.gov/PDF/CAFR/2015/2015CAFR.pdf) (CAFR): This financial report is an overview of how the county actually spent its money.
@@ -65,7 +66,8 @@ The below chart represents revenue sources for education in all Tennessee counti
 
 <div id="funding-sources-chart"></div>
 
-**Federal funds**  
+### Federal funds
+
 While diverse federal agencies, such as the Department of Agriculture and the Department of Labor, provide funds towards education, the Department of Education is the largest contributor towards spending in the U.S. In 2014, the department provided roughly $79 billion towards K–12, which represented [less than 3 percent of the total federal budget](http://atlas.newamerica.org/school-finance). The biggest programs it administers are Title I grants totaling $14.4 billion and Individuals with Disabilities Act (IDEA) grants totaling $11.5 billion. The department’s funds are distributed to states and school districts through formulas or competitive grants. 
 
 Federal funds vary widely across states. Those receiving the lowest amount of federal money as a percentage of their education budgets include New Jersey and Connecticut ([4 percent](http://www2.census.gov/govs/school/13f33pub.pdf)). States receiving the highest amount of federal money include Louisiana, South Dakota, New Mexico and Arizona (15 percent). In 2015, [12 percent](https://www.tn.gov/assets/entities/education/attachments/asr_1415.pdf), or $1.1 billion, of Tennessee’s education receipts were composed of federal funds.
@@ -74,7 +76,8 @@ Hamilton County tracks with the statewide percentage of federal receipts. In 201
 
 {% include article/aside.html title="What is the Individuals with Disabilities Education Act?" %}
 
-**State funds**  
+### State funds
+
 States fund education primarily through income and sales tax revenue. These funds are usually determined by formulas based on the number of students in a district. State funds as a percentage of total education budgets vary widely. State funding is lowest in South Dakota ([31 percent](http://www2.census.gov/govs/school/13f33pub.pdf)) and highest in Vermont (88 percent). The rate is [47 percent](https://www.tn.gov/assets/entities/education/attachments/asr_1415.pdf) in Tennessee.  
 
 In Tennessee, state education funds come primarily from the sales tax. They’re distributed across counties according to a formula known as the Basic Education Program (BEP). The BEP formula is intended to calculate enough funds to cover a basic education for Tennessee students. This formula is driven primarily by student enrollment and covers three broad categories: instruction, classroom and non-classroom.
@@ -83,7 +86,8 @@ For example, for [every 20 students in K–3](https://www.tn.gov/assets/entities
 
 Hamilton County’s education budget is composed of roughly 34 percent, or [$137 million](http://www.hamiltontn.gov/PDF/CAFR/2015/2015CAFR.pdf), of state funds.
 
-**Local funds**  
+### Local funds
+
 Local government contributions to the education budget come primarily from property tax revenue. As a result, wealthier counties tend to have more resources at their disposal than poorer counties. This is why the BEP shifts a greater burden on to wealthier counties that can afford to pay more for education.
 
 Nationally, local funds as a percentage of total education budgets vary widely. Local funding is smallest in Hawaii ([2 percent](http://www2.census.gov/govs/school/13f33pub.pdf)) and greatest in Washington, D.C. (90 percent), which is followed distantly by New Hampshire (59 percent). The overall percentage for Tennessee is [41 percent](https://www.tn.gov/assets/entities/education/attachments/asr_1415.pdf).

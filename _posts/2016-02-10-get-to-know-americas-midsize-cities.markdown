@@ -16,14 +16,13 @@ author:
 - Jacqueline Homann
 ---
 
-Here at the Metro Ideas Project we are really into cities. We're fascinated in everything from the way they’re designed to how they choose to govern themselves. Particularly, we focus on midsize cities across the country. So it was only natural that in launching this project, we took some time to get to know those places a little bit better.
-
+respons
 To start our comparative analysis, we needed what any good researcher needs: data. It turned out that comparing cities to each other using the same dataset wasn’t as simple as we originally had thought. A lot of federal data is sorted by census tracts or counties as opposed to individual cities or municipalities. But it turned out that the U.S. Census Bureau had exactly what we needed in the American Community Survey.
 
 The ACS is a national annual survey conducted by the U.S. Census Bureau and the primary source for estimates of national population characteristics. It’s a key data source for policymakers, planners and the public seeking to understand economic and social trends at the national, regional, state and local levels. To better understand why we chose the ACS as our data source, it helps to first understand some things about the census.
 
 <figure>
-  <div class="responsive-embed">
+  <div class="responsive-embed wider">
     <iframe src="http://graphics.metroideas.org/maps/midsize-us-cities/"></iframe>
   </div>
 
@@ -104,8 +103,8 @@ We hope you are as compelled by these curiosities as we are. We are going to be 
 
 ## Footnotes
 
-[^1]: Three-year estimates were discontinued in 2013.  
-[^2]:  Estimates include a margin of error (MOE), which were not included here. For the MOE, refer to the American Community Survey.
+[^1]: Three-year estimates were discontinued in 2013.
+[^2]: Estimates include a margin of error (MOE), which were not included here. For the MOE, refer to the American Community Survey.
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
 <script>

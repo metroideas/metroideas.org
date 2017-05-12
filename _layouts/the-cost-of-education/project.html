@@ -21,7 +21,7 @@ layout: critical
 
     {% comment %} Mobile default {% endcomment %}
     #{{ hero_id }} {
-      background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format" }}');
+      background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop" }}');
     }
     
     {% comment %} Mobile retina and high res displays {% endcomment %}
@@ -32,14 +32,14 @@ layout: critical
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) { 
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format", dpr: 2 }}');
+        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", dpr: 2 }}');
       }
     }
     
     {% comment %} Desktop default {% endcomment %}
     @media only screen and (min-width:600px) {
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", auto:"format" }}');
+        background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop" }}');
       }
     }
 
@@ -51,14 +51,14 @@ layout: critical
     only screen and (min-width:600px) and (min-resolution: 192dpi),
     only screen and (min-width:600px) and (min-resolution: 2dppx) {
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", auto:"format", dpr:2 }}');
+        background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", dpr:2 }}');
       }
     }
 
     {% comment %} Desktop large default {% endcomment %}
     @media only screen and (min-width: 1800px) {
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", auto:"format" }}');
+        background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop" }}');
       }
     }
 
@@ -70,13 +70,13 @@ layout: critical
     only screen and (min-width:1800px) and (min-resolution: 192dpi),
     only screen and (min-width:1800px) and (min-resolution: 2dppx) {
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", auto:"format", dpr: 2 }}');
+        background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", dpr: 2 }}');
       }
     }
     
     {% comment %} Mobile default {% endcomment %}
     #download-hero {
-      background-image: url('{{ image | imgix_url: w: 400, h:400, fit:"crop", auto:"format" }}');
+      background-image: url('{{ image | imgix_url: w: 400, h:400, fit:"crop" }}');
     }
 
     {% comment %} Mobile retina and high res displays {% endcomment %}
@@ -87,14 +87,14 @@ layout: critical
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) { 
       #download-hero {
-        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", auto:"format", dpr:2 }}');
+        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", dpr:2 }}');
       }
     }
 
     {% comment %} Desktop default {% endcomment %}
     @media only screen and (min-width:600px) {
       #download-hero {
-        background-image: url('{{ image | imgix_url: w:1200, h:400, fit:"crop", auto:"format" }}');
+        background-image: url('{{ image | imgix_url: w:1200, h:400, fit:"crop" }}');
       }
     }
 
@@ -106,7 +106,7 @@ layout: critical
     only screen and (min-width:600px) and (min-resolution: 192dpi),
     only screen and (min-width:600px) and (min-resolution: 2dppx) {
       #download-hero {
-        background-image: url('{{ image | imgix_url: w:1200, h:400, fit:"crop", auto:"format", dpr:2 }}');
+        background-image: url('{{ image | imgix_url: w:1200, h:400, fit:"crop", dpr:2 }}');
       }
     }
   </style>

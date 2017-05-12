@@ -1,0 +1,13 @@
+{% comment %}
+Determines whether article header should display category or project title
+{% endcomment %}
+
+{% if page.project %}
+  {% assign project = site.projects | where_exp: "project", "project.title contains page.project" | first %}
+  <a href="{{ project.url }}" class="category">{{ project.title }}</a>
+{% elsif page.categories.size > 0 %}
+  {% assign category = page.categories | first %}
+  <a href="/archives/category/{{ category | slugify }}" class="category">
+    {{ category }}
+  </a>
+{% endif %}

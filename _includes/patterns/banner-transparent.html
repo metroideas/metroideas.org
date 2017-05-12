@@ -4,18 +4,6 @@ Transparent banner navigation lays on top of a page hero.
 
 <div class="transparent-banner-wrapper">
   <header role="banner" class="transparent">
-    <a href="/" class="logo" aria-label="Homepage"></a>
-    <a href="#" class="skip-menu">Skip to content</a>
-    
-    <button class="menu-toggle" id="menu-toggle" aria-label="Dropdown menu" aria-expanded="true" aria-controls="site-menu"><span></span><span></span><span></span></button>
-    
-    <nav role="navigation" class="site-menu" id="site-menu" aria-labelledby="menu-toggle">
-      <ul>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="https://metroideaslab.com">Lab</a></li>
-      </ul>
-    </nav>
+    {% include default/navigation-items.html %}
   </header>
 </div>

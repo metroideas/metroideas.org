@@ -45,7 +45,7 @@ For our calculation of average per-student expenditure, we focused on spending t
 
 Our analysis includes six major spending categories:
 
-
+{: .long-list}
 + **School-level salaries and benefits**: At over 80 percent of total spending, salaries and benefits for school personnel are the biggest chunk of the general purpose school fund.
 + **Title I**: These federal funds go toward equalizing the playing field for economically disadvantaged students. Title I represents over 50 percent of the federal projects fund. Fifty schools in 2015 received Title I funding.
 + **Individuals with Disabilities Education Act (IDEA)**: Federal funds for special education were not identified by school. IDEA grants were allocated based on a school's percentage of total students with disabilities.
@@ -81,7 +81,7 @@ Recent national research has also indicated that schools with similar demographi
 The Tennessee accountability system designates [Reward Schools](https://www.tn.gov/education/article/2015-school-accountability) based on relatively high levels of achievement[^3]. Reward Schools are the top five percent in the state in terms of student performance and year-over-year progress. While these schools are helping students achieve great outcomes, spending amounts differ. Both Lookout Mountain Elementary and Chattanooga School for the Liberal Arts have high performance but relatively higher average per-student spending. Thrasher Elementary also has high performance but relatively lower average per-student spending. These differences highlight the need to look more closely at how high performing schools are spending their money and how more efficient behavior can be replicated.
 
 <table>
-  <caption><strong>Reward Schools</strong></caption>
+  <caption>Reward Schools</caption>
   <thead>
     <tr>
       <th>School</th>

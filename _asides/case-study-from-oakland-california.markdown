@@ -12,12 +12,10 @@ Prior to reform, the school district was driven by top-down compliance-oriented 
 
 After shifting to student-based budgeting the district implemented many changes, including the following:
 
+{: .long-list}
 + The main compliance document, called the _Single Plan for Student Achievement_, was transformed into a three-year strategic planning tool.
-
 + Data standardization and access was prioritized. The district held training for school communities to use data and develop strategies to address the learning needs of different student groups.
-
 + Training was provided for central office staff on service delivery.
-
 + A two-way accountability system was implemented. Schools were scored based on student outcomes. Central office was scored on how well it served schools.
 
 

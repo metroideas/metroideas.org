@@ -5,9 +5,17 @@ Author profile section(s) for the end of an article. Accommodates multiple autho
 {% for byline in page.author %}
   {% assign author = site.authors | where_exp: 'author', 'author.title contains byline' | first %}
   <section class="profile">
+    {% if author.image.file %}
     <figure>
-      <img src="{{ author.image.file }}" alt="{{ author.title }}" class="avatar" aria-hidden="true">
+      <img srcset="{{ author.image.file | imgix_url: w: 130, h: 130, fit:"crop" }} 1x,
+                   {{ author.image.file | imgix_url: w: 130, h: 130, fit:"crop", dpr:2 }} 2x,
+                   {{ author.image.file | imgix_url: w: 130, h: 130, fit:"crop", dpr:3 }} 3x"
+           src="{{ author.image.file | imgix_url: w: 130, h: 130, fit:"crop" }}"
+           alt="{{ author.title }}"
+           class="avatar"
+           aria-hidden="true">
     </figure>
+    {% endif %}
     <div class="description">
       <h2><a href="{{ author.url }}">{{ author.title }}</a></h2>
       <span class="meta-title">{{ author.role }}</span>

@@ -50,6 +50,7 @@ dd {
 // Use with items that longer than one line
 .long-list li {
   @include vertical-margin-default;
+  margin-left: 0;
 }
 
 .unstyled-list {
