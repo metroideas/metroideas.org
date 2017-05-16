@@ -12,13 +12,13 @@ Article card requires post object
   <picture aria-hidden="true">
     {% if post.image.file %}
     <source media="(min-width:800px)"
-           srcset="{{ post.image.file | imgix_url: w:280, h:280, fit:"crop" }} 1x,
-                   {{ post.image.file | imgix_url: w:280, h:280, fit:"crop", dpr:2 }} 2x,
-                   {{ post.image.file | imgix_url: w:280, h:280, fit:"crop", dpr:3 }} 3x">
-    <img srcset="{{ post.image.file | imgix_url: w:350, h:200, fit:"crop" }} 1x,
-                 {{ post.image.file | imgix_url: w:350, h:200, fit:"crop", dpr:2 }} 2x,
-                 {{ post.image.file | imgix_url: w:350, h:200, fit:"crop", dpr:3 }} 3x"
-            src="{{ post.image.file | imgix_url: w:350, h:200, fit:"crop" }}"
+           srcset="{{ post.image.file | imgix_url: w:280, h:280, fit:"crop", q:75 }} 1x,
+                   {{ post.image.file | imgix_url: w:280, h:280, fit:"crop", q:75, dpr:2 }} 2x,
+                   {{ post.image.file | imgix_url: w:280, h:280, fit:"crop", q:75, dpr:3 }} 3x">
+    <img srcset="{{ post.image.file | imgix_url: w:350, h:200, fit:"crop", q:75 }} 1x,
+                 {{ post.image.file | imgix_url: w:350, h:200, fit:"crop", q:75, dpr:2 }} 2x,
+                 {{ post.image.file | imgix_url: w:350, h:200, fit:"crop", q:75, dpr:3 }} 3x"
+            src="{{ post.image.file | imgix_url: w:350, h:200, fit:"crop", q:75 }}"
             alt="{{ post.image.alt }}">
     {% else %}
     <img src="/media/bg-dots.svg" alt="{{ post.title }}" class="green">

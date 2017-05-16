@@ -10,7 +10,7 @@ layout: default
   {% if page.image.file %}
     {% comment %} Mobile default {% endcomment %}
     #{{ hero_id }} {
-      background-image: url('{{ image | imgix_url: w:400, h:300, fit:"crop" }}');
+      background-image: url('{{ image | imgix_url: w:400, h:300, fit:"crop", q:75 }}');
     }
     
     {% comment %} Mobile retina and high res displays {% endcomment %}
@@ -21,14 +21,14 @@ layout: default
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) { 
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:400, h:300, fit:"crop", dpr:2 }}');
+        background-image: url('{{ image | imgix_url: w:400, h:300, fit:"crop", q:75, dpr:2 }}');
       }
     }
     
     {% comment %} Desktop default {% endcomment %}
     @media only screen and (min-width:600px) {
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1200, h:500, fit:"crop" }}');
+        background-image: url('{{ image | imgix_url: w:1200, h:500, fit:"crop", q:75 }}');
       }
     }
     
@@ -40,14 +40,14 @@ layout: default
     only screen and (min-width:600px) and (min-resolution: 192dpi),
     only screen and (min-width:600px) and (min-resolution: 2dppx) {
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1200, h:500, fit:"crop", dpr:2 }}');
+        background-image: url('{{ image | imgix_url: w:1200, h:500, fit:"crop", q:75, dpr:2 }}');
       }
     }
 
     {% comment %} Desktop large default {% endcomment %}
     @media only screen and (min-width: 1800px) {
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1800, h:500, fit:"crop" }}');
+        background-image: url('{{ image | imgix_url: w:1800, h:500, fit:"crop", q:75 }}');
       }
     }
 
@@ -59,7 +59,7 @@ layout: default
     only screen and (min-width:1800px) and (min-resolution: 192dpi),
     only screen and (min-width:1800px) and (min-resolution: 2dppx) {
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1800, h:500, fit:"crop", dpr:2 }}');
+        background-image: url('{{ image | imgix_url: w:1800, h:500, fit:"crop", q:75, dpr:2 }}');
       }
     }
 
