@@ -12,10 +12,10 @@ Article preview has required post argument:
   <figure>
     <a href="{{ link }}">
       {% if post.image.file %}
-        <img srcset="{{ image | imgix_url: w:450, h:250, fit:"crop" }} 1x,
-                     {{ image | imgix_url: w:450, h:250, fit:"crop", dpr:2 }} 2x,
-                     {{ image | imgix_url: w:450, h:250, fit:"crop", dpr:3 }} 3x"
-                src="{{ image | imgix_url: w:450, h:250, fit:"crop" }}"
+        <img srcset="{{ image | imgix_url: w:450, h:250, fit:"crop", q:75 }} 1x,
+                     {{ image | imgix_url: w:450, h:250, fit:"crop", q:75, dpr:2 }} 2x,
+                     {{ image | imgix_url: w:450, h:250, fit:"crop", q:75, dpr:3 }} 3x"
+                src="{{ image | imgix_url: w:450, h:250, fit:"crop", q:75 }}"
                 alt="{{ post.image.alt }}">
         {% if post.image.credit %}
         <figcaption>{{ post.image.credit }}</figcaption>

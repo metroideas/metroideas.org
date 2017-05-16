@@ -9,10 +9,10 @@ layout: default
 <section class="bio container" id="bio">
   {% if page.image.file %}
   <figure class="half">
-    <img srcset="{{ image | imgix_url: w: 590, h:590 }} 1x,
-                 {{ image | imgix_url: w: 590, h:590, dpr:2 }} 2x,
-                 {{ image | imgix_url: w: 590, h:590, dpr:3 }} 3x"
-            src="{{ image | imgix_url: w: 590, h:590 }}"
+    <img srcset="{{ image | imgix_url: w: 590, h:590, q:75 }} 1x,
+                 {{ image | imgix_url: w: 590, h:590, q:75, dpr:2 }} 2x,
+                 {{ image | imgix_url: w: 590, h:590, q:75, dpr:3 }} 3x"
+            src="{{ image | imgix_url: w: 590, h:590, q:75 }}"
             alt="{{ page.title }}"
             aria-hidden="true">
   </figure>
