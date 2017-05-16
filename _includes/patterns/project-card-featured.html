@@ -15,7 +15,7 @@ Outputs html and inline style:
   {% if project.image.file %}
     {% comment %} Mobile default {% endcomment %}
     #{{ hero_id }} {
-      background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop" }}');
+      background-image: url('{{ image | imgix_url: w:400, h:300, fit:"crop" }}');
     }
     
     {% comment %} Mobile retina and high res displays {% endcomment %}
@@ -26,7 +26,7 @@ Outputs html and inline style:
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) { 
       #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", dpr:2 }}');
+        background-image: url('{{ image | imgix_url: w:400, h:300, fit:"crop", dpr:2 }}');
       }
     }
     

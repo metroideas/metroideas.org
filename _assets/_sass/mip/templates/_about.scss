@@ -27,6 +27,16 @@ main.about object {
   }
 }
 
+// Nukes hero gradients
+main.about .hero,
+main.about .full-screen,
+main.about .hero-short {
+  &:before {
+    width: 0;
+    height: 0;
+  }
+}
+
 // Layout
 // Section vertical flow
 // Default bottom margins
