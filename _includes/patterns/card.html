@@ -12,9 +12,9 @@ Article card requires post object
   <picture aria-hidden="true">
     {% if post.image.file %}
     <source media="(min-width:800px)"
-           srcset="{{ post.image.file | imgix_url: w:300, h:300, fit:"crop" }} 1x,
-                   {{ post.image.file | imgix_url: w:300, h:300, fit:"crop", dpr:2 }} 2x,
-                   {{ post.image.file | imgix_url: w:300, h:300, fit:"crop", dpr:3 }} 3x">
+           srcset="{{ post.image.file | imgix_url: w:280, h:280, fit:"crop" }} 1x,
+                   {{ post.image.file | imgix_url: w:280, h:280, fit:"crop", dpr:2 }} 2x,
+                   {{ post.image.file | imgix_url: w:280, h:280, fit:"crop", dpr:3 }} 3x">
     <img srcset="{{ post.image.file | imgix_url: w:350, h:200, fit:"crop" }} 1x,
                  {{ post.image.file | imgix_url: w:350, h:200, fit:"crop", dpr:2 }} 2x,
                  {{ post.image.file | imgix_url: w:350, h:200, fit:"crop", dpr:3 }} 3x"
