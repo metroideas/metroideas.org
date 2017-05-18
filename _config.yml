@@ -1,6 +1,8 @@
 ---
 title: Metro Ideas Project
 timezone: America/New_York
+url: https://www.metroideas.org
+description:
 collections:
   posts:
     title: Articles
@@ -40,8 +42,8 @@ defaults:
     path: ''
     type: authors
   values:
-    layout: profile-page
-    main: profile-page
+    layout: staff
+    main: staff
     current: true
     role: 
     email: 
@@ -129,7 +131,4 @@ jekyll-archives:
   permalinks:
     category: "/archives/category/:name/"
     tag: "/archives/tag/:name/"
-api:
-  analytics: 
-  facebook: 
-  mailchimp: 
+google_analytics: "UA-68712194-1"

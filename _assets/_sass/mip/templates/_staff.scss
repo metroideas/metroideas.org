@@ -1,5 +1,5 @@
 // Main
-main.profile-page {
+main.staff {
   @include section-margin-default;
 
   @media (min-width: $medium) {
@@ -7,11 +7,11 @@ main.profile-page {
   }
 }
 
-main.profile-page .article-preview:last-of-type {
+main.staff .article-preview:last-of-type {
   margin-bottom: 0;
 }
 
-main.profile-page .bio {
+main.staff .bio {
   @include vertical-margin-default;
 
   @media (min-width: $small) {
@@ -22,7 +22,7 @@ main.profile-page .bio {
 }
 
 // On displays > 800px, shift description column left *when paired with figure element*
-main.profile-page .bio > :last-child {
+main.staff .bio > :last-child {
   margin-top: $gutter;
 
   @media (min-width: $small) {
@@ -30,7 +30,7 @@ main.profile-page .bio > :last-child {
   }
 }
 
-main.profile-page .bio figure + :last-child {
+main.staff .bio figure + :last-child {
   margin-top: 0;
   @media (min-width: $medium) {
     @include grid-shift(-1);
@@ -40,33 +40,33 @@ main.profile-page .bio figure + :last-child {
   }
 }
 
-main.profile-page .bio .icon-list {
+main.staff .bio .icon-list {
   @include vertical-margin-reset;
 }
 
 // Full bleed profile image on small screens only
-main.profile-page .bio figure {
+main.staff .bio figure {
   @media (max-width: $small) {
     @include margin(null $half-gutter * -1);  
   }
 }
 
 // Bio styles
-main.profile-page .bio figure,
-main.profile-page .bio h1 {
+main.staff .bio figure,
+main.staff .bio h1 {
   @include vertical-margin-reset;
 }
 
-main.profile-page .bio p {
+main.staff .bio p {
   margin-top: $gutter;
 }
 
 // Typography
-main.profile-page .bio h1 {
+main.staff .bio h1 {
   @include h2;
 }
 
-main.profile-page .articles h2 {
+main.staff .articles h2 {
   @include h3;
   margin-bottom: $half-gutter;
   text-align: center;
