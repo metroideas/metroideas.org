@@ -6,5 +6,7 @@ author:
 - Cate Irvin
 - David Morton
 - Peter Hagemeyer
+- Tracey Woodbury
+- Megan Gienapp
 ---
 
