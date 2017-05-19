@@ -4,13 +4,13 @@ layout: critical
 
 {% assign project = page %}
 {% assign hero_id = project.title | append: " hero" | slugify %}
-{% assign image   = project.image.file %}
+{% if project.image.file %}
+  {% assign image = project.image.file %}
+{% endif %}
 
 {% include patterns/banner-transparent.html %}
 
 <main class="project" role="main" id="main">
-  
-
   <style>
     .full-screen object,
     .full-screen img {
@@ -18,98 +18,10 @@ layout: critical
       width: 100%;
       height: 100%;
     }
-
-    {% comment %} Mobile default {% endcomment %}
-    #{{ hero_id }} {
-      background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", q:50 }}');
-    }
-    
-    {% comment %} Mobile retina and high res displays {% endcomment %}
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min--moz-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) { 
-      #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", q:50, dpr: 2 }}');
-      }
-    }
-    
-    {% comment %} Desktop default {% endcomment %}
-    @media only screen and (min-width:600px) {
-      #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", q:50 }}');
-      }
-    }
-
-    {% comment %} Desktop retina and high res displays {% endcomment %}
-    @media only screen and (min-width:600px) and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min-width:600px) and (min--moz-device-pixel-ratio: 2),
-    only screen and (min-width:600px) and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-width:600px) and (min-device-pixel-ratio: 2),
-    only screen and (min-width:600px) and (min-resolution: 192dpi),
-    only screen and (min-width:600px) and (min-resolution: 2dppx) {
-      #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", q:50, dpr:2 }}');
-      }
-    }
-
-    {% comment %} Desktop large default {% endcomment %}
-    @media only screen and (min-width: 1800px) {
-      #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", q:50 }}');
-      }
-    }
-
-    {% comment %} Desktop large retina and high res displays {% endcomment %}
-    @media only screen and (min-width:1800px) and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min-width:1800px) and (min--moz-device-pixel-ratio: 2),
-    only screen and (min-width:1800px) and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-width:1800px) and (min-device-pixel-ratio: 2),
-    only screen and (min-width:1800px) and (min-resolution: 192dpi),
-    only screen and (min-width:1800px) and (min-resolution: 2dppx) {
-      #{{ hero_id }} {
-        background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", q:50, dpr: 2 }}');
-      }
-    }
-    
-    {% comment %} Mobile default {% endcomment %}
-    #download-hero {
-      background-image: url('{{ image | imgix_url: w: 400, h:400, fit:"crop", q:50 }}');
-    }
-
-    {% comment %} Mobile retina and high res displays {% endcomment %}
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min--moz-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) { 
-      #download-hero {
-        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", q:50, dpr:2 }}');
-      }
-    }
-
-    {% comment %} Desktop default {% endcomment %}
-    @media only screen and (min-width:600px) {
-      #download-hero {
-        background-image: url('{{ image | imgix_url: w:1200, h:400, fit:"crop", q:50 }}');
-      }
-    }
-
-    {% comment %} Desktop retina and high res displays {% endcomment %}
-    @media only screen and (min-width:600px) and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min-width:600px) and (min--moz-device-pixel-ratio: 2),
-    only screen and (min-width:600px) and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-width:600px) and (min-device-pixel-ratio: 2),
-    only screen and (min-width:600px) and (min-resolution: 192dpi),
-    only screen and (min-width:600px) and (min-resolution: 2dppx) {
-      #download-hero {
-        background-image: url('{{ image | imgix_url: w:1200, h:400, fit:"crop", q:50, dpr:2 }}');
-      }
-    }
   </style>
+
+  {% include inline-css/hero-full-screen.html id=hero_id image=image %}
+  {% include inline-css/hero-short.html id="download-hero" image=image %}
   
   <header class="full-screen" id="{{ hero_id }}">
     <h1 class="small-container">
