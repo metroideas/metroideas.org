@@ -1,7 +1,7 @@
 ---
 title: Joda Thongnopnua
 date: 2016-12-16 14:31:00 -05:00
-position: 2
+position: 1
 role: Executive director
 description: Joda Thongnopnua has a background in communications and advertising.
   He worked with major retail brands, international non-governmental organizations,
