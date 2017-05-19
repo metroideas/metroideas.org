@@ -152,12 +152,14 @@ layout: default
   }
 </style>
 
-<div class="container" id="container">
-  <div class="row">
+<div class="container" id="container" style="margin-top:6rem;">
     <div class="span-4">
-      <header>
-        <span class="category">{{ page.category }}</span>
+      <header style="margin-left:0;margin-right:0;">
         <h1>Hamilton County school spending</h1>
+        <p class="byline">
+          {% include article/byline.html %}
+        </p>
+        
         <p>{{ page.description }}</p>
         <p>Select a school zone to see how it compares to others. Filter schools by grade, demographics or county district.</p>
         <p>See our <a href="/blog/one-answer-many-questions">research on per-student spending</a> for additional details.</p>
@@ -287,7 +289,7 @@ layout: default
         <img src="/media/map-hamilton-county-school-spending-map-fallback.png" alt="Hamilton County map shows school zones by per-student funding">  
       </figure>
     </div>
-  </div>
+  
   
   <div class="whole">
     <p>Map does not show Center for Creative Arts, Chattanooga School for the Arts and Sciences, Chattanooga School for the Liberal Arts, Chattanooga STEM School or Sequoyah High School. Data was unavailable for the joint zone of Battle Academy and Brown Academy. Percentages of economically disadvantaged students are from the Hamilton County Department of Education (2015 Title I schools) and the Tennessee Department of Education (non-Title I schools).</p>

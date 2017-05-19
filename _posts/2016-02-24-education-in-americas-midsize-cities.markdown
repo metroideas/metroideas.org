@@ -6,6 +6,7 @@ categories:
 tags:
 - Hamilton County
 - American Community Survey
+layout: article-bare
 description: We revisit American Community Survey data to look at education in 441
   midsize U.S. cities.
 author:
