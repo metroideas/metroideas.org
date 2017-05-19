@@ -1,7 +1,7 @@
 ---
 title: Julia Bursch
 date: 2017-05-08 16:30:00 -04:00
-position: 4
+position: 5
 role: Project manager
 description: 
 image:

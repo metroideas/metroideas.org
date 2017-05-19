@@ -1,7 +1,7 @@
 ---
 title: Peter Hagemeyer
 date: 2016-12-16 14:32:00 -05:00
-position: 5
+position: 6
 role: Research assistant
 description: Peter Hagemeyer is studying economics, history and Africana studies at
   the University of Tennessee at Chattanooga. The East Tennessee native is also a
