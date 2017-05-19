@@ -1,0 +1,84 @@
+{% comment %}
+Adds inline media queries to optimize hero-full-screen image size.
+
+Partial has 2 arguments: required id and optional path to an image source. When image is missing, use bg-dots pattern and blue background.
+
+Original image sources are replaced by Imgix-optimized versions in production.
+
+Example:
+
+{% include inline-css/hero-full-screen.html id=id image=image-source-file %}
+{% endcomment %}
+
+{% assign id = include.id %}
+
+{% if include.image %}
+  {% assign image = include.image %}
+{% else %}
+  {% assign image = false %}
+{% endif %}
+
+<style>
+  {% if image %}
+    {% comment %} Mobile default {% endcomment %}
+    #{{ id }} {
+      background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", q:50 }}');
+    }
+    
+    {% comment %} Mobile retina and high res displays {% endcomment %}
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) { 
+      #{{ id }} {
+        background-image: url('{{ image | imgix_url: w:400, h:400, fit:"crop", q:50, dpr: 2 }}');
+      }
+    }
+    
+    {% comment %} Desktop default {% endcomment %}
+    @media only screen and (min-width:600px) {
+      #{{ id }} {
+        background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", q:50 }}');
+      }
+    }
+
+    {% comment %} Desktop retina and high res displays {% endcomment %}
+    @media only screen and (min-width:600px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-width:600px) and (min-device-pixel-ratio: 2),
+    only screen and (min-width:600px) and (min-resolution: 192dpi),
+    only screen and (min-width:600px) and (min-resolution: 2dppx) {
+      #{{ id }} {
+        background-image: url('{{ image | imgix_url: w:1200, h:800, fit:"crop", q:50, dpr:2 }}');
+      }
+    }
+
+    {% comment %} Desktop large default {% endcomment %}
+    @media only screen and (min-width: 1800px) {
+      #{{ id }} {
+        background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", q:50 }}');
+      }
+    }
+
+    {% comment %} Desktop large retina and high res displays {% endcomment %}
+    @media only screen and (min-width:1800px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-width:1800px) and (min--moz-device-pixel-ratio: 2),
+    only screen and (min-width:1800px) and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-width:1800px) and (min-device-pixel-ratio: 2),
+    only screen and (min-width:1800px) and (min-resolution: 192dpi),
+    only screen and (min-width:1800px) and (min-resolution: 2dppx) {
+      #{{ id }} {
+        background-image: url('{{ image | imgix_url: w:1800, h:1080, fit:"crop", q:50, dpr: 2 }}');
+      }
+    }
+  {% else %}
+    #{{ id }} {
+      background: #3b71e8;
+      background-image: url("/media/bg-dots.svg");
+      background-repeat: repeat;
+    }
+  {% endif %}
+</style>

@@ -5,6 +5,7 @@ categories:
 - Election
 tags:
 - Chattanooga
+layout: article-bare
 description: Voter turnout was once again low in Chattanooga's recent city election.
 image:
   file: "/media/low-voter-turnout-in-chattanooga-precincts.png"
