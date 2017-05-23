@@ -16,6 +16,7 @@ var gulp         = require('gulp');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var uglify       = require('gulp-uglify');
+var webpack      = require('webpack-stream');
 
 // Local settings
 var config = require('./gulp.config.js');
@@ -129,10 +130,11 @@ gulp.task('sass', function() {
 // List JavaScript dependencies in config.concatJS
 gulp.task('js', function() {
   browserSync.notify('Compiling JavaScript')
-  return gulp.src(config.concatJS)
-    .pipe(concat('main.js'))
+
+  return gulp.src(config.paths.js + '/*.js')
+    .pipe(webpack(require('./webpack.config.js')))
     .pipe(uglify())
-    .pipe(gulp.dest(paths.script))
+    .pipe(gulp.dest(config.paths.script));
 })
 
 // Watch for changes 
