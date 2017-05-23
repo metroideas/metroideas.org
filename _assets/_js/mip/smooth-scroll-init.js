@@ -1,5 +1,6 @@
 window.mip = window.mip || {};
 var mip = window.mip;
+var smoothScroll = require('smooth-scroll');
 
 (function($) {
   // Remove html root's 'no-js' class

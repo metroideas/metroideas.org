@@ -27,6 +27,7 @@
     "gulp-sourcemaps": "^2.4.1",
     "gulp-uglify": "^2.0.1",
     "run-sequence": "^1.2.2",
+    "webpack-stream": "^3.2.0",
     "yargs": "^6.6.0"
   },
   "dependencies": {
