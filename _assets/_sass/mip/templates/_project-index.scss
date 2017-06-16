@@ -23,10 +23,6 @@ main.project-index .description {
   }
 }
 
-main.project-index .description p {
-  @include vertical-margin-reset;
-}
-
 main.project-index .card-group:first-of-type {
   @media (min-width: $medium) {
     @include section-margin-default;

@@ -34,7 +34,8 @@ main: about
 </header>
 
 <section class="midsize-cities" id="midsize-cities">
-  <div class="hero" style="background:url('https://unsplash.it/1600/500/?random');">
+  {% include inline-css/hero.html id="midsize-cities-hero" image="/media/about-midsize-cities-hero.jpg" %}
+  <div class="hero" id="midsize-cities-hero">
   </div>
 
   <div class="container">
@@ -48,8 +49,8 @@ main: about
 <section class="goals" id="goals">
   <h2>Our approach</h2>
   <div class="goal-1">
-    <object type="image/svg+xml" data="/media/foster-informed-discussions.svg" aria-hidden="true" tabindex="-1">
-      <img src="/media/foster-informed-discussions@2x.png" alt="Dialog bubbles">
+    <object type="image/svg+xml" data="/media/support-local-governments.svg" aria-hidden="true" tabindex="-1">
+      <img src="/media/support-local-governments@2x.png" alt="Lightbulb">
     </object>
     <h3>Conduct meaningful research</h3>
     <p>We help cities answer complex questions by building research projects designed to inform decision makers with local data, place-based context and actionable findings.</p>
@@ -62,9 +63,10 @@ main: about
     <p>We help cities develop smart urban policy, balancing new and experimental ideas with solutions that are both effective and have a realistic path to implementation.</p>
   </div>
   <div class="goal-3">
-    <object type="image/svg+xml" data="/media/support-local-governments.svg" aria-hidden="true" tabindex="-1">
-      <img src="/media/support-local-governments@2x.png" alt="Lightbulb">
+    <object type="image/svg+xml" data="/media/foster-informed-discussions.svg" aria-hidden="true" tabindex="-1">
+      <img src="/media/foster-informed-discussions@2x.png" alt="Dialog bubbles">
     </object>
+    
     <h3>Engage communities</h3>
     <p>We put the research and policy design framework through a creative lens in order to ensure our work is engaging, accessible and relevant to everyday residents.</p>
   </div>
@@ -130,14 +132,14 @@ main: about
 </section>
 
 <section class="creative-thinking" id="creative-thinking">
-  <div class="hero" style="background:url('https://unsplash.it/1600/500/?random');">
+  {% include inline-css/hero.html id="creative-thinking-hero" image="/media/about-creative-thinking.jpg" %}
+  <div class="hero" id="creative-thinking-hero"></div>
   </div>
 
   <div class="description">
     <object type="image/svg+xml" data="/media/naked-logo.svg" aria-hidden="true">
       <img src="/media/naked-logo@2x.png" alt="Lightbulb">
     </object>
-    
     <div>
       <h2>Policy designed for everyone</h2>
       <p>Our work is designed to build efficacy and understanding among residents by sparking meaningful community dialog about tough and complex local issues. Across different venues and platforms, we value accessibility and strive to be inclusive in the way we speak, write and do.</p>
@@ -147,9 +149,18 @@ main: about
 
 <section class="team alt-gray" id="team">
   <figure class="large-container">
-    <img srcset="https://unsplash.it/1600/600/?random 1x, https://unsplash.it/3200/1200/?random 2x"
-      src="https://unsplash.it/1600/600/?random"
-      alt="Random image">
+    <picture aria-hidden="true">
+      {% assign team_photo = "/media/about-team.jpg" %}
+      <source media="(min-width:600px)"
+             srcset="{{ team_photo | imgix_url: w: 1200, h: 450, fit:"crop", q:50 }} 1x,
+                     {{ team_photo | imgix_url: w: 1200, h: 450, fit:"crop", q:50, dpr:2 }} 2x,
+                     {{ team_photo | imgix_url: w: 1200, h: 450, fit:"crop", q:50, dpr:3 }} 3x">
+      <img srcset="{{ team_photo | imgix_url: w:600, h: 250, fit:"crop", q:50 }} 1x,
+                   {{ team_photo | imgix_url: w:600, h: 250, fit:"crop", q:50, dpr:2 }} 2x,
+                   {{ team_photo | imgix_url: w:600, h: 250, fit:"crop", q:50, dpr:3 }} 3x"
+              src="{{ team_photo | imgix_url: w:600, h: 250, fit:"crop", q:50 }}"
+              alt="Staff talking at conference table">
+    </picture>
   </figure>
 
   <div class="container">
@@ -183,12 +194,12 @@ main: about
     <form class="block whole" action="https://formspree.io/info@metroideas.org" method="POST">
       <div>
         <label for="contact-us-name">Name</label><br>
-        <input type="text" id="contact-us-name" name="name" placeholder="Name">
+        <input type="text" id="contact-us-name" name="name" placeholder="Jane Jacobs">
       </div>
 
       <div>
         <label for="contact-us-email-address">Email address</label><br>
-        <input type="email" id="contact-us-email-address" name="_replyto" placeholder="Email address">
+        <input type="email" id="contact-us-email-address" name="_replyto" placeholder="jane@example.com">
       </div>
       
       <div>

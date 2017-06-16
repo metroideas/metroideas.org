@@ -270,6 +270,7 @@ header[role="banner"].transparent {
 header[role="banner"].transparent .logo {
   background: url("/media/logo-transparent@2x.png") no-repeat;
   background: url("/media/logo-transparent.svg") no-repeat;
+  z-index: 11;
 }
 
 header[role="banner"].transparent nav {
