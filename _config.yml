@@ -70,7 +70,7 @@ defaults:
     - title: 
       file: 
 url: https://metroideas.org
-description: "We are an urban policy startup working for U.S. cities."
+description: We are an urban policy startup working for U.S. cities.
 public: true
 facebook: metroideas
 github: metroideas
