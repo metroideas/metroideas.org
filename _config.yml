@@ -69,51 +69,29 @@ defaults:
     downloads:
     - title: 
       file: 
-url: https://www.metroideas.org
-description: 
-public: false
+url: https://metroideas.org
+description: "We are an urban policy startup working for U.S. cities."
+public: true
 facebook: metroideas
 github: metroideas
 instagram: metroideas
 twitter: thinkmetro
 email: info@metroideas.org
-nav:
-- title: Home
-  icon: logo
-  url: "/"
-- title: About
-  icon: 
-  url: "/about/"
-- title: Projects
-  icon: 
-  url: "/projects/"
-- title: Blog
-  icon: 
-  url: "/blog/"
-- title: Archives
-  icon: 
-  url: "/archives/"
-- title: Staff
-  icon: 
-  url: "/staff/"
-- title: Lab
-  icon: 
-  url: https://metroideaslab.org
 include:
 - _pages
 exclude:
-- node_modules/
-- bower_components/
-- tmp/
-- bower.json
 - Gemfile*
 - gulpfile.js
 - gulp.config.js
+- node_modules/
 - package.json
+- package-lock.json
 - README.md
 - LICENSE
 - jekyll-build-error.log
 - npm-debug.log
+- tmp/
+- webpack.config.js
 gems:
 - jekyll-feed
 - jekyll-redirect-from
@@ -121,7 +99,7 @@ gems:
 - jekyll-archives
 - jekyll/imgix
 imgix:
-  source: mip-beta.imgix.net
+  source: metro-ideas-project.imgix.net
 jekyll-archives:
   enabled:
   - categories
