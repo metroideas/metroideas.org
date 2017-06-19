@@ -8,8 +8,7 @@ Social media meta tags
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 
 {% if page.image.file %}
-<meta property="og:image:url" content="{{ page.image.file | prepend: "http://metro-ideas-project.imgix.net" }}">
-<meta property="og:image:secure_url" content="{{ page.image.file | prepend: "https://metro-ideas-project.imgix.net" }}">
+<meta property="og:image" content="{{ page.image.file | prepend: "http://metro-ideas-project.imgix.net" }}">
 {% endif %}
 
 <meta property="og:description" content="
