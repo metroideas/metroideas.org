@@ -75,8 +75,8 @@ Over the next several weeks the Metro Ideas Project will explore the question, "
 [^2]: "Economically disadvantaged" refers to students who qualify for free or reduced lunch prices. According to HCDE’s Guide to Understanding the Education Budget, a student whose family earns about $44,000 (85 percent above the federal poverty level for a family of four) qualifies for reduced lunch. A student whose family earns $23,000 or less (the federal poverty line for a family of four) qualifies for free lunch.
 [^3]: Hamilton County was included in this study. We'll discuss those results in a later part of this project.
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
 <script>
-  var url         = "http://graphics.metroideas.org/charts/tn-grad-rates-by-county/";
+  var url         = "//graphics.metroideas.org/charts/tn-grad-rates-by-county/";
   var scatterplot = new pym.Parent("scatterplot", url, {});
 </script>

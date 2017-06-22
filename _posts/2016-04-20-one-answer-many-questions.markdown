@@ -128,10 +128,10 @@ In the upcoming final part of our report, we'll discuss ideas and examples of ho
 [^2]:  Brown Academy and Tyner Academy received Focus Grants during fiscal year 2015. Brainerd High, Dalewood Middle, Orchard Knob Elementary, Orchard Knob Middle and Woodmore Elementary received Innovation Zone grants.
 [^3]: Hamilton County Collegiate High at Chattanooga State is also a Reward School, but it is not included in our per-pupil spending analysis.
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
 <script>
-new pym.Parent("map", "http://graphics.metroideas.org/maps/us-education-spending-per-student/", {});
-new pym.Parent("barchart", "http://graphics.metroideas.org/charts/education-spending-comparison/", {});
-new pym.Parent("normalized-barchart", "http://graphics.metroideas.org/charts/hcde-spending-compared-to-average/", {});
-new pym.Parent("quadrant", "http://graphics.metroideas.org/charts/scatterplot-hcde-spending-accountability/", {});
+new pym.Parent("map", "//graphics.metroideas.org/maps/us-education-spending-per-student/", {});
+new pym.Parent("barchart", "//graphics.metroideas.org/charts/education-spending-comparison/", {});
+new pym.Parent("normalized-barchart", "//graphics.metroideas.org/charts/hcde-spending-compared-to-average/", {});
+new pym.Parent("quadrant", "//graphics.metroideas.org/charts/scatterplot-hcde-spending-accountability/", {});
 </script>
