@@ -129,8 +129,8 @@ Metro Ideas Project will hold a panel discussion with local candidates and campa
 Chattanewbies is co-hosting the event with us to help welcome new residents to the city. Get [directions](https://www.google.com/maps/place/1216+E+Main+St+%23102,+Chattanooga,+TN+37408/@35.0289869,-85.2911864,17z/data=!3m1!4b1!4m5!3m4!1s0x88605de6bf9e0193:0x536956b9164e4321!8m2!3d35.0289869!4d-85.2889977) or [RSVP on Facebook](https://www.facebook.com/events/1136570059801994/1158069657652034/?notif_t=like&notif_id=1489591974254449).
 
 
-<script src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script src="//pym.nprapps.org/pym.v1.min.js"></script>
 <script>
-  var url   = "http://graphics.metroideas.org/maps/chattanooga-election-2017-precinct-turnout/";
+  var url   = "//graphics.metroideas.org/maps/chattanooga-election-2017-precinct-turnout/";
   new pym.Parent("voter-turnout-precinct-map", url, {});
 </script>

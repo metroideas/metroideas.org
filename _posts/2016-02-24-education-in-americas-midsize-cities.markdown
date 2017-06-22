@@ -126,9 +126,9 @@ A similar relationship appears to connect [education levels with poverty rates](
 
 MIP sees the education sphere as relating to really interesting policy questions. It's a topic that we plan to come back to with more more in-depth analysis and careful consideration. In the meantime, we hope this post gives you an idea of some of the overarching trends related to education in America's midsize cities. 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
 <script>
-  new pym.Parent("educational-attainment", "http://graphics.metroideas.org/charts/linechart-education-attainment/", {});
-  new pym.Parent("education-native-foreign", "http://graphics.metroideas.org/charts/scatterplot-education-by-birth/", {});
-  new pym.Parent("unemployment-by-education", "http://graphics.metroideas.org/charts/linechart-unemployment-education/", {});
+  new pym.Parent("educational-attainment", "//graphics.metroideas.org/charts/linechart-education-attainment/", {});
+  new pym.Parent("education-native-foreign", "//graphics.metroideas.org/charts/scatterplot-education-by-birth/", {});
+  new pym.Parent("unemployment-by-education", "//graphics.metroideas.org/charts/linechart-unemployment-education/", {});
 </script>

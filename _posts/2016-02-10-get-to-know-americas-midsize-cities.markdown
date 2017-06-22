@@ -24,7 +24,7 @@ The ACS is a national annual survey conducted by the U.S. Census Bureau and the 
 
 <figure>
   <div class="responsive-embed wider">
-    <iframe src="http://graphics.metroideas.org/maps/midsize-us-cities/"></iframe>
+    <iframe src="//graphics.metroideas.org/maps/midsize-us-cities/"></iframe>
   </div>
 
   <figcaption>
@@ -107,8 +107,8 @@ We hope you are as compelled by these curiosities as we are. We are going to be 
 [^1]: Three-year estimates were discontinued in 2013.
 [^2]: Estimates include a margin of error (MOE), which were not included here. For the MOE, refer to the American Community Survey.
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
 <script>
-  var url       = "http://graphics.metroideas.org/charts/barchart-city-population/";
+  var url       = "//graphics.metroideas.org/charts/barchart-city-population/";
   var barchart  = new pym.Parent("barchart", url, {});
 </script>

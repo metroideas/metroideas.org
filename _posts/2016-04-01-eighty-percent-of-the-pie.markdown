@@ -131,8 +131,8 @@ Teacher salaries alone do not determine student success. To understand the relat
 [^3]:  Data for both 2008 and 2016 pertains to all school-level personnel. Data is for salaries only and excludes benefits.
 [^4]: We want to give two caveats regarding the database used to calculate the Teacher Investment Index. The first is that years of teaching experience can be an imprecise measurement. For example, a new teacher might have a year or more of experience in the classroom as a teaching aide to fulfill an academic requirement, but show zero years of teaching experience as a new hire. Another example is that the database has a ceiling of 25 years, which would not accurately reflect the additional years of experience of someone who has been teaching for 30 years. The second caveat is that the database shows active employees based on pay status. What this means is that if a teacher is on leave of absence but has enough available leave to still be considered in paid status, that teacher will be counted among active teachers. Further, interim teachers are also counted, which can lead to double counting for some positions.
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
 <script>
-  new pym.Parent("hamilton-county-school-salaries", "http://graphics.metroideas.org/charts/hcde-salaries-2008-2016/", {});
-  new pym.Parent("teacher-investment-index", "http://graphics.metroideas.org/charts/barchart-hcde-brainpower-index/", {});
+  new pym.Parent("hamilton-county-school-salaries", "//graphics.metroideas.org/charts/hcde-salaries-2008-2016/", {});
+  new pym.Parent("teacher-investment-index", "//graphics.metroideas.org/charts/barchart-hcde-brainpower-index/", {});
 </script>
