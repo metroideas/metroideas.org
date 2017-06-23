@@ -5,6 +5,10 @@ tags:
 - Immigration
 - Chattanooga
 - Event
+description: |-
+  To many, immigration and the status of refugees can seem like abstract and polarizing issues that continue to hopelessly divide Washington and the nation. But to so many others, it’s a deeply personal topic with consequences that reverberate in communities across the country. On June 28 at 5:30pm, Metro Ideas Project will host three individuals that will help us
+
+  , we are hosting three individuals that will help us dive deeper into how immigrants and refugees have shaped our communities. On June 28 at 5:30 p.m., Metro Ideas Project will hold a panel discussion with Welcoming America and Coming to America: The Story of Us to discuss how policymakers, community leaders and residents can work together to build more welcoming and inclusive communities. We will also hear the personal stories of two immigrants who call Chattanooga home.
 author:
 - Joda Thongnopnua
 - Julia Bursch
