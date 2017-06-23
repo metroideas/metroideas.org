@@ -11,7 +11,7 @@ description: 'To many, immigration and the status of refugees can seem like abst
   in communities across the country. On June 28 at 5:30pm, Metro Ideas Project will
   host three individuals that will dive deep into how policymakers, community leaders
   and residents can work together to build more welcoming and inclusive communities. '
-lead: 'On June 28 at 5:30 p.m., Metro Ideas Project will hold a panel discussion with Welcoming
+lead: 'On June 28 at 5:30 p.m., Metro Ideas Project will host a discussion with Welcoming
   America and Coming to America: The Story of Us to discuss how policymakers, community
   leaders and residents can work together to build more welcoming and inclusive communities.'
 author:
