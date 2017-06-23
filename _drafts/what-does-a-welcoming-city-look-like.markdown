@@ -39,8 +39,8 @@ This event will be held June 28 at 5:30 p.m. in our Highland Park office (1216
 
 \(Beer and wine provided for individuals ages 21\+.)
 
-[Click here to RSVP.](https://www.facebook.com/events/109319819622480/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A176974182643152%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A176974182643152%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D)
- 
+[Click here to RSVP.](https://www.facebook.com/events/109319819622480/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A176974182643152%2C%22action_history%22%3A%5B%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A176974182643152%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D%5D%2C%22has_source%22%3Atrue%7D)
+
 ## Panelists for this event are:
 
 **Anton Demenchuk, president and CEO of Cresco Group**
