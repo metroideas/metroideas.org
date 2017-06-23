@@ -25,6 +25,7 @@ defaults:
     path: ''
   values:
     description: 
+    lead: 
     author: []
     image:
       file: 
