@@ -49,7 +49,7 @@ This event will be held June 28 at 5:30 p.m. in our Highland Park office (1216
 **Anton Demenchuk, president and CEO of Cresco Group**
 
 Anton Demenchuk, originally from Ukraine, is the president and CEO of Cresco Group, the company he founded in 2012. While in Ukraine, Anton received his bachelor's in business administration, as well as degrees in macroeconomic analysis and forecasting. He also taught macroeconomics as a part of the Macroeconomic Research Institute. In 2010 at the age of 21, Anton moved to the United States and received his MBA from Southern Adventist University. From 2015 to 2017, Anton served as the president of the International Business Council of the Chattanooga Area Chamber of Commerce, and he founded the Chattanooga Marketing Clinic in 2016. Anton and his wife, Christina, who is originally from the Dominican Republic, now consider themselves Chattanoogans.
- 
+
 **Isha Lee, chief network officer at Welcoming America**
 
 Isha Lee is a nonprofit practitioner fluent in external affairs, government relations and organizational development. She has over 10 years of experience at national and local organizations. Her recent roles include chief of staff for the national communication team at Teach for America and a founding staff person at the Center for Civil and Human Rights in Atlanta. She is an alumna of Davidson College, where she majored in political science, and Goddard College, where she received an M.A. in sustainable business and community. Isha lives in Decatur, Georgia, with her family.
