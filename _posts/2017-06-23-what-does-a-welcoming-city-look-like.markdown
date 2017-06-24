@@ -24,11 +24,11 @@ image:
 
 To many, immigration and the status of refugees can seem like abstract and polarizing issues that continue to hopelessly divide Washington and the nation. But to so many others, it’s a deeply personal topic with consequences that reverberate in communities across the country.
 
-From the local economy to the cultural identity of a place, immigrants dramatically affect and are affected by the cities and counties they reside in. From 2000 to 2013, all the net growth in Main Street business nationally can be attributed to immigrants. These businesses, from coffee shops to grocery stores, act as key assets and anchors within neighborhoods. Immigrants are also becoming homeowners faster than the U.S.-born population, contributing $3.7 trillion to housing markets nationwide. Immigrants play a large role in key local industries, including construction, hospitality, and health care. In so many ways, immigrants are laying down roots and, in doing so, becoming an essential part of the communities they call home.
+From the local economy to the cultural identity of a place, immigrants dramatically affect and are affected by the cities and counties they reside in. From 2000 to 2013, all the net growth in Main Street business nationally can be attributed to immigrants[^1]. These businesses, from coffee shops to grocery stores, act as key assets and anchors within neighborhoods. Immigrants are also becoming homeowners faster than the U.S.-born population, contributing $3.7 trillion to housing markets nationwide[^2]. Immigrants play a large role in key local industries, including construction, hospitality, and health care. In so many ways, immigrants are laying down roots and, in doing so, becoming an essential part of the communities they call home.
  
 As immigrants arrive and begin to carve out new lives in the U.S., we felt like Wonk Wednesday was an ideal platform to discuss how cities can redefine the narrative taking place on cable news or in political talking points. That’s why we’re going beyond the national dialogue. This coming Wednesday, we are hosting three individuals that will help us dive deeper into how immigrants and refugees have shaped our communities.
 
-While limiting cooperation between local law enforcement and federal immigration officials is a hot topic — collectively, over 600 municipalities, counties and states have done so — this isn’t the only way that communities are engaging with their immigrant and refugee residents to create a more welcoming and inclusive front door to the nation. Cities such as Nashville and Philadelphia have worked hard to assure that city services are available to all its residents by actively helping immigrants who aspire to become U.S. citizens and conducting workshops to teach leaders from immigrant communities how to navigate local government.
+While limiting cooperation between local law enforcement and federal immigration officials is a hot topic — collectively, over 600 municipalities, counties and states have done so[^3] — this isn’t the only way that communities are engaging with their immigrant and refugee residents to create a more welcoming and inclusive front door to the nation. Cities such as Nashville and Philadelphia have worked hard to assure that city services are available to all its residents by actively helping immigrants who aspire to become U.S. citizens and conducting workshops to teach leaders from immigrant communities how to navigate local government.
 
 Although national immigration policy continues to be a controversial wedge issue, we aim to break through that noise by talking with immigrants and refugees in our own cities — people we call neighbors, colleagues and friends.
 
@@ -57,3 +57,11 @@ Isha Lee is a nonprofit practitioner fluent in external affairs, government rela
 **Daniela Peterson, founder of Coming to America: The Story of Us and community engagement specialist at Chattanooga Neighborhood Enterprise**
 
 Daniela's homeland is the most southern part of South America, Chile. She grew up in the driest desert in the world, "El Desierto de Atacama" (the Atacama Desert). From a family of five, she is the eldest of her two brothers. This Chilean social worker now works for the Chattanooga Neighborhood Enterprise (CNE) as a bilingual community engagement specialist, after having founded Coming to America: The Story of Us, a storytelling collective focused on the stories of immigrants and refugees in Chattanooga.
+
+## Footnotes
+
+[^1]: Kallick, David Dyssegaard, Kate Brick, Steven McCutcheon Rubio, Susan Segal, Richard Andre, Zachary Bleckner. 2015. “Bringing Vitality to Main Street: How Immigrant Small Businesses Help Local Economies Grow.” *Americas Society/Council of the Americas.*
+
+[^2]: Gopal, Prashant. 2017. “Why Trump’s Immigration Crackdown Could Sink U.S. Home Prices.” *Bloomberg.*
+
+[^3]: Graber, Lena, Nikki Marquez. 2016. “Searching for Sanctuary: An Analysis of America’s Counties & Their Voluntary Assistance with Deportations.” *Washington: Immigrant Legal Resource Center.* 
