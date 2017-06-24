@@ -17,6 +17,8 @@ lead: 'On June 28 at 5:30 p.m., Metro Ideas Project will host a discussion with
 author:
 - Joda Thongnopnua
 - Julia Bursch
+image:
+  file: "/media/C96A0071.jpg"
 ---
 
 To many, immigration and the status of refugees can seem like abstract and polarizing issues that continue to hopelessly divide Washington and the nation. But to so many others, it’s a deeply personal topic with consequences that reverberate in communities across the country.
