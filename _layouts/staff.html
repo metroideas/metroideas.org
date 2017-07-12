@@ -27,6 +27,8 @@ layout: default
   </header>
 </section>
 
+{% if posts.size > 0 %}
+
 <section class="articles container" id="articles">
   <div class="whole">
     <h2>Contributions</h2>
@@ -35,3 +37,5 @@ layout: default
     {% endfor %}
   </div>
 </section>
+
+{% endif %}
