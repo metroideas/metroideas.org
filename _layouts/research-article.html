@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article>
+  {% include article/header.html hero=true %}
+  
+  <section class="copy">
+    {{ content }}
+  </section>
+</article>
+
+<style>
+  .supplemental h2.meta-title {
+    margin-bottom: 20px;
+  }
+</style>
+
+<section class="supplemental container">
+  <div class="span-5">
+    {% include project/further-reading.html %}
+  </div>
+
+  <div class="offset-2 span-5">
+    {% include project/about.html %}
+    {% include project/downloads.html %}
+  </div>
+</section>
