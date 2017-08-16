@@ -1,0 +1,39 @@
+{% comment %}
+Sets research article header and optional hero via boolean hero argument:
+
+{% include project/research-article-header.html hero=true %}
+{% endcomment %}
+
+{% assign hero_id = page.title | slugify %}
+
+{% if page.image.file %}
+  {% assign image = page.image.file %}
+{% endif %}
+
+{% if include.hero %}
+  {% include inline-css/hero.html id=hero_id image=image %}
+  <!-- Hero & header -->
+  <div class="hero" id="{{ hero_id }}">
+    <header>
+      {% include article/category.html %}
+      
+      <h1 class="large-display">{{ page.title }}</h1>
+
+      <p class="byline">
+        <time datetime={{ page.date | date_to_xmlschema }}>{{ page.date | ap_datetime }}</time>
+      </p>
+    </header>
+  </div>
+{% else %}
+  <!-- Header only uses temp. inline styles -->
+  <style>header a.category{margin:0;padding:0;}</style>
+  <header style="margin-top:6rem;">
+    {% include article/category.html %}
+
+    <h1 class="large-display">{{ page.title }}</h1>
+
+    <p class="byline">
+      {% include article/byline.html %}  
+    </p>
+  </header>
+{% endif %}
