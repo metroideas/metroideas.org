@@ -7,8 +7,8 @@ tags:
 - Chattanooga
 - Gentrification
 - Event
-description: '"Gentrification" has become a buzzword to describe changing urban neighborhoods,
-  but what does it really mean?'
+description: Gentrification has become a buzzword to describe changing urban neighborhoods,
+  but what does it really mean?
 lead: '"Gentrification" has become a buzzword to describe changing urban neighborhoods,
   but what does it really mean?'
 author:
