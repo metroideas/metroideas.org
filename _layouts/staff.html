@@ -4,6 +4,7 @@ layout: default
 
 {% assign byline = page.title %}
 {% assign posts  = site.posts | where_exp: "post", "post.author contains byline" %}
+{% assign projects = site.projects | where_exp: "project", "project.author contains byline" | sort: "position" %}
 {% assign image  = page.image.file %}
 
 <section class="bio container" id="bio">
@@ -27,11 +28,15 @@ layout: default
   </header>
 </section>
 
-{% if posts.size > 0 %}
+{% if projects.size > 0 or posts.size > 0 %}
 
 <section class="articles container" id="articles">
   <div class="whole">
     <h2>Contributions</h2>
+    {% for project in projects %}
+      {% include patterns/preview.html post=project %}
+    {% endfor %}
+
     {% for post in posts %}
       {% include patterns/preview.html post=post %}
     {% endfor %}
