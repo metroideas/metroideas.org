@@ -6,6 +6,10 @@ categories:
 tags:
 - Chattanooga
 - Hamilton County
+description: Our calculator shows the impact of proposed property tax increases in
+  Chattanooga and Hamilton County.
+lead: Our calculator shows the impact of proposed property tax increases in Chattanooga
+  and Hamilton County.
 author:
 - David Morton
 layout: article-bare
