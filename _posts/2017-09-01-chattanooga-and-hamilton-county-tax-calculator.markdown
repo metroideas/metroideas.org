@@ -38,7 +38,7 @@ Property owners in the Chattanooga city limits pay both city and county taxes.
 
 If you don't know your home's appraised or assessed value, you can look it up on the [Hamilton County assessor of property website](http://assessor.hamiltontn.gov/). Here's a brief demo of how to find the appraised (total) and assessed values.
 
-<img src="/media/assessor-lookup-1200px.gif" alt="Looking up property appraisal demo" style="display: block;">
+<img src="/media/assessor-lookup-1200px.gif" alt="Looking up property appraisal demo" style="width:100%;">
 
 <script src="//d3js.org/d3.v4.min.js"></script>
 
