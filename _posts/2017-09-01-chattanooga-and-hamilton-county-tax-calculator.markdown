@@ -12,6 +12,10 @@ lead: Our calculator shows the impact of proposed property tax increases in Chat
   and Hamilton County.
 author:
 - David Morton
+image:
+  file: "/media/tax-calculator-preview.png"
+  caption: Chattanooga and Hamilton County property tax calculator
+  alt: Bar graph showing property taxes
 layout: article-bare
 ---
 
