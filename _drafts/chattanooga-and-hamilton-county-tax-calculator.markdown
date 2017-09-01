@@ -6,9 +6,14 @@ categories:
 tags:
 - Chattanooga
 - Hamilton County
+author:
+- David Morton
+layout: article-bare
 ---
 
+The governments of [Chattanooga](http://www.timesfreepress.com/news/local/story/2017/aug/01/chattanooga-property-tax-rate-may-drop-bills-are-expected-increase/441422/) and [Hamilton County](http://www.timesfreepress.com/news/breakingnews/story/2017/aug/29/county-mayor-raising-property-taxes/446110/) are considering raising their respective property tax rates for fiscal year 2018.
 
+Find out how the proposed increases would impact your annual tax bill. Enter your home's appraised or assessed value to get an estimate comparing your cost under the current and proposed rates.
 
 <div class="grid" style="margin-bottom:15px;">
  <div class="half">
@@ -24,6 +29,10 @@ tags:
 </div>
 
 <figure id="taxgraph"></figure>
+
+Property owners in the Chattanooga city limits pay both city and county taxes.
+
+If you don't know your home's appraised or assessed value, you can look it up on the [Hamilton County assessor of property website](http://assessor.hamiltontn.gov/). Here's a brief demo of how to find the appraised (total) and assessed values.
 
 <script src="//d3js.org/d3.v4.min.js"></script>
 
