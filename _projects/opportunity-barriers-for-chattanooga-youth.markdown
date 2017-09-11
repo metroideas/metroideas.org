@@ -14,9 +14,13 @@ author:
 - Megan Gienapp
 - Peter Hagemeyer
 - Tracey Woodbury
+- David Morton
 image:
   file: "/media/mdc-cover.jpg"
   alt: Ladder leaning against white wall.
+about: 'Metro Ideas Project conducted focus groups and interviews with Chattanooga
+  youth and employers on behalf of the Network for Southern Economic Mobility Initiative
+  in 2017. '
 layout: research-article
 ---
 
