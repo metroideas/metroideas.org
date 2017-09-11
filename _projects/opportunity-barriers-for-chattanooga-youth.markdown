@@ -1,7 +1,6 @@
 ---
 title: Opportunity barriers for Chattanooga youth
 date: 2017-09-11 10:00:00 -04:00
-published: false
 categories:
 - Economy
 tags:
