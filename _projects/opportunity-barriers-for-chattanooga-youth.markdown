@@ -35,12 +35,17 @@ further reading:
   description: 
 - title: 'Sociology’s Revenge: Moving to Opportunity (MTO) Revisited'
   url: https://www.brookings.edu/blog/social-mobility-memos/2015/05/06/sociologys-revenge-moving-to-opportunity-mto-revisited/
-  description: 
+  description: 'Brookings looks at research that shows that neighborhoods matter not
+    only for daily life, but for the life chances of the children raised there.
+
+'
 - title: 'From Preschool to Prosperity: The Economic Payoff to Early Childhood Education'
   url: http://www.upjohn.org/sites/default/files/WEfocus/FromPreschooltoProsperity.pdf
-  description: Timothy Bartik shows that investment in high-quality early childhood
+  description: 'Timothy Bartik shows that investment in high-quality early childhood
     education has several long-term benefits, including higher adult earnings for
     program participants.
+
+'
 main: article
 layout: research-article
 ---
