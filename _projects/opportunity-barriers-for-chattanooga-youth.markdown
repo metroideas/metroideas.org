@@ -32,11 +32,14 @@ further reading:
   description: 
 - title: The Economic Impact of School Suspensions
   url: https://www.theatlantic.com/business/archive/2014/10/the-economic-impact-of-school-suspensions/381859/
-  description: 
+  description: 'Alana Semuels
+
+'
 - title: 'Sociology’s Revenge: Moving to Opportunity (MTO) Revisited'
   url: https://www.brookings.edu/blog/social-mobility-memos/2015/05/06/sociologys-revenge-moving-to-opportunity-mto-revisited/
-  description: 'Brookings looks at research showing that neighborhoods matter not
-    only for daily life, but for the life chances of the children raised there.
+  description: 'Brookings'' Jonathan Rothwell looks at research showing that neighborhoods
+    matter not only for daily life, but for the life chances of the children raised
+    there.
 
 '
 - title: 'From Preschool to Prosperity: The Economic Payoff to Early Childhood Education'
