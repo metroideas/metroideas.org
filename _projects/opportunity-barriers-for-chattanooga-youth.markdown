@@ -34,7 +34,7 @@ further reading:
   url: https://www.theatlantic.com/business/archive/2014/10/the-economic-impact-of-school-suspensions/381859/
   description: 
 - title: 'Sociology’s Revenge: Moving to Opportunity (MTO) Revisited'
-  url: https://www.brookings. edu/blog/social-mobility-memos/2015/05/06/sociolo- gys-revenge-moving-to-opportunity-mto-revisited/
+  url: https://www.brookings.edu/blog/social-mobility-memos/2015/05/06/sociologys-revenge-moving-to-opportunity-mto-revisited/
   description: 
 - title: 'From Preschool to Prosperity: The Economic Payoff to Early Childhood Education'
   url: http://www.upjohn.org/sites/default/files/WEfocus/FromPreschooltoProsperity.pdf
