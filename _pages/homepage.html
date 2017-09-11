@@ -6,9 +6,10 @@ image:
   file: "/media/mip-team-full.jpg"
 ---
 
-{% assign project-1 = site.projects[0] %}
-{% assign project-2 = site.projects[1] %}
-{% assign project-3 = site.projects[2] %}
+{% assign projects = site.projects | sort: "position" %}
+{% assign project-1 = projects[0] %}
+{% assign project-2 = projects[1] %}
+{% assign project-3 = projects[2] %}
 {% assign blog = site.posts | where_exp: "post", "post.project == null" %}
 
 <section class="projects" id="projects">

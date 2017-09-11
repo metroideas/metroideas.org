@@ -4,9 +4,12 @@ layout: default
 main: project-index
 ---
 
-{% assign project-1 = site.projects[0] %}
-{% assign project-2 = site.projects[1] %}
-{% assign project-3 = site.projects[2] %}
+{% assign projects = site.projects | sort: "position" %}
+{% assign project-1 = projects[0] %}
+{% assign project-2 = projects[1] %}
+{% assign project-3 = projects[2] %}
+{% assign project-4 = projects[3] %}
+{% assign project-5 = projects[4] %}
 
 <section class="card-group">
   {% include patterns/project-card-featured.html project=project-1 %}
@@ -22,3 +25,15 @@ main: project-index
   {% include patterns/project-card.html project=project-2 %}
   {% include patterns/project-card.html project=project-3 %}
 </section>
+
+{% if projects.size > 3%}
+<section class="card-group">
+  {% if project-4 %}
+    {% include patterns/project-card.html project=project-4 %}
+  {% endif %}
+  {% if project-5 %}
+    {% include patterns/project-card.html project=project-4 %}
+  {% endif %}
+</section>
+{% endif %}
+
