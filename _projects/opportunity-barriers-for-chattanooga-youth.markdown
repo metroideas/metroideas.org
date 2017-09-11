@@ -29,12 +29,14 @@ about: 'Metro Ideas Project conducted focus groups and interviews with Chattanoo
 further reading:
 - title: Why It’s So Hard to Get Ahead in the South
   url: https://www.theatlantic.com/business/archive/2017/04/south-mobility-charlotte/521763/
-  description: 
-- title: The Economic Impact of School Suspensions
-  url: https://www.theatlantic.com/business/archive/2014/10/the-economic-impact-of-school-suspensions/381859/
-  description: 'Alana Semuels
+  description: 'Alana Semuels reports for The Atlantic: In Charlotte and other Southern
+    cities, poor children have the lowest odds of making it to the top income bracket
+    of kids anywhere in the country. Why?
 
 '
+- title: The Economic Impact of School Suspensions
+  url: https://www.theatlantic.com/business/archive/2014/10/the-economic-impact-of-school-suspensions/381859/
+  description: 
 - title: 'Sociology’s Revenge: Moving to Opportunity (MTO) Revisited'
   url: https://www.brookings.edu/blog/social-mobility-memos/2015/05/06/sociologys-revenge-moving-to-opportunity-mto-revisited/
   description: 'Brookings'' Jonathan Rothwell looks at research showing that neighborhoods
