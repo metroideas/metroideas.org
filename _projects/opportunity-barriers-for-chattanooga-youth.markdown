@@ -10,9 +10,14 @@ tags:
 lead: Exploring economic mobility in Chattanooga's youth.
 author:
 - Cate Irvin
+- Jonah Paul
+- Megan Gienapp
+- Peter Hagemeyer
+- Tracey Woodbury
 image:
   file: "/media/mdc-cover.jpg"
   alt: Ladder leaning against white wall.
+layout: research-article
 ---
 
 A child's prospects of earning more than his or her parents have fallen 40 percent over the past half-century, according to data from the Equality of Opportunity Project.
