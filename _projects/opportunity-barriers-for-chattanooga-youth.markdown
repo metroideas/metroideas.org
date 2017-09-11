@@ -38,7 +38,9 @@ further reading:
   description: 
 - title: 'From Preschool to Prosperity: The Economic Payoff to Early Childhood Education'
   url: http://www.upjohn.org/sites/default/files/WEfocus/FromPreschooltoProsperity.pdf
-  description: 
+  description: Timothy Bartik shows that investment in high-quality early childhood
+    education has several long-term benefits, including higher adult earnings for
+    program participants.
 main: article
 layout: research-article
 ---
