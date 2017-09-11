@@ -143,5 +143,3 @@ While there are entry-level positions in Chattanooga, they are not all easily ac
 For those who get into college, finances restrict where they can attend, time devoted to their studies, and where they live. Young people are forced to give up on schools that are best suited for their interests and needs in favor of in-state schools with lower tuition, Tennessee-based scholarships, and a lower cost of living if they continue living with their parents.
 
 We recommend evidence-based policies that improve economic opportunities for many Americans currently left behind.
-
-{
