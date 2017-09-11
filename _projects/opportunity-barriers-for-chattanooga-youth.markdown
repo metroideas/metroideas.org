@@ -28,7 +28,7 @@ about: 'Metro Ideas Project conducted focus groups and interviews with Chattanoo
   in 2017. '
 further reading:
 - title: Why It’s So Hard to Get Ahead in the South
-  url: https://www.theatlantic.com/business/archive/2017/04/ south-mobility-charlotte/521763/
+  url: https://www.theatlantic.com/business/archive/2017/04/south-mobility-charlotte/521763/
   description: 
 - title: The Economic Impact of School Suspensions
   url: https://www.theatlantic.com/business/ar- chive/2014/10/the-economic-impact-of-school-suspensions/381859/
