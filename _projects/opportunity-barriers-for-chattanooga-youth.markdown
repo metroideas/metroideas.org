@@ -36,7 +36,12 @@ further reading:
 '
 - title: The Economic Impact of School Suspensions
   url: https://www.theatlantic.com/business/archive/2014/10/the-economic-impact-of-school-suspensions/381859/
-  description: 
+  description: 'Lucia Graves, writing for The Atlantic: A recent report found that
+    African-American girls were suspended at much higher rates than their white peers,
+    a phenomenon that leads to lower earnings and educational attainment in the long
+    run.
+
+'
 - title: 'Sociology’s Revenge: Moving to Opportunity (MTO) Revisited'
   url: https://www.brookings.edu/blog/social-mobility-memos/2015/05/06/sociologys-revenge-moving-to-opportunity-mto-revisited/
   description: 'Brookings'' Jonathan Rothwell looks at research showing that neighborhoods
