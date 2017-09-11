@@ -12,7 +12,7 @@ author:
 - Cate Irvin
 image:
   file: "/media/mdc-cover.jpg"
-  alt: Ladder
+  alt: Ladder leaning against white wall.
 ---
 
 A child's prospects of earning more than his or her parents have fallen 40 percent over the past half-century, according to data from the Equality of Opportunity Project.
