@@ -57,7 +57,7 @@ We conducted qualitative focus groups with youths between 15 and 25 years old to
 Our research report below is part of a larger project examining youth mobility in four Southern communities.
 
 <div>
-  {% include patterns/box-download.html title="Report: Exploring Economic Mobility in Chattanooga Youth" href="http://example.com" meta="PDF (2.8MB)" %}
+  {% include patterns/box-download.html title="Report: Exploring Economic Mobility in Chattanooga Youth" href="/media/Exploring Economic Mobility in Chattanooga Youth.pdf" meta="PDF (2.8MB)" %}
 </div>
 
 ## Focus groups
@@ -111,3 +111,5 @@ While there are entry-level positions in Chattanooga, they are not all easily ac
 For those who get into college, finances restrict where they can attend, time devoted to their studies, and where they live. Young people are forced to give up on schools that are best suited for their interests and needs in favor of in-state schools with lower tuition, Tennessee-based scholarships, and a lower cost of living if they continue living with their parents.
 
 We recommend evidence-based policies that improve economic opportunities for many Americans currently left behind.
+
+{
