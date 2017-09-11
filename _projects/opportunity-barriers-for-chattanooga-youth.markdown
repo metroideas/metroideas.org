@@ -31,7 +31,7 @@ further reading:
   url: https://www.theatlantic.com/business/archive/2017/04/south-mobility-charlotte/521763/
   description: 
 - title: The Economic Impact of School Suspensions
-  url: https://www.theatlantic.com/business/ar- chive/2014/10/the-economic-impact-of-school-suspensions/381859/
+  url: https://www.theatlantic.com/business/archive/2014/10/the-economic-impact-of-school-suspensions/381859/
   description: 
 - title: 'Sociology’s Revenge: Moving to Opportunity (MTO) Revisited'
   url: https://www.brookings. edu/blog/social-mobility-memos/2015/05/06/sociolo- gys-revenge-moving-to-opportunity-mto-revisited/
