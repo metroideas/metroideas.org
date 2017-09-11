@@ -93,7 +93,7 @@ For example, a child who grows up in Chattanooga, Tennessee, with parents who ea
       <tr><td>50</td><td>Charlotte, NC</td><td>4.40%</td></tr>
     </tbody>
   </table>
-  <figcaption>
+  <figcaption style="line-height:1.3;">
     Source: <a href="http://www.nber.org/papers/w19843">Where Is the Land of Opportunity? The Geography of Intergenerational Mobility</a>
   </figcaption>
 </figure>
