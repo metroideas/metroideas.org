@@ -44,6 +44,7 @@ further reading:
 - title: 'From Preschool to Prosperity: The Economic Payoff to Early Childhood Education'
   url: http://www.upjohn.org/sites/default/files/WEfocus/FromPreschooltoProsperity.pdf
   description: 
+main: article
 layout: research-article
 ---
 
