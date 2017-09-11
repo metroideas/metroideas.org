@@ -7,7 +7,18 @@ categories:
 tags:
 - Hamilton County
 - Chattanooga
-lead: Exploring economic mobility in Chattanooga's youth.
+description: |
+  Barriers to economic mobility are most acute in the South, where segregation, income inequality, local school quality, and family structure strongly correlate with geographical differences in upward mobility.
+
+  {: .long-list}
+  + Reduce segregation in neighborhoods and schools. This can be accomplished through a mix of state and local policy initiatives as well as a robust effort at the district level to create more integrated schools.
+  + Expand awareness of existing career opportunities, college alternatives, and ladders into the middle class. Many youth are not aware of their options, including two-year degrees, certifications, and professional careers that do not require a traditional four-year degree.
+  + Increase wages across all industries to support a stronger economy. Stagnant wages have hurt new entrants to the job market, particularly local youth that are struggling to make ends meet.
+  + Reform discipline and juvenile justice practices. Black youth are far more likely to be disciplined with out-of-school suspensions and referrals to the juvenile court system than white youth are—a destructive trend that is rooted in policy.
+  + Increase access to and bolster quality education at every level. From universal pre-K to robust soft skill training in secondary school, education must be a pillar of any strategy to increase upward mobility among youth.
+  + Expand data collection to include youth not currently connected to institutional support or programming. Collecting candid feedback from youths not connected to support institutions will be critical to better understanding the challenges facing a wide strata of disadvantaged youth.
+lead: A child's prospects of earning more than his or her parents have fallen 40 percent
+  over the past half-century.
 author:
 - Cate Irvin
 - Jonah Paul
