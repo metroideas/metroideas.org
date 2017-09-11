@@ -57,7 +57,7 @@ further reading:
 
 '
 downloads:
-- title: Exploring Economic Mobility in Chattanooga Youth
+- title: 'Report: Exploring Economic Mobility in Chattanooga Youth'
   file: "/media/Exploring%20Economic%20Mobility%20in%20Chattanooga%20Youth.pdf"
 main: article
 layout: research-article
