@@ -35,7 +35,7 @@ further reading:
   description: 
 - title: 'Sociology’s Revenge: Moving to Opportunity (MTO) Revisited'
   url: https://www.brookings.edu/blog/social-mobility-memos/2015/05/06/sociologys-revenge-moving-to-opportunity-mto-revisited/
-  description: 'Brookings looks at research that shows that neighborhoods matter not
+  description: 'Brookings looks at research showing that neighborhoods matter not
     only for daily life, but for the life chances of the children raised there.
 
 '
