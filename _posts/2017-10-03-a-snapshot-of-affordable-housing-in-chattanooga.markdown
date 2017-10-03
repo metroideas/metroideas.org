@@ -1,6 +1,9 @@
 ---
 title: A snapshot of affordable housing in Chattanooga
 date: 2017-10-03 13:21:00 -04:00
+description: Understanding what is meant by "affordable housing" is the first step
+  in addressing the complex issue that impacts and is impacted by not only housing
+  but also workforce and economic development.
 author:
 - Cate Irvin
 image:
