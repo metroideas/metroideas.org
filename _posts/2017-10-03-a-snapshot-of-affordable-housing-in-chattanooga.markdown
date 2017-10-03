@@ -110,7 +110,6 @@ Sign up with your email below and be the first to know when we release new updat
 
 ## Footnotes
 
-[^1]: Data derived from 2010 Census and 2015 5-Year American Community Survey. [Learn more](https://affordablehousingonline.com/affordable-housing-data#census).  
-Margin of error: ± 1.75 percentage points. Source: [Affordable Housing Online](https://affordablehousingonline.com/housing-search/Tennessee/Chattanooga#income).
+[^1]: Data derived from 2010 Census and 2015 5-Year American Community Survey. [Learn more](https://affordablehousingonline.com/affordable-housing-data#census). Margin of error: ± 1.75 percentage points. Source: [Affordable Housing Online](https://affordablehousingonline.com/housing-search/Tennessee/Chattanooga#income).
 
 [^2]: [Affordable Housing Online](https://affordablehousingonline.com/housing-search/Tennessee/Chattanooga#income)
