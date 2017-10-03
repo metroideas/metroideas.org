@@ -14,6 +14,7 @@ about: Our neighborhood series explores ways to build a more equitable Chattanoo
   to strengthen our communities.
 article:
 - 'Gentrification: What it is and why it matters'
+- A snapshot of affordable housing in Chattanooga
 ---
 
 ## How can we build a more equitable Chattanooga? Let's start with neighborhoods.
