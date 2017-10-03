@@ -1,6 +1,9 @@
 ---
 title: Neighborhood perspectives
 date: 2017-10-03 13:00:00 -04:00
+tags:
+- Chattanooga
+- Neighborhoods
 position: 1
 description: How can we build a more equitable Chattanooga? Let's start with neighborhoods.
 lead: Our neighborhood series explores ways to build a more equitable Chattanooga.
@@ -15,6 +18,11 @@ about: Our neighborhood series explores ways to build a more equitable Chattanoo
 article:
 - 'Gentrification: What it is and why it matters'
 - A snapshot of affordable housing in Chattanooga
+further reading:
+- title: Chattanooga rent prices rise three times faster than income
+  url: http://www.timesfreepress.com/news/business/aroundregion/story/2016/jul/04/chattanooga-rent-prices-rise-three-times-faster-income/374274/
+  description: The Times Free Press reports on rising rents, which are outpacing income
+    gains in Chattanooga.
 ---
 
 ## How can we build a more equitable Chattanooga? Let's start with neighborhoods.
