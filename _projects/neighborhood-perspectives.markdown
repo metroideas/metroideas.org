@@ -1,7 +1,6 @@
 ---
 title: Neighborhood perspectives
 date: 2017-10-03 13:00:00 -04:00
-published: false
 description: How can we build a more equitable Chattanooga? Let's start with neighborhoods.
 lead: Our neighborhood series explores ways to build a more equitable Chattanooga.
 author:
