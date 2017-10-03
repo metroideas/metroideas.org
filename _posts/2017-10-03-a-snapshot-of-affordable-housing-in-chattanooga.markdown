@@ -9,13 +9,14 @@ tags:
 description: Understanding what is meant by "affordable housing" is the first step
   in addressing the complex issue that impacts and is impacted by not only housing
   but also workforce and economic development.
+lead: Affordable housing can be very difficult to define, and it can vary widely even
+  within a single city or county, never mind a country or across the globe.
 author:
 - Cate Irvin
 image:
   file: "/media/affordable-housing.jpg"
   credit: Chattanooga Times Free Press
   alt: Man building a house
-project: Neighborhood perspectives
 ---
 
 Housing is one of the most basic and important needs, but also one of the most complicated urban issues. A decade after the onset of the Great Recession, which devastated the housing market nationally, many cities are still reeling from its effects. Chattanooga was not spared the impact of the Great Recession, but its rebound has compared auspiciously with other small- to midsize cities in the U.S. While the city has been prospering in many ways, seeing new job growth and real estate development on the rise since 2009, these benefits have not been shared by all Chattanoogans. In terms of *affordable housing*, needs have continued to persist or even worsen.
