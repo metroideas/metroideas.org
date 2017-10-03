@@ -6,6 +6,9 @@ description: How can we build a more equitable Chattanooga? Let's start with nei
 lead: Our neighborhood series explores ways to build a more equitable Chattanooga.
 author:
 - Cate Irvin
+image:
+  file: "/media/neighborhood-perspectives.jpg"
+  alt: Man hanging a "For Sale" sign
 about: Our neighborhood series explores ways to build a more equitable Chattanooga.  Some
   pieces are educational and informative. Others look at outside-the-box strategies
   to strengthen our communities.
