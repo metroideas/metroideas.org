@@ -3,7 +3,7 @@ title: Violence reduction playbook
 date: 2016-12-07 08:00:00 -05:00
 categories:
 - Criminal justice
-position: 0
+position: 3
 layout: research-article
 main: article
 description: Finding the right policy is the first step to curbing crime. We break

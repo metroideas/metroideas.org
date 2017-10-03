@@ -7,7 +7,7 @@ tags:
 - Hamilton County
 - Hamilton County schools
 - HCDE
-position: 2
+position: 5
 layout: the-cost-of-education/project
 description: 'The Metro Ideas Project examined more than a dozen local, state and
   federal datasets to answer a simple question: How much does it cost to educate a
