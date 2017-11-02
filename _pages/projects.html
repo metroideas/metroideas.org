@@ -4,7 +4,12 @@ layout: default
 main: project-index
 ---
 
-{% assign projects = site.projects | sort: "position" %}
+{% if jekyll.environment == "production" %}
+  {% assign projects = site.projects | where_exp: "project", "project.published != false" | sort: "position" %}
+{% else %}
+  {% assign projects = site.projects | sort: "position" %}
+{% endif %}
+
 {% assign project-1 = projects[0] %}
 {% assign project-2 = projects[1] %}
 {% assign project-3 = projects[2] %}
