@@ -19,7 +19,6 @@ image:
   caption: Restaurant facade.
   credit: Samuel Zeller via Unsplash
   alt: Restaurant facade.
-project: Neighborhood perspectives
 ---
 
 Small business are the economic engine of American cities, employing the vast majority of residents in most communities. In Chattanooga, our community has rallied around entrepreneurs and small business owners—putting them front and center of our city's revitalization narrative. We've seen a strong outpouring from the community to shop local and support these small businesses. Chattanoogans aren't the only ones that have noticed the importance of these small businesses—American Express has created a campaign to encourage individuals to spend their hard-earned dollars at local small businesses for this exact reason.
