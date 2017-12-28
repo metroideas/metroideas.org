@@ -29,6 +29,8 @@ further reading:
 downloads:
 - title: 'Report: Fighting Predatory Lending in Tennessee'
   file: "/media/Fighting%20Predatory%20Lending%20in%20Tennessee%20-%20Metro%20Ideas%20Project.pdf"
+- title: 'Data: Payday lenders in Tennessee'
+  file: "/media/tn-payday-data.csv"
 main: article
 layout: research-article
 ---
