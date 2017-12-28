@@ -1,7 +1,6 @@
 ---
 title: Fighting predatory lending in Tennessee
 date: 2017-12-28 13:31:00 -05:00
-published: false
 categories:
 - Economy
 tags:
