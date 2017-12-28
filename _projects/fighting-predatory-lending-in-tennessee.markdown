@@ -2,6 +2,14 @@
 title: Fighting predatory lending in Tennessee
 date: 2017-12-28 13:31:00 -05:00
 published: false
+categories:
+- Economy
+tags:
+- Chattanooga
+- Payday loans
+- Poverty
+- Tennessee
+description: A simple strategy for cities and counties.
 lead: A simple strategy for cities and counties.
 author:
 - Joda Thongnopnua
