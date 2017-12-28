@@ -11,6 +11,7 @@ image:
 downloads:
 - title: 'Report: Fighting Predatory Lending in Tennessee'
   file: "/media/Fighting%20Predatory%20Lending%20in%20Tennessee%20-%20Metro%20Ideas%20Project.pdf"
+main: article
 layout: research-article
 ---
 
