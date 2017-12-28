@@ -7,7 +7,18 @@ author:
 - Joda Thongnopnua
 image:
   file: "/media/vitaly-145502.jpg"
-  alt: Hand holding a dollar bill
+  alt: Hand holding a 20 dollar bill
+about: 'Metro Ideas Project prepared this report in December 2017. '
+further reading:
+- title: 'CFPB Data Point: Payday Lending'
+  url: http://files.consumerfinance.gov/f/201403_cfpb_report_payday-lending.pdf#page=4
+  description: 
+- title: Payday Loan Facts and the CFPB's Impact
+  url: http://www.pewtrusts.org/~/media/assets/2016/06/payday_loan_facts_and_the_cfpbs_impact.pdf
+  description: 
+- title: 'Payday Loans: Who Uses Them and Why?'
+  url: http://www.pewtrusts.org/en/multimedia/video/2013/payday-loans-who-uses-them-and-why
+  description: 
 downloads:
 - title: 'Report: Fighting Predatory Lending in Tennessee'
   file: "/media/Fighting%20Predatory%20Lending%20in%20Tennessee%20-%20Metro%20Ideas%20Project.pdf"
