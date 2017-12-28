@@ -1,0 +1,96 @@
+id,county,locations,population,Per Capita,,,TOP 20 COUNTIES PER CAPITA,,,
+157,Shelby County,232,937750,24.74006931,,,county,locations,population,Per Capita
+37,Davidson County,109,658506,16.55262063,,,Madison County,29,98184,29.53638067
+65,Hamilton County,71,348121,20.39520741,,,Shelby County,232,937750,24.74006931
+93,Knox County,68,444348,15.30332082,,,Putnam County,18,73810,24.38693944
+149,Rutherford County,50,282558,17.69548199,,,Maury County,19,84089,22.59510756
+163,Sullivan County,31,156752,19.77646218,,,Bradley County,23,102062,22.53532167
+125,Montgomery County,31,185980,16.66845897,,,Robertson County,14,67426,20.76350369
+113,Madison County,29,98184,29.53638067,,,Washington County,26,125317,20.74738463
+179,Washington County,26,125317,20.74738463,,,Greene County,14,68576,20.41530565
+11,Bradley County,23,102062,22.53532167,,,Hamilton County,71,348121,20.39520741
+165,Sumner County,23,169623,13.55948191,,,Sullivan County,31,156752,19.77646218
+119,Maury County,19,84089,22.59510756,,,Rutherford County,50,282558,17.69548199
+107,McMinn County,18,52506,34.28179637,,,Anderson County,13,75430,17.23452207
+141,Putnam County,18,73810,24.38693944,,,Montgomery County,31,185980,16.66845897
+9,Blount County,18,125188,14.37837492,,,Davidson County,109,658506,16.55262063
+31,Coffee County,17,53448,31.80661578,,,Knox County,68,444348,15.30332082
+99,Lawrence County,16,42226,37.89134656,,,Blount County,18,125188,14.37837492
+147,Robertson County,14,67426,20.76350369,,,Sevier County,13,93617,13.88636679
+59,Greene County,14,68576,20.41530565,,,Sumner County,23,169623,13.55948191
+189,Wilson County,14,122445,11.43370493,,,Wilson County,14,122445,11.43370493
+53,Gibson County,13,49572,26.22448156,,,Williamson County,11,199456,5.515000802
+43,Dickson County,13,50472,25.75685529,,,,,,
+1,Anderson County,13,75430,17.23452207,,,,,,
+155,Sevier County,13,93617,13.88636679,,,,,,
+3,Bedford County,12,45986,26.09489845,,,,,,
+167,Tipton County,12,61674,19.45714564,,,,,,
+145,Roane County,11,53162,20.69147135,,,,,,
+63,Hamblen County,11,62999,17.46059461,,,,,,
+187,Williamson County,11,199456,5.515000802,,,,,,
+55,Giles County,10,28949,34.54350755,,,,,,
+131,Obion County,10,31129,32.12438562,,,,,,
+45,Dyer County,10,38054,26.27844642,,,,,,
+177,Warren County,10,40015,24.99062851,,,,,,
+75,Haywood County,9,18248,49.32047348,,,,,,
+103,Lincoln County,9,33550,26.82563338,,,,,,
+13,Campbell County,9,40176,22.40143369,,,,,,
+89,Jefferson County,9,52490,17.14612307,,,,,,
+115,Marion County,8,28306,28.26255917,,,,,,
+183,Weakley County,8,34415,23.24567776,,,,,,
+51,Franklin County,8,41138,19.44674024,,,,,,
+35,Cumberland County,8,57455,13.92394048,,,,,,
+185,White County,7,26252,26.66463508,,,,,,
+97,Lauderdale County,7,27427,25.52229555,,,,,,
+77,Henderson County,7,28013,24.98839824,,,,,,
+17,Carroll County,7,28353,24.68874546,,,,,,
+47,Fayette County,7,38814,18.03472974,,,,,,
+123,Monroe County,7,45293,15.45492681,,,,,,
+71,Hardin County,6,25900,23.16602317,,,,,,
+69,Hardeman County,6,26253,22.85453091,,,,,,
+117,Marshall County,6,31159,19.25607369,,,,,,
+79,Henry County,6,32269,18.59369674,,,,,,
+143,Rhea County,6,32394,18.52194851,,,,,,
+29,Cocke County,6,35321,16.98706152,,,,,,
+153,Sequatchie County,5,14592,34.26535088,,,,,,
+85,Humphreys County,5,18240,27.4122807,,,,,,
+133,Overton County,5,22100,22.62443439,,,,,,
+109,McNairy County,5,26103,19.15488641,,,,,,
+21,Cheatham County,5,39422,12.6832733,,,,,,
+105,Loudon County,5,50229,9.954408808,,,,,,
+19,Carter County,5,56941,8.781018949,,,,,,
+101,Lewis County,4,11944,33.48961822,,,,,,
+5,Benton County,4,16261,24.59873317,,,,,,
+111,Macon County,4,22761,17.5739203,,,,,,
+25,Claiborne County,4,31748,12.59921885,,,,,,
+73,Hawkins County,4,56595,7.06776217,,,,,,
+15,Cannon County,3,13787,21.75962864,,,,,,
+23,Chester County,3,17324,17.31701686,,,,,,
+91,Johnson County,3,18017,16.65094078,,,,,,
+41,DeKalb County,3,19038,15.75795777,,,,,,
+81,Hickman County,3,24283,12.35432195,,,,,,
+169,Trousdale County,2,7884,25.36783359,,,,,,
+39,Decatur County,2,11686,17.11449598,,,,,,
+139,Polk County,2,16687,11.98537784,,,,,,
+181,Wayne County,2,16897,11.83642067,,,,,,
+49,Fentress County,2,17931,11.1538676,,,,,,
+171,Unicoi County,2,18069,11.06868117,,,,,,
+173,Union County,2,19096,10.47339757,,,,,,
+151,Scott County,2,22043,9.073175158,,,,,,
+95,Lake County,1,7687,13.00897619,,,,,,
+27,Clay County,1,7780,12.85347044,,,,,,
+135,Perry County,1,7864,12.71617497,,,,,,
+87,Jackson County,1,11496,8.698677801,,,,,,
+121,Meigs County,1,11716,8.535336292,,,,,,
+161,Stewart County,1,13286,7.526719855,,,,,,
+61,Grundy County,1,13524,7.394262053,,,,,,
+7,Bledsoe County,1,13686,7.306736811,,,,,,
+33,Crockett County,1,14600,6.849315068,,,,,,
+159,Smith County,1,19136,5.225752508,,,,,,
+129,Morgan County,1,21794,4.588418831,,,,,,
+57,Grainger County,0,22736,0,,,,,,
+67,Hancock County,0,6642,0,,,,,,
+83,Houston County,0,8290,0,,,,,,
+127,Moore County,0,6351,0,,,,,,
+137,Pickett County,0,5097,0,,,,,,
+175,Van Buren County,0,5596,0,,,,,,
