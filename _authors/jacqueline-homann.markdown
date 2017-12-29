@@ -1,7 +1,7 @@
 ---
 title: Jacqueline Homann
 date: 2016-12-16 14:31:00 -05:00
-position: 6
+position: 7
 current: false
 role: Policy research director
 description: Jacqueline Homann has worked at a number of international and federal
