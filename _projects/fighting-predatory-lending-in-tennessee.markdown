@@ -35,9 +35,9 @@ main: article
 layout: research-article
 ---
 
-For many Americans, loans and banking go hand in hand. Borrowing money from an institution typically requires a traditional  nancial provider, such as a bank or credit union, to underwrite that loan. But many of those facing tough  nancial situations have few options but to turn to nontraditional, and often less scrupulous, lenders.
+For many Americans, loans and banking go hand in hand. Borrowing money from an institution typically requires a traditional financial provider, such as a bank or credit union, to underwrite that loan. But many of those facing tough financial situations have few options but to turn to nontraditional, and often less scrupulous, lenders.
 
-These lenders, often known as payday lenders or check cashers, are used by over twelve million Americans. The loans they o er are characterized by some of the highest interest rates in the  nancial industry—annual percentage rates (APRs) range between 391 percent and 521 percent in the 28 states that these lenders are legally allowed to operate in, according to [The Pew Charitable Trusts](http://www.pewtrusts.org/~/media/assets/2016/06/payday_loan_facts_and_the_cfpbs_impact.pdf). In fact, payday loans frequently carry fees and interest charges that exceed the principal amount loaned.
+These lenders, often known as payday lenders or check cashers, are used by over twelve million Americans. The loans they offer are characterized by some of the highest interest rates in the financial industry—annual percentage rates (APRs) range between 391 percent and 521 percent in the 28 states that these lenders are legally allowed to operate in, according to [The Pew Charitable Trusts](http://www.pewtrusts.org/~/media/assets/2016/06/payday_loan_facts_and_the_cfpbs_impact.pdf). In fact, payday loans frequently carry fees and interest charges that exceed the principal amount loaned.
 
 <div>
   {% include patterns/box-download.html title="Report: Fighting Predatory Lending in Tennessee" href="/media/Fighting%20Predatory%20Lending%20in%20Tennessee%20-%20Metro%20Ideas%20Project.pdf" meta="PDF (4MB)" %}
