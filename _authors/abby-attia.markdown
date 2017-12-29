@@ -1,7 +1,7 @@
 ---
 title: Abby Attia
 date: 2016-12-16 14:30:00 -05:00
-position: 10
+position: 8
 current: false
 role: Research assistant
 description: Abby Attia moved to East Tennessee from Amman, Jordan. She is studying
