@@ -1,7 +1,7 @@
 ---
 title: Cate Irvin
 date: 2016-12-16 14:31:00 -05:00
-position: 8
+position: 7
 description: 'Cate Irvin is the research director for Metro Ideas Project. She is
   a doctoral candidate in the City, Culture and Community program at Tulane University
   and also earned her master’s degree in public health from Tulane University. Her
