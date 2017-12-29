@@ -50,6 +50,10 @@ county.
 
 And the demand for payday and installment loans, another kind of high-interest revolving loan, is huge—with industry revenues exceeding $14.3 billion in 2016. This is indicative of a growing need for short-term, alternative credit options for people who are often underserved by traditional  nancial institutions. Predatory lenders are able to exploit this need, in part, because there are few alternatives for consumers to go to.
 
+<div>
+  {% include patterns/box-download.html title="Report: Fighting Predatory Lending in Tennessee" href="/media/Fighting%20Predatory%20Lending%20in%20Tennessee%20-%20Metro%20Ideas%20Project.pdf" meta="PDF (3.8MB)" %}
+</div>
+
 Traditional banks are typically restricted in the interest rates they can charge, with limits of 10 or 11 percent annual percentage rates for consumer loans. And access to credit cards is often limited to those lacking good credit scores.
 
 Predatory lenders rely on extended indebtedness. The Consumer Financial Protection Bureau (CFPB) finds that [80 percent of payday loans](http://files.consumerfinance.gov/f/201403_cfpb_report_payday-lending.pdf#page=4) are taken out within two weeks of repayment of a previous payday loan. The industry often concentrates in distressed communities and areas with high rates of poverty.
