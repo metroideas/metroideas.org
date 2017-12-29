@@ -65,6 +65,6 @@ This report proposes a three-prong strategy to combat predatory lending:
 {: .long-list}
 + **Warn**: Leverage laws allowing municipalities to regulate signage and require predatory lenders to post plainspoken warnings on all exterior signage (e.g., billboards, exterior signs, posters) about the dangers and risks associated with their services.
 + **Permit**: Require an additional local permit to operate a predatory lending establishment in city boundaries.
-+ **Lend**: Create an alternative, community-based, and nonpro t lending institution under the same legal structure utilized by predatory lenders, featuring a ordable rates, transparent fees, and honest underwriting practices.
++ **Lend**: Create an alternative, community-based, and nonprofit lending institution under the same legal structure utilized by predatory lenders, featuring affordable rates, transparent fees, and honest underwriting practices.
 
 As cities look to build strong local economies and bring people out of poverty, ensuring that people are not trapped in debt and have lending options that encourage upward mobility will be paramount. This research aims to provide cities a selection of tools and strategies to help achieve those goals.
