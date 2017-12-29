@@ -1,7 +1,7 @@
 ---
 title: Jonah Paul
 date: 2017-05-19 15:34:00 -04:00
-position: 9
+position: 8
 image:
   file: "/media/jonah-paul.jpg"
 current: false
