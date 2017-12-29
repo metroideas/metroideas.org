@@ -9,6 +9,7 @@ description: 'Cate Irvin is the research director for Metro Ideas Project. She
   spatial inequality in the urban context; and urban redevelopment and gentrification.'
 image:
   file: "/media/cate-irvin.jpg"
+current: false
 role: Research director
 email: cate@metroideas.org
 ---
