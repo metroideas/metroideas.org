@@ -52,7 +52,7 @@ county.
 + Madison County has the highest concentration of lenders amongst Tennessee’s 20 most populous counties, with 29.5 locations per 100,000 residents.
 + People without a four-year college degree, home renters, African-Americans, and those earning below $40,000 are more likely to have used a payday loan. And contrary to payday lender advertising, [seven in 10 borrowers](http://www.pewtrusts.org/en/multimedia/video/2013/payday-loans-who-uses-them-and-why) use them for regular, recurring expenses as opposed to unexpected or emergency costs.
 
-And the demand for payday and installment loans, another kind of high-interest revolving loan, is huge—with industry revenues exceeding $14.3 billion in 2016. This is indicative of a growing need for short-term, alternative credit options for people who are often underserved by traditional  nancial institutions. Predatory lenders are able to exploit this need, in part, because there are few alternatives for consumers to go to.
+And the demand for payday and installment loans, another kind of high-interest revolving loan, is huge—with industry revenues exceeding $14.3 billion in 2016. This is indicative of a growing need for short-term, alternative credit options for people who are often underserved by traditional financial institutions. Predatory lenders are able to exploit this need, in part, because there are few alternatives for consumers to go to.
 
 Traditional banks are typically restricted in the interest rates they can charge, with limits of 10 or 11 percent annual percentage rates for consumer loans. And access to credit cards is often limited to those lacking good credit scores.
 
