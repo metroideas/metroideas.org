@@ -9,6 +9,7 @@ description: How can we build a more equitable Chattanooga? Let's start with nei
 lead: Our neighborhood series explores ways to build a more equitable Chattanooga.
 author:
 - Cate Irvin
+- Julia Bursch
 image:
   file: "/media/neighborhood-perspectives.jpg"
   alt: Man hanging a "For Sale" sign
@@ -18,6 +19,7 @@ about: Our neighborhood series explores ways to build a more equitable Chattanoo
 article:
 - 'Gentrification: What it is and why it matters'
 - A snapshot of affordable housing in Chattanooga
+- Diversify Chattanooga's economy with a food incubator
 further reading:
 - title: Chattanooga rent prices rise three times faster than income
   url: http://www.timesfreepress.com/news/business/aroundregion/story/2016/jul/04/chattanooga-rent-prices-rise-three-times-faster-income/374274/
