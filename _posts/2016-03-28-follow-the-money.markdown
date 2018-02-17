@@ -117,7 +117,7 @@ Now that we have a handle on the money that comes into Hamilton County, our next
 [^2]: The Boards of Education involved in the lawsuit include those of Bradley, Coffee, Grundy, Hamilton, Marion, McMinn and Polk counties.
 [^3]: Hamilton County Commissioners are given $100,000 in discretionary funds each year. 
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+<script src="//pym.nprapps.org/pym.v1.min.js"></script>
 <script>
   new pym.Parent("funding-sources-chart", "//graphics.metroideas.org/charts/normalized-barchart-school-district-revenue/", {});
   new pym.Parent("inflation-adjusted-revenue-chart", "//graphics.metroideas.org/charts/linechart-hcde-cafr/", {});
