@@ -107,7 +107,7 @@ We hope you are as compelled by these curiosities as we are. We are going to be 
 [^1]: Three-year estimates were discontinued in 2013.
 [^2]: Estimates include a margin of error (MOE), which were not included here. For the MOE, refer to the American Community Survey.
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+<script src="//pym.nprapps.org/pym.v1.min.js"></script>
 <script>
   var url       = "//graphics.metroideas.org/charts/barchart-city-population/";
   var barchart  = new pym.Parent("barchart", url, {});
