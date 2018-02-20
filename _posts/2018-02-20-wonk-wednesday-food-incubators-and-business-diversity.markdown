@@ -6,6 +6,7 @@ categories:
 tags:
 - Chattanooga
 - Food incubator
+- Immigration
 description: 'Join us for a happy hour and panel discussion on food incubators and
   business diversity. '
 lead: Join us for a happy hour and panel discussion on food incubators and business
