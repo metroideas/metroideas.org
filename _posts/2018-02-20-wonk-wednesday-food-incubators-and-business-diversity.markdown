@@ -43,11 +43,11 @@ Hors d'oeuvres will be catered by our neighbors at Jinan's Kitchen. Oddstory bee
 
 This event is free and open to the public.
 
-<p><a class="button" href="https://www.facebook.com/events/334466947050211/">RSVP</p>
+<a class="button" href="https://www.facebook.com/events/334466947050211/">RSVP</a>
 
 ## Panelists
 
-{.long-list}
+{: .long-list}
 + Saša Hasanbegović, co-founder of Coming to America: The Story of Us and co-owner of Guesthouse Creative, will moderate the discussion.
 + Victoria Capdavielle, owner of Bread & Butter Artisan Bakers
 + Wahab Najim, owner of Jinan's Kitchen
