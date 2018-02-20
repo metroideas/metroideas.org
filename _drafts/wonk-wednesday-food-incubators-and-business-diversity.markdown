@@ -1,5 +1,5 @@
 ---
-title: 'Wonk Wednesday: How a food incubator would diversify the city''s food scene'
+title: 'Wonk Wednesday: Food incubators and business diversity'
 date: 2018-02-21 15:13:00 -05:00
 author:
 - Julia Bursch
