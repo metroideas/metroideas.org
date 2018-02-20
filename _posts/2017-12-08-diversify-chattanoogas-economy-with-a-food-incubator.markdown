@@ -6,6 +6,7 @@ categories:
 tags:
 - Chattanooga
 - Immigration
+- Food incubator
 description: 'A food incubator would help entrepreneurs — including many immigrants
   — overcome first-year barriers to getting a restaurant off the ground.
 
