@@ -3,6 +3,9 @@ title: 'Wonk Wednesday: Food incubators and business diversity'
 date: 2018-02-20 09:30:00 -05:00
 categories:
 - Community development
+tags:
+- Chattanooga
+- Food incubator
 description: 'Join us for a happy hour and panel discussion on food incubators and
   business diversity. '
 lead: Join us for a happy hour and panel discussion on food incubators and business
