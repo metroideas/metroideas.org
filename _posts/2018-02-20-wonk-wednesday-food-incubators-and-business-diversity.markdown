@@ -54,3 +54,4 @@ This event is free and open to the public.
 + Wahab Najim, owner of Jinan's Kitchen
 + Marco Perez, vice president of operations at LAUNCH Chattanooga
 + Mike Robinson, chief operating officer at Chattanooga Whiskey
++ Antonia Poland, co-owner of Dipped Fresh
