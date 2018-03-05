@@ -1,7 +1,7 @@
 ---
 title: Peter Hagemeyer
 date: 2016-12-16 14:32:00 -05:00
-position: 5
+position: 4
 description: Peter Hagemeyer’s background is in economics and business. He joined
   our research staff in 2016. He shifted roles to public engagement in 2018 — driving
   Metro Ideas Project’s community outreach efforts. He is a a Counter Culture Coffee

@@ -1,7 +1,7 @@
 ---
 title: Paul Broussard
 date: 2017-12-29 13:40:00 -05:00
-position: 3
+position: 10
 image:
   file: "/media/paul-broussard.jpg"
 current: false
