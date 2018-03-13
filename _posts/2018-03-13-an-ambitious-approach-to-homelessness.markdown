@@ -13,6 +13,10 @@ lead: Housing First targets the problem directly in New York and Seattle. Can th
   same approach work in Chattanooga?
 author:
 - Megan Gienapp
+image:
+  file: "/media/16158459743_08fa93a76d_o.jpg"
+  credit: Roel Wijnants via Flickr
+  alt: Homeless man sitting in front of a building
 ---
 
 Late last year, Hamilton County Sheriff Jim Hammond announced a plan to reduce the number of inmates suffering from mental illness and addiction.
