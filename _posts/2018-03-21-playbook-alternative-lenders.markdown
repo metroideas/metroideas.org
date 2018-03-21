@@ -13,6 +13,12 @@ lead: |-
   find better alternatives.
 author:
 - Peter Hagemeyer
+image:
+  file: "/media/metmin.jpg"
+  caption: Metropolitan Ministries provides emergency assistance for utility bills
+    in the Chattanooga area.
+  credit: Peri McIntosh
+  alt: Metropolitan Ministries storefront
 ---
 
 Credit is an essential tool for wealth creation. We use it when we swipe
