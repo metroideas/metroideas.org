@@ -69,7 +69,7 @@ lending businesses.
       <td>A partnership between the Rio Grande Valley Multibank and Texas employers allows workers to take out small loans against future earnings. Loan payments are deducted from borrowers' paychecks</td>
     </tr>
     <tr>
-      <th>Emergency assistanc</th>
+      <th>Emergency assistance</th>
       <td>Small grants to cover overdue utilities, rent, and other necessities. The federal government administers the Low Income Household Energy Assistance Program (LIHEAP). Nonprofits such as Metropolitan Ministries also offer emergency assistance</td>
     </tr>
     <tr>
