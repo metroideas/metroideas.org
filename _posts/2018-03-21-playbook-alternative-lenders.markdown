@@ -5,6 +5,8 @@ categories:
 - Economy
 tags:
 - Chattanooga
+- Tennessee
+- Payday loans
 description: |-
   Predatory lenders provide credit when traditional banks won’t. Let’s
   find better alternatives.
