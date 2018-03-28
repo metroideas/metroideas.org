@@ -14,7 +14,6 @@ author:
 - Alea Tveit
 image:
   file: "/media/emissions-test-facility.jpg"
-  caption: Emissions testing facility in Hamilton County, Tennessee.
   credit: Peri McIntosh
   alt: Emissions testing facility
 ---
