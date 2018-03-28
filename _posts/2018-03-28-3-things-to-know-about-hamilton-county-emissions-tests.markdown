@@ -13,7 +13,7 @@ lead: State lawmakers want to ban emissions testing in Tennessee. They might be 
 author:
 - Alea Tveit
 image:
-  file: "/media/_37A0700.jpg"
+  file: "/media/emissions-test-facility.jpg"
   caption: Emissions testing facility in Hamilton County, Tennessee.
   credit: Peri McIntosh
   alt: Emissions testing facility
