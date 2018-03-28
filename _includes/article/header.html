@@ -4,7 +4,7 @@ Sets article header and optional hero via boolean hero argument:
 {% include article/header.html hero=true %}
 {% endcomment %}
 
-{% assign hero_id = page.title | slugify %}
+{% assign hero_id = page.title | slugify | prepend: "hero-" %}
 
 {% if page.image.file %}
   {% assign image = page.image.file %}
