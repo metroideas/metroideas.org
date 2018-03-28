@@ -12,6 +12,11 @@ lead: State lawmakers want to ban emissions testing in Tennessee. They might be 
   something.
 author:
 - Alea Tveit
+image:
+  file: "/media/_37A0700.jpg"
+  caption: Emissions testing facility in Hamilton County, Tennessee.
+  credit: Peri McIntosh
+  alt: Emissions testing facility
 ---
 
 Hamilton County car owners are familiar with the [annual ritual](http://countyclerkanytime.com/pdf/Tag_Title/BK--529 Vehicle Emission Testing.pdf). You pull up to an emissions testing facility, pay $9, and cross your fingers the car passes without additional maintenance fees. 
