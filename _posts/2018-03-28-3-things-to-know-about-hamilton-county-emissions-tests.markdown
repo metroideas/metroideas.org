@@ -92,7 +92,7 @@ The fiscal note also warns that, without an implementation plan, Tennessee could
 
 Despite these decreases, consumers might benefit from eliminating the program. They would not have to pay maintenance costs or testing fees. The bill’s proponents suggest that eliminating emissions testing [would benefit drivers in low-income communities](http://nashvillepublicradio.org/post/tennessee-lawmakers-try-eliminate-vehicle-emissions-tests#stream/0), who tend to drive older cars and face a disproportionate cost burden.
 
-Many environmental advocates and researchers counter that low-income communities, who face disproportionate health and environmental impacts of pollution](http://nashvillepublicradio.org/post/tennessee-lawmakers-try-eliminate-vehicle-emissions-tests#stream/0), will suffer and pay more in the long run with lower clean air standards. However, [other researchers](http://www.latimes.com/nation/la-na-emissions-standards-20150924-story.html) argue that since it is hard to directly measure or link emissions testing to direct air pollution reduction, it may be too costly compared to the environmental benefit. 
+Many environmental advocates and researchers counter that low-income communities, who face [disproportionate health and environmental impacts of pollution](http://nashvillepublicradio.org/post/tennessee-lawmakers-try-eliminate-vehicle-emissions-tests#stream/0), will suffer and pay more in the long run with lower clean air standards. However, [other researchers](http://www.latimes.com/nation/la-na-emissions-standards-20150924-story.html) argue that since it is hard to directly measure or link emissions testing to direct air pollution reduction, it may be too costly compared to the environmental benefit. 
 
 ## Challenges
 
