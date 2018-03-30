@@ -1,6 +1,11 @@
 ---
 title: Tax Revenue in Hamilton County
 date: 2018-03-30 11:11:00 -04:00
+categories:
+- Economy
+tags:
+- Chattanooga
+- Hamilton County
 description: An analysis of 2013-2017 tax revenue.
 lead: An analysis of 2013-2017 tax revenue.
 author:
@@ -13,6 +18,7 @@ about: Metro Ideas Project completed this report in the fall of 2017.
 downloads:
 - title: Tax Revenue in Hamilton County
   file: "/media/tax-revenue-in-hamilton-county.pdf"
+main: article
 layout: research-article
 ---
 
