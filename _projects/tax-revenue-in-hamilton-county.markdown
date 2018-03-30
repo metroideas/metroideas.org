@@ -15,6 +15,11 @@ author:
 image:
   file: "/media/about-midsize-cities-hero.jpg"
 about: Metro Ideas Project completed this report in the fall of 2017.
+further reading:
+- title: Downtown is top tax generator for Chattanooga, Hamilton County
+  url: http://www.timesfreepress.com/news/business/aroundregion/story/2018/feb/22/downtown-top-tax-generator-city-countycentral/464306/
+  description: 'The Times Free Press reports on increasing tax revenue generated from
+    downtown Chattanooga. '
 downloads:
 - title: Tax Revenue in Hamilton County
   file: "/media/tax-revenue-in-hamilton-county.pdf"
