@@ -6,6 +6,7 @@ categories:
 tags:
 - Chattanooga
 - Hamilton County
+position: 1
 description: An analysis of 2013-2017 tax revenue.
 lead: An analysis of 2013-2017 tax revenue.
 author:
