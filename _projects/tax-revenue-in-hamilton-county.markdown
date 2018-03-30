@@ -31,6 +31,10 @@ Property taxes are the primary source of stable revenue for nearly all local gov
 
 In an effort to better understand our community, its revenue sources, and the impact of public policy and private investment, Metro Ideas Project (MIP) analyzed five years of property tax bills at the parcel level. This research examined over 1.2 million individual tax records from over 240,000 properties in Hamilton County, Tennessee. In this brief report, our analysis is limited to tax bills from two municipalities over five years: Hamilton County and the City of Chattanooga.
 
+<div>
+  {% include patterns/box-download.html title="Report: Tax Revenue in Hamilton County" href="/media/tax-revenue-in-hamilton-county.pdf" meta="PDF (4MB)" %}
+</div>
+
 It is often difficult to get reliable local data on property taxes comparable by neighborhood. Previous analyses would  allow analysis at the ZIP code level, but  prove difficult to differentiate between  commercial and residential rates.  Furthermore, ZIP codes often encompass  several neighborhoods with a wide variety  of differing characteristics, including  income, property values, and real estate trends. Far better is census tract level data, which are a stable set of geographic units with a plethora of additional data that are tracked by a variety of federal, state, and local agencies.
 
 This level of granularity is an important factor in understanding a changing local economy, the role of density, and relative tax burden across multiple communities. 
