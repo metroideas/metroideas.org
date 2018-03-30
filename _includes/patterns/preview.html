@@ -33,6 +33,6 @@ Article preview has required post argument:
     <h1>
       <a href="{{ link }}">{{ post.title }}</a>
     </h1>
-    <p>{{ post.description }}</p>
+    <p>{{ post.description | markdownify }}</p>
   </header>
 </article>
