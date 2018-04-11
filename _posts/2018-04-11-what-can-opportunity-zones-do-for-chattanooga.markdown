@@ -12,8 +12,11 @@ lead: Tucked inside Congress’s overhaul of the tax code is a bipartisan progra
   encourage investment in low-income communities.
 author:
 - Joda Thongnopnua
+image:
+  file: "/media/chattanooga-neighborhood.jpg"
+  credit: Peri McIntosh
+  alt: Chattanooga neighborhood
 ---
-
 
 Last year, Congress passed the highly contentious Tax Cuts and Jobs Act. It permanently reduced corporate tax rates, provided a sunset provision for middle-class tax cuts, and expanded the deficit by approximately $1.5 trillion over the next ten years. The major provisions of the tax bill itself were divisive and largely praised or condemned on strict partisan lines.
 
