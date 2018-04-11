@@ -26,6 +26,8 @@ Senators Tim Scott (R-SC) and Cory Booker (D-NJ) spearheaded the initiative base
 
 ## What Is an Opportunity Zone?
 
+{% include article/aside.html title="About Opportunity Zones" %}
+
 As outlined in legislation based on the Investing in Opportunity Act, an Opportunity Zone is an innovative new community development policy that will provide a unique incentive for equity capital investments in low-income communities across America.
 
 In the Tax Cuts and Jobs Act, Congress empowered governors of all fifty states to designate 25 percent of all eligible Low-Income Community census tracts as nominated Opportunity Zones. Within the zones, corporations, funds, and financiers who invest in the Opportunity Zones will enjoy favorable capital gains treatment. The following benefits are present for investors who put their capital in these distressed neighborhoods through an Opportunity Fund:
