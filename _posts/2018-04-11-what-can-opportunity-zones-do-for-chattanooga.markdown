@@ -31,9 +31,9 @@ As outlined in legislation based on the Investing in Opportunity Act, an Opportu
 In the Tax Cuts and Jobs Act, Congress empowered governors of all fifty states to designate 25 percent of all eligible Low-Income Community census tracts as nominated Opportunity Zones. Within the zones, corporations, funds, and financiers who invest in the Opportunity Zones will enjoy favorable capital gains treatment. The following benefits are present for investors who put their capital in these distressed neighborhoods through an Opportunity Fund:
 
 {:.long-list}
-+ Gains accrued from investments held for at least ten years in qualified neighborhoods through an Opportunity Fund are permanently exempt from capital gains taxes.
-+ Immediately, there is a temporary deferral of inclusion in taxable income for capital gains reinvested into an Opportunity Fund.
-+ Over time, there is a stepped-up basis for taxable income on invested capital gains. Once investments have been held at least five years, there is a 10 percent step-up in basis, and after seven years, the step-up in basis rises to 15 percent.
++ Gains accrued from investments held for _at least ten years_ in qualified neighborhoods through an Opportunity Fund are **permanently exempt from capital gains taxes**.
++ Immediately, there is a **temporary deferral of inclusion in taxable income for capital gains** reinvested into an Opportunity Fund.
++ Over time, there is a **stepped-up basis for taxable income on invested capital gains**. Once investments have been held at least five years, there is a 10 percent step-up in basis, and after seven years, the step-up in basis rises to 15 percent.
 
 Essentially, this allows significantly lower capital gains tax burdens on the appreciations of investments in an Opportunity Fund and substantial increases on effective annual returns compared to equivalent non-Opportunity Fund investments, assuming the same rate of return. For investors, this is a very favorable treatment and, in theory, will incentivize private investors to make substantial investments into previously distressed communities.
 
