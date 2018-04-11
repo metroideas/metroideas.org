@@ -26,8 +26,6 @@ Senators Tim Scott (R-SC) and Cory Booker (D-NJ) spearheaded the initiative base
 
 ## What Is an Opportunity Zone?
 
-{% include article/aside.html title="About Opportunity Zones" %}
-
 As outlined in legislation based on the Investing in Opportunity Act, an Opportunity Zone is an innovative new community development policy that will provide a unique incentive for equity capital investments in low-income communities across America.
 
 In the Tax Cuts and Jobs Act, Congress empowered governors of all fifty states to designate 25 percent of all eligible Low-Income Community census tracts as nominated Opportunity Zones. Within the zones, corporations, funds, and financiers who invest in the Opportunity Zones will enjoy favorable capital gains treatment. The following benefits are present for investors who put their capital in these distressed neighborhoods through an Opportunity Fund:
@@ -40,6 +38,8 @@ In the Tax Cuts and Jobs Act, Congress empowered governors of all fifty states t
 Essentially, this allows significantly lower capital gains tax burdens on the appreciations of investments in an Opportunity Fund and substantial increases on effective annual returns compared to equivalent non-Opportunity Fund investments, assuming the same rate of return. For investors, this is a very favorable treatment and, in theory, will incentivize private investors to make substantial investments into previously distressed communities.
 
 Opportunity Zones offer distressed communities a way to potentially reallocate up to $6.1 trillion in existing unrealized capital gains, a figure based on data from the Federal Reserve.
+
+{% include article/aside.html title="The Big Idea" %}
 
 Opportunity Funds, the investment vehicle through which capital gains may be reinvested, must hold at least 90 percent of their assets in a qualified property. After the designation of Opportunity Zones by the US Treasury Department in coordination with the governors of all fifty states, the Treasury Department will issue further guidance on how investors and fund managers may set up Opportunity Funds.
 
