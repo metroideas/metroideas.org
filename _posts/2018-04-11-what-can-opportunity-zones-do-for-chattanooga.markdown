@@ -26,7 +26,7 @@ Senators Tim Scott (R-SC) and Cory Booker (D-NJ) spearheaded the initiative base
 
 ## What Is an Opportunity Zone?
 
-{% include article/aside.html title="About Opportunity Zones" %}
+{% include article/aside.html title="The Big Idea" %}
 
 As outlined in legislation based on the Investing in Opportunity Act, an Opportunity Zone is an innovative new community development policy that will provide a unique incentive for equity capital investments in low-income communities across America.
 
