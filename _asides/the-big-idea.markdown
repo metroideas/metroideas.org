@@ -1,5 +1,5 @@
 ---
-title: About Opportunity Zones
+title: The Big Idea
 date: 2018-04-11 10:59:00 -04:00
 article: What Can Opportunity Zones Do for Chattanooga?
 ---
