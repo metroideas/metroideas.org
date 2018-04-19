@@ -14,7 +14,7 @@ image:
   {% assign project-3 = projects[2] %}
 {% endcomment %}
 {% assign blog = site.posts | where_exp: "post", "post.project == null" %}
-{% assign project-1 = site.posts | where_exp: "post", "post.id == "public-assembly-starts-may-11" %}
+{% assign project-1 = site.posts | where_exp: "post", "post.title == "Public Assembly Starts May 11" %}
 {% assign project-2 = projects[0] %}
 {% assign project-3 = projects[1] %}
 
