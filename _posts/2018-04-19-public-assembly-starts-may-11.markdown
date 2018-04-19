@@ -10,6 +10,10 @@ lead: Our upcoming conference will focus on bridging divisions among urban, subu
   and rural communities.
 author:
 - Julia Bursch
+image:
+  file: "/media/public-assembly-flyer.jpg"
+  credit: Peri McIntosh
+  alt: Flyer for Public Assembly
 ---
 
 Metro Ideas Project and the Aspen Institute Socrates Program will host a two-day conference in Chattanooga, Tennessee, that focuses on bridging divisions among urban, suburban, and rural communities. 
