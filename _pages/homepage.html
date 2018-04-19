@@ -7,10 +7,16 @@ image:
 ---
 
 {% assign projects = site.projects | sort: "position" %}
-{% assign project-1 = projects[0] %}
-{% assign project-2 = projects[1] %}
-{% assign project-3 = projects[2] %}
+{% comment %}
+  Homepage default. Temporarily overwritten
+  {% assign project-1 = projects[0] %}
+  {% assign project-2 = projects[1] %}
+  {% assign project-3 = projects[2] %}
+{% endcomment %}
 {% assign blog = site.posts | where_exp: "post", "post.project == null" %}
+{% assign project-1 = site.posts | where_exp: "post", "post.id == "public-assembly-starts-may-11" %}
+{% assign project-2 = projects[0] %}
+{% assign project-3 = projects[1] %}
 
 <section class="projects" id="projects">
   <div class="card-group">
