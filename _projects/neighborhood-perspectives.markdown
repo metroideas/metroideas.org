@@ -4,7 +4,7 @@ date: 2017-10-03 13:00:00 -04:00
 tags:
 - Chattanooga
 - Neighborhoods
-position: 1
+position: 2
 description: How can we build a more equitable Chattanooga? Let's start with neighborhoods.
 lead: Our neighborhood series explores ways to build a more equitable Chattanooga.
 author:

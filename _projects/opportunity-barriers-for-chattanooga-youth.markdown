@@ -6,7 +6,7 @@ categories:
 tags:
 - Hamilton County
 - Chattanooga
-position: 2
+position: 3
 description: 'Barriers to economic mobility are most acute in the South, where segregation,
   income inequality, local school quality, and family structure strongly correlate
   with geographical differences in upward mobility.
