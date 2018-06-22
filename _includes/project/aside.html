@@ -1,0 +1,13 @@
+{% comment %}
+Renders array of _asides in a project page
+{% endcomment %}
+
+<article id="{{ post.slug }}">
+  <header>
+    <h3 class="h1">{{ post.title }}</h3>
+    <p class="h3">{{ post.description }}</p>
+  </header>
+  <div style="margin-bottom:4rem">
+    {{ post.content }}
+  </div>
+</article>
