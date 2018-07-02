@@ -1,7 +1,6 @@
 ---
 title: Steal This Platform
 date: 2018-06-12 13:30:00 -04:00
-published: false
 categories:
 - Election
 tags:
