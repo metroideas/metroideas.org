@@ -33,6 +33,9 @@ economy_asides:
 - Subsidies for Workforce Development
 - Tax Preparation and Refund Assistance
 - Protect Workers From Forced Arbitration
+accountability_asides:
+- Enact an Open Data Policy
+- Tax Incentive Transparency
 layout: steal-this-platform
 ---
 
