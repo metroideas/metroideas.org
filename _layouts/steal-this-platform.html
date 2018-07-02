@@ -69,9 +69,10 @@ layout: critical
       <span class="visually-hidden">Education</span>
     </h2>
     <div class="row">
-      <figure class="span-4 bg-dots" style="height:300px;">
+      <figure class="span-5">
+        {% include project/stp-section-image.html filename='stp-education.jpg' %}
       </figure>
-      <div class="offset-1 span-6">
+      <div class="span-6">
         {% for title in page.education_asides %}
           {% assign post = site.asides | where_exp: "aside", "aside.title contains title" | first %}
           {% include project/aside.html %}
@@ -88,9 +89,10 @@ layout: critical
       <span class="visually-hidden">Economy</span>
     </h2>
     <div class="row">
-      <figure class="span-4 bg-dots" style="height:300px;">
+      <figure class="span-5">
+        {% include project/stp-section-image.html filename='stp-economy.jpg' %}  
       </figure>
-      <div class="offset-1 span-6">
+      <div class="span-6">
         {% for title in page.economy_asides %}
           {% assign post = site.asides | where_exp: "aside", "aside.title contains title" | first %}
           {% include project/aside.html %}
@@ -107,9 +109,10 @@ layout: critical
       <span class="visually-hidden">Accountability</span>
     </h2>
     <div class="row">
-      <figure class="span-4 bg-dots" style="height:300px;">
+      <figure class="span-5">
+        {% include project/stp-section-image.html filename='stp-accountability.jpg' %}  
       </figure>
-      <div class="offset-1 span-6">
+      <div class="span-6">
         {% for title in page.accountability_asides %}
           {% assign post = site.asides | where_exp: "aside", "aside.title contains title" | first %}
           {% include project/aside.html %}
@@ -126,9 +129,10 @@ layout: critical
       <span class="visually-hidden">Inclusion</span>
     </h2>
     <div class="row">
-      <figure class="span-4 bg-dots" style="height:300px;">
+      <figure class="span-5">
+        {% include project/stp-section-image.html filename='stp-inclusion.jpg' %}  
       </figure>
-      <div class="offset-1 span-6">
+      <div class="span-6">
         {% for title in page.inclusion_asides %}
           {% assign post = site.asides | where_exp: "aside", "aside.title contains title" | first %}
           {% include project/aside.html %}
