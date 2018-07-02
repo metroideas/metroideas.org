@@ -19,7 +19,8 @@ author:
 - Nathan Sheppard
 image:
   file: "/media/stp-main.jpg"
-about: Metro Ideas Project prepared this platform in summer 2018.
+about: Metro Ideas Project prepared this platform in summer 2018. Photography by Peri
+  McIntosh.
 further reading:
 - title: The Cost of Education
   url: "/projects/the-cost-of-education/"
