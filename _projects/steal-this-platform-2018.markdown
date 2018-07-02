@@ -30,6 +30,10 @@ education_asides:
 - Modernize School Spending
 - Diversify Our Schools
 - Expand Summer Reading
+economy_asides:
+- Subsidies for Workforce Development
+- Tax Preparation and Refund Assistance
+- Protect Workers From Forced Arbitration
 layout: steal-this-platform
 ---
 
