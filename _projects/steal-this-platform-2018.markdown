@@ -1,14 +1,16 @@
 ---
 title: Steal This Platform
-date: 2018-06-12 12:30:00 -05:00
+date: 2018-06-12 13:30:00 -04:00
 categories:
 - Election
 tags:
 - Hamilton County
 position: 0
 layout: steal-this-platform
-description: Practical ideas and solutions to confront Hamilton County's challenges head on. 
-lead: Practical ideas and solutions to confront Hamilton County's challenges head on. 
+description: Practical ideas and solutions to confront Hamilton County's challenges
+  head on.
+lead: Practical ideas and solutions to confront Hamilton County's challenges head
+  on.
 image:
   file: 
   alt: 
@@ -37,10 +39,10 @@ inclusion_asides:
 - Inclusion 3
 further reading:
 - title: The Cost of Education
-  url: /projects/the-cost-of-education/
+  url: "/projects/the-cost-of-education/"
   description: Our research on school spending explores student-based budgeting.
 - title: Open Hamilton
-  url: /projects/open-hamilton/
+  url: "/projects/open-hamilton/"
   description: An open data policy would improve transparency, efficiency, and accountability.
 about: Metro Ideas Project prepared this platform in summer 2018.
 ---
