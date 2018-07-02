@@ -36,6 +36,10 @@ economy_asides:
 accountability_asides:
 - Enact an Open Data Policy
 - Tax Incentive Transparency
+inclusion_asides:
+- Provide a Welcoming and Inclusive Community
+- Create Trauma-Informed Schools
+- End Zero-Tolerance Discipline in Schools
 layout: steal-this-platform
 ---
 
