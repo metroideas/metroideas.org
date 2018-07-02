@@ -15,7 +15,5 @@ While race cannot be used to determine school enrollment, socioeconomic status c
 
 Regardless of method, school segregation is one of the most critical challenges facing our district. Officials should face it with a community-driven approach that meets the diverse needs of our students.
 
-+ [A New Wave of School
-    Integration](https://tcf.org/content/report/a-new-wave-of-school-integration/?session=1)
-+ [The Many Ways Teacher Diversity May Benefit
-    Students](https://www.brookings.edu/blog/brown-center-chalkboard/2016/08/19/the-many-ways-teacher-diversity-may-benefit-students/)
++ [A New Wave of School Integration](https://tcf.org/content/report/a-new-wave-of-school-integration/?session=1)
++ [The Many Ways Teacher Diversity May Benefit Students](https://www.brookings.edu/blog/brown-center-chalkboard/2016/08/19/the-many-ways-teacher-diversity-may-benefit-students/)
