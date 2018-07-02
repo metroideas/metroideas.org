@@ -27,21 +27,7 @@ further reading:
   url: "/projects/open-hamilton/"
   description: An open data policy would improve transparency, efficiency, and accountability.
 education_asides:
-- Education 1
-- Education 2
-- Education 3
-economy_asides:
-- Economy 1
-- Economy 2
-- Economy 3
-accountability_asides:
-- Accountability 1
-- Accountability 2
-- Accountability 3
-inclusion_asides:
-- Inclusion 1
-- Inclusion 2
-- Inclusion 3
+- 
 layout: steal-this-platform
 ---
 
