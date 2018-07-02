@@ -17,6 +17,8 @@ author:
 - Peter Hagemeyer
 - Alea Tveit
 - Nathan Sheppard
+image:
+  file: "/media/stp-main.jpg"
 about: Metro Ideas Project prepared this platform in summer 2018.
 further reading:
 - title: The Cost of Education
