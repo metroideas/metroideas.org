@@ -1,0 +1,156 @@
+---
+layout: critical
+---
+
+{% assign project = page %}
+{% assign hero_id = project.title | append: " hero" | slugify %}
+{% if project.image.file %}
+  {% assign image = project.image.file %}
+{% endif %}
+
+{% include patterns/banner-transparent.html %}
+
+<main class="project" role="main" id="main">
+  <style>
+    .full-screen object,
+    .full-screen img {
+      width: 50%;
+      height: 50%;
+    }
+
+    .stp-tag object {
+      height: 35px;
+      margin-left: -2px;
+    }
+
+    @media (min-width:600px) and (min-height:600px) {
+      .full-screen object,
+      .full-screen img {
+        width: 80%;
+        height: 80%;
+      }
+
+      .stp-tag object {
+        height: 50px;
+        margin-left: -3px;
+      }
+    }
+    
+  </style>
+
+  {% include inline-css/hero-full-screen.html id=hero_id image=image %}
+  
+  <header class="full-screen" id="{{ hero_id }}">
+    <h1 class="small-container">
+      <object data="/media/stp-banner.svg" type="image/svg+xml" aria-hidden="true">
+        <img src="/media/stp-banner.png" alt="{{ page.title }}">
+      </object>
+      <span class="visually-hidden">{{ page.title }}</span>
+    </h1>
+  </header>
+  
+  <section class="intro container">
+    <div class="description span-7">
+      {{ content }}
+    </div>
+
+    <div class="offset-1 span-4">
+      {% include patterns/sharing-widget.html %}
+    </div>
+  </section>
+
+  <hr style="margin-top:3rem;margin-bottom:3rem;">
+
+  <section class="article-list container" id="education">
+    <h2 class="whole stp-tag">
+      <object data="/media/stp-education-tag.svg" type="image/svg+xml" aria-hidden="true">
+        <img src="/media/stp-education-tag.png" alt="education">
+      </object>
+      <span class="visually-hidden">Education</span>
+    </h2>
+    <div class="row">
+      <figure class="span-5">
+        {% include project/stp-section-image.html filename='stp-education.jpg' %}
+      </figure>
+      <div class="span-6">
+        {% for title in page.education_asides %}
+          {% assign post = site.asides | where_exp: "aside", "aside.title contains title" | first %}
+          {% include project/aside.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="article-list container" id="economy">
+    <h2 class="whole stp-tag">
+      <object data="/media/stp-economy-tag.svg" type="image/svg+xml" aria-hidden="true">
+        <img src="/media/stp-economy-tag.png" alt="economy">
+      </object>
+      <span class="visually-hidden">Economy</span>
+    </h2>
+    <div class="row">
+      <figure class="span-5">
+        {% include project/stp-section-image.html filename='stp-economy.jpg' %}  
+      </figure>
+      <div class="span-6">
+        {% for title in page.economy_asides %}
+          {% assign post = site.asides | where_exp: "aside", "aside.title contains title" | first %}
+          {% include project/aside.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="article-list container" id="accountability">
+    <h2 class="whole stp-tag">
+      <object data="/media/stp-accountability-tag.svg" type="image/svg+xml" aria-hidden="true">
+        <img src="/media/stp-accountability-tag.png" alt="accountability">
+      </object>
+      <span class="visually-hidden">Accountability</span>
+    </h2>
+    <div class="row">
+      <figure class="span-5">
+        {% include project/stp-section-image.html filename='stp-accountability.jpg' %}  
+      </figure>
+      <div class="span-6">
+        {% for title in page.accountability_asides %}
+          {% assign post = site.asides | where_exp: "aside", "aside.title contains title" | first %}
+          {% include project/aside.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="article-list container" id="inclusion">
+    <h2 class="whole stp-tag">
+      <object data="/media/stp-inclusion-tag.svg" type="image/svg+xml" aria-hidden="true">
+        <img src="/media/stp-inclusion-tag.png" alt="inclusion">
+      </object>
+      <span class="visually-hidden">Inclusion</span>
+    </h2>
+    <div class="row">
+      <figure class="span-5">
+        {% include project/stp-section-image.html filename='stp-inclusion.jpg' %}  
+      </figure>
+      <div class="span-6">
+        {% for title in page.inclusion_asides %}
+          {% assign post = site.asides | where_exp: "aside", "aside.title contains title" | first %}
+          {% include project/aside.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+    
+  <section class="supplemental container">
+    <div class="span-5">
+      {% include project/further-reading.html %}
+    </div>
+
+    <div class="offset-2 span-5">
+      {% include project/about.html %}
+      {% include project/downloads.html %}
+    </div>
+  </section>
+</main>
+
+{% include patterns/footer.html %}

@@ -1,0 +1,17 @@
+{% comment %}
+Render section images for Steal This Platform layout
+{% endcomment %}
+
+{% assign image = include.filename | prepend: "/media/" %}
+
+<picture aria-hidden="true">
+  <source media="(min-width:800px)"
+         srcset='{{ image | imgix_url: w:390, h:260, fit:"crop", q:50 }} 1x,
+                   {{ image | imgix_url: w:390, h:260, fit:"crop", q:50, dpr:2 }} 2x,
+                   {{ image | imgix_url: w:390, h:260, fit:"crop", q:50, dpr:3 }} 3x'>
+  <img srcset="{{ image | imgix_url: w:280, h:280, fit:"crop", q:50 }} 1x,
+               {{ image | imgix_url: w:280, h:280, fit:"crop", q:50, dpr:2 }} 2x,
+               {{ image | imgix_url: w:280, h:280, fit:"crop", q:50, dpr:3 }} 3x"
+          src="{{ image | imgix_url: w:280, h:280, fit:"crop", q:50 }}"
+          alt="">
+</picture>
