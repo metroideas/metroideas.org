@@ -27,7 +27,9 @@ further reading:
   url: "/projects/open-hamilton/"
   description: An open data policy would improve transparency, efficiency, and accountability.
 education_asides:
-- 
+- Modernize School Spending
+- Diversify Our Schools
+- Expand Summer Reading
 layout: steal-this-platform
 ---
 
