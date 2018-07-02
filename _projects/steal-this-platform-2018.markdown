@@ -1,19 +1,16 @@
 ---
 title: Steal This Platform
 date: 2018-06-12 13:30:00 -04:00
+published: false
 categories:
 - Election
 tags:
 - Hamilton County
 position: 0
-layout: steal-this-platform
 description: Practical ideas and solutions to confront Hamilton County's challenges
   head on.
 lead: Practical ideas and solutions to confront Hamilton County's challenges head
   on.
-image:
-  file: 
-  alt: 
 author:
 - David Morton
 - Megan Gienapp
@@ -21,6 +18,14 @@ author:
 - Peter Hagemeyer
 - Alea Tveit
 - Nathan Sheppard
+about: Metro Ideas Project prepared this platform in summer 2018.
+further reading:
+- title: The Cost of Education
+  url: "/projects/the-cost-of-education/"
+  description: Our research on school spending explores student-based budgeting.
+- title: Open Hamilton
+  url: "/projects/open-hamilton/"
+  description: An open data policy would improve transparency, efficiency, and accountability.
 education_asides:
 - Education 1
 - Education 2
@@ -37,14 +42,7 @@ inclusion_asides:
 - Inclusion 1
 - Inclusion 2
 - Inclusion 3
-further reading:
-- title: The Cost of Education
-  url: "/projects/the-cost-of-education/"
-  description: Our research on school spending explores student-based budgeting.
-- title: Open Hamilton
-  url: "/projects/open-hamilton/"
-  description: An open data policy would improve transparency, efficiency, and accountability.
-about: Metro Ideas Project prepared this platform in summer 2018.
+layout: steal-this-platform
 ---
 
 ## Good Ideas for Hamilton County
