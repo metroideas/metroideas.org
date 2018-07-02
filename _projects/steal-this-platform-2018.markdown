@@ -45,10 +45,10 @@ inclusion_asides:
 layout: steal-this-platform
 ---
 
-## Good Ideas for Hamilton County
+## Ideas and solutions for Hamilton County
 
 Voters will decide the next slate of Hamilton County leadership on August 2. A wide range of offices will appear on the ballot. There are contested races for school board, the county commission, sheriff, and many others. This election is an opportunity to implement an ambitious agenda that will improve citizens' quality of life.
 
-Metro Ideas Project staff has prepared a platform of practical ideas and policy solutions that can help officials address the challenges facing Hamilton County. Our platform rests on four pillars: education reform, economic development, government accountability, and inclusivity.
+Metro Ideas Project staff has prepared a platform of practical ideas and policy solutions that can help officials address the challenges facing Hamilton County. Our platform rests on four pillars: education reform, economic development, government accountability, and inclusion.
 
-We encourage candiates to adopt these ideas and steal this platform as they prepare to serve Hamilton County's citizens in the coming term.
+We encourage candidates to adopt these ideas and steal this platform as they prepare to serve Hamilton County's citizens in the coming term.
