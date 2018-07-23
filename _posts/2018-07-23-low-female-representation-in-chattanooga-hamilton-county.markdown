@@ -55,3 +55,5 @@ Eighty-six percent of the women who ran primaries in Hamilton County are advanci
 | 2014 | 10           | 3    | 13    | 76.92%         |
 | 2010 | 3            | 2    | 5     | 60.00%         |
 | 2006 | 7            | 2    | 9     | 77.78%         |
+
+**NOTE** – *Metro Ideas Project is a 501(c)3 Public Charity and thus does not endorse candidates for public office. This isn’t nor should be construed as support or an endorsement for any candidate, but rather an analysis of an important social issue in our community.*
