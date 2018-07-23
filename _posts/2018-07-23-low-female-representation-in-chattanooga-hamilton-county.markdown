@@ -10,6 +10,11 @@ description: Women hold few elected offices in local government.
 lead: Women hold few elected offices in local government.
 author:
 - Mallory Treece
+image:
+  file: "/media/county-commission.jpg"
+  caption: Hamilton County Commission
+  credit: Peri McIntosh
+  alt: public meeting
 ---
 
 Women are underrepresented in every level of government, especially in elected positions. Women make up 20 percent of the US Congress. The numbers only get worse at the state level, where 16% of the Tennessee General Assembly is female. Tennessee received a D- in political participation on the [Status of Women report card](https://statusofwomendata.org/publications/2015-national-report/) from the Institute for Women's Policy Research. These trends are reflected at the local level.
