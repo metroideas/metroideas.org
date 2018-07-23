@@ -50,6 +50,7 @@ Although Hamilton County and Chattanooga haven't reached parity, the number of w
 Eighty-six percent of the women who ran primaries in Hamilton County are advancing to the August general election. This percentage is higher than the 2014, 2010, and 2006 elections. This shows that when women run in Hamilton County, they tend to win.
 
 | Year | Won Primary  | Lost | Total | Percentage Won |
+| :-   | :-           | :-   | :-    | :-             |
 | 2018 | 6            | 1    | 7     | 85.71%         |
 | 2014 | 10           | 3    | 13    | 76.92%         |
 | 2010 | 3            | 2    | 5     | 60.00%         |
