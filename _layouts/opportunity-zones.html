@@ -1,0 +1,71 @@
+---
+layout: critical
+---
+
+{% assign hero_id = page.title | append: " hero" | slugify %}
+{% if page.image.file %}
+  {% assign image = page.image.file %}
+{% endif %}
+
+{% include patterns/banner-transparent.html %}
+
+<main class="project" role="main" id="main">
+  {% include inline-css/hero-full-screen.html id=hero_id image=image %}
+  <header class="full-screen" id="{{ hero_id }}">
+    <div class="medium-container">
+      <h1 class="large-display">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <section class="intro container">
+    <div class="description span-7">
+      {{ content }}
+    </div>
+    <div class="offset-1 span-4">
+      {% include patterns/sharing-widget.html %}
+    </div>
+  </section>
+
+  <section class="container" style="max-width:1000px">
+    <div class="description-form">
+      <div class="description bg-dots green">
+        <h2 class="h1" style="color:#fff;">Get the report</h2>
+        <p style="color:#fff;">Tell us more about you and your organization to get a free report on Tennessee's opportunity zones.</p>
+      </div>
+
+      <form class="block" method="post" action="https://metroideas.us11.list-manage.com/subscribe/post?u=f9d7c3f4989701b58fc58c470&amp;id=6c7006ca04" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+        <div class="half">
+          <label for="mce-FNAME">First Name</label><br>
+          <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+        </div>
+
+        <div class="half">
+          <label for="mce-LNAME">Last Name</label><br>
+          <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+        </div>
+
+        <div class="whole">
+          <label for="mce-EMAIL">Email Address<span class="asterisk">*</span>
+          </label><br>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        
+        <div class="whole">
+          <label for="mce-MMERGE5">Business/Organization</label><br>
+          <input type="text" value="" name="MMERGE5" class="" id="mce-MMERGE5">
+        </div>
+
+        <div class="half">
+          <label for="mce-PHONE">Phone Number</label><br>
+          <input type="text" name="PHONE" class="required" value="" id="mce-PHONE">
+        </div>
+
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f9d7c3f4989701b58fc58c470_6c7006ca04" tabindex="-1" value=""></div>
+        
+        <div class="whole">
+          <button class="green" name="subscribe">Get Report</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
