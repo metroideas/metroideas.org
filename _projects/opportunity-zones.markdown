@@ -1,7 +1,6 @@
 ---
 title: Opportunity Zones
 date: 2018-07-27 09:52:00 -04:00
-published: false
 categories:
 - Economy
 tags:
@@ -14,6 +13,10 @@ author:
 - Alea Tveit
 - Nathan Sheppard
 - Joda Thongnopnua
+image:
+  file: "/media/opportunity-zones.jpg"
+  credit: Peri McIntosh
+  alt: Neighborhood
 layout: opportunity-zones
 ---
 
