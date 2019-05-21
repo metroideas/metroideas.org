@@ -4,11 +4,7 @@ _site/
 .jekyll-metadata
 
 # Build
-css/
-js/
-bower_components/
 node_modules/
-Gemfile.lock
 
 # Misc
 tmp/
