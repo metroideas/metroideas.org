@@ -1,8 +1,15 @@
-module.exports = {
+const path = require('path');
+
+const config = {
+  devtool: 'source-map',
   entry: {
-    main: './_assets/_js/main.js'
+    main: path.resolve(__dirname, './_assets/_js/main.js')
   },
+  mode: 'production',
   output: {
+    path: path.resolve(__dirname, 'js/'),
     filename: '[name].js'
   }
 }
+
+module.exports = config;

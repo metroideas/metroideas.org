@@ -1,9 +1,9 @@
 /*! mip-starter | MIT License | github.com/metroideas/mip-starter */
 
 // Vendor
-@import "/node_modules/normalize.css/normalize.css";
 @import "../../node_modules/bourbon/core/bourbon";
 @import "../../node_modules/bourbon-neat/core/neat";
+@import "mip/core/normalize";
 
 // Core
 @import "mip/core/variables";

@@ -93,7 +93,7 @@ exclude:
 - npm-debug.log
 - tmp/
 - webpack.config.js
-gems:
+plugins:
 - jekyll-feed
 - jekyll-redirect-from
 - jekyll-sitemap
