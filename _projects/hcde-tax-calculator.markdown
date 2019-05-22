@@ -1,7 +1,6 @@
 ---
 title: HCDE Tax Calculator
 date: 2019-05-21 17:55:00 -04:00
-published: true
 categories:
 - Education
 tags:
@@ -19,3 +18,5 @@ image:
   alt: "Children raising their hands in class"
 hcde_calc: true
 ---
+
+Page content goes here.
