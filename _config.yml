@@ -96,7 +96,6 @@ exclude:
 plugins:
 - jekyll-feed
 - jekyll-redirect-from
-- jekyll-sitemap
 - jekyll-archives
 - jekyll/imgix
 imgix:
