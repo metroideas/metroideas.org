@@ -19,5 +19,3 @@ image:
   alt: "Children raising their hands in class"
 hcde_calc: true
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem praesentium beatae harum molestiae, eligendi eius mollitia laboriosam aliquam perferendis cumque, officiis. Accusamus, itaque, est. Quibusdam, nihil. Corporis officia dolore voluptate.
