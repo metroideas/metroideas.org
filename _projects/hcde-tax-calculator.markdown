@@ -22,7 +22,7 @@ description: Our tax calculator breaks down how changes to the Hamilton County s
 
 On June 26, the Hamilton County Commission will vote on whether or not to adopt an increased education budget as presented by Hamilton County Schools. This will likely require a property tax increase, as there is a $34 million funding gap in the Hamilton County Schools budget.
 
-The last increase in the millage rate (see here for an explainer on property taxes) was in 2009, although Hamilton County Schools have received some additional funding through growth in the tax base in the years since.
+The last increase in the millage rate (see here for an explainer on property taxes) was in 2004, although Hamilton County Schools have received some additional funding through growth in the tax base in the years since.
 
 Additionally, there was a ten percent millage rate increase approved in 2018 due to a Tennessee state law that required an automatic reduction of the millage rate if property values increase to prevent local governments from experiencing a “windfall” in reappraisal years without the approval of the County Commission. That additional funding, although not allocated directly to Hamilton County Schools, was used to fund capital expenses such as new schools and improvements.
 
