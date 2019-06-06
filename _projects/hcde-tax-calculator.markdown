@@ -36,7 +36,7 @@ The proposed revenue increase would fund a number of key priorities for Hamilton
 + Full-time college and career advisors at every high school
 + Adding intervention/coaching positions so all 42 elementary schools have support staff to assist struggling readers.
 
-Hamilton County ranks lower than many of its peers in property tax burdens, but has benefited from aggressive growth in its tax base. While Tennessee has an overall low tax burden, high sales taxes and a lack of income tax have created one of the most regressive tax system in America.
+Hamilton County ranks lower than many of its peers in property tax burdens, but has benefited from aggressive growth in its tax base. While Tennessee has an overall low tax burden, high sales taxes and a lack of income tax have created [one of the most regressive tax system in America](https://itep.org/wp-content/uploads/whopays-ITEP-2018.pdf).
 
 <table>
   <thead>
