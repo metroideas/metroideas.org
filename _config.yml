@@ -116,6 +116,6 @@ hcde_image_path: 'https://s3.amazonaws.com/hcde-calculator-images/'
 page_gen:
   - data: 'hcde-calculator'
     template: hcde-calc
-    name: 'title'
+    name: 'slug'
     dir: 'projects/hcde-tax-calculator/results'
     index_files: true
