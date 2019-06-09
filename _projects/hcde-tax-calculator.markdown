@@ -1,5 +1,5 @@
 ---
-title: Calculate Your School Budget
+title: Build Your School Budget
 date: 2019-05-21 17:55:00 -04:00
 categories:
 - Education
@@ -20,13 +20,16 @@ hcde_calc: true
 description: Our tax calculator breaks down how changes to the Hamilton County school system would impact your household budget.
 ---
 
-On June 26, the Hamilton County Commission will vote on whether or not to adopt an increased education budget as presented by Hamilton County Schools. This will likely require a property tax increase, as there is a $34 million funding gap in the Hamilton County Schools budget.
+On June 26, the Hamilton County Commission will vote on whether or not to adopt an increased education budget as presented by Hamilton County Schools. This will likely require a property tax increase, as there is a $34 million funding gap in the Hamilton County Schools' budget.
+
+
+<a href="#react-root">Build your school budget with our calculator</a>
 
 The last increase in the millage rate (read our [breakdown on property taxes in Hamilton County](https://metroideas.org/projects/tax-revenue-in-hamilton-county/)) was in 2005, although Hamilton County Schools have received some additional funding through growth in the tax base in the years since.
 
 Additionally, there was a ten percent millage rate increase approved in 2018 due to a Tennessee state law that required an automatic reduction of the millage rate if property values increase to prevent local governments from experiencing a “windfall” in reappraisal years without the approval of the County Commission. That additional funding, although not allocated directly to Hamilton County Schools, was used to fund capital expenses such as new schools and improvements.
 
-The proposed revenue increase would fund a number of key priorities for Hamilton County Schools, including additional school counselors, academic interventionists, and will eliminate classroom fees for parents across the county. The revenue increase would fund:
+The proposed revenue increase would fund a number of key priorities for Hamilton County Schools, including additional school counselors, academic interventionists, and will eliminate classroom fees for parents across the county. **The revenue increase would fund:**
 
 {: .long-list}
 + A 5 percent salary increase for teachers and professional employees.
@@ -36,7 +39,7 @@ The proposed revenue increase would fund a number of key priorities for Hamilton
 + Full-time college and career advisors at every high school
 + Adding intervention/coaching positions so all 42 elementary schools have support staff to assist struggling readers.
 
-Hamilton County ranks lower than many of its peers in property tax burdens, but has benefited from aggressive growth in its tax base. While Tennessee has an overall low tax burden, high sales taxes and a lack of income tax have created [one of the most regressive tax system in America](https://itep.org/wp-content/uploads/whopays-ITEP-2018.pdf).
+Hamilton County ranks lower than many of its peers in property tax burdens, but has benefited from aggressive growth in its tax base. While Tennessee has an overall low tax burden, high sales taxes and a lack of income tax have created [one of the most regressive tax systems in America](https://itep.org/wp-content/uploads/whopays-ITEP-2018.pdf).
 
 <table>
   <thead>
@@ -77,3 +80,5 @@ Local property taxes, one of Tennessee’s only forms of progressive taxation, m
 Metro Ideas Project wanted to offer parents, residents, and students the opportunity to estimate their property taxes if the proposed budget presented by the Hamilton County School Board is adopted. Additionally, we analyzed several high-priority _unfunded_ education needs that _were not_ included in the proposed budget and offer parents an opportunity to estimate what their property taxes could look like if those line-items were included.
 
 Below is a calculator based off of your estimated property value and several adjustable key funding priorities. Share your proposed vision for Hamilton County Schools and how much you’re willing to pay for an appropriately funded education system.
+
+**Note**: Calculating your property taxes without any increases or changes will simply provide your estimated bill under the FY2020 School Board budget proposal.
