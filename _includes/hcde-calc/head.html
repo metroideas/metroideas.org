@@ -1,0 +1,43 @@
+{% capture img_path %}{{ site.hcde_image_path }}{{ page.amount | prepend: 'hcde-' | append: '.png' }}{% endcapture %}
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{ page.title }} — Metro Ideas Project</title>
+{% if page.amount %}
+<meta name="description" content="Explore education data to create your own budget.">
+{% else %}
+<meta name="description" content="{{ page.description }}">
+{% endif %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/favicon/manifest.json">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:title" content="{{ page.title }} &mdash; Metro Ideas Project">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="fb:app_id" content="{{ site.facebook_id }}">
+{% if page.amount %}
+<meta property="og:image" content="{{ img_path }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:description" content="Explore education data to create your own budget.">
+{% else %}
+<meta property="og:image" content="{{ page.image.file | absolute_url }}">
+<meta property="og:description" content="{{ page.description }}">
+{% endif %}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@thinkmetro">
+
+<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="Metro Ideas Project">
+<link type="text/plain" rel="author" href="/humans.txt">
+
+<link rel="stylesheet" href="/css/mip.css">
+<link rel="stylesheet" href="/css/hcde-calc.css">

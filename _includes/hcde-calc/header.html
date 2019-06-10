@@ -1,0 +1,23 @@
+{% if page.hcde_calc %}
+  {% assign source = page %}
+{% endif %}
+
+{% assign hero_id = source.title | slugify | prepend: "hero-" %}
+
+{% if source.image.file %}
+  {% assign image = source.image.file %}
+{% endif %}
+
+{% include inline-css/hero.html id=hero_id image=image %}
+<!-- Hero & header -->
+<div class="hero" id="{{ hero_id }}">
+  <header>
+    <a href="/archives/category/education/" class="category">education</a>
+
+    <h1 class="large-display">{{ page.title }}</h1>
+
+    <p class="byline">
+      <time datetime={{ source.date | date_to_xmlschema }}>{{ source.date | ap_datetime }}</time>
+    </p>
+  </header>
+</div>

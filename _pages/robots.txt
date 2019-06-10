@@ -9,8 +9,18 @@ robots.txt output depends on jekyll.environment and site.public
 # www.robotstxt.org/
 
 {% if jekyll.environment == "production" and site.public %}
+# All
 User-agent: *
-Disallow:
+Disallow: /projects/hcde-tax-calculator/results/
+
+# Facebook
+User-Agent: facebookexternalhit/1.1
+Allow: /projects/hcde-tax-calculator/results/
+
+# Twitter
+User-Agent: Twitterbot
+Allow: /projects/hcde-tax-calculator/results/
+
 {% else %}
 User-agent: *
 Disallow: *
