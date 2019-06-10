@@ -110,12 +110,10 @@ jekyll-archives:
     tag: "/archives/tag/:name/"
 google_analytics: UA-68712194-1
 facebook_id: 225621571136193
-
-# HCDE Tax Calculator
-hcde_image_path: 'https://s3.amazonaws.com/hcde-calculator-images/'
+hcde_image_path: https://s3.amazonaws.com/hcde-calculator-images/
 page_gen:
-  - data: 'hcde-calculator'
-    template: hcde-calc
-    name: 'slug'
-    dir: 'projects/hcde-tax-calculator/results'
-    index_files: true
+- data: hcde-calculator
+  template: hcde-calc
+  name: slug
+  dir: projects/hcde-tax-calculator/results
+  index_files: true

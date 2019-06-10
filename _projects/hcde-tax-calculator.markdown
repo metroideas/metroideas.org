@@ -14,10 +14,11 @@ author:
 layout: hcde-calc
 image:
   file: "/media/kids-in-classroom.jpg"
-  credit: "Nicole Honeywell via Unsplash"
-  alt: "Children raising their hands in class"
+  credit: Nicole Honeywell via Unsplash
+  alt: Children raising their hands in class
 hcde_calc: true
-description: Our tax calculator breaks down how changes to the Hamilton County school system would impact your household budget.
+description: Our tax calculator breaks down how changes to the Hamilton County school
+  system would impact your household budget.
 ---
 
 On June 26, the Hamilton County Commission will vote on whether or not to adopt an increased education budget as presented by Hamilton County Schools. This will likely require a property tax increase, as there is a $34 million funding gap in the Hamilton County Schools' budget.
