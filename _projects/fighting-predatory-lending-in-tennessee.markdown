@@ -8,7 +8,7 @@ tags:
 - Payday loans
 - Poverty
 - Tennessee
-position: 2
+position: 4
 description: A simple strategy for cities and counties.
 lead: A simple strategy for cities and counties.
 author:

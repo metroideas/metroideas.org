@@ -8,6 +8,7 @@ tags:
 - Hamilton County schools
 - HCDE
 - Hamilton County Department of Education
+position: 0
 description: Our tax calculator breaks down how changes to the Hamilton County school
   system would impact your household budget.
 author:

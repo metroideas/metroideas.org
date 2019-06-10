@@ -6,6 +6,7 @@ categories:
 tags:
 - Tennessee
 - Neighborhoods
+position: 1
 description: Download our report profiling opportunity zones in Tennessee.
 lead: Download our report profiling opportunity zones in Tennessee.
 author:

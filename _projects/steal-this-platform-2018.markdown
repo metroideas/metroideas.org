@@ -5,7 +5,7 @@ categories:
 - Election
 tags:
 - Hamilton County
-position: 0
+position: 2
 description: Practical ideas and solutions to confront Hamilton County's challenges
   head on.
 lead: Practical ideas and solutions to confront Hamilton County's challenges head
